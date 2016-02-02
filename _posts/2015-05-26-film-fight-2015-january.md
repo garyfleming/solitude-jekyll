@@ -1,0 +1,32 @@
+---
+id: 16087
+title: 'Film Fight 2015: January'
+date: 2015-05-26T19:47:58+00:00
+author: Gary Fleming
+layout: post
+guid: http://solitude.vkps.co.uk/?p=16087
+permalink: /Archives/2015/05/26/film-fight-2015-january/
+categories:
+  - Films
+---
+Welcome to Film Fight 2015! I haven&#8217;t checked to be certain, but I believe this is going to be the biggest month yet with 9 films in the fight. Even the thought of tackling this number has delayed this post by a silly amount. Because this was during the season for Oscar releases, most of these are going to be better than average.
+
+First up, **Big Hero 6** rightly makes a big deal of the main character&#8217;s robot, Baymax, and his understated and unintentional humour. He&#8217;s a great addition to an otherwise barely sketched cast of characters, none of whom get enough individual screen time to get beyond a single character trait. I&#8217;m not expecting nuance, but a little more than we get would be nice. That said, the film is the kind of fun adventure we&#8217;ve come to expect from Disney Animation Studios. It&#8217;s certainly not the best kid&#8217;s animated film you&#8217;ll see, but it&#8217;s far from the worst. (See [my Big Hero 6 Twitter review](https://twitter.com/garyfleming/status/552032691391315968)).
+
+**St. Vincent** has Bill Murray play a grouchy but funny old man, a role with which he has become more than comfortable. Keeping the act fresh is the introduction of a single mother and son as neighbours who begin to rely on him. All of the characters build just enough, their interactions work very well, and the movie ticks along nicely. A funny, and at times sweet, comedy. Well worth seeing. (See [my St. Vincent Twitter review](https://twitter.com/garyfleming/status/554739681494319104))
+
+**Taken 3** is the next inevitable cash grab in the series, following the surprisingly great original. There&#8217;s nothing new here, and many of the ideas have been done to death. It&#8217;s formulaic, but fun; entertaining, but with an utterly nonsensical plot. The action set pieces that we&#8217;re always moving towards are reasonable enough but you won&#8217;t care about any of the cast, making those sequences fairly hollow. Watch if you want something mindless. (See [my Taken 3 Twitter review](https://twitter.com/garyfleming/status/554740268696887297)).
+
+The relentless pace and movement given to **Birdman** by both its seamless editing and direction define it. There&#8217;s no looking away from Michael Keaton&#8217;s lead performance as an actor losing himself to self-doubt and self-obsession, a nihilistic narcissism played out between stage performances. The supporting cast are equally brilliant, particularly Edward Norton and Emma Stone, each bringing their own distractions. We&#8217;re never allowed to see what is real and what is imaginary, where the play within the movie ends and the lead&#8217;s breakdown begins. An excellent movie. (See [my Birdman Twitter review](https://twitter.com/garyfleming/status/554741451155070976)).
+
+**Foxcatcher** is based on the true story of a millionaire funding wrestling in the US, for mostly vanity reasons, and the two brothers who get caught up in his ill-conceived act of egotism. The lead performances are exceptionally strong. Steve Carrell shows a serious side we haven&#8217;t seen before, and Channing Tatum puts in a great physical performance as an awkward, lumbering wrestler. As a whole, however, the movie is languidly paced. Until the very end, you want things to move just a bit faster. Worth seeing. (See [my Foxcatcher Twitter review](https://twitter.com/garyfleming/status/557302240973946880)).
+
+Never before has musical performance been so tense as in **Whiplash**. I can think of few films that had my muscles tighten so much as when the lead, an aspiring drummer, performs as hard as he can whilst being berated by his bully of a coach, fantastically played by JK Simmons. As you might imagine, the film sounds incredible, one of the few times going to the cinema pays dividends unless you have a high-end sound system. The story itself is weak (you&#8217;ll see most of it coming) but it&#8217;s the two thoroughly unlikeable main characters going head-to-head that make this film something you. Excellent. (See [my Whiplash Twitter review](https://twitter.com/garyfleming/status/557304314595917825)).
+
+There are many war films that have something to say that would be worth hearing. **American Sniper** is not one of them. Its few messages (the impact of war on veterans, the unflinching/harmful patriotism of some) have been said far better in other movies. The plot itself, focussing on a sniper chasing one of his counterparts over the years, is dull: each of the four main segments are similar enough that even the few action sequences are pretty unengaging, with the only stand-out being the scene used for the trailer. Not worth seeing. (See [my American Sniper Twitter review](https://twitter.com/garyfleming/status/558025475411705857)).
+
+I have a lot of time for James Franco and Seth Rogen. Their comedy is often juvenile, but it frequently tickles me just the right way. **The Interview** is not one of those occasions. The premise is thin, the jokes are one-note (and it&#8217;s a dud), the progression is contrived, the acting is weak, and there&#8217;s really not much else. It fails to do just about anything well. There are a million better comedies to see than this. (See [my The Interview Twitter review](https://twitter.com/garyfleming/status/559074371961372672)).
+
+Finally, **Ex Machina** is a fascinating and gripping take on some very important issues. It&#8217;s an exploration of AI, human nature, and manipulation. There are enough twists and turns, layers of complication, to keep things moving nicely. Alex Garland has shot this beautifully, squeezing surprisingly great and nuanced performances from his small cast. This is an exceptionally good movie, directorial debut or not. (See [my Ex Machina Twitter review](https://twitter.com/garyfleming/status/561164586259603456)).
+
+There are at least three movies that could win the year this month, but only one gets through. Very hard to call, but I think it has to be **Birdman**, for keeping up that pace and quality for so long.

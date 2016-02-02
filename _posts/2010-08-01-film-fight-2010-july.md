@@ -1,0 +1,22 @@
+---
+id: 2465
+title: 'Film Fight 2010: July'
+date: 2010-08-01T17:41:28+00:00
+author: Gary Fleming
+layout: post
+guid: http://solitude.vkps.co.uk/?p=2465
+permalink: /Archives/2010/08/01/film-fight-2010-july/
+categories:
+  - Uncategorized
+---
+As is the norm, July was a reasonably full month with 4 films viewed.
+
+**Predators**, while not a masterpiece by any measure, is exactly what it needed to be: an action movie with an 80&#8217;s feel, free from large CG scenes and full of physical effects, enough of a plot to put the cannon fodder where it needed to be, and some absolutely great scenes. The pre-credits opening shot is particularly grabbing, pushing the audience immediately into the action and getting things started with some panic. Adrien Brody doesn&#8217;t pull-off being an action hero in the same way that Schwarzenegger did, and the slow reveal of the predators themselves was something of a waste, given we know what they look like from the rest of the franchise, but those are small points in an otherwise solid film. (See [my Predators Twitter review](http://twitter.com/garyfleming/status/18185834123)).
+
+There&#8217;s a lot I would like to say about Christopher Nolan&#8217;s latest masterpiece, **Inception**, but can&#8217;t do so without leaving a large trail of spoilers. There will be many fiercely argued debates about the minutiae of it&#8217;s world and it&#8217;s take on subjective reality. That&#8217;s how you know it&#8217;s going to be a classic. Nolan has created an incredible piece of cinematic storytelling, full of visuals and world-building that wouldn&#8217;t work in any other medium. The central conceit of controllable dream worlds is revealed just as quickly as it needs to be, just like everything else in this film from Leonardo DiCaprio&#8217;s broken team lead to the depth of the maze that is being built in the incredible plot. That, as I see it, is its only major flaw: everything moves so quickly that only the central concept and DiCaprio get a chance to breath. The supporting cast (and a great cast it is) provide excellent sketches of characters and there are many questions to be asked about them, but we never get the time to see any of it. When the only real criticism you have of a movie is that you want to see a lot more, you have a classic. A fantastic, must-see film. (See [my Inception Twitter review](http://twitter.com/garyfleming/status/18840963110)).
+
+Pixar&#8217;s latest effort is a new look at an old franchise. **Toy Story 3** revisits Woody, Buzz and friends ten years later as Andy, their owner, prepares to go to college. The central theme of transition and moving on sets a tone that is both sweet in places, and fairly sad in others. That&#8217;s not to say it&#8217;s not got the little adventure set-pieces of the previous films, it has quite a few that will make you laugh, but it is less overtly funny than its two predecessors. Revisiting a franchise this long gone is dangerous, but Pixar have done well to put a neat little ending on this story. A great film. One other note: the 3D effects are understated to the point that they actually don&#8217;t add anything to the film. If you saw this in 2d, you&#8217;d still have the same great movie. (See [my Toy Story 3 Twitter review](http://twitter.com/garyfleming/status/19436128539)).
+
+I had high hopes for **The Karate Kid**, a thematically different take on the story structure of the 80&#8217;s classic. In the opening chunk, some of my hopes were lived up to: we see the frustration and loneliness of a young boy pushed into a foreign situation. Had the film built on this theme, it could&#8217;ve been a great film but it was there just as the set-up for a much more formulaic movie. Jaden Smith managed to get the emotional points across pretty well for an actor of his age, but failed when it came to anything approaching comedy: he has the mannerisms of his father, without the brash charm to pull it off. For a film lacking in depth and out-and-out fun, it certainly ran a lot longer than it should have. The plot on offer could&#8217;ve been covered in 90-odd minutes, but we&#8217;re given nearly an hour more than that. A shame. (See [my The Karate Kid Twitter review](http://twitter.com/garyfleming/status/19497790703)).
+
+While I really enjoyed Toy Story 3, this month&#8217;s winner is **Inception** for its clever storytelling and THAT hotel corridor scene.

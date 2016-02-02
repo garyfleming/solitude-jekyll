@@ -1,0 +1,20 @@
+---
+id: 15687
+title: 'Film Fight 2012: November'
+date: 2012-12-02T12:05:13+00:00
+author: Gary Fleming
+layout: post
+guid: http://solitude.vkps.co.uk/?p=15687
+permalink: /Archives/2012/12/02/film-fight-2012-november/
+categories:
+  - Films
+---
+As with last month, there are three films in this month&#8217;s round-up.
+
+First up, **Skyfall** is everything that I thought I wanted in a Bond film, but proves that it&#8217;s actually not what I wanted at all. It spends a great deal of time building out several of the characters, but does so in a way that only vaguely connects with the rest of the plot. I want to see Bond develop through his actions; not by being told he&#8217;s getting old and can&#8217;t handle it, but by showing it. The other major issue is that, despite a two and a half hour run-time, the film can&#8217;t muster a credible threat. Javier Bardem is an excellent actor and can certainly do threatening (see No Country for Old Men), but here he comes across as a little bit camp and extremely incompetent. His opening monologue is excellent, but throughout the rest of the movie he fails to live up to any of his supposedly terrifying build-up. It&#8217;s a far better film than many of the worst Bond films, like Die Another Day or Quantum of Solace, but it&#8217;s dull and flabby where the best Bond films focus on being lean and entertaining. Not worth the lengthy run-time. (See [my Skyfall Twitter review](http://twitter.com/garyfleming/status/270145763621892097)).
+
+After an excellent first few movies by Ben Affleck, **Argo** manages to disappoint. First, the good: it looks amazing. Even when it&#8217;s filling out with obvious Oscar-baiting establishing shots, it&#8217;s a visually impressive movie that feels just right. It also has an amazing cast who do the best they can. From Affleck himself, Bryan Cranston, Clea DuVall, Victor Garber et al, it&#8217;s absolutely crammed with fantastic actors. The problem is that it fails to build any interesting or original tension. Because you know that that the various phone calls or checks that might get the cast killed are going to work out at the last second, there&#8217;s never any doubt or real sense of threat. It doesn&#8217;t help that, Affleck&#8217;s character aside, none of the characters really get fleshed out, besides some whining: he could&#8217;ve been going to Iran to extract some cardboard boxes of important files, for all the difference it would&#8217;ve made to the plot. At no point was I concerned for their safety, and that&#8217;s deadly for this kind of film. Finally, the plot set in Hollywood was even worse: having someone point out the absurdity of their plan is one thing, doing it with every character is just dull. Don&#8217;t go out of your way to see this film. (See [my Argo Twitter review](http://twitter.com/garyfleming/status/271385721556832256)).
+
+Lastly, **End of Watch** feels exactly as it is edited: very uneven. There are times when the film is very dark and tense, there are moments that it feels genuinely funny, and there&#8217;s a hell of a lot of it where not much really happens. Maybe that&#8217;s what the film-maker was aiming for, to show that life is a cop in a dangerous areas has at least as much mundanity as it does excitement, but as a viewer it doesn&#8217;t make for the most interesting narrative. The whole thing has a conceit where it appears to have been filmed on hand-held cameras that the main cast have on them (explicitly shown in the film) but, oddly, it never sees this through, showing plenty of shots that are taken from no particular point of view. It might have worked a little better had they seen it through, or avoided it altogether. As a whole, it&#8217;s an okay movie, but could&#8217;ve been better.  (See [my End of Watch Twitter review](https://twitter.com/garyfleming/status/274832045199474688)).
+
+I can&#8217;t say I particularly enjoyed any of this month&#8217;s films, but I think **End of Watch** probably wins for some of the funnier moments.

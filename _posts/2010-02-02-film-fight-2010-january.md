@@ -1,0 +1,26 @@
+---
+id: 930
+title: 'Film Fight 2010: January'
+date: 2010-02-02T00:05:47+00:00
+author: Gary Fleming
+layout: post
+guid: http://solitude.vkps.co.uk/?p=930
+permalink: /Archives/2010/02/02/film-fight-2010-january/
+categories:
+  - Uncategorized
+---
+Another year, and another fresh film fight. As always, January was a tough month, with lots of pretty strong competition (usually the Oscar wannabes are released around this time of year). To get us started, there are 6 films this month.
+
+First up is Robert Downey Jr. in a role that he really wasn&#8217;t born to play: **Sherlock Holmes**. Guy Ritchie gives us an interesting take on the classic detective. His typically non-linear storytelling is used to great effect to explain how the master detective has reached his conclusions, and is particularly good when he&#8217;s sizing up opponents in fights, slowly and methodically showing how he&#8217;s going to break down their defences. Why this particular story mechanic is dropped relatively early in the film is beyond me, because it&#8217;s one of the strongest. Less good is the script: a fairly poor mishmash of ideas, ranging from secret societies, magic, steampunk and master villians. It doesn&#8217;t particularly fit into the Sherlock Holmes mythos, and doesn&#8217;t readily establish itself as a new take. It&#8217;s a pretty mediocre action film, that&#8217;s also trying to be a comedy. It fails to do anything particularly well. Not recommended.  (Read [my Sherlock Holmes Twitter review](http://twitter.com/garyfleming/status/7313858309)).
+
+**Daybreakers** is a surprisingly watchable, but not great, film. It deftly manages to build up its world, quickly, quietly and effectively, and moves on with the story it has to tell. This is a world where an infection has caused the vampires to take over and hunt down the humans. The vampires, however, have over-extended and food is becoming scarce. Queue a story about diminishing food supplies, the folly of rapid and mindless expansion, and a lot of gore. That&#8217;s what saves this film: the tongue-in-cheek bloodbath we&#8217;re treated with visually, paired with some slightly cheesy lines. The film would&#8217;ve been better had it been more over-the-top. As it stands, Daybreakers is a decent action movie, but not a great one. (Read [my Daybreaks Twitter review](http://twitter.com/garyfleming/status/7493111154)).
+
+**The Road** is the almost resolutely bleak, yet absolutely compelling. The primary narrative follows a father and son travelling through a post-apocalyptic world (what happened is never explained), as they encounter endless difficulties and enemies. What starts as trying to protect his son soon becomes a desperate paranoia, as the father becomes wary of everyone they met, and slowly loses his way. Several scenes are horrifyingly blunt about the lengths the father will go to to ensure they don&#8217;t become food for the more cannibalistic elements, and Viggo Mortensen does a fantastic job of showing the slow decay that takes a grip of him. While the ending ties things up a little too neatly, the rest of the film is very well done. A must see. (Read [my The Road Twitter review](http://twitter.com/garyfleming/status/7597149764)).
+
+Not many people would make a comedy about firing people, but Jason Reitman has done just that with **Up in the Air**. The core conceit gives way to an inspection of the main character&#8217;s choices in life at just the right time, showing him up to be a willing outcast and seeing if those choices are right. While it does veer dangerously close to schmaltzy in places, it always manages to pull away by being brutally honest elsewhere. It&#8217;s not the funniest comedy, nor the best character piece, but both halves combine to make a good, solid movie. (Read [my Up in the Air Twitter review](http://twitter.com/garyfleming/status/7862400594)).
+
+**A Prophet** is a very interesting French film, a fairly gritty take on a prison drama. Malik begins as a young, somewhat naive hoodlum who goes to jail and, over the course of the film, becomes warped by his environment and the things he needs to do to survive. It doesn&#8217;t pull many punches as he schemes his way further up the criminal ladder. It&#8217;s well-structured and well-paced, being lent real weight by the very natural performances. While the scene in the middle where they both use the title and throw around a dead deer are puzzlingly unnecessary (and in poor taste), the rest of the film is very well done. (Read [my A Prophet Twitter review](http://twitter.com/garyfleming/status/8151079914)).
+
+Finally, **Precious** is a fairly harrowing story of bullying, abusive upbringings and never thinking you can make something of yourself. While, at times, it turns things around a little too neatly, the main plot-line is equally engaging and chilling. Mo&#8217;Nique puts in an Oscar worthy performance as the abusive mother, handling a fairly dicey subject with a great believability. It&#8217;s not easy to watch, but it is worthwhile. A powerful film. (Read [my Precious Twitter review](http://twitter.com/garyfleming/status/8414638989)).
+
+And the winner? It was a close-run thing between Precious, The Road and A Prophet, but I think **The Road** takes it in the end. Another great January for film.

@@ -1,0 +1,24 @@
+---
+id: 15625
+title: 'Film Fight 2012: July'
+date: 2012-09-08T16:12:21+00:00
+author: Gary Fleming
+layout: post
+guid: http://solitude.vkps.co.uk/?p=15625
+permalink: /Archives/2012/09/08/film-fight-2012-july/
+categories:
+  - Films
+---
+Yes, it&#8217;s a bit late, but I&#8217;ve finally written the Film Fight for July, including no fewer than 5 films&#8230;
+
+First up, **Killer Joe** is the story of a murderer for hire that starts to go very wrong when payment becomes an issue. It&#8217;s full of top-notch performances, from Emile Hirsch and Juno Temple&#8217;s overly interested brother and untainted sister, to Thomas Church Haden&#8217;s deadbeat father. It is Matthew McConaughey as the titular character, however, who is a revelation. As soon as he makes his displeasure known, he can convey an intense threat with silence or terse politeness. Even amongst the weight the movie tries to convey, it still finds time to pack in a rich vein of dark humour, which makes the brutal moments all the more effective. Very good. (See [my Killer Joe Twitter review](http://twitter.com/garyfleming/status/219881995583488001)).
+
+Despite a trailer that suggested an amount of slapstick and lightness, **The Angels&#8217; Share** is a surprisingly well-rounded movie about struggling through adverse conditions and becoming a better person. It&#8217;s a small film (as opposed to large or complex), that doesn&#8217;t try to be anything that it is not. It has a good measure of real-good feeling without every becoming overbearing. Despite some of the lead&#8217;s flaws, you still want him (and his band of friends) to succeed in the little caper that makes up the final act. Worth seeing. (See [my The Angels&#8217; Share Twitter review](http://twitter.com/garyfleming/status/224174445554708482)).
+
+**Seeking A Friend For The End Of The World** never quite lives up to its promise. A world that is going to end, where people have become nihilistic and fatalistic, contrasted by a man who remains true to his old-fashioned romantic nature is a great premise for a comedy. Indeed, the first half delivers a number of very funny moments and ideas (like the assassin&#8217;s people have hired so they don&#8217;t have to wait until the end of the world), without ever looking like it&#8217;ll be a classic. Sadly, the second half switches gears to be quite a straight-forward love story. Introducing that element isn&#8217;t bad by itself (and you&#8217;ll see it coming anyway), but it isn&#8217;t enough to keep the film interesting. It&#8217;s a sweet film, but not a great one. (See [my Seeking A Friend For The End Of The World Twitter review](http://twitter.com/garyfleming/status/226703017515298816)).
+
+**The Dark Knight Rises** had an incredibly tough act to follow, and was never likely to better its predecessor; and it doesn&#8217;t. What it does do, however, is put a fantastic ending on the best series of comic book-based films we have yet to see. As with all of Nolan&#8217;s recent films, The Dark Knight Rises manages to be both an epic, action-driven story, with enough interesting character to push things through. Tom Hardy, as Bane, continues a streak of excellent performances with a very different take on the character. He&#8217;s an imposing and focussed brawler, rather than the monstrous brute we&#8217;ve seen previously. Anne Hathaway also delivers a great take on Catwoman, that is very much in fitting with Nolan&#8217;s vision of Gotham. The worst of the film comes from moments that feel rushed, where the 3 hour soft-limit on mainstream movies makes a number of sequences seem extremely compressed. On the flip-side, it also makes for some very tight storytelling. All-in, a very worthwhile film.  (See [my The Dark Knight Rises Twitter review](http://twitter.com/garyfleming/status/229284557449490432)).
+
+Finally, **King of Devil&#8217;s Island** is the story of a boy who doesn&#8217;t fit in at a young offender&#8217;s institute, set in Norway in the early 1900s. It shows the brutal environment in which he and his fellow inmates live, and the harsh punishments they face. It does this competently, with a great deal of careful direction and some beautiful scenerey. However, it does not do anything new. You&#8217;ll have seen films that tell this story before. While it&#8217;s certainly a good telling of the tale, it lacks some of the impact that similar movies have had simply because it isn&#8217;t fresh enough. Well done, but not provocative. (See [my King of Devil&#8217;s Island Twitter review](http://twitter.com/garyfleming/status/230052704645443584)).
+
+A difficult month to pick a winner, but I think that **Killer Joe**&#8216;s performances edge out Batman&#8217;s big storytelling.

@@ -1,0 +1,19 @@
+url: http://solitude.vkps.co.uk
+name: Solitude
+description: >
+  Technology. Code. Living relentlessly in
+  the real world.
+
+gems:
+  - jekyll-archives
+
+jekyll-archives:
+  enabled:
+    - year
+    - month
+  layout: 'archive'
+  permalinks:
+    year: '/Archives/:year/'
+    month: '/Archives/:year/:month/'
+    tag: '/tag/:name/'
+    
