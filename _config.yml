@@ -1,10 +1,13 @@
 url: http://solitude.vkps.co.uk
 name: Solitude
+lsi: false
 description: >
   Technology. Code. Living relentlessly in
   the real world.
 timezone: Europe/London
 encoding: utf-8
+
+exclude: [LICENSE, CNAME, README.md, .gitignore, Gemfile, Gemfile.lock]
 
 paginate: 5
 paginate_path: "/page/:num"
