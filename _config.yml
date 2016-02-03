@@ -3,15 +3,20 @@ name: Solitude
 description: >
   Technology. Code. Living relentlessly in
   the real world.
+timezone: Europe/London
+encoding: utf-8
 
-gems:
-  - jekyll-archives
+paginate: 5
+paginate_path: "/page/:num"
+
+gems: [ "jekyll-archives", "jekyll-paginate"]
 
 jekyll-archives:
   enabled:
     - year
     - month
-  layout: 'archive'
+    - tag
+  layout: 'default'
   permalinks:
     year: '/Archives/:year/'
     month: '/Archives/:year/:month/'
