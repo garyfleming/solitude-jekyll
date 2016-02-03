@@ -161,6 +161,7 @@ nav h1, nav h2 {
   border-left: 1px solid #DDD;
   padding-left: 40px;
   padding-top: 25px;
+  line-height: 25px;
   min-height: 400px;
 }
 
