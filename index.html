@@ -5,9 +5,28 @@ title: Happenings
 
 <div id="home">
   <h2><i class="fa fa-bookmark"></i> Happenings</h2>
-  <ul id="blog-posts" class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }} &raquo;</span><a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+
+  {% for post in paginator.posts %}
+  <div class="postcontainer">
+  <h3><a href="{{ post.url }}">{{ post.title }}</a></h1>
+  <p class="author">
+    <span class="date">{{ page.date | date: "%B %d, %Y" }} </span>
+  </p>
+  <div class="post">
+    {{ post.content }}
+  </div>
+  </div>
+  {% endfor %}
+</div>
+
+
+
+<!-- Pagination links -->
+<div class="postnavigation">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="previous">&laquo; Previous</a>
+  {% endif %}
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="next">Next &raquo;</a>
+  {% endif %}
 </div>
