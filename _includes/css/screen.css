@@ -121,7 +121,12 @@ nav h1, nav h2 {
 }
 
 .postcontainer {
-  margin-bottom: 4em;
+  margin-bottom: 3em;
+  border-top: 1px solid #DDD;
+}
+
+.divider {
+  margin-top: 2em;
 }
 
 .post pre {
@@ -134,6 +139,10 @@ nav h1, nav h2 {
 .post ul,
 .post ol {
   margin-left: 1.35em;
+}
+
+.post a {
+  text-decoration: underline;
 }
 
 .post code {
