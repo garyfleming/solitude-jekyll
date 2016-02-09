@@ -7,6 +7,8 @@ description: >
 timezone: Europe/London
 encoding: utf-8
 
+permalinks: /:year/:month/:title
+
 exclude: [LICENSE, CNAME, README.md, .gitignore, Gemfile, Gemfile.lock]
 
 paginate: 5
