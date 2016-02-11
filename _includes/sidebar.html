@@ -13,4 +13,7 @@
   <div id="social">
     {% include social.html %}
   </div>
+  {% if page.include_pinboard %}
+    {% site_includes pinboard.html %}
+  {% endif %}
 </nav>
