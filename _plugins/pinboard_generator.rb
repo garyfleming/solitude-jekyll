@@ -10,6 +10,9 @@ module Jekyll
     def initialize(site, base)
       template_path = File.join(base, '_layouts', 'pinboard_list.html')
 
+      @limit = 10
+      @user = "garyfleming"
+
       @site  = site
       @base  = base
       @dir   = File.join('..', '_includes')
@@ -21,13 +24,8 @@ module Jekyll
         @perform_render = true
         template_dir    = File.dirname(template_path)
         template        = File.basename(template_path)
-        # Read the YAML data from the layout page.
         self.read_yaml(template_dir, template)
-       # self.data['category']    = category
-        # Set the title for this page.
-        self.data['title']       = "pinboard"
-        # Set the meta-description for this page.
-        self.data['description'] = "pinboard"
+        self.data['bookmarks'] = bookmarks
       else
         @perform_render = false
       end
@@ -37,7 +35,65 @@ module Jekyll
       @perform_render
     end
 
+    def bookmarks
+      @bookmarks = JSON.parse(json).take(@limit).map { |item| Bookmark.new(item['u'], item['d'], item['n'], item['dt'], item['a'], item['t'])}
+    end
+
+    # Get feed with username
+    def json
+      url     = 'http://feeds.pinboard.in/json/v1/u:' + @user
+      resp    = Net::HTTP.get_response(URI.parse(url))
+      return  resp.body
+    end
   end
+
+  class Bookmark
+
+    def initialize(url, description, note, datetime, author, tags)
+      @url              = url
+      @description      = description
+      @note             = note
+      @datetime         = datetime
+      @author           = author
+      @tags             = tags
+    end
+
+    def to_liquid
+      {
+        'url' => @url,
+        'description' => @description,
+        'note' => @note,
+        'datetime' => @datetime,
+        'author' => @author,
+        'tags' => @tags
+      }
+    end
+
+    def url
+      return @url
+    end
+
+    def description
+      return @description
+    end
+
+    def note
+      return @note
+    end
+
+    def datetime
+      return @datetime
+    end
+
+    def author
+      return @author
+    end
+
+    def tags
+      return @tags
+    end
+  end
+
 
   # The Site class is a built-in Jekyll class with access to global site config information.
   class Site

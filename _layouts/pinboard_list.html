@@ -1,1 +1,6 @@
-<h1>HELLO</h1>
+<h3>B-Links</h3>
+<ul>
+{% for bookmark in page.bookmarks %}
+	<li><a href="{{ bookmark.url }}">{{ bookmark.description }}</a>{% if bookmark.note %} - {{ bookmark.note }}{% endif %}</li>
+{% endfor %}
+</ul>
