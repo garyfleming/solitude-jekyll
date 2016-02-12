@@ -8,18 +8,21 @@ module Jekyll
     #  +site+          is the Jekyll Site instance.
     #  +base+          is the String path to the <source>.
     def initialize(site, base)
-      template_path = File.join(base, '_layouts', 'pinboard_list.html')
-
+      
+      #Consider making these externally configurable.
+      @pinboard_layout = 'pinboard_list.html'
+      @pinboard_output = 'pinboard.html'
       @limit = 10
       @user = "garyfleming"
 
       @site  = site
       @base  = base
       @dir   = File.join('..', '_includes')
-      @name  = 'pinboard.html'
+      @name  = @pinboard_output
 
       self.process(name)
 
+      template_path = File.join(base, '_layouts', @pinboard_layout)
       if File.exist?(template_path)
         @perform_render = true
         template_dir    = File.dirname(template_path)
