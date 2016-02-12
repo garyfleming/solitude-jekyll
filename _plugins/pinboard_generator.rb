@@ -69,29 +69,6 @@ module Jekyll
       }
     end
 
-    def url
-      return @url
-    end
-
-    def description
-      return @description
-    end
-
-    def note
-      return @note
-    end
-
-    def datetime
-      return @datetime
-    end
-
-    def author
-      return @author
-    end
-
-    def tags
-      return @tags
-    end
   end
 
 
@@ -123,16 +100,6 @@ module Jekyll
 
     def generate(site)
       site.write_pinboard
-    end
-
-    def write_pinboard(site)
-      pinboard = PinboardPage.new(site, site.source)
-      # if pinboard.render?
-        pinboard.render(site.layouts, site_payload)
-        pinboard.write(site.dest)
-        # Record the fact that this pages has been added, otherwise Site::cleanup will remove it.
-        site.pages << pinboard
-      # end
     end
 
   end
