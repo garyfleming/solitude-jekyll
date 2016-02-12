@@ -75,38 +75,24 @@ module Jekyll
   end
 
 
-  # The Site class is a built-in Jekyll class with access to global site config information.
-  class Site
+  # Jekyll hook - the generate method is called by jekyll
+  class GeneratePinboard < Generator
+    safe true
+    priority :high
 
-    def write_pinboard
-      if self.layouts.key? 'pinboard_list'
-        pinboard = PinboardPage.new(self, self.source)
+    def generate(site)
+      if site.layouts.key? 'pinboard_list'
+        pinboard = PinboardPage.new(site, site.source)
         if pinboard.render?
-          pinboard.render(self.layouts, site_payload)
-          pinboard.write(self.dest)
-          # Record the fact that this pages has been added, otherwise Site::cleanup will remove it.
-          self.pages << pinboard
+          pinboard.render(site.layouts, site.site_payload)
+          pinboard.write(site.dest)
+          site.pages << pinboard
         end
-      # Throw an exception if the layout couldn't be found.
       else
         throw "No 'pinboard_list' layout found."
       end
     end
 
   end
-
-  # Jekyll hook - the generate method is called by jekyll
-  class GeneratePinboard < Generator
-    safe true
-    priority :high
-
-
-    def generate(site)
-      site.write_pinboard
-    end
-
-  end
-
-
 
 end
