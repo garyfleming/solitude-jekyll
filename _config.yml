@@ -17,7 +17,7 @@ paginate_path: "/page/:num"
 gems: [ "jekyll-archives", "jekyll-paginate"]
 
 jekyll-archives:
-  enabled: ["year", "month"]
+  enabled: ["all", "year", "month"]
   layout: 'archive'
   permalinks:
     year: '/Archives/:year/'

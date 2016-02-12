@@ -115,6 +115,15 @@ nav h1, nav h2 {
   padding-top: 15px;
 }
 
+nav {
+  margin-bottom: 15px;
+  border-bottom: 1px dotted #ddd;
+}
+
+nav ul li {
+  list-style: none;
+}
+
 #social {
   margin-bottom: 10px;
   font-size: 13px;
