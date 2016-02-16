@@ -3,7 +3,7 @@ title: Hexagonal for Java
 -- date: unpublished
 author: Gary Fleming
 layout: post
-permalink: /:year/:month/:title
+permalink: /:year/:month/:title/
 categories:
   - Code
 ---

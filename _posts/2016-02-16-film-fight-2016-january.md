@@ -3,7 +3,7 @@ title: "Film Fight 2016: January"
 date: 2016-02-16T16:30:16+00:00
 author: Gary Fleming
 layout: post
-permalink: /:year/:month/:title
+permalink: /:year/:month/:title/
 categories:
   - Films
 ---
