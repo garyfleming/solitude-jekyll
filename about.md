@@ -5,6 +5,7 @@ date: 2007-05-10T00:15:35+00:00
 author: Gary Fleming
 layout: default
 guid: http://solitude.vkps.co.uk/?page_id=599
+permalink: /about/
 ---
 
 ## About

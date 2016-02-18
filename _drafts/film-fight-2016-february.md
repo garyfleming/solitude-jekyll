@@ -13,3 +13,5 @@ categories:
 Trumbo (See <a href="https://twitter.com/garyfleming/status/696023886895443969">my Trumbo Twitter review</a>).
 
 Deadpool (See [my Deadpool Twitter review](https://twitter.com/garyfleming/status/699191826666885120))
+
+Hail, Caesar! (See [my Hail, Caesar! Twitter review](https://twitter.com/garyfleming/status/700254778455126016))
