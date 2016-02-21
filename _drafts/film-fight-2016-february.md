@@ -15,3 +15,5 @@ Trumbo (See <a href="https://twitter.com/garyfleming/status/696023886895443969">
 Deadpool (See [my Deadpool Twitter review](https://twitter.com/garyfleming/status/699191826666885120))
 
 Hail, Caesar! (See [my Hail, Caesar! Twitter review](https://twitter.com/garyfleming/status/700254778455126016))
+
+The Finest Hours (See [my The Finest Hours Twitter review](https://twitter.com/garyfleming/status/701362148849688576))
