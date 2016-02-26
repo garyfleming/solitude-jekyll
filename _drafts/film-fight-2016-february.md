@@ -17,3 +17,5 @@ Deadpool (See [my Deadpool Twitter review](https://twitter.com/garyfleming/statu
 Hail, Caesar! (See [my Hail, Caesar! Twitter review](https://twitter.com/garyfleming/status/700254778455126016))
 
 The Finest Hours (See [my The Finest Hours Twitter review](https://twitter.com/garyfleming/status/701362148849688576))
+
+Triple 9 (See [my Triple 9 Twitter review](https://twitter.com/garyfleming/status/703194174342897667))
