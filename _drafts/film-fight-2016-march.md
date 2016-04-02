@@ -15,3 +15,5 @@ Anomalisa (See [my Anomalisa Twitter review](https://twitter.com/garyfleming/sta
 Batman V. Superman: Dawn of Justice (See [my Batman V. Superman: Dawn of Justice Twitter review](https://twitter.com/garyfleming/status/713751050252058627))
 
 High-Rise (See [my High-Rise Twitter review](https://twitter.com/garyfleming/status/714532994128691200))
+
+Zootropolis (See [my Zootropolis Twitter review](https://twitter.com/garyfleming/status/715621123002613760))
