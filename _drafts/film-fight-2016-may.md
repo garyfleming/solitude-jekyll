@@ -9,3 +9,7 @@ categories:
 ---
 
 Captain America: Civil War (See [my Captain America: Civil War Twitter review](https://twitter.com/garyfleming/status/727964848336842753))
+
+Bad Neighbours 2 (See [my Bad Neighbours 2 Twitter review](https://twitter.com/garyfleming/status/730850382243594241))
+
+Green Room (See [my Green Room Twitter review](https://twitter.com/garyfleming/status/731925620037451776))
