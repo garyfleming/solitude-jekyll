@@ -17,3 +17,5 @@ Green Room (See [my Green Room Twitter review](https://twitter.com/garyfleming/s
 Everybody Wants Some (See [my Everybody Wants Some Twitter review](https://twitter.com/garyfleming/status/732985581496590337))
 
 Money Monster (See [my Money Monster Twitter review](https://twitter.com/garyfleming/status/736883276321787905))
+
+Special Correspondents (See [my Special Correspondents Twitter review](https://twitter.com/garyfleming/status/737758190155223042))
