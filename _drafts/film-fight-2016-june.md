@@ -9,3 +9,5 @@ categories:
 ---
 
 The Nice Guys (See [my The Nice Guys Twitter review](https://twitter.com/garyfleming/status/745025606954389504))
+
+Independence Day: Resurgence (See [my Independence Day: Resurgence Twitter review](https://twitter.com/garyfleming/status/747017466618974208))
