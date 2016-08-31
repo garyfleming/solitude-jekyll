@@ -13,3 +13,5 @@ Jason Bourne (See [my Jason Bourne Twitter review](https://twitter.com/garyflemi
 The BFG (See [my The BFG Twitter review](https://twitter.com/garyfleming/status/764396889676603392))
 
 Suicide Squad (See [my Suicide Squad Twitter review](https://twitter.com/garyfleming/status/765950794805936129))
+
+War Dogs (See [my War Dogs Twitter review](https://twitter.com/garyfleming/status/771025036274786304))
