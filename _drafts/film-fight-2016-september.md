@@ -10,3 +10,8 @@ categories:
 
 Bad Moms (See [my Bad Moms Twitter review](https://twitter.com/garyfleming/status/775413654284079104))
 
+The Infiltrator (See [my The Infiltrator Twitter review](https://twitter.com/garyfleming/status/777473114007568384))
+
+Arq (See [my Arq Twitter review](https://twitter.com/garyfleming/status/777473369633619968))
+
+(See [my Twitter review]())
