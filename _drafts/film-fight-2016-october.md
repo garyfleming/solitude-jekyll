@@ -12,4 +12,6 @@ The Magnificent Seven (See [my Magnificent Seven Twitter review](https://twitter
 
 Swiss Army Man (See [my Swiss Army Man Twitter review](https://twitter.com/garyfleming/status/783212527270453248))
 
+War On Everyone (See [my War On Everyone Twitter review](https://twitter.com/garyfleming/status/785557622137163776))
+
  (See [my  Twitter review]())
