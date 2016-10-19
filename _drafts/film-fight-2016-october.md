@@ -14,4 +14,6 @@ Swiss Army Man (See [my Swiss Army Man Twitter review](https://twitter.com/garyf
 
 War On Everyone (See [my War On Everyone Twitter review](https://twitter.com/garyfleming/status/785557622137163776))
 
+Mascots (See [my Mascots Twitter review](https://twitter.com/garyfleming/status/788810688785416192))
+
  (See [my  Twitter review]())
