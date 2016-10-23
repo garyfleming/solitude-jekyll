@@ -16,4 +16,6 @@ War On Everyone (See [my War On Everyone Twitter review](https://twitter.com/gar
 
 Mascots (See [my Mascots Twitter review](https://twitter.com/garyfleming/status/788810688785416192))
 
+My Scientology Movie (See [my My Scientology Movie Twitter review](https://twitter.com/garyfleming/status/790121098994155520))
+
  (See [my  Twitter review]())
