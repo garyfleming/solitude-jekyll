@@ -18,4 +18,6 @@ Mascots (See [my Mascots Twitter review](https://twitter.com/garyfleming/status/
 
 My Scientology Movie (See [my My Scientology Movie Twitter review](https://twitter.com/garyfleming/status/790121098994155520))
 
+Doctor Strange (See [my Doctor Strange Twitter review](https://twitter.com/garyfleming/status/793195553245069312))
+
  (See [my  Twitter review]())
