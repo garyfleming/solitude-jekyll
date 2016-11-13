@@ -12,4 +12,6 @@ Nocturnal Animals (See [my Nocturnal Animals Twitter review](https://twitter.com
 
 Before The Flood (See [my Before The Flood Twitter review](https://twitter.com/garyfleming/status/795283243314585600))
 
+Arrival (See [my Arrival Twitter review](https://twitter.com/garyfleming/status/797786831312064512))
+
  (See [my  Twitter review]())
