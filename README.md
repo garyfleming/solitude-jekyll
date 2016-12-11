@@ -14,4 +14,5 @@ From the site root:
 
 `rsync -arvz ./_site/ flemingg@vkps.co.uk:/home/flemingg/solitude.vkps.co.uk`
 
-You'll need a password, which you can get from 1password under VKPS SSH.
+You'll might need a password, which you can get from 1password under VKPS SSH, but I've
+set-up keyless ssh from the iMac.
