@@ -14,7 +14,6 @@ Before The Flood (See [my Before The Flood Twitter review](https://twitter.com/g
 
 Arrival (See [my Arrival Twitter review](https://twitter.com/garyfleming/status/797786831312064512))
 
-
 The Accountant (See [my The Accountant Twitter review](https://twitter.com/garyfleming/status/798261145081708544))
 
  (See [my  Twitter review]())
