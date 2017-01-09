@@ -10,5 +10,6 @@ categories:
 
 Assassin's Creed (See [my Assassin's Creed Twitter review](https://twitter.com/garyfleming/status/816348825589874688))
 
+Silence (See [my Silence Twitter review](https://twitter.com/garyfleming/status/818518748776857600))
 
 (See [my XXXXX Twitter review]())
