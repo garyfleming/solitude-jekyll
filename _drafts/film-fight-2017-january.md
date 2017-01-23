@@ -14,4 +14,8 @@ Silence (See [my Silence Twitter review](https://twitter.com/garyfleming/status/
 
 Live By Night (See [my Live By Night Twitter review](https://twitter.com/garyfleming/status/821104444834271232))
 
+Jackie (See [my Jackie Twitter review](https://twitter.com/garyfleming/status/823599414824550401))
+
+Manchester By Sea (See [my Manchester By Sea Twitter review](https://twitter.com/garyfleming/status/823599975405907970))
+
 (See [my XXXXX Twitter review]())
