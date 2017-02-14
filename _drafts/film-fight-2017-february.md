@@ -10,4 +10,7 @@ categories:
 
 The Lego Batman Movie (See [my The Lego Batman Movie Twitter review](https://twitter.com/garyfleming/status/829060419159474176))
 
+Fences (See [my Fences Twitter review](https://twitter.com/garyfleming/status/831499047919841282))
+
+
 (See [my XXXXX Twitter review]())
