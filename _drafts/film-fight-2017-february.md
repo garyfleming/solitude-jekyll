@@ -12,5 +12,6 @@ The Lego Batman Movie (See [my The Lego Batman Movie Twitter review](https://twi
 
 Fences (See [my Fences Twitter review](https://twitter.com/garyfleming/status/831499047919841282))
 
+John Wick: Chapter 2 (See [my John Wick: Chapter 2 Twitter review](https://twitter.com/garyfleming/status/833246232021700608))
 
 (See [my XXXXX Twitter review]())
