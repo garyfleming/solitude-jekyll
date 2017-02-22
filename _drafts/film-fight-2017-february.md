@@ -17,4 +17,6 @@ John Wick: Chapter 2 (See [my John Wick: Chapter 2 Twitter review](https://twitt
 
 Moonlight (See [my Moonlight Twitter review](https://twitter.com/garyfleming/status/833752013422862337))
 
+The Founder (See [my The Founder Twitter review](https://twitter.com/garyfleming/status/834477036756410368))
+
 (See [my XXXXX Twitter review]())
