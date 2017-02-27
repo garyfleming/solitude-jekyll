@@ -23,4 +23,6 @@ I Don't Feel At Home In This World Anymore (See [my I Don't Feel At Home In This
 
 Imperial Dreams (See [my Imperial Dreams Twitter review](https://twitter.com/garyfleming/status/835600488217391105))
 
+A Cure For Wellness (See [my A Cure For Wellness Twitter review](https://twitter.com/garyfleming/status/836291060276084736))
+
 (See [my XXXXX Twitter review]())
