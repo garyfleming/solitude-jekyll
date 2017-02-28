@@ -1,3 +1,4 @@
+require 'net/http'
 
 module Jekyll
 
@@ -8,7 +9,7 @@ module Jekyll
     #  +site+          is the Jekyll Site instance.
     #  +base+          is the String path to the <source>.
     def initialize(site, base)
-      
+
       #Consider making these externally configurable.
       @pinboard_layout = 'pinboard_list.html'
       @pinboard_output = 'pinboard.html'
