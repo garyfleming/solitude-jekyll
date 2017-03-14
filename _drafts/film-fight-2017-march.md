@@ -10,5 +10,8 @@ categories:
 
 Logan (See [my Logan Twitter review](https://twitter.com/garyfleming/status/840958569621147648))
 
+Burning Sands (See [my Burning Sands Twitter review](https://twitter.com/garyfleming/status/841734791724732417))
+
+Elle (See [my Elle Twitter review](https://twitter.com/garyfleming/status/841735243275096064))
 
 (See [my XXXXX Twitter review]())
