@@ -14,4 +14,8 @@ Burning Sands (See [my Burning Sands Twitter review](https://twitter.com/garyfle
 
 Elle (See [my Elle Twitter review](https://twitter.com/garyfleming/status/841735243275096064))
 
+Get Out (See [my Get Out Twitter review](https://twitter.com/garyfleming/status/845366255817297920))
+
+Deidra And Laney Rob A Train (See [my Deidra And Laney Rob A Train Twitter review](https://twitter.com/garyfleming/status/845366478920732673))
+
 (See [my XXXXX Twitter review]())
