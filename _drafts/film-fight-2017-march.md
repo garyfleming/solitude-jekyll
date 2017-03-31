@@ -21,6 +21,6 @@ Deidra And Laney Rob A Train (See [my Deidra And Laney Rob A Train Twitter revie
 
 The Most Hated Woman In America (See [my The Most Hated Woman In America Twitter review](https://twitter.com/garyfleming/status/847173004505354241))
 
-(See [my XXXXX Twitter review]())
+The Discovery (See [my The Discovery Twitter review](https://twitter.com/garyfleming/status/847917011250413568))
 
 (See [my XXXXX Twitter review]())
