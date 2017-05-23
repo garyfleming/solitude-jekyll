@@ -17,4 +17,8 @@ Handsome (See [my Handsome Twitter review](https://twitter.com/garyfleming/statu
 Mindhorn (See [my Mindhorn Twitter review](https://twitter.com/garyfleming/status/863334047736528900))
 
 
+Alien Covenant (See [my Alien: Covenant Twitter review](https://twitter.com/garyfleming/status/865897155181064193))
+
+Colossal (See [my Colossal Twitter review](https://twitter.com/garyfleming/status/867084714590564353))
+
 (See [my XXXXX Twitter review]())
