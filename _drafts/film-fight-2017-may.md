@@ -21,4 +21,10 @@ Alien Covenant (See [my Alien: Covenant Twitter review](https://twitter.com/gary
 
 Colossal (See [my Colossal Twitter review](https://twitter.com/garyfleming/status/867084714590564353))
 
+Small Crimes (See [my Small Crimes Twitter review](https://twitter.com/garyfleming/status/869606648108769280))
+
+Get Me Roger Stone (See [my Get Me Roger Stone Twitter review](https://twitter.com/garyfleming/status/869606951298244610))
+
+War Machine (See [my War Machine Twitter review](https://twitter.com/garyfleming/status/869607922812293121))
+
 (See [my XXXXX Twitter review]())
