@@ -16,12 +16,12 @@ Burning Sands looks at hazing in college fraternities. Rather than the usual sil
 
 Next up, Elle is... well, challenging. Isabelle Huppert's central performance is stunning, and without the film would likely fall apart. The rest of the material is controversial and often hard to watch, dealing pointedly with subjects that are usually dealt with differently. Almost two months on, and I can't honestly say I enjoyed it as a whole but it certainly made an impression. (See [my Elle Twitter review](https://twitter.com/garyfleming/status/841735243275096064))
 
-Get Out (See [my Get Out Twitter review](https://twitter.com/garyfleming/status/845366255817297920))
+Get Out is that rarest of horror films: a masterpiece that doesn't use "horror" as an excuse. The direction and performances are as tight as anything you'll see. Nearly every shot, every line, is aimed with purpose; that which seems throw-away, with hindsight, carries weight. There are clear messages that enhance, not hinder, the action. This is a film that is gripping and great throughout. I'm remaining somewhat vague because you deserve to see this film fresh, because there's an awful lot to see here. An absolute classic. (See [my Get Out Twitter review](https://twitter.com/garyfleming/status/845366255817297920))
 
-Deidra And Laney Rob A Train (See [my Deidra And Laney Rob A Train Twitter review](https://twitter.com/garyfleming/status/845366478920732673))
+Deidra And Laney Rob A Train is one of Netflix's Sundance picks, so hopes are high. We pretty much get what we see on the tin: two sisters decide, for their family survival, that they need to start robbing trains. Cue light-hearted mishaps and drama, as things don't quite go their way. It's a little incoherent and doesn't carry much substance, but the film is a reasonable enough way to pass a few hours. Watchable. (See [my Deidra And Laney Rob A Train Twitter review](https://twitter.com/garyfleming/status/845366478920732673))
 
 
-The Most Hated Woman In America (See [my The Most Hated Woman In America Twitter review](https://twitter.com/garyfleming/status/847173004505354241))
+The Most Hated Woman In America  (See [my The Most Hated Woman In America Twitter review](https://twitter.com/garyfleming/status/847173004505354241))
 
 The Discovery (See [my The Discovery Twitter review](https://twitter.com/garyfleming/status/847917011250413568))
 
