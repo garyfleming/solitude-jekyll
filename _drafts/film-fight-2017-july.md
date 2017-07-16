@@ -12,4 +12,8 @@ The House (See [my THe House Twitter review](https://twitter.com/garyfleming/sta
 
 Okja (See [my Okja Twitter review](https://twitter.com/garyfleming/status/884452068085424133))
 
+The Circle (See [my The Circle Twitter review](https://twitter.com/garyfleming/status/886667115675176961))
+
+Spiderman: Homecoming (See [my Spiderman: Homecoming Twitter review](https://twitter.com/garyfleming/status/886667372370821120))
+
 (See [my XXXXX Twitter review]())
