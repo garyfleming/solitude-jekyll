@@ -20,4 +20,6 @@ To The Bone (See [my To The Bone Twitter review](https://twitter.com/garyfleming
 
 Dunkirk (See [my Dunkirk Twitter review](https://twitter.com/garyfleming/status/889209457766526977))
 
+War for the Planet of the Apes (See [my War for the Planet of the Apes Twitter review](https://twitter.com/garyfleming/status/892092664312737794))
+
 (See [my XXXXX Twitter review]())
