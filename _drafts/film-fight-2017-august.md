@@ -12,4 +12,8 @@ The Incredible Jessica James (See [my The Incredible Jessica James Twitter revie
 
 Message From The King (See [my Message From The King Twitter review](https://twitter.com/garyfleming/status/897187588372656128))
 
+Naked (See [my Naked Twitter review](https://twitter.com/garyfleming/status/898869072900771840))
+
+What Happened To Monday (See [my What Happened To Monday Twitter review](https://twitter.com/garyfleming/status/898869456088088576))
+
 (See [my XXXXX Twitter review]())
