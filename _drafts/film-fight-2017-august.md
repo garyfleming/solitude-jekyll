@@ -20,4 +20,6 @@ Atomic Blonde (See [my Atomic Blonde Twitter review](https://twitter.com/garyfle
 
 American Made (See [my American Made Twitter review](https://twitter.com/garyfleming/status/901168713168293888))
 
+Death Note (See [my Death Note Twitter review](https://twitter.com/garyfleming/status/902602776102002690))
+
 (See [my XXXXX Twitter review]())
