@@ -10,5 +10,6 @@ categories:
 
 Logan Lucky (See [my Logan Lucky Twitter review](https://twitter.com/garyfleming/status/904339930318503937))
 
+The Hitman's Bodyguard (See [my The Hitman's Bodyguard Twitter review](https://twitter.com/garyfleming/status/907573242096967680))
 
 (See [my XXXXX Twitter review]())
