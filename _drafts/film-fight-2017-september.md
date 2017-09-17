@@ -12,4 +12,8 @@ Logan Lucky (See [my Logan Lucky Twitter review](https://twitter.com/garyfleming
 
 The Hitman's Bodyguard (See [my The Hitman's Bodyguard Twitter review](https://twitter.com/garyfleming/status/907573242096967680))
 
+Mother! (See [my mother! Twitter review](https://twitter.com/garyfleming/status/909493871733886976))
+
+American Assassin (See [my American Assassin Twitter review](https://twitter.com/garyfleming/status/909494288618311680))
+
 (See [my XXXXX Twitter review]())
