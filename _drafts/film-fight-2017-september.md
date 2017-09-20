@@ -18,4 +18,6 @@ American Assassin (See [my American Assassin Twitter review](https://twitter.com
 
 First They Killed My Father (See [my First They Killed My Father Twitter review](https://twitter.com/garyfleming/status/910465566732902400))
 
+Kingsman: The Golden Circle (See [my Kingsman: The Golden Circle Twitter review](https://twitter.com/garyfleming/status/910546864914747393))
+
 (See [my XXXXX Twitter review]())
