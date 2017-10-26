@@ -16,4 +16,8 @@ Happy Death Day (See [my Happy Death Day Twitter review](https://twitter.com/gar
 
 The Babysitter (See [my The Babysitter Twitter review](https://twitter.com/garyfleming/status/922457155491508224))
 
+The Death of Stalin (See [my The Death of Stalin Twitter review](https://twitter.com/garyfleming/status/923615688618627072))
+
+Bomb Scared (See [my Bomb Scared Twitter review](https://twitter.com/garyfleming/status/923616009910702081))
+
 (See [my XXXXX Twitter review]())
