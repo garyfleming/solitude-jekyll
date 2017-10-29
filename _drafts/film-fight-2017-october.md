@@ -20,4 +20,8 @@ The Death of Stalin (See [my The Death of Stalin Twitter review](https://twitter
 
 Bomb Scared (See [my Bomb Scared Twitter review](https://twitter.com/garyfleming/status/923616009910702081))
 
+Thor: Ragnarok (See [my Thor: Ragnarok Twitter review](https://twitter.com/garyfleming/status/924592943993892865))
+
+The Meyerowitz Stories (See [my The Meyerowitz Stories Twitter review](https://twitter.com/garyfleming/status/924593376896405504))
+
 (See [my XXXXX Twitter review]())
