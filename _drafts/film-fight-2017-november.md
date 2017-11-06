@@ -10,4 +10,8 @@ categories:
 
 1922 (See [my 1922 Twitter review](https://twitter.com/garyfleming/status/926842962180493312))
 
+Wheelman (See [my Wheelman Twitter review](https://twitter.com/garyfleming/status/927588568981278720))
+
+The Killing of a Sacred Deer (See [my The Killing of a Sacred Deer Twitter review](https://twitter.com/garyfleming/status/927589255500697600))
+
 (See [my XXXXX Twitter review]())
