@@ -14,4 +14,6 @@ Wheelman (See [my Wheelman Twitter review](https://twitter.com/garyfleming/statu
 
 The Killing of a Sacred Deer (See [my The Killing of a Sacred Deer Twitter review](https://twitter.com/garyfleming/status/927589255500697600))
 
+The Florida Project (See [my The Florida Project Twitter review](https://twitter.com/garyfleming/status/929783555634487297))
+
 (See [my XXXXX Twitter review]())
