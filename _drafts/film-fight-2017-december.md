@@ -12,4 +12,6 @@ categories:
 
 The Disaster Artist (See [my The Disaster Artist Twitter review](https://twitter.com/garyfleming/status/940274393401438209))
 
+Star Wars: The Last Jedi (See [my Star Wars: The Last Jedi Twitter review](https://twitter.com/garyfleming/status/942402312005472261))
+
 (See [my XXXXX Twitter review]())
