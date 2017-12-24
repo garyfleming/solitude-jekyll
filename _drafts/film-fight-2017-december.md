@@ -14,4 +14,8 @@ The Disaster Artist (See [my The Disaster Artist Twitter review](https://twitter
 
 Star Wars: The Last Jedi (See [my Star Wars: The Last Jedi Twitter review](https://twitter.com/garyfleming/status/942402312005472261))
 
+Bright (See [my Bright Twitter review](https://twitter.com/garyfleming/status/944998691202650112))
+
+El Camino Christmas (See [my El Camino Christmas Twitter review](https://twitter.com/garyfleming/status/944998966030229505))
+
 (See [my XXXXX Twitter review]())
