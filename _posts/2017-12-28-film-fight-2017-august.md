@@ -1,6 +1,6 @@
 ---
 title: "Film Fight 2017: August"
-date: 2018-12-28T08:01:00+00:00
+date: 2017-12-28T08:01:00+00:00
 author: Gary Fleming
 layout: post
 permalink: /:year/:month/:title/

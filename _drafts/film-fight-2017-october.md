@@ -8,6 +8,8 @@ categories:
   - Films
 ---
 
+A huge month, with eight films appearing!
+
 Bladeruner 2049 (See [my Bladeruner 2049 Twitter review](https://twitter.com/garyfleming/status/918154431446880257))
 
 Gerald's Game (See [my Gerald's Game Twitter review](https://twitter.com/garyfleming/status/922456275161698306))
