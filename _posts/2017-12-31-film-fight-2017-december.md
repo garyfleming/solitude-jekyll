@@ -20,4 +20,4 @@ As Netflix's biggest bet to date, there's a lot of interest around **Bright**. S
 
 Finally, **El Camino Christmas** is a low-budget Christmas film, suffering from a so-so script. It's not TV movie bad, but it's not great. The most notable thing in it is Tim Allen who, despite having little to work with, delivers a far better performance than was needed. Lightweight, throw-away, okay. (See [my El Camino Christmas Twitter review](https://twitter.com/garyfleming/status/944998966030229505))
 
-The winner for December is **The Disaster**. It's not exceptional, but does tell a weird and interesting story.
+The winner for December is **The Disaster Artist**. It's not exceptional, but does tell a weird and interesting story.

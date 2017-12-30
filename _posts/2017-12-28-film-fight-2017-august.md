@@ -24,4 +24,4 @@ You know how Tom Cruise has two modes of late? He either does sincere action-guy
 
 Finally, **Death Note** is an adaptation of an anime series, in which a young boy gets a book that allows him to kill anyone he likes. As you might expect, there are consequences. The film rushes through a lot you would like to see explored more, but the depth of the premise is apparent by the end. I'd have preferred a mini-series to allow the story to breath, but it's still watchable. Willem Dafoe is particularly good as the demon, Ryuk, who controls the book. Decent. (See [my Death Note Twitter review](https://twitter.com/garyfleming/status/902602776102002690))
 
-The winner for August is Atomic Blonde. An easier win than most months recently, but not undeserved.
+The winner for August is **Atomic Blonde**. An easier win than most months recently, but not undeserved.

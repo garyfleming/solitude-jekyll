@@ -26,4 +26,4 @@ Netflix are seriously upping their Original movies game with several coming out 
 
 Finally, **A Cure For Wellness** is horror schlock. It's overlong, and ridden with as many cliches as they could cram in. That said, it works reasonably well: by always going over-the-top, we can't do anything but go along with the characters as they do increasingly bizarre things in almost surreal circumstances. Okay. (See [my A Cure For Wellness Twitter review](https://twitter.com/garyfleming/status/836291060276084736))
 
-The winner for March is **Fences**, as nothing else comes close to the dramatic tension in the scenes of family struggle in this movie.
+The winner for February is **Fences**, as nothing else comes close to the dramatic tension in the scenes of family struggle in this movie.
