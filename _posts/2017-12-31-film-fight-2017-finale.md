@@ -1,6 +1,6 @@
 ---
 title: "Film Fight 2017: Finale"
-date: 2017-12-31T14:00:00+00:00
+date: 2017-12-31T13:00:00+00:00
 author: Gary Fleming
 layout: post
 permalink: /:year/:month/:title/
