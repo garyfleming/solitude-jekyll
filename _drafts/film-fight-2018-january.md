@@ -12,6 +12,6 @@ Jupiter's Moon: https://twitter.com/garyfleming/status/950102317067620353
 
 Molly's Game: https://twitter.com/garyfleming/status/950103341840953345
 
-The Polka King:
+The Polka King: https://twitter.com/garyfleming/status/952156639351791617
 
-Three Billboards Outside Ebbing, Missouri: https://twitter.com/garyfleming/status/952156639351791617
+Three Billboards Outside Ebbing, Missouri: https://twitter.com/garyfleming/status/952643339718885377
