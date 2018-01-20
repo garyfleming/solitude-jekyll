@@ -17,3 +17,5 @@ The Polka King: https://twitter.com/garyfleming/status/952156639351791617
 Three Billboards Outside Ebbing, Missouri: https://twitter.com/garyfleming/status/952643339718885377
 
 Darkest Hour: https://twitter.com/garyfleming/status/953364433383849988
+
+The Post: https://twitter.com/garyfleming/status/954814254330216448
