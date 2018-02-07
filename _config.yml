@@ -14,7 +14,8 @@ exclude: [LICENSE, CNAME, README.md, .gitignore, Gemfile, Gemfile.lock]
 paginate: 5
 paginate_path: "/page/:num"
 
-gems: [ "jekyll-archives", "jekyll-paginate"]
+gems: [ "jekyll-archives", "jekyll-paginate", "jekyll-twitter-plugin"]
+# plugins: ['jekyll-twitter-plugin']
 
 jekyll-archives:
   enabled: ["all", "year", "month"]
@@ -22,4 +23,3 @@ jekyll-archives:
   permalinks:
     year: '/Archives/:year/'
     month: '/Archives/:year/:month/'
-    
