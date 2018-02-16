@@ -22,10 +22,14 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/963151116140625920 %}
 
+### Black Panther
+
+{% twitter https://twitter.com/garyfleming/status/964540220388626433 %}
+
+
 ### film name
 
 {% twitter url %}
-
 
 ### The month Winner
 
