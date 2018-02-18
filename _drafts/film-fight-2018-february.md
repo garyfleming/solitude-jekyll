@@ -26,6 +26,9 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/964540220388626433 %}
 
+### When We First Met
+
+{% twitter https://twitter.com/garyfleming/status/965234400953864192 %}
 
 ### film name
 
