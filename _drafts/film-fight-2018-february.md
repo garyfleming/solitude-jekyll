@@ -30,6 +30,22 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/965234400953864192 %}
 
+### Irreplaceable You
+
+{% twitter https://twitter.com/garyfleming/status/967422284041515008 %}
+
+### Mute
+
+{% twitter https://twitter.com/garyfleming/status/967423039905456128 %}
+
+### Lady Bird
+
+{% twitter https://twitter.com/garyfleming/status/967424067585310720 %}
+
+### The Shape Of Water
+
+{% twitter https://twitter.com/garyfleming/status/968197122276413440 %}
+
 ### film name
 
 {% twitter url %}
