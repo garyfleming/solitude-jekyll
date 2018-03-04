@@ -1,6 +1,6 @@
 ---
 title: "Film Fight 2018: February"
-date: 3899-01-07T20:00:00+00:00
+date: 2018-03-04T10:00:00+00:00
 author: Gary Fleming
 layout: post
 permalink: /:year/:month/:title/
@@ -8,7 +8,7 @@ categories:
   - Films
 ---
 
-Intro
+Another huge month, with 9 films!
 
 ### Phantom Thread
 
@@ -46,10 +46,7 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/968197122276413440 %}
 
-### film name
 
-{% twitter url %}
+### The February Winner
 
-### The month Winner
-
-...
+This is a tough one. The performances in Lady Bird and Phantom Thread are excellent and they're strong films in their own right, but I think I'm going to give this to **The Shape of Water**. It has an unusual, magical quality that stuck with me for a fair while afterwards.
