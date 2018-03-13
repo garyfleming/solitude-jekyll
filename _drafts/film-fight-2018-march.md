@@ -31,6 +31,10 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/973304723641073667 %}
 
+### The Outsider
+
+{% twitter https://twitter.com/garyfleming/status/973672715944120325 %}
+
 ### film name
 
 {% twitter url %}
