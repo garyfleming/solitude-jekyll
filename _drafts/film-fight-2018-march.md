@@ -35,6 +35,14 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/973672715944120325 %}
 
+### Mom and Dad
+
+{% twitter https://twitter.com/garyfleming/status/975030019583021056 %}
+
+### Annihilation
+
+{% twitter https://twitter.com/garyfleming/status/975032208913248257 %}
+
 ### film name
 
 {% twitter url %}
