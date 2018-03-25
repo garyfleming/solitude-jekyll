@@ -43,6 +43,10 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/975032208913248257 %}
 
+### Pacific Rim: Uprising
+
+{% twitter https://twitter.com/garyfleming/status/977577536988295168 %}
+
 ### film name
 
 {% twitter url %}
