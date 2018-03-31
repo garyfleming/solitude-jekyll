@@ -47,6 +47,18 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/977577536988295168 %}
 
+### Ready Player One
+
+{% twitter https://twitter.com/garyfleming/status/979436018494558209 %}
+
+### Game Over, Man!
+
+{% twitter https://twitter.com/garyfleming/status/980011441142009857 %}
+
+### First Match
+
+{% twitter https://twitter.com/garyfleming/status/980012460437630977 %}
+
 ### film name
 
 {% twitter url %}
