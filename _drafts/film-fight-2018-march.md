@@ -59,6 +59,14 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/980012460437630977 %}
 
+### Blockers
+
+{% twitter https://twitter.com/garyfleming/status/980168118776549376 %}
+
+### Happy Anniversary
+
+{% twitter https://twitter.com/garyfleming/status/980168584864436225 %}
+
 ### film name
 
 {% twitter url %}
