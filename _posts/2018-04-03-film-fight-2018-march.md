@@ -1,6 +1,6 @@
 ---
 title: "Film Fight 2018: March"
-date: 3899-01-07T20:00:00+00:00
+date: 2018-04-03T16:00:00+00:00
 author: Gary Fleming
 layout: post
 permalink: /:year/:month/:title/
@@ -8,8 +8,7 @@ categories:
   - Films
 ---
 
-Intro
-
+Okay, this is probably the biggest Film Fight to date, with a huge 14 films!
 
 ### I, Tonya
 
@@ -21,7 +20,7 @@ Intro
 
 ### Red Sparrow
 
-{% twitter https://twitter.com/garyfleming/status/970281464167313408 %}
+{% twitter https://twitter.com/garyfleming/status/970281947527294978 %}
 
 ### Game Night
 
@@ -67,11 +66,7 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/980168584864436225 %}
 
-### film name
 
-{% twitter url %}
+### The March Winner
 
-
-### The month Winner
-
-...
+Despite a couple of clunkers, there's a tonne of great films here, so it's hard to pick a winner. First Match was really close to winning, but I think **I, Tonya** edges it for the excellent direction, odd framing (that works), and fantastic lead performances.
