@@ -18,10 +18,13 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/981961429447299072 %}
 
+### Do You Trust This Computer?
+
+{% twitter https://twitter.com/garyfleming/status/983071062148689920 %}
+
 ### film name
 
 {% twitter url %}
-
 
 ### The month Winner
 
