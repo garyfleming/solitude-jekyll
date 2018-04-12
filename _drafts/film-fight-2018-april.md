@@ -22,6 +22,14 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/983071062148689920 %}
 
+### Ghost Stories
+
+{% twitter https://twitter.com/garyfleming/status/984525516190486528 %}
+
+### 6 Balloons
+
+{% twitter https://twitter.com/garyfleming/status/984526146388873216 %}
+
 ### film name
 
 {% twitter url %}
