@@ -30,6 +30,14 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/984526146388873216 %}
 
+### Roxanne Roxanne
+
+{% twitter https://twitter.com/garyfleming/status/985488181159227392 %}
+
+### Isle of Dogs
+
+{% twitter https://twitter.com/garyfleming/status/985488669040627712 %}
+
 ### film name
 
 {% twitter url %}
