@@ -38,6 +38,14 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/985488669040627712 %}
 
+### Thoroughbreds
+
+{% twitter https://twitter.com/garyfleming/status/986339633477947392 %}
+
+### Sun Dogs
+
+{% twitter https://twitter.com/garyfleming/status/986340216020570114 %}
+
 ### film name
 
 {% twitter url %}
