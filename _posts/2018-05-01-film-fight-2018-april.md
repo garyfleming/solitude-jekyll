@@ -1,6 +1,6 @@
 ---
 title: "Film Fight 2018: April"
-date: 3899-01-07T20:00:00+00:00
+date: 2018-05-01T15:00:00+00:00
 author: Gary Fleming
 layout: post
 permalink: /:year/:month/:title/
@@ -8,7 +8,7 @@ categories:
   - Films
 ---
 
-Intro
+Another fairly busy month, with 10 films in the fight.
 
 ### Proud Mary
 
@@ -50,10 +50,7 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/990311645946802178 %}
 
-### film name
 
-{% twitter url %}
+### The April Winner
 
-### The month Winner
-
-...
+Despite some strong choices this month, the winnner was easy for me: **A Quiet Place** is so well-executed on every front that nothing else was going to do it.
