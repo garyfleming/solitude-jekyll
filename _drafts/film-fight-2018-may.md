@@ -22,6 +22,18 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/996078655787986944 %}
 
+### Axis
+
+{% twitter https://twitter.com/garyfleming/status/1001194840959410177 %}
+
+### Deadpool 2
+
+{% twitter https://twitter.com/garyfleming/status/1001195464866304005 %}
+
+### Solo: A Star Wars Story
+
+{% twitter https://twitter.com/garyfleming/status/1001196614546001922 %}
+
 ### film name
 
 {% twitter url %}
