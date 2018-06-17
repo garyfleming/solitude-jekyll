@@ -18,6 +18,9 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1005820882374287360 %}
 
+### Super Troopers 2
+
+{% twitter https://twitter.com/garyfleming/status/1008306319760248832 %}
 
 ### film name
 
