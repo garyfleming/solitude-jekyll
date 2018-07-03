@@ -1,6 +1,6 @@
 ---
 title: "Film Fight 2018: June"
-date: 3899-01-07T20:00:00+00:00
+date: 2018-07-03T20:00:00+00:00
 author: Gary Fleming
 layout: post
 permalink: /:year/:month/:title/
@@ -8,7 +8,7 @@ categories:
   - Films
 ---
 
-Intro
+A super-quiet month with only three films viewed.
 
 ### Life of the Party
 
@@ -22,11 +22,6 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1008306319760248832 %}
 
-### film name
+### The July Winner
 
-{% twitter url %}
-
-
-### The month Winner
-
-...
+Easily and deservedly the winner, **Cargo** manages to largely deliver on its premise and surprise in interesting ways. Very worth seeing.
