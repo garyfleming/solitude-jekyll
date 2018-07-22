@@ -18,6 +18,22 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1015619002868097024 %}
 
+### Tag
+
+{% twitter https://twitter.com/garyfleming/status/1018142104500035584 %}
+
+### How It Ends
+
+{% twitter https://twitter.com/garyfleming/status/1020981317310328833 %}
+
+### Hotel Artemis
+
+{% twitter https://twitter.com/garyfleming/status/1020981776460795904 %}
+
+### The First Purge
+
+{% twitter url %}
+
 ### film name
 
 {% twitter url %}
