@@ -32,7 +32,7 @@ Intro
 
 ### The First Purge
 
-{% twitter url %}
+{% twitter https://twitter.com/garyfleming/status/1022542681686323200 %}
 
 ### film name
 
