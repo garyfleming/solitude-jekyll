@@ -34,6 +34,14 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1022542681686323200 %}
 
+### The Legacy of a Whitetail Deer Hunter
+
+{% twitter https://twitter.com/garyfleming/status/1023524984742993920 %}
+
+### Mission Impossible: Fallout
+
+{% twitter https://twitter.com/garyfleming/status/1023525553712885762 %}
+
 ### film name
 
 {% twitter url %}
