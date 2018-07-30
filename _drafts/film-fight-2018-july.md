@@ -46,6 +46,10 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1023980188089155590 %}
 
+### Extinction
+
+{% twitter https://twitter.com/garyfleming/status/1024019131870470145 %}
+
 ### film name
 
 {% twitter url %}
