@@ -1,6 +1,6 @@
 ---
 title: "Film Fight 2018: July"
-date: 3899-01-07T20:00:00+00:00
+date: 2018-08-11T14:15:00+00:00
 author: Gary Fleming
 layout: post
 permalink: /:year/:month/:title/
@@ -8,7 +8,7 @@ categories:
   - Films
 ---
 
-Intro
+A huge month, from Hollywood blockbusters and sequels, to some Netflix Originals. Ten films in total...
 
 ### Sicario 2: Soldado
 
@@ -50,11 +50,6 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1024019131870470145 %}
 
-### film name
+### The July Winner
 
-{% twitter url %}
-
-
-### The month Winner
-
-...
+There were a lot of films this month that were worth seeing, but not many that were really good. I think the winner this month is **Calibre**, a low-budget, psychological horror that ends up being pretty damn good.
