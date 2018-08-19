@@ -22,6 +22,14 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1028243777385897984 %}
 
+### The Package
+
+{% twitter https://twitter.com/garyfleming/status/1031112015383875584 %}
+
+### The Equalizer 2
+
+{% twitter https://twitter.com/garyfleming/status/1031112497019985921 %}
+
 ### film name
 
 {% twitter url %}
