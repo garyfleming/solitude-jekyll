@@ -1,6 +1,6 @@
 ---
-title: "Film Fight YEAR: MONTH"
-date: 3899-01-07T20:00:00+00:00
+title: "Film Fight 2018: August"
+date: 2018-09-02T15:15:00+00:00
 author: Gary Fleming
 layout: post
 permalink: /:year/:month/:title/
@@ -8,7 +8,7 @@ categories:
   - Films
 ---
 
-Intro
+August was a relatively quiet month, with nothing particularly outstanding. Onwards anyway...
 
 ### Robin Williams: Come Inside My Mind
 
@@ -30,11 +30,6 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1031112497019985921 %}
 
-### film name
+### The August Winner
 
-{% twitter url %}
-
-
-### The month Winner
-
-...
+There are plenty of okay films this month, but nothing excellent. For the winner, I'll go for **Robin Williams: Come Inside My Mind**; as a decent look at the problems that seemingly happy people might hide.
