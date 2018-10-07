@@ -12,6 +12,14 @@ Intro
 
 ### Operation Finale
 
+{% twitter https://twitter.com/garyfleming/status/1048623609680465921 %}
+
+### The Land of Steady Habits
+
+{% twitter https://twitter.com/garyfleming/status/1048976295395299330 %}
+
+### film name
+
 {% twitter url %}
 
 
