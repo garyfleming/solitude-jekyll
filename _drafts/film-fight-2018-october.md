@@ -18,6 +18,14 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1048976295395299330 %}
 
+### Bad Times at the El Royale
+
+{% twitter https://twitter.com/garyfleming/status/1051427058654556160 %}
+
+### Apostle
+
+{% twitter https://twitter.com/garyfleming/status/1051427816112308224 %}
+
 ### film name
 
 {% twitter url %}
