@@ -26,6 +26,14 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1051427816112308224 %}
 
+### Private Life
+
+{% twitter https://twitter.com/garyfleming/status/1053950127939960832 %}
+
+### First Man
+
+{% twitter https://twitter.com/garyfleming/status/1053951452312412161 %}
+
 ### film name
 
 {% twitter url %}
