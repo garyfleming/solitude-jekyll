@@ -1,6 +1,6 @@
 ---
 title: "Film Fight 2018: October"
-date: 3899-01-07T20:00:00+00:00
+date: 2018-11-03T14:26:00+00:00
 author: Gary Fleming
 layout: post
 permalink: /:year/:month/:title/
@@ -8,7 +8,7 @@ categories:
   - Films
 ---
 
-Intro
+October's Film Fight has six films to choose from...
 
 ### Operation Finale
 
@@ -34,11 +34,7 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1053951452312412161 %}
 
-### film name
 
-{% twitter url %}
+### The October Winner
 
-
-### The month Winner
-
-...
+Some very strong choices this month, but October's winner is **First Man**. Damien Chazelle and Ryan Gosling bring a beautifully understated and very personal take on the moon landings to life.
