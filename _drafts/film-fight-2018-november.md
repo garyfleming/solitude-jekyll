@@ -14,6 +14,10 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1058748207130464256 %}
 
+### The Other Side of The Wind
+
+{% twitter https://twitter.com/garyfleming/status/1059095208007221249 %}
+
 ### film name
 
 {% twitter url %}
