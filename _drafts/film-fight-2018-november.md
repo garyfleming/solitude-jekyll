@@ -18,6 +18,14 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1059095208007221249 %}
 
+### Outlaw King
+
+{% twitter https://twitter.com/garyfleming/status/1062840996222955521 %}
+
+### Wildlife
+
+{% twitter https://twitter.com/garyfleming/status/1062841932475449344 %}
+
 ### film name
 
 {% twitter url %}
