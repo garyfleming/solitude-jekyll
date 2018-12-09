@@ -14,6 +14,14 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1070445721453760514 %}
 
+### Spider-Man: Into The Spider-Verse
+
+{% twitter https://twitter.com/garyfleming/status/1071763199261851649 %}
+
+### Sorry To Bother You
+
+{% twitter https://twitter.com/garyfleming/status/1071764220373594112 %}
+
 ### film name
 
 {% twitter url %}
