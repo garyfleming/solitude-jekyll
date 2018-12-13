@@ -1,6 +1,6 @@
 ---
 title: "Film Fight 2018: November"
-date: 3899-01-07T20:00:00+00:00
+date: 2018-12-13T12:00:00+00:00
 author: Gary Fleming
 layout: post
 permalink: /:year/:month/:title/
@@ -8,7 +8,7 @@ categories:
   - Films
 ---
 
-Intro
+November was a decent month for films. Six films in the fight.
 
 ### The Night Comes For Us
 
@@ -34,11 +34,7 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1064091583434371072 %}
 
-### film name
 
-{% twitter url %}
+### The November Winner
 
-
-### The month Winner
-
-...
+The November winner is **Wildlife**. While some of the others had great moments, Wildlife worked for me from start to finish.
