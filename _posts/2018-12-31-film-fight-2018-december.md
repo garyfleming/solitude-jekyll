@@ -1,6 +1,6 @@
 ---
 title: "Film Fight 2018: December"
-date: 3899-01-07T20:00:00+00:00
+date: 2018-12-31T12:00:00+00:00
 author: Gary Fleming
 layout: post
 permalink: /:year/:month/:title/
@@ -8,7 +8,7 @@ categories:
   - Films
 ---
 
-Intro
+A great month for films, but not terribly good for the cinema. I only saw two of the six films at a cinema, and there was really not much to see on the big screen.
 
 ### The Ballad of Buster Scruggs
 
@@ -30,11 +30,11 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1079039909971808256 %}
 
-### film name
+### Time Share
 
-{% twitter url %}
+{% twitter https://twitter.com/garyfleming/status/1079721275952689153 %}
 
 
-### The month Winner
+### The December Winner
 
-...
+A genuinely tough month with two film of the year contenders, but I think it has to be **Roma**. Beautifully shot, fantastically constructed, artful and technically brilliant, with moments of tension and profound sadness; I cried more than once.
