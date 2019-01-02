@@ -22,6 +22,6 @@ A super-quiet month with only three films viewed.
 
 {% twitter https://twitter.com/garyfleming/status/1008306319760248832 %}
 
-### The July Winner
+### The June Winner
 
 Easily and deservedly the winner, **Cargo** manages to largely deliver on its premise and surprise in interesting ways. Very worth seeing.
