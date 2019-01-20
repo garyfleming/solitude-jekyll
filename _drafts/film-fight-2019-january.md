@@ -14,6 +14,14 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1080556384956108800 %}
 
+### Stan & Ollie
+
+{% twitter https://twitter.com/garyfleming/status/1086965059631411201 %}
+
+### Glass
+
+{% twitter https://twitter.com/garyfleming/status/1086965514956668928 %}
+
 ### film name
 
 {% twitter url %}
