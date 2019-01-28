@@ -26,6 +26,14 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1088507573270126592 %}
 
+### Close
+
+{% twitter https://twitter.com/garyfleming/status/1089994433242824704 %}
+
+### Mary, Queen of Scots
+
+{% twitter https://twitter.com/garyfleming/status/1089995243590684673 %}
+
 ### film name
 
 {% twitter url %}
