@@ -18,6 +18,22 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1092510360626753536 %}
 
+### Velvet Buzzsaw
+
+{% twitter https://twitter.com/garyfleming/status/1095069217521573888 %}
+
+### Green Book
+
+{% twitter https://twitter.com/garyfleming/status/1095069688588050432 %}
+
+### If Beale Street Could Talk...
+
+{% twitter https://twitter.com/garyfleming/status/1095070684013871112 %}
+
+### The Last Laugh
+
+{% twitter https://twitter.com/garyfleming/status/1095071087182966784 %}
+
 ### film name
 
 {% twitter url %}
