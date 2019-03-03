@@ -38,6 +38,14 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1096454596787126273 %}
 
+### The Breaker Upperers
+
+{% twitter https://twitter.com/garyfleming/status/1102310874788872193 %}
+
+### Three Identical Strangers
+
+{% twitter https://twitter.com/garyfleming/status/1102311312913297410 %}
+
 ### film name
 
 {% twitter url %}
