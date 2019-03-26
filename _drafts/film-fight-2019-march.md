@@ -14,6 +14,22 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1104737451711647745 %}
 
+### The Kindergarten Teacher
+
+{% twitter https://twitter.com/garyfleming/status/1110501249869381634 %}
+
+### Paddleton
+
+{% twitter https://twitter.com/garyfleming/status/1110501823553724416 %}
+
+### Triple Frontier
+
+{% twitter https://twitter.com/garyfleming/status/1110502644064419840 %}
+
+### Mirage
+
+{% twitter https://twitter.com/garyfleming/status/1110504160779296768 %}
+
 ### film name
 
 {% twitter url %}
