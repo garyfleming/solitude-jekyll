@@ -12,7 +12,7 @@ Intro
 
 ### Shazam
 
-{% twitter url %}
+{% twitter https://twitter.com/garyfleming/status/1115328660293206017 %}
 
 ### film name
 
