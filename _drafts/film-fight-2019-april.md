@@ -26,6 +26,14 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1117543911063523328 %}
 
+### The Ruthless
+
+{% twitter https://twitter.com/garyfleming/status/1121019380052131842 %}
+
+### The Sisters Brothers
+
+{% twitter https://twitter.com/garyfleming/status/1121019803651776512 %}
+
 ### film name
 
 {% twitter url %}
