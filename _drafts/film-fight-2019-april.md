@@ -34,9 +34,13 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1121019803651776512 %}
 
-### film name
+### Eighth Grade
 
-{% twitter url %}
+{% twitter https://twitter.com/garyfleming/status/1123659671091470338 %}
+
+### Avengers: Endgame
+
+{% twitter https://twitter.com/garyfleming/status/1123660147983880193 %}
 
 ### The month Winner
 
