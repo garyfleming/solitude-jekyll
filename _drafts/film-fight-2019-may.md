@@ -18,6 +18,14 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1125841961326399496 %}
 
+### Long Shot
+
+{% twitter https://twitter.com/garyfleming/status/1127897286284128256 %}
+
+### Wine Country
+
+{% twitter https://twitter.com/garyfleming/status/1127897891736104960 %}
+
 ### film name
 
 {% twitter url %}
