@@ -26,6 +26,10 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1127897891736104960 %}
 
+### John Wick: Chapter 3 - Parabellum
+
+{% twitter https://twitter.com/garyfleming/status/1129729546369011713 %}
+
 ### film name
 
 {% twitter url %}
