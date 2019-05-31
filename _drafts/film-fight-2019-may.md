@@ -42,6 +42,10 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1133828143553351680 %}
 
+### The Furie
+
+{% twitter https://twitter.com/garyfleming/status/1134409606174826497 %}
+
 ### film name
 
 {% twitter url %}
