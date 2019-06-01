@@ -46,9 +46,9 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1134409606174826497 %}
 
-### film name
+### Rim of the Wolrd
 
-{% twitter url %}
+{% twitter https://twitter.com/garyfleming/status/1134745673864220672 %}
 
 
 ### The month Winner
