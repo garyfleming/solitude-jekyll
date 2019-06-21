@@ -18,6 +18,10 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1141025275481923585 %}
 
+### Brightburn
+
+{% twitter https://twitter.com/garyfleming/status/1141974090925957122 %}
+
 ### film name
 
 {% twitter url %}
