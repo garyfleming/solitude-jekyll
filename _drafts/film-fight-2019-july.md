@@ -18,6 +18,10 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1150090710558957568 %}
 
+### The Current War
+
+{% twitter https://twitter.com/garyfleming/status/1155508313754349568 %}
+
 ### film name
 
 {% twitter url %}
