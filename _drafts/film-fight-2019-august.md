@@ -22,6 +22,11 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1167382305427611648 %}
 
+### Good Boys
+
+{% twitter https://twitter.com/garyfleming/status/1167719688312373248 %}
+
+
 
 ### The month Winner
 
