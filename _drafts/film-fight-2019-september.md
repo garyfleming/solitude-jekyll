@@ -1,5 +1,5 @@
 ---
-title: "Film Fight YEAR: MONTH"
+title: "Film Fight 2019: September"
 date: 3899-01-07T20:00:00+00:00
 author: Gary Fleming
 layout: post
