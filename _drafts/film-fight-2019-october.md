@@ -12,7 +12,7 @@ Intro
 
 ### Joker
 
-{% twitter https://twitter.com/garyfleming/status/1182259339261829121 %}
+{% twitter https://twitter.com/garyfleming/status/1182279630398640128 %}
 
 ### film name
 
