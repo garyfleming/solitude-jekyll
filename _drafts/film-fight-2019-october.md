@@ -14,6 +14,14 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1182279630398640128 %}
 
+### Ad Astra
+
+{% twitter https://twitter.com/garyfleming/status/1185943331102171138 %}
+
+### The Day Shall Come
+
+{% twitter https://twitter.com/garyfleming/status/1185943660212473856 %}
+
 ### film name
 
 {% twitter url %}
