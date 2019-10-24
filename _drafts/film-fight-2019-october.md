@@ -22,6 +22,10 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1185943660212473856 %}
 
+### Terminator: Dark Fate
+
+{% twitter https://twitter.com/garyfleming/status/1187338185388548096?s=20 %}
+
 ### film name
 
 {% twitter url %}
