@@ -24,4 +24,4 @@ A very quiet month for June, with just three films.
 
 ### The June Winner
 
-The winner for June is Booksmart, a great comedy with some nice character moments.
+The winner for June is **Booksmart**, a great comedy with some nice character moments.

@@ -1,6 +1,6 @@
 ---
 title: "Film Fight 2019: July"
-date: 3899-01-07T20:00:00+00:00
+date: 2019-10-29T09:07:00+00:00
 author: Gary Fleming
 layout: post
 permalink: /:year/:month/:title/
@@ -8,7 +8,7 @@ categories:
   - Films
 ---
 
-Intro
+Another quiet month with just three films...
 
 ### Spider-Man: Far From Home
 
@@ -22,11 +22,7 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1155508313754349568 %}
 
-### film name
 
-{% twitter url %}
+### The July Winner
 
-
-### The month Winner
-
-...
+Not a particularly strong month, so I think the winner is the fun action of **Spider-Man: Far From Home**.

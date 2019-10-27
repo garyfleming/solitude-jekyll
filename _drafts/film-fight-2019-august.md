@@ -1,6 +1,6 @@
 ---
 title: "Film Fight 2019: August"
-date: 3899-01-07T20:00:00+00:00
+date: 2019-10-29T09:08:00+00:00
 author: Gary Fleming
 layout: post
 permalink: /:year/:month/:title/
@@ -8,7 +8,7 @@ categories:
   - Films
 ---
 
-Intro
+A reasonable month with four films for August.
 
 ### Once Upon A Time In Hollywood
 
@@ -26,8 +26,6 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1167719688312373248 %}
 
+### The August Winner
 
-
-### The month Winner
-
-...
+Again, nothing that really shines in August. I'm surprised to say that **Once Upon A Time In Hollywood** has won.
