@@ -1,6 +1,6 @@
 ---
 title: "Film Fight 2019: February"
-date: 3899-01-07T20:00:00+00:00
+date: 2019-10-27T09:02:00+00:00
 author: Gary Fleming
 layout: post
 permalink: /:year/:month/:title/
@@ -8,7 +8,7 @@ categories:
   - Films
 ---
 
-Intro
+Lots of good options for February, with 9 films...
 
 ### Can You Ever Forgive Me?
 
@@ -26,7 +26,7 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1095069688588050432 %}
 
-### If Beale Street Could Talk...
+### If Beale Street Could Talk
 
 {% twitter https://twitter.com/garyfleming/status/1095070684013871112 %}
 
@@ -46,11 +46,7 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1102311312913297410 %}
 
-### film name
 
-{% twitter url %}
+### The February Winner
 
-
-### The month Winner
-
-...
+The winner for February is **If Beale Street Could Talk**; an excellent look at a relationship and the society that tears it apart. Another film of the year contender.
