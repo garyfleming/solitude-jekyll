@@ -24,7 +24,15 @@ Intro
 
 ### Terminator: Dark Fate
 
-{% twitter https://twitter.com/garyfleming/status/1187338185388548096?s=20 %}
+{% twitter https://twitter.com/garyfleming/status/1187338185388548096 %}
+
+### The Laundromat
+
+{% twitter https://twitter.com/garyfleming/status/1188057418649034753 %}
+
+### Zombieland: Double Tap
+
+{% twitter https://twitter.com/garyfleming/status/1188387362973376512 %}
 
 ### film name
 
