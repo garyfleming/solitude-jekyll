@@ -1,6 +1,6 @@
 ---
 title: "Film Fight 2019: June"
-date: 3899-01-07T20:00:00+00:00
+date: 2019-10-28T09:06:00+00:00
 author: Gary Fleming
 layout: post
 permalink: /:year/:month/:title/
@@ -8,7 +8,7 @@ categories:
   - Films
 ---
 
-Intro
+A very quiet month for June, with just three films.
 
 ### I Am Mother
 
@@ -22,11 +22,6 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1141974090925957122 %}
 
-### film name
+### The June Winner
 
-{% twitter url %}
-
-
-### The month Winner
-
-...
+The winner for June is Booksmart, a great comedy with some nice character moments.

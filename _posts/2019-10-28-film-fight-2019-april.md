@@ -1,6 +1,6 @@
 ---
 title: "Film Fight 2019: April"
-date: 3899-01-07T20:00:00+00:00
+date: 2019-10-28T09:04:00+00:00
 author: Gary Fleming
 layout: post
 permalink: /:year/:month/:title/
@@ -8,7 +8,7 @@ categories:
   - Films
 ---
 
-Intro
+Another bumper month, with 8 films in the fight for April.
 
 ### Shazam
 
@@ -42,6 +42,6 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1123660147983880193 %}
 
-### The month Winner
+### The April Winner
 
-...
+The winner for April is **Eighth Grade**, a fantastic film about growing up and being awkward.
