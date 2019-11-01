@@ -1,6 +1,6 @@
 ---
 title: "Film Fight 2019: August"
-date: 2019-10-29T09:08:00+00:00
+date: 2019-11-01T07:08:00+00:00
 author: Gary Fleming
 layout: post
 permalink: /:year/:month/:title/
