@@ -1,6 +1,6 @@
 ---
 title: "Film Fight 2019: October"
-date: 3899-01-07T20:00:00+00:00
+date: 2019-11-03T09:10:00+00:00
 author: Gary Fleming
 layout: post
 permalink: /:year/:month/:title/
@@ -8,7 +8,7 @@ categories:
   - Films
 ---
 
-Intro
+A decent sized month with 6 films.
 
 ### Joker
 
@@ -34,11 +34,7 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1188387362973376512 %}
 
-### film name
 
-{% twitter url %}
+### The October Winner
 
-
-### The month Winner
-
-...
+Nothing really amazing here, but I'll give it to **The Laundromat** as the best of the bunch.
