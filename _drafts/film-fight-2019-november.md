@@ -18,6 +18,10 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1197260898165018625 %}
 
+### 21 Bridges
+
+{% twitter https://twitter.com/garyfleming/status/1198606972884541440 %}
+
 ### film name
 
 {% twitter url %}
