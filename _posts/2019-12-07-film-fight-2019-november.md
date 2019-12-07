@@ -1,6 +1,6 @@
 ---
 title: "Film Fight 2019: November"
-date: 3899-01-07T20:00:00+00:00
+date: 2019-12-07T12:30:00+00:00
 author: Gary Fleming
 layout: post
 permalink: /:year/:month/:title/
@@ -8,7 +8,7 @@ categories:
   - Films
 ---
 
-Intro
+A fairly quiet November, with not much intersting at the cinema. Just three films...
 
 ### Dolemite Is My Name
 
@@ -22,11 +22,6 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1198606972884541440 %}
 
-### film name
-
-{% twitter url %}
-
-
 ### The November Winner
 
-...
+Nothing particularly deserving this month, but I'll go with **Dolemite Is My Name** for being a solid, surprising, funny biopic.
