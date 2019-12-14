@@ -20,11 +20,11 @@ Intro
 
 ### Marriage Story
 
-{% twitter https://twitter.com/garyfleming/status/1205820921002569728?s=20 %}
+{% twitter https://twitter.com/garyfleming/status/1205820921002569728 %}
 
 ### The Report
 
-{% twitter https://twitter.com/garyfleming/status/1205822344364773376?s=20 %}
+{% twitter https://twitter.com/garyfleming/status/1205822344364773376 %}
 
 ### film name
 
