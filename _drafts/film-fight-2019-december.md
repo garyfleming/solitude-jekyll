@@ -26,6 +26,14 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1205822344364773376 %}
 
+### Motherless Brooklyn
+
+{% twitter https://twitter.com/garyfleming/status/1208372431917912065 %}
+
+### 6 Underground
+
+{% twitter https://twitter.com/garyfleming/status/1206661642462941184 %}
+
 ### film name
 
 {% twitter url %}
