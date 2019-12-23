@@ -34,6 +34,10 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1206661642462941184 %}
 
+### Star Wars: Rise of Skywalker
+
+{% twitter https://twitter.com/garyfleming/status/1209048972964323328 %}
+
 ### film name
 
 {% twitter url %}
