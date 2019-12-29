@@ -38,6 +38,14 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1209048972964323328 %}
 
+### The Two Popes
+
+{% twitter https://twitter.com/garyfleming/status/1211253934712655872 %}
+
+### The App
+
+{% twitter https://twitter.com/garyfleming/status/1211254908252491777 %}
+
 ### film name
 
 {% twitter url %}
