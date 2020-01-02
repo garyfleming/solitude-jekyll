@@ -1,6 +1,6 @@
 ---
 title: "Film Fight 2019: December"
-date: 3899-01-07T20:00:00+00:00
+date: 2020-01-02T20:00:00+00:00
 author: Gary Fleming
 layout: post
 permalink: /:year/:month/:title/
@@ -8,7 +8,7 @@ categories:
   - Films
 ---
 
-Intro
+A big finish to the year with 9 films for December.
 
 ### Knives Out
 
@@ -46,11 +46,7 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1211254908252491777 %}
 
-### film name
-
-{% twitter url %}
-
 
 ### The December Winner
 
-...
+There are a lot of really great films that would easily have won in other months and the winner is a tough choice, but I think it has to be **Marriage Story**. Those lead performances and the material work.
