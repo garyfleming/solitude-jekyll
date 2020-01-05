@@ -14,6 +14,10 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1213439527265734658 %}
 
+### Jojo Rabbit
+
+{% twitter https://twitter.com/garyfleming/status/1213818043652071425 %}
+
 ### film name
 
 {% twitter url %}
