@@ -16,7 +16,7 @@ Intro
 
 ### Jojo Rabbit
 
-{% twitter https://twitter.com/garyfleming/status/1213818043652071425 %}
+{% twitter https://twitter.com/garyfleming/status/1213818750392291329 %}
 
 ### film name
 
