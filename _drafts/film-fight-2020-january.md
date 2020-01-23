@@ -24,7 +24,11 @@ Intro
 
 ### The Lighthouse
 
-{% twitter url %}
+{% twitter https://twitter.com/garyfleming/status/1220448078936924175 %}
+
+### 1917
+
+{% twitter https://twitter.com/garyfleming/status/1220448546291437568 %}
 
 ### film name
 
