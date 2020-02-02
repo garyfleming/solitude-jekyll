@@ -1,6 +1,6 @@
 ---
 title: "Film Fight 2020: January"
-date: 3899-01-07T20:00:00+00:00
+date: 2020-01-31T20:00:00+00:00
 author: Gary Fleming
 layout: post
 permalink: /:year/:month/:title/
@@ -8,7 +8,7 @@ categories:
   - Films
 ---
 
-Intro
+The first Film Fight of 2020 is... shockingly on time. Seven films this month.
 
 ### The Gentlemen
 
@@ -30,11 +30,15 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1220448546291437568 %}
 
-### film name
+### Parasite
 
-{% twitter url %}
+{% twitter https://twitter.com/garyfleming/status/1223348847319179266?s=20 %}
+
+### The Personal History of David Copperfield
+
+{% twitter https://twitter.com/garyfleming/status/1223349718274781184?s=20 %}
 
 
-### The month Winner
+### The January Winner
 
-...
+Lots of very strong contenders this month, but **Parasite** is a masterpiece. It works almost flawlessly from start to finish to bring you into its world, and pulls you through it one twist at a time.
