@@ -1,6 +1,6 @@
 ---
-title: "Film Fight YEAR: MONTH"
-date: 3899-01-07T20:00:00+00:00
+title: "Film Fight 2020: February"
+date: 2020-03-08T12:30:00+00:00
 author: Gary Fleming
 layout: post
 permalink: /:year/:month/:title/
@@ -8,7 +8,7 @@ categories:
   - Films
 ---
 
-Intro
+A relatively quiet month, due to being busy with a few other things, so only four films in the fight.
 
 ### The Rhythm Section
 
@@ -26,11 +26,6 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1226597374090412033 %}
 
-### film name
+### The February Winner
 
-{% twitter url %}
-
-
-### The month Winner
-
-...
+The winner for February is **Uncut Gems**. Tense, anxiety-producing, with an ending that's as effective as it is inevitable.
