@@ -14,6 +14,14 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1236683189340581888 %}
 
+### Spenser Confidential
+
+{% twitter https://twitter.com/garyfleming/status/1241415024993861632 %}
+
+### The Hunt
+
+{% twitter https://twitter.com/garyfleming/status/1241415716944969729 %}
+
 ### film name
 
 {% twitter url %}
