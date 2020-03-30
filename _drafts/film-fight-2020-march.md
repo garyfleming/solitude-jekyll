@@ -22,6 +22,14 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1241415716944969729 %}
 
+### The Last Thing He Wanted
+
+{% twitter https://twitter.com/garyfleming/status/1244693176037900288 %}
+
+### Freaks
+
+{% twitter https://twitter.com/garyfleming/status/1244693519425589249 %}
+
 ### film name
 
 {% twitter url %}
