@@ -18,6 +18,22 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1247178389158604801 %}
 
+### Vivarium
+
+{% twitter https://twitter.com/garyfleming/status/1250400163144896514 %}
+
+### Lost Girls
+
+{% twitter https://twitter.com/garyfleming/status/1250400626976133120 %}
+
+### The Jesus Rolls
+
+{% twitter https://twitter.com/garyfleming/status/1250400739794583552 %}
+
+### System Crasher
+
+{% twitter https://twitter.com/garyfleming/status/1250401390595366912 %}
+
 ### film name
 
 {% twitter url %}
