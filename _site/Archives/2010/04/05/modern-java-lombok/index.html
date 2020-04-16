@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Solitude - Modern Java: Lombok</title>
+  <meta name="author" content="Solitude" />
+  <meta name="twitter:widgets:csp" content="on" />
+  <meta name="description" content="The blog of Solitude" />
+  <link rel="canonical" href="http://solitude.vkps.co.uk/Archives/2010/04/05/modern-java-lombok/" />
+
+  <link href="//fonts.googleapis.com/css?family=Open+Sans:600,800" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="alternate" type="application/atom+xml" title="Solitude" href="http://solitude.vkps.co.uk/atom.xml" />
+
+  <link rel="stylesheet" href="/assets/css/all.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-k2/8zcNbxVIh5mnQ52A0r3a6jAgMGxFJFE2707UxGCk= sha512-ZV9KawG2Legkwp3nAlxLIVFudTauWuBpC10uEafMHYL0Sarrz5A7G79kXh5+5+woxQ5HM559XX2UZjMJ36Wplg==" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container">
+    <div class="four columns sidebar">
+      <nav>
+  <h1><a href="/">Solitude</a></h1>
+  <a href="/">
+    
+    <img src="/assets/images/tree-160.jpg" id="solitude-logo" alt="Solitude logo"/>
+    
+  </a>
+  <div id="bio">
+    <p>Technology. Code. Living relentlessly in the real world.</p>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="/about/">About</a></li>
+      <li><a href="/Archives/">Archives</a></li>
+    </ul>
+  </nav>
+  <div id="social">
+    Follow me:
+<div id="stalker">
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <a title="garyfleming on Twitter" href="https://twitter.com/garyfleming">
+    <i class="fa fa-twitter-square"></i>
+  </a>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <a title="Atom feed" id="atom" href="/feed/">
+    <i class="fa fa-rss-square"></i>
+  </a>
+  
+</div>
+
+  </div>
+  
+</nav>
+
+    </div>
+
+    <div class="eleven columns content">
+      <p class="meta">
+  April 05, 2010 | Category: <a class='category' href='/categories/uncategorized/'>Uncategorized</a>
+  <a href="/">
+    <i class="home fa fa-home"></i>
+  </a>
+</p>
+
+<h1 class="title"><a href="/Archives/2010/04/05/modern-java-lombok/">Modern Java: Lombok</a></h1>
+
+<div class="post">
+  <p>In recent months, I’ve been looking at a lot of new Java libraries to see what I’d like to use and what I think still has a way to go. I’ll be posting about them all in due course but I wanted to mention <a href="http://projectlombok.org/">Lombok</a> first.</p>
+
+<p>First, a class:</p>
+
+<pre class="brush: java; title: ; notranslate" title="">public class Person {
+    private String firstName;
+    private String lastName;
+    private int age;
+
+    public String getFirstName() {
+      return firstName;
+    }
+    public void setFirstName(String firstName) {
+      this.firstName = firstName;
+    }
+    public String getLastName() {
+      return lastName;
+    }
+    public void setLastName(String lastName) {
+      this.lastName = lastName;
+    }
+    public int getAge() {
+      return age;
+    }
+    public void setAge(int age) {
+      this.age = age;
+    }
+}
+</pre>
+
+<p>The problem here is that everything after <code class="highlighter-rouge">public int age</code> is predictable and verbose; you know that this is a Java bean class and that the fields are likely going to have getters and setters just like those provided. If we know exactly what to expect, shouldn’t the compiler take care of that for us rather than having us specify more code? Less code is often cleaner code.</p>
+
+<p>For several years now, people have been asking for the idea of <a href="http://weblogs.java.net/blog/rbair/archive/2007/01/properties_in_j.html">properties in Java</a>. That is, being able to define fields and automatically having standard getters and setters defined, without having to clutter the class file with boilerplate. The most common (and reasonable) response for avoiding this is that it would be difficult to implement without affecting backwards compatibility.</p>
+
+<p>While those proposals are pretty much dead at the moment, Lombok saves us from having to specify our standard getters and setters by marking our classes as beans and then jumping into the compilation process to make sure getters and setters are generated. The above code becomes:</p>
+
+<pre class="brush: java; title: ; notranslate" title="">@Data
+public class Person {
+    private String firstName;
+    private String lastName;
+    private int age;
+}
+</pre>
+
+<p>That’s right: the 18 or so lines of getter/setter boilerplate are replaced by the tiny little <a href="http://projectlombok.org/features/Data.html">@Data</a> annotation, and the code is much cleaner. As a bonus, @Data also generates a <code class="highlighter-rouge">toString()</code>, an <code class="highlighter-rouge">equals()</code> and a <code class="highlighter-rouge">hashCode()</code>. You can use the other Lombok annotations to tweak the behaviour, but this is what most people are going to want.</p>
+
+<p>Also of note is the <a href="http://projectlombok.org/features/Cleanup.html">@Cleanup annotation</a>, which provides automatic resource management (ARM) for using input/output streams. While this will be less essential if ARM arrives in Java 7, it’s a handy little helper for the time being.</p>
+
+<p>While Lombok can’t make bad code good, it can make verbose code a lot more succinct.</p>
+
+</div>
+
+<div class="postnavigation">
+  
+    <a class="prev" href="/Archives/2010/04/03/film-fight-2010-march/">&laquo; Film Fight 2010: March</a>
+  
+  
+    <a class="next" href="/Archives/2010/04/11/modern-java-validation/">Modern Java: Validation &raquo;</a>
+  
+</div>
+
+
+      <div class="footer">
+        <div class="disclaimer">
+  
+
+  <p>
+    © Solitude, 2003-20 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a>, using <a href="https://github.com/swanson/lagom">Lagom</a> as a base theme.
+  </p>
+</div>
+      </div>
+    </div>
+  </div>
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-11493178-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Solitude - Happenings</title>
+  <meta name="author" content="Solitude" />
+  <meta name="twitter:widgets:csp" content="on" />
+  <meta name="description" content="The blog of Solitude" />
+  <link rel="canonical" href="http://solitude.vkps.co.uk/page/79/" />
+
+  <link href="//fonts.googleapis.com/css?family=Open+Sans:600,800" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="alternate" type="application/atom+xml" title="Solitude" href="http://solitude.vkps.co.uk/atom.xml" />
+
+  <link rel="stylesheet" href="/assets/css/all.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-k2/8zcNbxVIh5mnQ52A0r3a6jAgMGxFJFE2707UxGCk= sha512-ZV9KawG2Legkwp3nAlxLIVFudTauWuBpC10uEafMHYL0Sarrz5A7G79kXh5+5+woxQ5HM559XX2UZjMJ36Wplg==" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container">
+    <div class="four columns sidebar">
+      <nav>
+  <h1><a href="/">Solitude</a></h1>
+  <a href="/">
+    
+    <img src="/assets/images/tree-160.jpg" id="solitude-logo" alt="Solitude logo"/>
+    
+  </a>
+  <div id="bio">
+    <p>Technology. Code. Living relentlessly in the real world.</p>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="/about/">About</a></li>
+      <li><a href="/Archives/">Archives</a></li>
+    </ul>
+  </nav>
+  <div id="social">
+    Follow me:
+<div id="stalker">
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <a title="garyfleming on Twitter" href="https://twitter.com/garyfleming">
+    <i class="fa fa-twitter-square"></i>
+  </a>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <a title="Atom feed" id="atom" href="/feed/">
+    <i class="fa fa-rss-square"></i>
+  </a>
+  
+</div>
+
+  </div>
+  
+    <h3><a href="https://pinboard.in/u:garyfleming">B-Links</a></h3>
+<ul>
+
+	
+	<li><a href="https://codepen.io/collection/DamKJW/3/">CSS Text Effects</a> - A Collection, by Mandy Michael, of impressive CSS text Effects</li>
+
+	
+	<li><a href="https://medium.com/@jdxcode/12-factor-cli-apps-dd3c227a0e46">12 Factor CLI Apps</a> - Useful tips for creating CLI commands</li>
+
+	
+	<li><a href="http://stevelosh.com/blog/2013/09/teach-dont-tell/">Teach, Don't Tell</a> - A fantastic, lengthy post on good documentation.</li>
+
+	
+	<li><a href="https://bulma.io/">Bulma</a> - A modern CSS framework based on Flexbox. Looks good</li>
+
+	
+	<li><a href="https://github.com/codelion/gramtest">GramTest: A tool for Grammar based Test case generation</a></li>
+
+	
+	<li><a href="https://www.erikheemskerk.nl/event-sourcing-eventual-consistency-responding-to-events/">Event Sourcing: Eventual Consistency and Responding to Events</a> - The 3rd part in an excellent series on Event Sourcing.</li>
+
+	
+	<li><a href="https://18f.gsa.gov/2017/01/19/the-dark-standup/">The Dark Standup</a> - Great idea</li>
+
+	
+	<li><a href="http://manishearth.github.io/blog/2017/01/14/stop-ascribing-meaning-to-unicode-code-points/">Let’s Stop Ascribing Meaning to Code Points</a> - They are NOT characters. Do NOT treat them as such.</li>
+
+	
+	<li><a href="https://developers.google.com/web/updates/2016/12/performant-parallaxing">Performant Parallaxing</a> - Non-JS, smooth parallax scrolling.</li>
+
+	
+	<li><a href="http://redsymbol.net/articles/unofficial-bash-strict-mode/">Use the Unofficial Bash Strict Mode</a> - Good advice for using Bash</li>
+
+</ul>
+
+  
+</nav>
+
+    </div>
+
+    <div class="eleven columns content">
+      <div id="home">
+  <h2><i class="fa fa-bookmark"></i> Happenings</h2>
+
+  
+  <div class="postcontainer">
+  <h3><a href="/Archives/2005/01/26/WebAudioPart3WhatPlayersNeed/">Web Audio, Part 3: What Players Need</a></h1>
+  <p class="author">
+    <span class="date"> </span>
+  </p>
+  <div class="post">
+    <p>There are (generically) two player types for web audio, whether embedded or otherwise:</p>
+
+<ul>
+  <li><strong>Single stream</strong> – Players which feature a single song or a continous sequence of songs which can’t be control.</li>
+  <li><strong>Multi stream</strong> – Players which feature multiple songs, which can be flicked through in some way.</li>
+</ul>
+
+<p>The former is not a particularly interesting case; it’s essentially just data (music) down a wire (connection). A reasonably solved problem, but useful for radio and simple repetitive sounds (whether using continual loops is good is not being questioned here).</p>
+
+<p>The latter, however, is not as clear cut as far too many players get it wrong. All mature media players should have a feature set including playlist creation (and manipulation), selection directly from playlist, randomisation (“play a song that has not been played recently, using a random but possibly weighted function”), and continous play (“start the next song when this one finishes, regardless of how next is picked”).</p>
+
+<p>This is one reason why Real player fails. It does allow for playlist playback but not selection or creation, making the feature largely impossible to use seriously.</p>
+
+<p>If players for web audio want to compete seriously then they should take a lesson from established players. Or do at least one usability study. I can’t imagine anyone who thinks many players do half of what they want.</p>
+
+  </div>
+  <div class="divider"><img src="/assets/images/divider.png" /></div>
+  </div>
+  
+  <div class="postcontainer">
+  <h3><a href="/Archives/2005/01/19/WebAudioPart2Flash/">Web Audio, Part 2: Flash</a></h1>
+  <p class="author">
+    <span class="date"> </span>
+  </p>
+  <div class="post">
+    <p>Yesterday, we had <a href="http://solitude.vkps.co.uk/Archives/2005/01/18/WebAudioPart1Real">a look at Real Player</a> as a way of utilising web audio. Today we look at the main contender (in my eyes): <a href="http://www.macromedia.com/software/flash/">Flash</a>.</p>
+
+<p>This is a very different beast. First, Flash player is everywhere. I have no figures giving the proportion of web users who have the player installed, but I imagine it’s a damn sight higher than Real player. While it is highly unlikely to be for the purpose of enjoying web audio, the possibility is still there. Leading on from this, it is apparent that Macromedia do not suffer from the same trust issues as Real. People are happy to install the Flash plug-in into any browser they happen to be using. From the point of view of content producers this should speak volumes: people have Flash installed and are willing to install it if they don’t. The same cannot be said of Real.</p>
+
+<p>Flash is also incredibly easy to integrate with websites, even if that integration is often abused (but the horrors of unskippable flash splash pages are for elsewhere). Your radio/stream controller will look like whatever you want it to. This has the advantage of seamless embedding, but has the obvious downside of lack of consistency (having to learn a new interface for each and every site you visit). Effort has gone into fixing this with standard and relatively feature-rich players recently, such as <a href="http://soundblox.blogspot.com/">Soundblox</a>, but it’ll be a while before they become conventional.</p>
+
+<p>Of course, Real are in the business of streaming media so it should come as no surprise that the failure mechanisms in Flash player are far weaker. It hasn’t had millions of dollars spend on engineering relatively sophisticated buffering and pre-fetch technology. Thus, your mileage may vary on sound quality; an important measure in any audio test.</p>
+
+<p>Pros and cons for both, obviously, but which is best? I’m a lazy person. I don’t need the hassle of configuring Real player to my liking. Windows is bad enough, but Linux is a royal pain. My recommendation has to be for Flash. Once more Flash players appear (such as the marvellous <a href="http://www.captainsof.com/player2.html">Captains Of Industry Radio</a>), I can see a bright future for Macromedia’s entertainment plug-in. Hassle-free, high installation base, a market waiting to be cornered.</p>
+
+  </div>
+  <div class="divider"><img src="/assets/images/divider.png" /></div>
+  </div>
+  
+  <div class="postcontainer">
+  <h3><a href="/Archives/2005/01/18/WebAudioPart1Real/">Web Audio, Part 1: Real</a></h1>
+  <p class="author">
+    <span class="date"> </span>
+  </p>
+  <div class="post">
+    <p>Recently, I’ve been playing with different ways of listening to media over the web (see a recent post on the <a href="/Archives/2005/01/10/FlashRadio">Flash Radio</a> for more). MP3s are out of the question, as they tend to chew through bandwidth, and I can’t necessarily store them wherever I am.</p>
+
+<p>I can see two reasonable options: <a href="http://www.real.com">Real player</a> and <a href="http://www.macromedia.com/software/flash/">Flash</a>.</p>
+
+<p>First up, Real player pros:</p>
+
+<ul>
+  <li>Established for a long time. This means that there are thousands of files to pick from on the web, covering every genre. This is obviously a big plus.</li>
+  <li>The player is a proper application, which gives the <acronym title="User Interface">UI</acronym> consistency you would expect between listening to different files, i.e. it doesn’t matter which stream you listen to today, the UI is always the same.</li>
+  <li>Live streams are possible, rather than being restricted to prerecorded audio.</li>
+</ul>
+
+<p>Cons:</p>
+
+<ul>
+  <li>The player itself is garbage. The Windows version has long been associated with adware, spyware, bloatedness and other assorted nasties. I’ve heard nothing but disparaging remarks from Mac users, and the Linux version is dreadful (more on that within the next few days).</li>
+  <li>Quality varies dramatically. Most modern streams are fine, but some older streams are unlistenably bad (optimised for dialup).</li>
+  <li>Trust. Because of aforementioned problems with the player, a lot of users simply do not trust Real and would rather stay away from the software all together.</li>
+  <li>Application launching. Although this allows for consistency in the UI, it doesn’t allow for consistency with a website. Whether this is a major hassle or not is up to the web designers (should they choose to take embedding streams seriously at some point). Components to do this are already available, but most sites don’t bother.</li>
+</ul>
+
+<p>This is not an exhaustive list, what other pros and cons exist?</p>
+
+  </div>
+  <div class="divider"><img src="/assets/images/divider.png" /></div>
+  </div>
+  
+  <div class="postcontainer">
+  <h3><a href="/Archives/2005/01/14/PubCrawlsPart4MysteryShape/">Pub Crawls, Part 4: Mystery Shape</a></h1>
+  <p class="author">
+    <span class="date"> </span>
+  </p>
+  <div class="post">
+    <p>The final pub crawl is one devised by myself and <a href="http://mrry.co.uk">Derek</a> in an entirely immature moment, and the route will be given below. If you want to see the childish humour at work, get a map of glasgow out and figure out the shape. It’s a comparatively mild route for drinking but takes in a fairly wide range of pub. Drink in each one. Pubs (and some of the intermediary route) are listed, but not complete. Visit as many as you can that you pass:</p>
+
+<ul>
+  <li>Solid Rock Cafe on Hope Street (easily accessed by either bus or train, being next to Central).</li>
+  <li>Sir John Moore.</li>
+  <li>A trip down Roberston St.</li>
+  <li>Casino on the Clyde (if you fancy a quick hand).</li>
+  <li>Along Clyde Street to Barfly.</li>
+  <li>Fat Boab’s.</li>
+  <li>Times Square.</li>
+  <li>Goose on Union Street (passing the Cathouse, if you wish to start elsewhere and end here).</li>
+  <li>Foquets.</li>
+  <li>Drum And Monkey</li>
+  <li>Edwards.</li>
+  <li>Revolution (“for the vodka connoisseur”).</li>
+  <li>Flares (the highest point, but it is a nightclub).</li>
+  <li>Rufus T. Firefly’s.</li>
+  <li>Otis B. Driftwood (no, it’s not cheating).</li>
+  <li>Candy Bar.</li>
+  <li>Cosmopol.</li>
+  <li>Solid Rock Cafe (closing the circuit).</li>
+</ul>
+
+<p>Since the route is closed, you can start and end wherever you like. Depending on your clubbing whims, you may wish to end near Union street (handy for Sub Club and the Cathouse) or Sauchiehall Street (Garage, etc). Although, if you end at Solid Rock Cafe, you can dart along Union Street (taking in 2 more pubs) and get to Union Street in minutes.</p>
+
+<p>I can’t personally verify the quality of all those bars but by the time you’re halfway round I’m sure it won’t matter.</p>
+
+  </div>
+  <div class="divider"><img src="/assets/images/divider.png" /></div>
+  </div>
+  
+  <div class="postcontainer">
+  <h3><a href="/Archives/2005/01/13/PubCrawlsPart3AshtonLane/">Pub Crawls, Part 3: Ashton Lane</a></h1>
+  <p class="author">
+    <span class="date"> </span>
+  </p>
+  <div class="post">
+    <p>One time bastion of students and indie kids (<a href="http://www.belleandsebastian.com/">Belle And Sebastian</a> have been known to busk there), Ashton Lane is now full of slighty more expensive bars and pubs. While the cost of drinking has risen, there is still fun to be had in the tiny West End street.</p>
+
+<p>The challenge: you have 30 minutes to visit (and drink in) as many pubs, bars or restaurants in Ashton Lane as you possibly can. Start and end where you like, but half an hour is the time limit. Because the area is quite small, getting between the pubs is not difficult but hitting them all in time is much harder.</p>
+
+<p>A good one, but be warned that it is also the most expensive crawl so far.</p>
+
+  </div>
+  <div class="divider"><img src="/assets/images/divider.png" /></div>
+  </div>
+  
+</div>
+
+
+
+<!-- Pagination links -->
+<div class="postnavigation">
+  
+    <a href="/page/78" class="previous">&laquo; Previous</a>
+  
+  
+    <a href="/page/80" class="next">Next &raquo;</a>
+  
+</div>
+
+      <div class="footer">
+        <div class="disclaimer">
+  
+
+  <p>
+    © Solitude, 2003-20 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a>, using <a href="https://github.com/swanson/lagom">Lagom</a> as a base theme.
+  </p>
+</div>
+      </div>
+    </div>
+  </div>
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-11493178-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>

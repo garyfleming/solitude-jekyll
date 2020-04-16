@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Solitude - Plagiarism: Introduction</title>
+  <meta name="author" content="Solitude" />
+  <meta name="twitter:widgets:csp" content="on" />
+  <meta name="description" content="The blog of Solitude" />
+  <link rel="canonical" href="http://solitude.vkps.co.uk/Archives/2006/10/17/PlagiarismIntroduction/" />
+
+  <link href="//fonts.googleapis.com/css?family=Open+Sans:600,800" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="alternate" type="application/atom+xml" title="Solitude" href="http://solitude.vkps.co.uk/atom.xml" />
+
+  <link rel="stylesheet" href="/assets/css/all.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-k2/8zcNbxVIh5mnQ52A0r3a6jAgMGxFJFE2707UxGCk= sha512-ZV9KawG2Legkwp3nAlxLIVFudTauWuBpC10uEafMHYL0Sarrz5A7G79kXh5+5+woxQ5HM559XX2UZjMJ36Wplg==" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container">
+    <div class="four columns sidebar">
+      <nav>
+  <h1><a href="/">Solitude</a></h1>
+  <a href="/">
+    
+    <img src="/assets/images/tree-160.jpg" id="solitude-logo" alt="Solitude logo"/>
+    
+  </a>
+  <div id="bio">
+    <p>Technology. Code. Living relentlessly in the real world.</p>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="/about/">About</a></li>
+      <li><a href="/Archives/">Archives</a></li>
+    </ul>
+  </nav>
+  <div id="social">
+    Follow me:
+<div id="stalker">
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <a title="garyfleming on Twitter" href="https://twitter.com/garyfleming">
+    <i class="fa fa-twitter-square"></i>
+  </a>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <a title="Atom feed" id="atom" href="/feed/">
+    <i class="fa fa-rss-square"></i>
+  </a>
+  
+</div>
+
+  </div>
+  
+</nav>
+
+    </div>
+
+    <div class="eleven columns content">
+      <p class="meta">
+  October 17, 2006 | Category: 
+  <a href="/">
+    <i class="home fa fa-home"></i>
+  </a>
+</p>
+
+<h1 class="title"><a href="/Archives/2006/10/17/PlagiarismIntroduction/">Plagiarism: Introduction</a></h1>
+
+<div class="post">
+  <p>Having been been involved in various natural language problems at university, the area of study interests me greatly as a series of very difficult problems. Despite that, I’ve written very little about it. This series on plagiarism detection is an attempt to rectify that.</p>
+
+<p>First, the problem: people are opportunistic, lying cheats who will take any advantage to get ahead. Well, if you believe the tabloids. While we might not all be like that, sadly, the number of people cheating in universities is increasing. Rather than work hard and produce their own work, professors are dismayed to find that several students hand in suspiciously similar pieces of work. Of course, with rather a lot of students in any given course, it can be very difficult to match up a handful as being similar. Lots of people, lots entries, not enough time to go through them and compare every single one against every other one by hand.</p>
+
+<p>Take some time to appreciate the scale of the problem: if a class has 300 people, and you want to compare them all against each other, you’re invoking the classic <a href="http://dwb.unl.edu/calculators/activities/middle/shake.html">handshake problem</a>. To compare them all, you have to do <em>44850</em> checks. Ouch.</p>
+
+<p>This is where <strong>plagiarism detection</strong> comes in: we want to automatically detect any near-duplicates in a group of submissions, eliminating any honest submissions in the process.</p>
+
+<p>Note that although I will refer to most examples in terms of students, submissions and universities, you can substitute in a wide range of domains. Copied texts in a library, finding cross-quotations, finding duplicate entries in financial market systems, the list is nearly endless.</p>
+
+<p>Next, a couple of useful terms: If one person copies another without that person knowing, we call that <strong>plagiarism</strong>. If two or more people copy one another intentionally, we call that <strong>collusion</strong>. For our purposes, these are the same thing. Why? It would be tremendously difficult, if not impossible, to infer the intentions of any entries marked as potential duplicates. Because of this and other possible failings in the system, it is never for the system to act as a final decision maker in whether or not people are cheating; it merely serves as an ordering system for someone else to make a decision. We will, therefore, use the terms “plagiarism” and “collusion” in interchangeably.</p>
+
+<p>It’s worth reiterating that plagiarism detection systems are just ordering systems: they take in a bunch of entries, find groups of similar entries (normally simple pairs of entries), and order those groups by the similarity found within. A user would then look at the produced ordering and decide whether these entries really are similar. There’s nothing unusual about that, when you think about it. Google is doing something pretty similar: it takes a bunch of web pages and a query, groups them on key attributes (words, meta-data, rankings), and orders the pages by how similar they are to the query. A user would then look at the produced ordering and decide which entries best matched the query. You’ve done this a million times yourself, you know it mostly works.</p>
+
+<p>You also know that, heck, sometimes it doesn’t; you can’t make decisions on the ordering with absolute certainty. In this way, plagiarism detection, search engines and other natural language problems are, at the time of writing, incomplete. While we don’t have the natural language problem nailed, we have to accept that they sometimes produce errors. In the case of plagiarism detection systems, those errors could lead to someone being kicked out of university if the risks are not understood. Again, these systems are just for ordering: not absolute decision making.</p>
+
+<p>Another point worth noting is that plagiarism detection systems generally deal with <strong>intra corpus</strong> search. That is, we know and have absolutely every entry in the set: they all come from submissions for a set exercise with a set deadline. After the deadline, the set is fixed in size, it will never grow, and it is almost always relatively small in size (a few hundred or thousand entries). Compare with web search where the corpus of documents is continually increasing and has billions of entries. So we’re comparing the entries in a fixed size set of documents, and not against a wider set. It is possible to compare against a much larger set like, say, the internet to find people copying from there, but it’s beyond the scope of much of the series as it is a much more difficult problem.</p>
+
+<p>We’re nearly down with this introduction, I hope by the time that I end this series, you will have a much better feel for how plagiarism detection works, how natural language problems can be solved, and what the trade-offs can by through-out.</p>
+
+<p>Finally, I highly recommend that you read Tim Bray’s excellent <a href="http://www.tbray.org/ongoing/When/200x/2003/07/30/OnSearchTOC">On Search</a> series. While reading the whole thing will do you no harm, if you’re lacking time I would read the sections on <a href="http://www.tbray.org/ongoing/When/200x/2003/06/22/PandR">Precision and Recall</a> and <a href="http://www.tbray.org/ongoing/When/200x/2003/07/11/Stopwords">Stop Words</a> as they hint at areas that need to be understood for most of this series.</p>
+
+</div>
+
+<div class="postnavigation">
+  
+    <a class="prev" href="/Archives/2006/10/10/DualMonitors/">&laquo; Dual Monitors</a>
+  
+  
+    <a class="next" href="/Archives/2006/10/24/ThisIs23/">This Is 23 &raquo;</a>
+  
+</div>
+
+
+      <div class="footer">
+        <div class="disclaimer">
+  
+
+  <p>
+    © Solitude, 2003-20 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a>, using <a href="https://github.com/swanson/lagom">Lagom</a> as a base theme.
+  </p>
+</div>
+      </div>
+    </div>
+  </div>
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-11493178-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>

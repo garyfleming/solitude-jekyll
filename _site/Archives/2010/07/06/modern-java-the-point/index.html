@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Solitude - Modern Java: The Point</title>
+  <meta name="author" content="Solitude" />
+  <meta name="twitter:widgets:csp" content="on" />
+  <meta name="description" content="The blog of Solitude" />
+  <link rel="canonical" href="http://solitude.vkps.co.uk/Archives/2010/07/06/modern-java-the-point/" />
+
+  <link href="//fonts.googleapis.com/css?family=Open+Sans:600,800" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="alternate" type="application/atom+xml" title="Solitude" href="http://solitude.vkps.co.uk/atom.xml" />
+
+  <link rel="stylesheet" href="/assets/css/all.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-k2/8zcNbxVIh5mnQ52A0r3a6jAgMGxFJFE2707UxGCk= sha512-ZV9KawG2Legkwp3nAlxLIVFudTauWuBpC10uEafMHYL0Sarrz5A7G79kXh5+5+woxQ5HM559XX2UZjMJ36Wplg==" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container">
+    <div class="four columns sidebar">
+      <nav>
+  <h1><a href="/">Solitude</a></h1>
+  <a href="/">
+    
+    <img src="/assets/images/tree-160.jpg" id="solitude-logo" alt="Solitude logo"/>
+    
+  </a>
+  <div id="bio">
+    <p>Technology. Code. Living relentlessly in the real world.</p>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="/about/">About</a></li>
+      <li><a href="/Archives/">Archives</a></li>
+    </ul>
+  </nav>
+  <div id="social">
+    Follow me:
+<div id="stalker">
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <a title="garyfleming on Twitter" href="https://twitter.com/garyfleming">
+    <i class="fa fa-twitter-square"></i>
+  </a>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <a title="Atom feed" id="atom" href="/feed/">
+    <i class="fa fa-rss-square"></i>
+  </a>
+  
+</div>
+
+  </div>
+  
+</nav>
+
+    </div>
+
+    <div class="eleven columns content">
+      <p class="meta">
+  July 06, 2010 | Category: <a class='category' href='/categories/uncategorized/'>Uncategorized</a>
+  <a href="/">
+    <i class="home fa fa-home"></i>
+  </a>
+</p>
+
+<h1 class="title"><a href="/Archives/2010/07/06/modern-java-the-point/">Modern Java: The Point</a></h1>
+
+<div class="post">
+  <p>In the Modern Java series, I’ve looked at how <a href="/Archives/2010/04/05/modern-java-lombok/" title="Modern Java: Lombok">Lombok</a> removes boilerplate from bean classes, <a href="/Archives/2010/04/11/modern-java-validation/" title="Modern Java: Validation">JSR-303 validation</a> makes checking domain correctness neat and how <a href="/Archives/2010/04/22/modern-java-jpa/" title="Modern Java: JPA">JPA</a> provides a convenient standardisation over the ORM space. Each of these technologies does something interesting and in an interesting way.</p>
+
+<p>The point of this series, however, was not to try to provide any deep level of insight into any of those technologies; writing anything even approaching a useful tutorial about JPA alone would take up many more posts than I had ever intended on giving the subject. There is simply too much there, and too much intricacy involved to sum that up.</p>
+
+<p>No, the point of this series was multi-faceted, and I’d like to take another few moments to try and explain what I was trying to achieve.</p>
+
+<p>Firstly, the primary concern for designing good systems is understanding the domain of interest. If you don’t understand the domain well, you won’t be able to produce a nice user experience at the front-end. You won’t be able to write meaningful abstractions at the back-end. You won’t be able to write something that you can pick up a year or two down the line and immediately understand. Knowing and understanding the domain is a <em>prerequisite</em> for good design.</p>
+
+<p>What does that have to do with the libraries I discussed? Each of them help you design in terms of the domain and only the domain. Lombok helps you write domain objects without all the cruft in the way. Standardised validation makes sure the correct rules are cleanly annotated and enforced on those domain objects. JPA ensures that when instances of those domain objects are persisted, they are persisted following a series of rules that make sense for the domain. Each of the libraries pushes you down a path of thinking about your domain and hiding other more mundane concerns.</p>
+
+<p>Secondly, I wanted to show that clean code is infinitely preferable to cluttered code. In the examples I gave, I showed a simple bean class being built up with just a handful of annotations, each one describing it’s own purpose and providing a clean understanding of the domain. As a thought experiment, consider what that code would be like without the annotations. Imagine the number of classes and methods that even a well-designed alternative would have to orchestrate. While I’m sure it could be quite neat, I can’t imagine a solution quite as neat as the one offered by the technologies I mentioned.</p>
+
+<p>That leads into my final point: modern Java features, such as annotations, and the libraries that make use of them allow for much richer, cleaner and downright better code than has been possible previously. I won’t try to argue that Java is perfect as a language as I like many of the alternatives, such as Scala, Groovy, Haskell, Ruby, Python and many others. What I <em>am</em> trying to say, though, is the situation with the Java language is a lot better than it was five years ago, when typical Java code was verbose, unsightly and headed away from the domain. It often obscured the domain, rather than illuminating it.</p>
+
+<p>My hope is that future iterations of the language and future libraries continue to keep Java in a competitive place in the language market, by making even more problems domain-focused and removing the remaining boilerplate. With the <a href="http://openjdk.java.net/projects/coin/">Project Coin</a> and <a href="http://openjdk.java.net/projects/lambda/">Project Lambda</a> improvements due in Java 7 later in the year, I really think this will be the case.</p>
+
+</div>
+
+<div class="postnavigation">
+  
+    <a class="prev" href="/Archives/2010/07/04/film-fight-2010-june/">&laquo; Film Fight 2010: June</a>
+  
+  
+    <a class="next" href="/Archives/2010/08/01/film-fight-2010-july/">Film Fight 2010: July &raquo;</a>
+  
+</div>
+
+
+      <div class="footer">
+        <div class="disclaimer">
+  
+
+  <p>
+    © Solitude, 2003-20 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a>, using <a href="https://github.com/swanson/lagom">Lagom</a> as a base theme.
+  </p>
+</div>
+      </div>
+    </div>
+  </div>
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-11493178-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Solitude - Redesign 3: Hazy Morning</title>
+  <meta name="author" content="Solitude" />
+  <meta name="twitter:widgets:csp" content="on" />
+  <meta name="description" content="The blog of Solitude" />
+  <link rel="canonical" href="http://solitude.vkps.co.uk/Archives/2004/09/08/Redesign3HazyMorning/" />
+
+  <link href="//fonts.googleapis.com/css?family=Open+Sans:600,800" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="alternate" type="application/atom+xml" title="Solitude" href="http://solitude.vkps.co.uk/atom.xml" />
+
+  <link rel="stylesheet" href="/assets/css/all.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-k2/8zcNbxVIh5mnQ52A0r3a6jAgMGxFJFE2707UxGCk= sha512-ZV9KawG2Legkwp3nAlxLIVFudTauWuBpC10uEafMHYL0Sarrz5A7G79kXh5+5+woxQ5HM559XX2UZjMJ36Wplg==" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container">
+    <div class="four columns sidebar">
+      <nav>
+  <h1><a href="/">Solitude</a></h1>
+  <a href="/">
+    
+    <img src="/assets/images/tree-160.jpg" id="solitude-logo" alt="Solitude logo"/>
+    
+  </a>
+  <div id="bio">
+    <p>Technology. Code. Living relentlessly in the real world.</p>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="/about/">About</a></li>
+      <li><a href="/Archives/">Archives</a></li>
+    </ul>
+  </nav>
+  <div id="social">
+    Follow me:
+<div id="stalker">
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <a title="garyfleming on Twitter" href="https://twitter.com/garyfleming">
+    <i class="fa fa-twitter-square"></i>
+  </a>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <a title="Atom feed" id="atom" href="/feed/">
+    <i class="fa fa-rss-square"></i>
+  </a>
+  
+</div>
+
+  </div>
+  
+</nav>
+
+    </div>
+
+    <div class="eleven columns content">
+      <p class="meta">
+  September 08, 2004 | Category: 
+  <a href="/">
+    <i class="home fa fa-home"></i>
+  </a>
+</p>
+
+<h1 class="title"><a href="/Archives/2004/09/08/Redesign3HazyMorning/">Redesign 3: Hazy Morning</a></h1>
+
+<div class="post">
+  <p>As you may have noticed (unless you use a feed reader or are reading this some time in the future), I’ve finally gotten round to doing a redesign of Solitude. This, the 4th full design since I started the site, is called Hazy Morning.</p>
+
+<p>It seems like I’m in fine company when it comes to redesigns, given recent or in progress changes by <a href="http://chris-miller.org/blog/">Chris</a>, <a href="http://mattgemmell.com">Matt</a>, <a href="http://bugsblog.com">Fiona</a>, <a href="http://www.submitresponse.co.uk/mt/">Jack Mottram</a>, <a href="http://www.allinthehead.com/">Drew Mclellan</a>, <a href="http://www.mozilla.org/">Mozilla</a> et al.</p>
+
+<p>Anyway, onto dissecting the trickier parts of the design.</p>
+
+<p>The header uses standard <a href="http://www.kryogenix.org/code/browser/lir/">image replacement techniques</a> and some <acronym title="Cascading Style Sheets">CSS</acronym> hacking to produce a full-length clickable region. It was more trick than it should be to get this working cross-platform. Much respect has to go towards the <a href="http://wellstyled.com/css-underscore-hack.html">CSS Underscore Hack</a>, the most elegant bug fix for <acronym title="Internet Explorer">IE</acronym> that I’ve yet to see. Very nice.</p>
+
+<p>Equally getting the individual post headings to be fully targetable was awkward. The key to getting it to work is to make the surrounding block be set to <code class="highlighter-rouge">display: inline;</code> and the heading itself to <code class="highlighter-rouge">display: block;</code>, and then set the width of both to 99.9%.</p>
+
+<p>Other than that, it was really a matter of tweaking as much as possible to get it to look alright in IE. It still doesn’t look perfect in that browser but I’ve spent enough time catering to a broken application.</p>
+
+<p>If you see any problems in your browser, leave a comment with details of the bug and your platform, browser and resolution. I’ll be tweaking over the next few days anyway, but it’s good to get feedback.</p>
+
+</div>
+
+<div class="postnavigation">
+  
+    <a class="prev" href="/Archives/2004/09/07/CSSRulesOfThumb/">&laquo; CSS Rules Of Thumb</a>
+  
+  
+    <a class="next" href="/Archives/2004/09/11/TheBourneSupremacy/">The Bourne Supremacy &raquo;</a>
+  
+</div>
+
+
+      <div class="footer">
+        <div class="disclaimer">
+  
+
+  <p>
+    © Solitude, 2003-20 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a>, using <a href="https://github.com/swanson/lagom">Lagom</a> as a base theme.
+  </p>
+</div>
+      </div>
+    </div>
+  </div>
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-11493178-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>

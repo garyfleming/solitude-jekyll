@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Solitude - All About The Structure</title>
+  <meta name="author" content="Solitude" />
+  <meta name="twitter:widgets:csp" content="on" />
+  <meta name="description" content="The blog of Solitude" />
+  <link rel="canonical" href="http://solitude.vkps.co.uk/Archives/2003/03/02/AllAboutTheStructure/" />
+
+  <link href="//fonts.googleapis.com/css?family=Open+Sans:600,800" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="alternate" type="application/atom+xml" title="Solitude" href="http://solitude.vkps.co.uk/atom.xml" />
+
+  <link rel="stylesheet" href="/assets/css/all.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-k2/8zcNbxVIh5mnQ52A0r3a6jAgMGxFJFE2707UxGCk= sha512-ZV9KawG2Legkwp3nAlxLIVFudTauWuBpC10uEafMHYL0Sarrz5A7G79kXh5+5+woxQ5HM559XX2UZjMJ36Wplg==" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container">
+    <div class="four columns sidebar">
+      <nav>
+  <h1><a href="/">Solitude</a></h1>
+  <a href="/">
+    
+    <img src="/assets/images/tree-160.jpg" id="solitude-logo" alt="Solitude logo"/>
+    
+  </a>
+  <div id="bio">
+    <p>Technology. Code. Living relentlessly in the real world.</p>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="/about/">About</a></li>
+      <li><a href="/Archives/">Archives</a></li>
+    </ul>
+  </nav>
+  <div id="social">
+    Follow me:
+<div id="stalker">
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <a title="garyfleming on Twitter" href="https://twitter.com/garyfleming">
+    <i class="fa fa-twitter-square"></i>
+  </a>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <a title="Atom feed" id="atom" href="/feed/">
+    <i class="fa fa-rss-square"></i>
+  </a>
+  
+</div>
+
+  </div>
+  
+</nav>
+
+    </div>
+
+    <div class="eleven columns content">
+      <p class="meta">
+  March 02, 2003 | Category: 
+  <a href="/">
+    <i class="home fa fa-home"></i>
+  </a>
+</p>
+
+<h1 class="title"><a href="/Archives/2003/03/02/AllAboutTheStructure/">All About The Structure</a></h1>
+
+<div class="post">
+  <p>In response to my <a href="http://solitude.vkps.co.uk/News/Index.php?ArtID=20030301233749">Graphic Vs. Web Design article</a>, someone said:</p>
+
+<blockquote>
+  <p>So, when I begin by opening photoshop and making everything look cool, am I doing it all wrong?</p>
+</blockquote>
+
+<p>Yes and no. It’s generally a good step to have a clear design in your head before starting anything (although, don’t be afraid to deviate from a preliminary design). But it should never be more than a concept.</p>
+
+<p>Imagine what you want to do visually, see the words flow together in your sea of colours. Paint this picture, if you must, in Photoshop (or whatever package you want to use). Done? Now, throw it away immediately.</p>
+
+<p>Let’s start again properly: take the content you want on a page and separate it into logical sections (content, navigation, header etc). We’ll do this (in mark-up) using the DIV tag. Importantly, give each of these top-level DIV’s a unique ID attribute. If each of those sections needs broken down further, then do that too (although you might be looking at giving these DIV’s generic classes, rather than ID’s). Iterate, until you’ve chopped your site into the smallest reasonable sections.</p>
+
+<p>Take this site as an example. It has 3 top-level sections: Content, Navigation and Header. Now, it so happens that I only wanted a single title in the header, so DIV tags were omitted. They were unnecessary since the (unique) H1 tag takes care of anything that a DIV could. Navigation is broken into a several sections, but I’ll focus on the Content section.</p>
+
+<p>First off, the Content DIV, has a header (H2). This is important since everything that follows is subordinate to this. In an outline view, you can easily determine that the content is part of “Happenings” (my own very special way of saying “News”). After this, each piece of content is broken into “BlogItem”‘s (a second-level DIV with a “BlogItem” class attribute attached to each one). These consist of 4 parts: A <em>heading</em> (H3), the <em>date</em> (a P with a date class attached), the <em>content</em> itself and a <em>permanent</em> link to that BlogItem.</p>
+
+<p>The <em>heading</em> is self-explanatory: each part of a document should have an appropriate title which, in this case, happens to be at the H3 level since it is within elements containing H1 and H2 tags (the parent sections of our BlogItem’s). We could add further subheadings in our content, if necessary.</p>
+
+<p>The <em>date</em> is a little more dubious. Some would make it an H4 heading. I disagree. In an outline of the document, nobody cares about the date something is posted. We would skim through the headings until we saw something that interests us, not when it was posted (“Oh yeah, this was posted on the 23rd February. I <strong>must</strong> read”). But it <em>is</em> useful meta-data. We can use it as frame of reference to put the content in.</p>
+
+<p>The <em>content</em> itself is quite self-explanatory too: it’s what you wanted on the page. It’s why we’ve went to these lengths to create a well-structured document. Type it in. (There’s a lot to be said about marking-up content, but that goes way beyond the scope of this article – another time perhaps). Note that an article is logically separated into paragraphs, and these paragraphs into sentences. This is what we’re doing here, and on a larger scale.</p>
+
+<p>Finally, we have a <em>permanent link</em> to each individual BlogItem. This is, again, meta-data. It’s useful to have an access mechanism to a given piece of content at the end (or beginning) of that content. We can then look back at it whenever we feel the need, without having to sift through the rest of the data structure.</p>
+
+<p>I’m not saying this structure should be adopted for other sites, it just made sense for <em>this</em> site. Separate your own information into logical sections, to get a decent structure for <em>your</em> site.</p>
+
+<p>Now I can already see the graphic designers and table fanatics at the back saying: “That’s not web design, it’s information management”. Well, yes, it is information management, and it’s also <strong>exactly</strong> what web design is based on. Now that we have a logical data structure for our information, we can make it look however we like. This is a secondary concern.</p>
+
+<p>Because of our detailed structure (complete with IDs and classes), we can now generically access every similar item on every page in one clean swoop. That means that redesigning a site will now take minutes, rather than weeks. The data structure, free from style of any form, is mouldable at a higher level. For anyone who’s strived to change a site or make it look good in a brand new browser (how are those new table hacks coming along?), this will mean a lot. Actually styling the page is, again, beyond the scope of this article, but will be resolved at a later date.</p>
+
+<p>To summarise, style should always come after structure. Once we have a structure, we can do what we like with it to make it look great. The same can’t be said in reverse.</p>
+
+</div>
+
+<div class="postnavigation">
+  
+    <a class="prev" href="/Archives/2003/03/02/TheMusicIndustry/">&laquo; The Music Industry</a>
+  
+  
+    <a class="next" href="/Archives/2003/03/06/PHPChallenge2Results/">PHP Challenge #2 Results &raquo;</a>
+  
+</div>
+
+
+      <div class="footer">
+        <div class="disclaimer">
+  
+
+  <p>
+    © Solitude, 2003-20 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a>, using <a href="https://github.com/swanson/lagom">Lagom</a> as a base theme.
+  </p>
+</div>
+      </div>
+    </div>
+  </div>
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-11493178-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>
