@@ -42,6 +42,10 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1252918481391140864 %}
 
+### Badlands
+
+{% twitter https://twitter.com/garyfleming/status/1253973904533737479 %}
+
 ### film name
 
 {% twitter url %}
