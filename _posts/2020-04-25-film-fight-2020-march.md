@@ -1,6 +1,6 @@
 ---
 title: "Film Fight 2020: March"
-date: 3899-01-07T20:00:00+00:00
+date: 2020-04-25T10:00:00+00:00
 author: Gary Fleming
 layout: post
 permalink: /:year/:month/:title/
@@ -8,7 +8,7 @@ categories:
   - Films
 ---
 
-Intro
+A little late to post (I forgot!) and light on cinema viewings (global pandemic!), but the March Film Fight still has 5 films.
 
 ### The Invisible Man
 
@@ -30,11 +30,7 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1244693519425589249 %}
 
-### film name
 
-{% twitter url %}
+### The March Winner
 
-
-### The month Winner
-
-...
+The winner is **The Invisible Man** for a genuinely tense and enjoyable update on a classic, that has something to say, and is well-executed.
