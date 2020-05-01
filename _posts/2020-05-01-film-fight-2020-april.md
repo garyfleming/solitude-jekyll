@@ -1,6 +1,6 @@
 ---
 title: "Film Fight 2020: April"
-date: 3899-01-07T20:00:00+00:00
+date: 2020-05-01T12:30:00+00:00
 author: Gary Fleming
 layout: post
 permalink: /:year/:month/:title/
@@ -8,7 +8,7 @@ categories:
   - Films
 ---
 
-Intro
+Despite cinemas being shut for the whole of April, I found a pretty good seam of new releases (giving myself a little more leeway with the film fight rules here). There are 12 films in the April Film Fight.
 
 ### The Platform
 
@@ -59,6 +59,6 @@ Intro
 {% twitter https://twitter.com/garyfleming/status/1255973869967605760 %}
 
 
-### The month Winner
+### The April Winner
 
-...
+Given the sheer number of films, pretty much the entire gamut of good to excellent are here so picking a winner is tough. That said, it has to be **System Crasher**: a powerful, difficult look at trauma in children and the effects.
