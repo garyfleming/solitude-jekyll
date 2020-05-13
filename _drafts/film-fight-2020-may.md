@@ -22,6 +22,22 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1258745868821368832 %}
 
+### Uncorked
+
+{% twitter https://twitter.com/garyfleming/status/1260612650347659264?s=20 %}
+
+### Swallow
+
+{% twitter https://twitter.com/garyfleming/status/1260613037486157831?s=20 %}
+
+### Sea Fever
+
+{% twitter https://twitter.com/garyfleming/status/1260613473240842241?s=20 %}
+
+### Sergio
+
+{% twitter https://twitter.com/garyfleming/status/1260613845418233857?s=20 %}
+
 ### film name
 
 {% twitter url %}
