@@ -24,19 +24,31 @@ Intro
 
 ### Uncorked
 
-{% twitter https://twitter.com/garyfleming/status/1260612650347659264?s=20 %}
+{% twitter https://twitter.com/garyfleming/status/1260612650347659264 %}
 
 ### Swallow
 
-{% twitter https://twitter.com/garyfleming/status/1260613037486157831?s=20 %}
+{% twitter https://twitter.com/garyfleming/status/1260613037486157831 %}
 
 ### Sea Fever
 
-{% twitter https://twitter.com/garyfleming/status/1260613473240842241?s=20 %}
+{% twitter https://twitter.com/garyfleming/status/1260613473240842241 %}
 
 ### Sergio
 
-{% twitter https://twitter.com/garyfleming/status/1260613845418233857?s=20 %}
+{% twitter https://twitter.com/garyfleming/status/1260613845418233857 %}
+
+### Selah And The Spades
+
+{% twitter https://twitter.com/garyfleming/status/1264888486504603648 %}
+
+### The Lovebirds
+
+{% twitter https://twitter.com/garyfleming/status/1264889000382341120 %}
+
+### Bloodshot
+
+{% twitter https://twitter.com/garyfleming/status/1264889354511699968 %}
 
 ### film name
 
