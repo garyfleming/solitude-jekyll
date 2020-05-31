@@ -50,6 +50,10 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1264889354511699968 %}
 
+### Earth and Blood
+
+{% twitter https://twitter.com/garyfleming/status/1267062839384190976 %}
+
 ### film name
 
 {% twitter url %}
