@@ -14,7 +14,7 @@ categories:
 ... more formally focus on patterns for hypermedia controls within hateoas
 
 Simple referential navigation... not sure this is really that interesting in an API context
-Exploring hierarchy... Proceding through tree-like hierarchy to go into more detail between related entities
+Exploring hierarchy... Proceeding through tree-like hierarchy to go into more detail between related entities
 Exploring abstraction... like hierarchy but for a single large entity.
 Search... mechanisms for exploring a dataset
 Paging... obvious. Complicated filtering/searching combined.
