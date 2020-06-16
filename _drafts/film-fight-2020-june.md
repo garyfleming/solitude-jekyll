@@ -14,6 +14,14 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1268568315175284739 %}
 
+### The Wrong Missy
+
+{% twitter https://twitter.com/garyfleming/status/1272863957901086720 %}
+
+### Da 5 Bloods
+
+{% twitter https://twitter.com/garyfleming/status/1272864682630623232 %}
+
 ### film name
 
 {% twitter url %}
