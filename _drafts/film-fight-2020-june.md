@@ -22,6 +22,22 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1272864682630623232 %}
 
+### The Banker
+
+{% twitter https://twitter.com/garyfleming/status/1277204350377644032 %}
+
+### Krabi, 2562
+
+{% twitter https://twitter.com/garyfleming/status/1277205086222069764 %}
+
+### The Last Days of American Crime
+
+{% twitter https://twitter.com/garyfleming/status/1277205663245111297 %}
+
+### Eurovision Song Contest: The Story of Fire Saga
+
+{% twitter https://twitter.com/garyfleming/status/1277206310015184897 %}
+
 ### film name
 
 {% twitter url %}
