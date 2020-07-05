@@ -1,6 +1,6 @@
 ---
 title: "Film Fight 2020: June"
-date: 3899-01-07T20:00:00+00:00
+date: 2020-07-04T11:00:00+00:00
 author: Gary Fleming
 layout: post
 permalink: /:year/:month/:title/
@@ -8,7 +8,7 @@ categories:
   - Films
 ---
 
-Intro
+A slightly quieter month than last, but still 8 new films!
 
 ### The Orphanage
 
@@ -38,11 +38,11 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1277206310015184897 %}
 
-### film name
+### The Ghost Who Walks
 
-{% twitter url %}
+{% twitter https://twitter.com/garyfleming/status/1279737030025633793 %}
 
 
 ### The June Winner
 
-...
+Lots of decidedly mediocre films, a couple of decent ones, but the winner is worth seeing: **The Orphanage** takes it.
