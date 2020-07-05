@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Solitude - Plagiarism: Tokenising, Part 1</title>
+  <meta name="author" content="Solitude" />
+  <meta name="twitter:widgets:csp" content="on" />
+  <meta name="description" content="The blog of Solitude" />
+  <link rel="canonical" href="http://solitude.vkps.co.uk/Archives/2006/11/12/PlagiarismTokenisingPart1/" />
+
+  <link href="//fonts.googleapis.com/css?family=Open+Sans:600,800" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="alternate" type="application/atom+xml" title="Solitude" href="http://solitude.vkps.co.uk/atom.xml" />
+
+  <link rel="stylesheet" href="/assets/css/all.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-k2/8zcNbxVIh5mnQ52A0r3a6jAgMGxFJFE2707UxGCk= sha512-ZV9KawG2Legkwp3nAlxLIVFudTauWuBpC10uEafMHYL0Sarrz5A7G79kXh5+5+woxQ5HM559XX2UZjMJ36Wplg==" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container">
+    <div class="four columns sidebar">
+      <nav>
+  <h1><a href="/">Solitude</a></h1>
+  <a href="/">
+    
+    <img src="/assets/images/tree-160.jpg" id="solitude-logo" alt="Solitude logo"/>
+    
+  </a>
+  <div id="bio">
+    <p>Technology. Code. Living relentlessly in the real world.</p>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="/about/">About</a></li>
+      <li><a href="/Archives/">Archives</a></li>
+    </ul>
+  </nav>
+  <div id="social">
+    Follow me:
+<div id="stalker">
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <a title="garyfleming on Twitter" href="https://twitter.com/garyfleming">
+    <i class="fa fa-twitter-square"></i>
+  </a>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <a title="Atom feed" id="atom" href="/feed/">
+    <i class="fa fa-rss-square"></i>
+  </a>
+  
+</div>
+
+  </div>
+  
+</nav>
+
+    </div>
+
+    <div class="eleven columns content">
+      <p class="meta">
+  November 12, 2006 | Category: 
+  <a href="/">
+    <i class="home fa fa-home"></i>
+  </a>
+</p>
+
+<h1 class="title"><a href="/Archives/2006/11/12/PlagiarismTokenisingPart1/">Plagiarism: Tokenising, Part 1</a></h1>
+
+<div class="post">
+  <p>After a long break since our <a href="/Archives/2006/10/17/PlagiarismIntroduction">plagiarism introduction</a>, it’s time to get started on the real work. I would go and get some coffee before reading, because this is going to take a while.</p>
+
+<p>The first thing you really need to know about implementing a plagiarism detection system, and most natural language processors, is called <strong>tokenising</strong>: the process of taking a document and splitting it into smaller parts before the real analysis can take place.</p>
+
+<p>What exactly do I mean by that? Say you have a 300 students all handing in essays or a piece of code (we will choose the latter simply because the syntax can be easier), and you want to compare them for the purpose of finding plagiarists. We’ll say that one of these pieces of code includes the line “<code class="highlighter-rouge">for i in 1..10 loop</code>“. The computer does not understand that snippet, or the language it is written in (ADA, incidentally). For it to compare it to other snippets, it must first do what the human brain has evolved to do naturally: split the sentences into words and extract meaning from the words. Without splitting up a page somewhat, you can understand it far less well than you can if you break it up, and you have less tolerance for slight differences when comparing documents. Same applies for the computer.</p>
+
+<p>That’s not strictly true. The computer can just read those documents in as one big long string and compare them the dumb way, character by character. This, however, gives you much less tolerance for slight changes when comparing two very similar documents. A series of changes, even simple ones like adding spaces or punctuation, would make two very similar documents look different. This is a <strong>bad thing</strong>. We don’t want the cheaters to be able to beat our system by making small changes. If they make a lot of changes, that makes our life harder (are they still really cheating if they’ve changed everything?) but we certainly don’t want people them getting away with small changes.</p>
+
+<p>So, we take the document, figure out what constitutes a “word” in the language of the document, and turn the document into a list of these “words”. We call these words <strong>tokens</strong>. We can compare tokens much more easily and efficiently than comparing full strings, and with more tolerance for change. So, our earlier example might be broken up like this: <code class="highlighter-rouge">["for", "i", "in", "1", "..", "10", "loop"]</code></p>
+
+<p>Anyone who is being astute will notice that I just skipped over the real crux of the problem: how do we determine what a token is? Well, that really depends on the language that the document is in and, to an extent, the domain. Consider:</p>
+
+<ul>
+  <li>An essay written in English is very different from an essay written in Spanish.</li>
+  <li>An essay written in English is very different from a Java source file.</li>
+  <li>An essay about biology is likely very different (in language and style) from an essay about history.</li>
+</ul>
+
+<p>What you really need to understand about tokenising is that it is:</p>
+
+<ol>
+  <li><strong>Language specific</strong> – in that to get anywhere worthwhile with your tokeninsing, you will need a different tokeniser for each language.</li>
+  <li><strong>Domain specific</strong> – to get the most out of your tokeniser, it needs to be tuned to the domain of the topic (i.e. History, medicine etc) to better take advantage of how people in that domain exploit and use the language.</li>
+</ol>
+
+<p>The latter of these two I will leave as an exercise to the reader, and not discuss much further. The former is the core of the problem we want to solve: how do we create a tokeniser for a specific language? Easy, we look at the <strong>grammar</strong> of the language.</p>
+
+<p>Now, I know some people just shuddered at the mention of the word “grammar”, but it’s not so bad. The grammar for a language is simply the set of rules that allow for the construction of language features, a bunch of very simple rules that state which tokens can appear where and what form they should take when near other tokens. Thankfully, just about every computer language has a detailed specified grammar somewhere. If you’re suffering insomnia, have a look at the <a href="http://www.adahome.com/rm95/rm9x-P.html">Ada syntax</a> or the <a href="http://java.sun.com/docs/books/jls/second_edition/html/syntax.doc.html">Java grammar</a>. Thrilling stuff, I know.</p>
+
+<p>You know your language, you have your grammar, now you need a <strong>parser</strong>. The parser takes the grammar and documents you provide, and spits out your tokens. This is a well-understood area, and you may even have some tools to do it for you. If not there are plenty of tools available that will parse for you: <code class="highlighter-rouge">yacc</code>, <code class="highlighter-rouge">bison</code> and <code class="highlighter-rouge">lexx</code> are just a few command line tools that will parse documents. I would recommend <a href="http://sablecc.org/">SableCC</a> if you’re writing your plagiarism detection system in Java: it has a decent <acronym title="Application Interface">API</acronym> and does most of the work for you. You just need to take the trees it produces (for compiler use), and flatten them into an array; a trivial task that amounts to an in-order walk.</p>
+
+<p>Wow! We’ve now tokenised the document. End of story.</p>
+
+<p>Well, not quite. The problem with using a pure parser-and-grammar approach is that it doesn’t work if your input (your code snippets or essays) are malformed. If even one part of your document breaks a rule, your parser is going to complain. Most will refuse to process it further. Handling this is your responsibility, and it’s not an easy problem to solve. The simplest solution I can suggest is falling back to white-space tokenising when something fails and logging the problem, feeding a better solution into the next version of your system. It’s hardly ideal. Also, always remember <a href="http://en.wikipedia.org/wiki/Robustness_Principle">Postel’s law</a> and consider that just because someone doesn’t fully follow the rules of a language, that does not mean they should get away with plagiarism.</p>
+
+<p>Are we done now? No, but we’ve done enough for today. More tokenising soon.</p>
+
+</div>
+
+<div class="postnavigation">
+  
+    <a class="prev" href="/Archives/2006/10/24/ThisIs23/">&laquo; This Is 23</a>
+  
+  
+    <a class="next" href="/Archives/2006/11/19/filmfightoctober2006/">Film Fight: October 2006 &raquo;</a>
+  
+</div>
+
+
+      <div class="footer">
+        <div class="disclaimer">
+  
+
+  <p>
+    © Solitude, 2003-20 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a>, using <a href="https://github.com/swanson/lagom">Lagom</a> as a base theme.
+  </p>
+</div>
+      </div>
+    </div>
+  </div>
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-11493178-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>

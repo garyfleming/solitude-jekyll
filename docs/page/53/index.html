@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Solitude - Happenings</title>
+  <meta name="author" content="Solitude" />
+  <meta name="twitter:widgets:csp" content="on" />
+  <meta name="description" content="The blog of Solitude" />
+  <link rel="canonical" href="http://solitude.vkps.co.uk/page/53/" />
+
+  <link href="//fonts.googleapis.com/css?family=Open+Sans:600,800" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="alternate" type="application/atom+xml" title="Solitude" href="http://solitude.vkps.co.uk/atom.xml" />
+
+  <link rel="stylesheet" href="/assets/css/all.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-k2/8zcNbxVIh5mnQ52A0r3a6jAgMGxFJFE2707UxGCk= sha512-ZV9KawG2Legkwp3nAlxLIVFudTauWuBpC10uEafMHYL0Sarrz5A7G79kXh5+5+woxQ5HM559XX2UZjMJ36Wplg==" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container">
+    <div class="four columns sidebar">
+      <nav>
+  <h1><a href="/">Solitude</a></h1>
+  <a href="/">
+    
+    <img src="/assets/images/tree-160.jpg" id="solitude-logo" alt="Solitude logo"/>
+    
+  </a>
+  <div id="bio">
+    <p>Technology. Code. Living relentlessly in the real world.</p>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="/about/">About</a></li>
+      <li><a href="/Archives/">Archives</a></li>
+    </ul>
+  </nav>
+  <div id="social">
+    Follow me:
+<div id="stalker">
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <a title="garyfleming on Twitter" href="https://twitter.com/garyfleming">
+    <i class="fa fa-twitter-square"></i>
+  </a>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <a title="Atom feed" id="atom" href="/feed/">
+    <i class="fa fa-rss-square"></i>
+  </a>
+  
+</div>
+
+  </div>
+  
+</nav>
+
+    </div>
+
+    <div class="eleven columns content">
+      <div id="home">
+  <h2><i class="fa fa-bookmark"></i> Happenings</h2>
+
+  
+  <div class="postcontainer">
+  <h3><a href="/Archives/2006/11/28/OneInterface/">One Interface</a></h1>
+  <p class="author">
+    <span class="date"> </span>
+  </p>
+  <div class="post">
+    <p>Raymond Chen has reasonably pointed out that most low-end users <a href="http://blogs.msdn.com/oldnewthing/archive/2006/11/27/1160055.aspx">don’t like using the search boxes</a> that modern browsers provide in addition to address bars. I couldn’t agree more.</p>
+
+<p>The first thing I do with any new FireFox install, before loading up bookmarks or any of my favourite extensions, is to remove the search bar. Why?</p>
+
+<ol>
+  <li>Ease of use. I don’t want to have to think about which box I’m going to use for a particular action, especially when the most common action is using Google: which works equally well in both boxes.</li>
+  <li>Address bar is faster. Any time you move your hands from the keyboard to the mouse, you lose a significant portion of time. I don’t know if the search bar has a keyboard shortcut, but I know that the address bar does (<kbd>Alt</kbd>+<kbd>d</kbd>). Even if it does, how do I then quickly select a different search engine than the default?</li>
+  <li>The address bar is multi-functional. I can use it for <acronym title="Uniform Resource Locator">URL</acronym>s and google, but if I add some keyword searches to my bookmarks (replace the query string <code class="highlighter-rouge">%s</code> and add a keyword), then I can have any search engine I want at my finger tips.</li>
+</ol>
+
+<p>This makes the search box dead space in a prime location. It’s one (recent) saving is the addition of Google-style autocomplete. With a little more work this could, and should, be integrated into the address bar. At the very least, the option should be available.</p>
+
+<p>So, what other things do I use the address bar quick search for?</p>
+
+<ul>
+  <li><a href="http://javadocs.org">Javadoc</a> – Look up any standard class with a quick “jdoc Class”.</li>
+  <li><a href="http://man.splitbrain.org/">Man pages</a> – As with terminals, “man [program]” works just fine for looking up UNIX stuff.</li>
+  <li><a href="http://acronymfinder.com">Acronyms</a> – Need to know what something means ASAP? “acronym ASAP” would do.</li>
+</ul>
+
+<p>I use it for dictionaries (“dic”), the thesaurus (“thes), torrents (“torr”), and just about any other common search because <em>it is better</em>. Give it a try.</p>
+
+  </div>
+  <div class="divider"><img src="/assets/images/divider.png" /></div>
+  </div>
+  
+  <div class="postcontainer">
+  <h3><a href="/Archives/2006/11/19/iBatisAndLike/">iBatis And Like</a></h1>
+  <p class="author">
+    <span class="date"> </span>
+  </p>
+  <div class="post">
+    <p>A reminder for myself for the future (and any other people doing Java development): using the <code class="highlighter-rouge">like</code> operator in <a href="http://ibatis.apache.org/">iBatis</a>. The meta character escaping you need in your <acronym title="eXtensible Markup Language">XML</acronym> is <code class="highlighter-rouge">column like '%'||#property#||'%'</code>, where <code class="highlighter-rouge">property</code> property is a bean property in your parameter class.</p>
+
+<p>Also, if you’re doing everything in your <code class="highlighter-rouge">where</code> clause dynamically, I would recommend looking at <code class="highlighter-rouge">dynamic</code> and <code class="highlighter-rouge">isNotNull</code> tags.</p>
+
+  </div>
+  <div class="divider"><img src="/assets/images/divider.png" /></div>
+  </div>
+  
+  <div class="postcontainer">
+  <h3><a href="/Archives/2006/11/19/filmfightoctober2006/">Film Fight: October 2006</a></h1>
+  <p class="author">
+    <span class="date"> </span>
+  </p>
+  <div class="post">
+    <p>Due to a silly number of other events in October, like a stupid number of birthdays (including, of course, <a href="/Archives/2006/10/24/ThisIs23">my own birthday</a>), I only saw three films in the cinema (though I did watch a decent number from my <acronym title="Digital Video Disc">DVD</acronym> backlog).</p>
+
+<p>Will Ferrell hits the race track for his latest character film, <strong>Tallageda Nights: The Ballad of Ricky Bobby</strong>. This is exactly what you expect from a recent Ferrell film: a tale of a man who is top of his field hitting hard times and unexpected competition, having to re-learn and evaluate himself, and coming back stronger than ever, with a number of bizarre characters and memorable lines. While it fails to match previous efforts, like the excellent <strong>Anchorman</strong>, it’s still a worthwhile comedy if you like the lead’s goofy schtick.</p>
+
+<p>Former Ferrell collaborator, Steve Carrell, plays it straight for once in delightful indie flick, <strong>Little Miss Sunshine</strong>. The story of a suburban family whose ties are wearing thing, the film follows them on a road trip across state to a (fairly nauseating) children’s beauty pageant. As with most good tales, the focus is on the journey, not the destination. The trials and breakdowns as they make their trip are tragic, hilarious and occassionally shocking. While a certain gloom hangs over areas of the film, it never lasts for long; the film serving as an affirmation of the tribulations of family life.</p>
+
+<p>A couple of years back, the great Hong Kong crime trilogy, <strong><a href="/Archives/2004/03/05/InfernalAffairs">Infernal Affairs</a></strong>, kicked off. That is long since finished, but a heavyweight Hollywood version has appeared in the form of <strong>The Departed</strong>. The tale of a cop going undercover in a crime syndicate, and the same crime syndicating planting a mole in the cops, this version builds the same tension through paranoia and near-misses, with some excellent performances from Jack Nicholson and Leonardo Dicaprio. Although the dialogue is better (post-translation), it does go wayward in a few places (like the love story). Still a very worthy film.</p>
+
+<p>It’s a tricky month, but I would say <strong>Little Miss Sunshine</strong> edges it.</p>
+
+  </div>
+  <div class="divider"><img src="/assets/images/divider.png" /></div>
+  </div>
+  
+  <div class="postcontainer">
+  <h3><a href="/Archives/2006/11/12/PlagiarismTokenisingPart1/">Plagiarism: Tokenising, Part 1</a></h1>
+  <p class="author">
+    <span class="date"> </span>
+  </p>
+  <div class="post">
+    <p>After a long break since our <a href="/Archives/2006/10/17/PlagiarismIntroduction">plagiarism introduction</a>, it’s time to get started on the real work. I would go and get some coffee before reading, because this is going to take a while.</p>
+
+<p>The first thing you really need to know about implementing a plagiarism detection system, and most natural language processors, is called <strong>tokenising</strong>: the process of taking a document and splitting it into smaller parts before the real analysis can take place.</p>
+
+<p>What exactly do I mean by that? Say you have a 300 students all handing in essays or a piece of code (we will choose the latter simply because the syntax can be easier), and you want to compare them for the purpose of finding plagiarists. We’ll say that one of these pieces of code includes the line “<code class="highlighter-rouge">for i in 1..10 loop</code>“. The computer does not understand that snippet, or the language it is written in (ADA, incidentally). For it to compare it to other snippets, it must first do what the human brain has evolved to do naturally: split the sentences into words and extract meaning from the words. Without splitting up a page somewhat, you can understand it far less well than you can if you break it up, and you have less tolerance for slight differences when comparing documents. Same applies for the computer.</p>
+
+<p>That’s not strictly true. The computer can just read those documents in as one big long string and compare them the dumb way, character by character. This, however, gives you much less tolerance for slight changes when comparing two very similar documents. A series of changes, even simple ones like adding spaces or punctuation, would make two very similar documents look different. This is a <strong>bad thing</strong>. We don’t want the cheaters to be able to beat our system by making small changes. If they make a lot of changes, that makes our life harder (are they still really cheating if they’ve changed everything?) but we certainly don’t want people them getting away with small changes.</p>
+
+<p>So, we take the document, figure out what constitutes a “word” in the language of the document, and turn the document into a list of these “words”. We call these words <strong>tokens</strong>. We can compare tokens much more easily and efficiently than comparing full strings, and with more tolerance for change. So, our earlier example might be broken up like this: <code class="highlighter-rouge">["for", "i", "in", "1", "..", "10", "loop"]</code></p>
+
+<p>Anyone who is being astute will notice that I just skipped over the real crux of the problem: how do we determine what a token is? Well, that really depends on the language that the document is in and, to an extent, the domain. Consider:</p>
+
+<ul>
+  <li>An essay written in English is very different from an essay written in Spanish.</li>
+  <li>An essay written in English is very different from a Java source file.</li>
+  <li>An essay about biology is likely very different (in language and style) from an essay about history.</li>
+</ul>
+
+<p>What you really need to understand about tokenising is that it is:</p>
+
+<ol>
+  <li><strong>Language specific</strong> – in that to get anywhere worthwhile with your tokeninsing, you will need a different tokeniser for each language.</li>
+  <li><strong>Domain specific</strong> – to get the most out of your tokeniser, it needs to be tuned to the domain of the topic (i.e. History, medicine etc) to better take advantage of how people in that domain exploit and use the language.</li>
+</ol>
+
+<p>The latter of these two I will leave as an exercise to the reader, and not discuss much further. The former is the core of the problem we want to solve: how do we create a tokeniser for a specific language? Easy, we look at the <strong>grammar</strong> of the language.</p>
+
+<p>Now, I know some people just shuddered at the mention of the word “grammar”, but it’s not so bad. The grammar for a language is simply the set of rules that allow for the construction of language features, a bunch of very simple rules that state which tokens can appear where and what form they should take when near other tokens. Thankfully, just about every computer language has a detailed specified grammar somewhere. If you’re suffering insomnia, have a look at the <a href="http://www.adahome.com/rm95/rm9x-P.html">Ada syntax</a> or the <a href="http://java.sun.com/docs/books/jls/second_edition/html/syntax.doc.html">Java grammar</a>. Thrilling stuff, I know.</p>
+
+<p>You know your language, you have your grammar, now you need a <strong>parser</strong>. The parser takes the grammar and documents you provide, and spits out your tokens. This is a well-understood area, and you may even have some tools to do it for you. If not there are plenty of tools available that will parse for you: <code class="highlighter-rouge">yacc</code>, <code class="highlighter-rouge">bison</code> and <code class="highlighter-rouge">lexx</code> are just a few command line tools that will parse documents. I would recommend <a href="http://sablecc.org/">SableCC</a> if you’re writing your plagiarism detection system in Java: it has a decent <acronym title="Application Interface">API</acronym> and does most of the work for you. You just need to take the trees it produces (for compiler use), and flatten them into an array; a trivial task that amounts to an in-order walk.</p>
+
+<p>Wow! We’ve now tokenised the document. End of story.</p>
+
+<p>Well, not quite. The problem with using a pure parser-and-grammar approach is that it doesn’t work if your input (your code snippets or essays) are malformed. If even one part of your document breaks a rule, your parser is going to complain. Most will refuse to process it further. Handling this is your responsibility, and it’s not an easy problem to solve. The simplest solution I can suggest is falling back to white-space tokenising when something fails and logging the problem, feeding a better solution into the next version of your system. It’s hardly ideal. Also, always remember <a href="http://en.wikipedia.org/wiki/Robustness_Principle">Postel’s law</a> and consider that just because someone doesn’t fully follow the rules of a language, that does not mean they should get away with plagiarism.</p>
+
+<p>Are we done now? No, but we’ve done enough for today. More tokenising soon.</p>
+
+  </div>
+  <div class="divider"><img src="/assets/images/divider.png" /></div>
+  </div>
+  
+  <div class="postcontainer">
+  <h3><a href="/Archives/2006/10/24/ThisIs23/">This Is 23</a></h1>
+  <p class="author">
+    <span class="date"> </span>
+  </p>
+  <div class="post">
+    <p>Another year down. 23. I’m at that fun stage in life where you’re sure you’re still young but end up in a whole bunch of situations where you feel old. It doesn’t help the ego, but I imagine it will only get more and more acute so I should enjoy my pseudo youth as best as I can.</p>
+
+<p>It’s been a fast year. This time last year, I was about 3 months into my job with the BigCo and still a little out of my depth. Now, I’m completely comfortable with my job and skills: they keep throwing me stuff out of my comfort zone, and I figure it out pretty quickly. Need a massively scalable web application with ridiculously low latency? I can do that. Want to compare any number of Solaris boxes from Sun for specific infrastructures? I can do that too. I couldn’t say that a year ago.</p>
+
+<p>I’ve also moved into a flat that I rather like. City centre living is definitely for me, right now. I can see myself wanting to live further into the countryside later in life but, right now, in the middle of everything is where I am enjoying myself. Two minutes from all the things I want to do.</p>
+
+<p>I’ve continued all that fun learning about the world and people, etc, but feel less inclined to talk about it. I know I’m better, and that’s all I need to say.</p>
+
+<p>Incidentally, by pure chance, I had the same song stuck in my head from <a href="/Archives/2005/10/24/AnotherYearGone">my birthday post last year</a>. So, older, better, but still the same.</p>
+
+  </div>
+  <div class="divider"><img src="/assets/images/divider.png" /></div>
+  </div>
+  
+</div>
+
+
+
+<!-- Pagination links -->
+<div class="postnavigation">
+  
+    <a href="/page/52" class="previous">&laquo; Previous</a>
+  
+  
+    <a href="/page/54" class="next">Next &raquo;</a>
+  
+</div>
+
+
+      <div class="footer">
+        <div class="disclaimer">
+  
+
+  <p>
+    © Solitude, 2003-20 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a>, using <a href="https://github.com/swanson/lagom">Lagom</a> as a base theme.
+  </p>
+</div>
+      </div>
+    </div>
+  </div>
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-11493178-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>

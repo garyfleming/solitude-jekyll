@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Solitude - Java 1.5</title>
+  <meta name="author" content="Solitude" />
+  <meta name="twitter:widgets:csp" content="on" />
+  <meta name="description" content="The blog of Solitude" />
+  <link rel="canonical" href="http://solitude.vkps.co.uk/Archives/2004/02/05/Java15/" />
+
+  <link href="//fonts.googleapis.com/css?family=Open+Sans:600,800" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="alternate" type="application/atom+xml" title="Solitude" href="http://solitude.vkps.co.uk/atom.xml" />
+
+  <link rel="stylesheet" href="/assets/css/all.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-k2/8zcNbxVIh5mnQ52A0r3a6jAgMGxFJFE2707UxGCk= sha512-ZV9KawG2Legkwp3nAlxLIVFudTauWuBpC10uEafMHYL0Sarrz5A7G79kXh5+5+woxQ5HM559XX2UZjMJ36Wplg==" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container">
+    <div class="four columns sidebar">
+      <nav>
+  <h1><a href="/">Solitude</a></h1>
+  <a href="/">
+    
+    <img src="/assets/images/tree-160.jpg" id="solitude-logo" alt="Solitude logo"/>
+    
+  </a>
+  <div id="bio">
+    <p>Technology. Code. Living relentlessly in the real world.</p>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="/about/">About</a></li>
+      <li><a href="/Archives/">Archives</a></li>
+    </ul>
+  </nav>
+  <div id="social">
+    Follow me:
+<div id="stalker">
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <a title="garyfleming on Twitter" href="https://twitter.com/garyfleming">
+    <i class="fa fa-twitter-square"></i>
+  </a>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <a title="Atom feed" id="atom" href="/feed/">
+    <i class="fa fa-rss-square"></i>
+  </a>
+  
+</div>
+
+  </div>
+  
+</nav>
+
+    </div>
+
+    <div class="eleven columns content">
+      <p class="meta">
+  February 05, 2004 | Category: 
+  <a href="/">
+    <i class="home fa fa-home"></i>
+  </a>
+</p>
+
+<h1 class="title"><a href="/Archives/2004/02/05/Java15/">Java 1.5</a></h1>
+
+<div class="post">
+  <p>Yesterday, the first beta of the long-awaited <a href="http://java.sun.com/j2se/1.5.0/">Java 1.5</a> finally went public. Sporting a large number of new features and classes, this new version will make every Java programmers life easier.</p>
+
+<p>Firstly, there are the new types and constructs.</p>
+
+<p>The new <a href="http://jcp.org/aboutJava/communityprocess/jsr/tiger/enum.html">enumerated types</a> have been in demand for a while, and work similarly to the typical <code class="highlighter-rouge">C/C++</code> idiom. In terms of Java, they are being compared to public inner classes; encapsulated but accessible.</p>
+
+<p><a href="http://jcp.org/aboutJava/communityprocess/jsr/tiger/autoboxing.html">Auto-boxing</a> takes away some of the hassle of casting primitive types to their respective wrapper classes. It should automatically create a reference, r, to the primitive, p, such that <code class="highlighter-rouge">r.value() == p</code>. Not a huge change, but it will help cut code.</p>
+
+<p>Much bigger is the <a href="http://jcp.org/aboutJava/communityprocess/jsr/tiger/enhanced-for.html">enhanced <code class="highlighter-rouge">for</code> loop</a>. As part of the introduction of <a href="http://java.sun.com/j2se/1.5.0/docs/relnotes/features.html#generics">Generics</a> – the new method to allow operations of objects of varying types safely – the new for loop will provide cleaner iteration over any Iterable class (pertinently, anything in the Collections framework). Instead of explicitly creating iterators and updating at each stage, a pseudo <code class="highlighter-rouge">foreach</code> syntax will be used. Example: <code class="highlighter-rouge">for (String s : c)</code>. This will take each String S in c (most likely a collection), and perform the loop operations on each one. Very clean, very nice.</p>
+
+<p>There are also some interesting new classes, both extending the old and starting from scratch.</p>
+
+<p>The Collections framework has been updated in several areas. <a href="http://java.sun.com/j2se/1.5.0/docs/api/java/util/Queue.html">Queue</a> provides an interface for holding Objects before processing. This has been implemented by, among several others, the <a href="http://java.sun.com/j2se/1.5.0/docs/api/java/util/PriorityQueue.html">PriorityQueue</a> and <a href="http://java.sun.com/j2se/1.5.0/docs/api/java/util/concurrent/SynchronousQueue.html">SynchronousQueue</a> classes. A more extensive <a href="http://java.sun.com/j2se/1.5.0/docs/guide/collections/changes5.html">list of the changes to Collections</a> is available.</p>
+
+<p>Other changes include:</p>
+
+<ul>
+  <li><a href="http://java.sun.com/j2se/1.5.0/docs/api/java/util/Scanner.html">Scanner</a> class – a method for parsing primitives and Strings using regexes.</li>
+  <li><a href="http://java.sun.com/j2se/1.5.0/docs/guide/rmi/relnotes.html">Removal of RMIC</a> – No more need to compile RMI stub classes explicitly.</li>
+  <li><a href="http://java.sun.com/j2se/1.5.0/docs/guide/vm/gc-ergonomics.html">Improvements to garbage collection</a> – It was a little lacking before.</li>
+  <li><a href="http://java.sun.com/j2se/1.5.0/docs/api/java/util/concurrent/package-summary.html">The Concurrency Framework</a> – Aiming to do for concurrent applications what the Collections framework did for data structures; providing a simple, consistent way of doing concurrency.</li>
+  <li><a href="http://java.sun.com/j2se/1.5.0/docs/guide/xml/jaxp/index.html">Improved <acronym title="eXtensible Markup Language">XML</acronym> handling</a> – Supporting both SAX and <acronym title="Document Object Model">DOM</acronym> parsing.</li>
+  <li>Making <code class="highlighter-rouge">JFrame.add()</code> equivalent to <code class="highlighter-rouge">JFrame.getContentPane().add()</code> – a small, but simple enhancement.</li>
+  <li><a href="http://java.sun.com/j2se/1.5.0/docs/guide/net/enhancements-1.5.0.html">Networking Enhancements</a> – Improved support for various standards (including IPv6) and a minimal set of mandatory protocol handlers.</li>
+</ul>
+
+<p>All in all, Java programming just got a lot simpler.</p>
+
+</div>
+
+<div class="postnavigation">
+  
+    <a class="prev" href="/Archives/2004/02/03/Elephant/">&laquo; Elephant</a>
+  
+  
+    <a class="next" href="/Archives/2004/02/08/PipesTheBibleAndNexus/">Pipes, The Bible And Nexus &raquo;</a>
+  
+</div>
+
+
+      <div class="footer">
+        <div class="disclaimer">
+  
+
+  <p>
+    © Solitude, 2003-20 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a>, using <a href="https://github.com/swanson/lagom">Lagom</a> as a base theme.
+  </p>
+</div>
+      </div>
+    </div>
+  </div>
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-11493178-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>

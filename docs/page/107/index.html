@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Solitude - Happenings</title>
+  <meta name="author" content="Solitude" />
+  <meta name="twitter:widgets:csp" content="on" />
+  <meta name="description" content="The blog of Solitude" />
+  <link rel="canonical" href="http://solitude.vkps.co.uk/page/107/" />
+
+  <link href="//fonts.googleapis.com/css?family=Open+Sans:600,800" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="alternate" type="application/atom+xml" title="Solitude" href="http://solitude.vkps.co.uk/atom.xml" />
+
+  <link rel="stylesheet" href="/assets/css/all.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-k2/8zcNbxVIh5mnQ52A0r3a6jAgMGxFJFE2707UxGCk= sha512-ZV9KawG2Legkwp3nAlxLIVFudTauWuBpC10uEafMHYL0Sarrz5A7G79kXh5+5+woxQ5HM559XX2UZjMJ36Wplg==" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container">
+    <div class="four columns sidebar">
+      <nav>
+  <h1><a href="/">Solitude</a></h1>
+  <a href="/">
+    
+    <img src="/assets/images/tree-160.jpg" id="solitude-logo" alt="Solitude logo"/>
+    
+  </a>
+  <div id="bio">
+    <p>Technology. Code. Living relentlessly in the real world.</p>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="/about/">About</a></li>
+      <li><a href="/Archives/">Archives</a></li>
+    </ul>
+  </nav>
+  <div id="social">
+    Follow me:
+<div id="stalker">
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <a title="garyfleming on Twitter" href="https://twitter.com/garyfleming">
+    <i class="fa fa-twitter-square"></i>
+  </a>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <a title="Atom feed" id="atom" href="/feed/">
+    <i class="fa fa-rss-square"></i>
+  </a>
+  
+</div>
+
+  </div>
+  
+</nav>
+
+    </div>
+
+    <div class="eleven columns content">
+      <div id="home">
+  <h2><i class="fa fa-bookmark"></i> Happenings</h2>
+
+  
+  <div class="postcontainer">
+  <h3><a href="/Archives/2004/03/04/GzipCSS/">Gzip CSS</a></h1>
+  <p class="author">
+    <span class="date"> </span>
+  </p>
+  <div class="post">
+    <p>Using a very simple technique, it is possible to <a href="http://www.fiftyfoureleven.com/sandbox/compress-css-with-php/">compress your <acronym title="Cascading Style Sheets">CSS</acronym></a> files with <acronym title="PHP Hypertext Processor">PHP</acronym>.</p>
+
+<p>Following the instructions on that site, and you can cut your CSS files by a large percentage. Good for bandwidth, good for visitors.</p>
+
+<p>However, I would suggest one modification to the code given: do some user-agent sniffing for Netscape 4. Now, normally I’m not a fan of <acronym title="User Agent">UA</acronym> specific techniques, but if you don’t make an exception in this case, the GZip process will crash Netscape 4.</p>
+
+<p>The problem is that it is difficult to target that particular browser. After some careful observation of various similar UA string, I think it is sufficient to not run the compression routine if you find the string <code class="highlighter-rouge">Mozilla/4</code> but not the string <code class="highlighter-rouge">compatible</code>.</p>
+
+<p>In addition, I’ve set up an htacess rule to parse .css files, rather than rename them to .php.</p>
+
+  </div>
+  <div class="divider"><img src="/assets/images/divider.png" /></div>
+  </div>
+  
+  <div class="postcontainer">
+  <h3><a href="/Archives/2004/02/29/RocksFishAndNinjaGold/">Rocks, Fish And Ninja Gold</a></h1>
+  <p class="author">
+    <span class="date"> </span>
+  </p>
+  <div class="post">
+    <p>This weeks random links:</p>
+
+<ul>
+  <li><strong><a href="http://www.davidandgoliathtees.com/new/games/throwrocks.html">Throw Rocks At Boys</a></strong> – A charming little flash game where you throw rocks… at boys.</li>
+  <li><strong><a href="http://www.blunck.info/iehttpheaders.html"><acronym title="Internet Explorer">IE</acronym> HTTP Headers</a></strong> – Like Live Headers, but for a crap browser.</li>
+  <li><strong><a href="http://www.perl.com/pub/a/2004/02/19/plucene.html">Plucene</a></strong> – A perl port of Lucene, the java indexing project.</li>
+  <li><strong><a href="http://www.foad.org/~abigail/Perl/url2.html">Regex For <acronym title="Uniform Resource Locator">URL</acronym>s</a></strong> – A mammoth regex that will parse almost any kind of url. Complex stuff.</li>
+  <li><strong><a href="http://www.generyx.de/anime.gif">Anime Cartoon</a></strong> – An odd little gif animation.</li>
+  <li><strong><a href="http://www.draig.de/LinkBar/index.en.html">Link Bar</a></strong> – Another workaround for Internet Explorer’s lackings, a link bar. Comes as standard on other browsers.</li>
+  <li><strong><a href="http://www.rcsheets.net/images/sharp_edges">Sharp Edges</a></strong> – Funny image.</li>
+  <li><strong><a href="http://www.langreiter.com/exec/yahoo-vs-google.html">Yahoo Vs Google</a></strong> – Visualisation of search engine overlap and differences.</li>
+  <li><strong><a href="http://www.oreillynet.com/pub/wlg/4478">Bright Fish</a></strong> – Who knew that MP3s are allowed to be tagged with “a bright coloured fish”? It’s in the spec.</li>
+  <li><strong><a href="http://projects.impenetrable.org/linkfader/">LinkFader</a></strong> – A link fader script that seems to be markup friendly. Nice.</li>
+  <li><strong><a href="http://www.willamette.edu/~jtdavis/teacher/teacher.html">Things My Maths Teacher Did</a></strong> – Some absolutely bizarre behaviour from a teacher.</li>
+  <li><strong><a href="http://www.i-mockery.com/minimocks/ninjagolf/">Ninja Golf</a></strong> – A great idea, whether it is a spoof or not.</li>
+  <li><strong><a href="http://www.oddmusic.com/gallery/om23350.html">Pikasso</a></strong> – Imagine the rocking you could do on this bad boy.</li>
+  <li><strong><a href="http://www.zug.com/pranks/viagra/index.html">The Viagra Prank</a></strong> – Taking a viagra and then going to church. Bad idea, but funny.</li>
+</ul>
+
+<p>That’s it for today.</p>
+
+  </div>
+  <div class="divider"><img src="/assets/images/divider.png" /></div>
+  </div>
+  
+  <div class="postcontainer">
+  <h3><a href="/Archives/2004/02/28/MagpiesEverywhere/">Magpies Everywhere</a></h1>
+  <p class="author">
+    <span class="date"> </span>
+  </p>
+  <div class="post">
+    <p>Although I’m loathe to include any personal entries on this site, I feel compelled to write about something odd I saw today. I was (and to an extent still am) having a terrible day, and on the way home I spotted something odd: 24 magpies.</p>
+
+<p>One for sorrow, two for joy… and all the rest. Now, as I recall, the things you get for seeing more of them get better and better as you go. Six is for gold, seven for a secret never told. Twenty-four must be one hell of a great thing; and I know what I want.</p>
+
+<ol>
+  <li>
+    <ol>
+      <li>More soon.</li>
+    </ol>
+  </li>
+</ol>
+
+  </div>
+  <div class="divider"><img src="/assets/images/divider.png" /></div>
+  </div>
+  
+  <div class="postcontainer">
+  <h3><a href="/Archives/2004/02/26/TheDreams/">The Dreams</a></h1>
+  <p class="author">
+    <span class="date"> </span>
+  </p>
+  <div class="post">
+    <p>A (comparatively) short review of <strong>The Dreamers</strong>: unengaging, self-involved, border-line pretentious, near-arthouse garbage.</p>
+
+<p>This ground has been treaded before, down less smug avenues; in ways that aren’t overtly dull. Avoid.</p>
+
+  </div>
+  <div class="divider"><img src="/assets/images/divider.png" /></div>
+  </div>
+  
+  <div class="postcontainer">
+  <h3><a href="/Archives/2004/02/25/ThreePay/">ThreePay</a></h1>
+  <p class="author">
+    <span class="date"> </span>
+  </p>
+  <div class="post">
+    <p>Finally there is a prepay 3G mobile plan in the UK. <a href="http://www.three.co.uk">Three</a> have unveiled their top-up based system, no longer requiring huge contracts for the new features.</p>
+
+<p>As expected, there is a catch. Or two.</p>
+
+<p>It’s expensive compared to other mobile companies. If you have no motivation to constantly use the video features, it might not work out well. It’s 15p per text message to other networks, and with added complications (the first £1.50 of your credit is priced differently), the pricing structure is bloated.</p>
+
+<p>The other main set-back is that all credit has to be used within 30 days of activating it or it gets removed. That’s right, you’re effectively having your money swiped out from under you if you’re a little lax one month. This is the same trick the first prepay mobile plans tried to use to leverage wallets. It failed. You would think Three had learned the lessons of the past.</p>
+
+<p>Seems like a good idea on the surface, but hold off another few months and maybe they’ll get the pricing under control and remove the restraints.</p>
+
+  </div>
+  <div class="divider"><img src="/assets/images/divider.png" /></div>
+  </div>
+  
+</div>
+
+
+
+<!-- Pagination links -->
+<div class="postnavigation">
+  
+    <a href="/page/106" class="previous">&laquo; Previous</a>
+  
+  
+    <a href="/page/108" class="next">Next &raquo;</a>
+  
+</div>
+
+
+      <div class="footer">
+        <div class="disclaimer">
+  
+
+  <p>
+    © Solitude, 2003-20 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a>, using <a href="https://github.com/swanson/lagom">Lagom</a> as a base theme.
+  </p>
+</div>
+      </div>
+    </div>
+  </div>
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-11493178-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>
