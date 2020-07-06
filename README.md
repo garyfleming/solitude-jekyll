@@ -48,4 +48,4 @@ The Archive root page is apparently hand-cranked (I've long since forgotten this
 ### GH Migration
 
 * Category links need fixed
-* Atom feed link probably needs fixed
+* Atom feed link probably needs fixed - /feed/ was being served up by htaccess rewrites to /feed.xml. 
