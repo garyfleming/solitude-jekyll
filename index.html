@@ -9,14 +9,14 @@ include_pinboard: false
 
   {% for post in paginator.posts %}
   <div class="postcontainer">
-  <h3><a href="{{ post.url }}">{{ post.title }}</a></h1>
+  <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
   <p class="author">
     <span class="date">{{ page.date | date: "%B %d, %Y" }} </span>
   </p>
   <div class="post">
     {{ post.content }}
   </div>
-  <div class="divider"><img src="/assets/images/divider.png" /></div>
+  <div class="divider"><img src="{{ site.baseurl }}/assets/images/divider.png" /></div>
   </div>
   {% endfor %}
 </div>
