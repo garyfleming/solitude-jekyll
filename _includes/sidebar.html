@@ -4,7 +4,7 @@
     {% if site.data.theme.social.gravatar %}
     <img src="http://www.gravatar.com/avatar/{{ site.data.theme.social.gravatar }}?s=200" id="gravatar" alt="My photo"/>
     {% else %}
-    <img src="/assets/images/tree-160.jpg" id="solitude-logo" alt="Solitude logo"/>
+    <img src="{{ site.baseurl }}/assets/images/tree-160.jpg" id="solitude-logo" alt="Solitude logo"/>
     {% endif %}
   </a>
   <div id="bio">
@@ -12,8 +12,8 @@
   </div>
   <nav>
     <ul>
-      <li><a href="/about/">About</a></li>
-      <li><a href="/Archives/">Archives</a></li>
+      <li><a href="{{ site.baseurl }}/about/">About</a></li>
+      <li><a href="{{ site.baseurl }}/Archives/">Archives</a></li>
     </ul>
   </nav>
   <div id="social">

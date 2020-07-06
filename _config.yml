@@ -11,7 +11,7 @@ baseurl: /solitude-jekyll
 
 permalinks: /:year/:month/:title
 
-exclude: [LICENSE, CNAME, README.md, .gitignore, Gemfile, Gemfile.lock, docs]
+exclude: [LICENSE, CNAME, README.md, .gitignore, Gemfile, Gemfile.lock, docs, gh-generate.sh]
 
 paginate: 5
 paginate_path: "/page/:num"
