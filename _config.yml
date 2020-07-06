@@ -7,9 +7,11 @@ description: >
 timezone: Europe/London
 encoding: utf-8
 
+baseurl: /solitude-jekyll
+
 permalinks: /:year/:month/:title
 
-exclude: [LICENSE, CNAME, README.md, .gitignore, Gemfile, Gemfile.lock]
+exclude: [LICENSE, CNAME, README.md, .gitignore, Gemfile, Gemfile.lock, docs]
 
 paginate: 5
 paginate_path: "/page/:num"
