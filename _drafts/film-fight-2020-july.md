@@ -14,6 +14,14 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1279743005763788803 %}
 
+### Wasp Network
+
+{% twitter https://twitter.com/garyfleming/status/1281947942614642688 %}
+
+### Hamilton
+
+{% twitter https://twitter.com/garyfleming/status/1281948683605508098 %}
+
 ### film name
 
 {% twitter url %}
