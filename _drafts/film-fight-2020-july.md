@@ -22,6 +22,14 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1281948683605508098 %}
 
+### The Old Guard
+
+{% twitter https://twitter.com/garyfleming/status/1282249293596889089 %}
+
+### Palm Springs
+
+{% twitter https://twitter.com/garyfleming/status/1282249906254733312 %}
+
 ### film name
 
 {% twitter url %}
