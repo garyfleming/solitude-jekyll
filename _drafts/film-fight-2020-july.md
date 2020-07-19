@@ -30,6 +30,14 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1282249906254733312 %}
 
+### The Assistant
+
+{% twitter https://twitter.com/garyfleming/status/1284870901884911616 %}
+
+### Nobody Knows I'm Here
+
+{% twitter https://twitter.com/garyfleming/status/1284872053984841728 %}
+
 ### film name
 
 {% twitter url %}
