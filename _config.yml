@@ -7,7 +7,7 @@ description: >
 timezone: Europe/London
 encoding: utf-8
 
-baseurl: /solitude-jekyll
+baseurl: ""
 
 permalinks: /:year/:month/:title
 
