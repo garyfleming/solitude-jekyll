@@ -11,7 +11,7 @@ baseurl: ""
 
 permalinks: /:year/:month/:title
 
-exclude: [LICENSE, CNAME, README.md, .gitignore, Gemfile, _local.yml, local-serve.sh, Gemfile.lock, docs, gh-generate.sh]
+exclude: [LICENSE, README.md, .gitignore, Gemfile, _local.yml, local-serve.sh, Gemfile.lock, docs, gh-generate.sh]
 
 paginate: 5
 paginate_path: "/page/:num"
