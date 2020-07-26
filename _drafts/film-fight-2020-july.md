@@ -38,6 +38,14 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1284872053984841728 %}
 
+### VFW
+
+{% twitter https://twitter.com/garyfleming/status/1287338047420477440 %}
+
+### Only
+
+{% twitter https://twitter.com/garyfleming/status/1287338504767377408 %}
+
 ### film name
 
 {% twitter url %}
