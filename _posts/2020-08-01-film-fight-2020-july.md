@@ -1,6 +1,6 @@
 ---
 title: "Film Fight 2020: July"
-date: 3899-01-07T20:00:00+00:00
+date: 2020-08-01T11:35:00+00:00
 author: Gary Fleming
 layout: post
 permalink: /:year/:month/:title/
@@ -8,7 +8,7 @@ categories:
   - Films
 ---
 
-Intro
+A fairly respectable month, with 10 films in July.
 
 ### Family Romance, LLC
 
@@ -46,11 +46,11 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1287338504767377408 %}
 
-### film name
+### The Night Clerk
 
-{% twitter url %}
+{% twitter https://twitter.com/garyfleming/status/1289556785875963906 %}
 
 
-### The month Winner
+### The July Winner
 
-...
+Tough to pick between the three films that stood out, but I think it has to be **The Assistant**. Fantastic but understated performances that show us how we become complicit in things with which we disagree.

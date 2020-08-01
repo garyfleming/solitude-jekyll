@@ -83,6 +83,30 @@
 
   
   <div class="postcontainer">
+  <h3><a href="/Archives/2004/09/08/Redesign3HazyMorning/">Redesign 3: Hazy Morning</a></h1>
+  <p class="author">
+    <span class="date"> </span>
+  </p>
+  <div class="post">
+    <p>As you may have noticed (unless you use a feed reader or are reading this some time in the future), I’ve finally gotten round to doing a redesign of Solitude. This, the 4th full design since I started the site, is called Hazy Morning.</p>
+
+<p>It seems like I’m in fine company when it comes to redesigns, given recent or in progress changes by <a href="http://chris-miller.org/blog/">Chris</a>, <a href="http://mattgemmell.com">Matt</a>, <a href="http://bugsblog.com">Fiona</a>, <a href="http://www.submitresponse.co.uk/mt/">Jack Mottram</a>, <a href="http://www.allinthehead.com/">Drew Mclellan</a>, <a href="http://www.mozilla.org/">Mozilla</a> et al.</p>
+
+<p>Anyway, onto dissecting the trickier parts of the design.</p>
+
+<p>The header uses standard <a href="http://www.kryogenix.org/code/browser/lir/">image replacement techniques</a> and some <acronym title="Cascading Style Sheets">CSS</acronym> hacking to produce a full-length clickable region. It was more trick than it should be to get this working cross-platform. Much respect has to go towards the <a href="http://wellstyled.com/css-underscore-hack.html">CSS Underscore Hack</a>, the most elegant bug fix for <acronym title="Internet Explorer">IE</acronym> that I’ve yet to see. Very nice.</p>
+
+<p>Equally getting the individual post headings to be fully targetable was awkward. The key to getting it to work is to make the surrounding block be set to <code class="highlighter-rouge">display: inline;</code> and the heading itself to <code class="highlighter-rouge">display: block;</code>, and then set the width of both to 99.9%.</p>
+
+<p>Other than that, it was really a matter of tweaking as much as possible to get it to look alright in IE. It still doesn’t look perfect in that browser but I’ve spent enough time catering to a broken application.</p>
+
+<p>If you see any problems in your browser, leave a comment with details of the bug and your platform, browser and resolution. I’ll be tweaking over the next few days anyway, but it’s good to get feedback.</p>
+
+  </div>
+  <div class="divider"><img src="/assets/images/divider.png" /></div>
+  </div>
+  
+  <div class="postcontainer">
   <h3><a href="/Archives/2004/09/07/CSSRulesOfThumb/">CSS Rules Of Thumb</a></h1>
   <p class="author">
     <span class="date"> </span>
@@ -162,20 +186,6 @@
     <p>As their respective code bases have been stable for a few months now (at least), I’m taking feature requests for both <a href="/Code/ActoRss/">Acto<acronym title="Rich Site Summary">RSS</acronym></a> and <a href="/Code/UgcRss/">UgcRSS</a>. Already requested is the ability to see more than just the current days cinema choices and an update to the cinema list itself.</p>
 
 <p>This is likely to be the only chance to request any features, as I would like to close these projects (except for any necessary screen-scraping fixes).</p>
-
-  </div>
-  <div class="divider"><img src="/assets/images/divider.png" /></div>
-  </div>
-  
-  <div class="postcontainer">
-  <h3><a href="/Archives/2004/08/31/GmailInvites/">Gmail Invites</a></h1>
-  <p class="author">
-    <span class="date"> </span>
-  </p>
-  <div class="post">
-    <p>Although I seriously doubt that anyone who wants one doesn’t have one already, I have a few Gmail invites available. Actually, I have 1 left now (after giving several to friends). So if you want it, post in the comments. Possibly leave a joke.</p>
-
-<p><ins>Update: Ok, I have another 5 invites to give away. You know what to do.</ins></p>
 
   </div>
   <div class="divider"><img src="/assets/images/divider.png" /></div>
