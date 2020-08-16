@@ -18,9 +18,14 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1292448649847373824 %}
 
+### Project Power
+
+{% twitter https://twitter.com/garyfleming/status/1294976925170114560 %}
+
 ### film name
 
 {% twitter url %}
+
 
 
 ### The month Winner
