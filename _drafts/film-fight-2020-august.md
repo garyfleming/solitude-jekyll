@@ -22,6 +22,14 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1294976925170114560 %}
 
+### Days of the Bagnold Summer
+
+{% twitter https://twitter.com/garyfleming/status/1297152949492342784 %}
+
+### An American Pickle
+
+{% twitter https://twitter.com/garyfleming/status/1297153492440829952 %}
+
 ### film name
 
 {% twitter url %}
