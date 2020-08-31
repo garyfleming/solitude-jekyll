@@ -24,6 +24,3 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }} # The GitHub installation token. Note: You can also use ${{ github.token }}
           gh_pages_branch: 'main' # The GitHub Pages branch to deploy the site to
-          gh_pages_dist_folder: 'docs' # The folder to build the site to
-          show_bundle_log: 'false' # Whether to show detailed logs from bundle install command. Useful for debugging broken builds.
-          bundler_version: '1.16.1' # A specific version of Bundler to be used.:  
