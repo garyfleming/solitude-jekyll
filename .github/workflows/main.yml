@@ -7,6 +7,8 @@ name: Jekyll Build and Deploy to GH
 on:
   push:
     branches: [ main ]
+    paths-ignore:
+      - '_drafts/**'
   pull_request:
     branches: [ main ]
 

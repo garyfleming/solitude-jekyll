@@ -30,6 +30,14 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1297153492440829952 %}
 
+### Never Rarely Sometimes Always
+
+{% twitter https://twitter.com/garyfleming/status/1300419642117292033 %}
+
+### Tenet
+
+{% twitter https://twitter.com/garyfleming/status/1300420185501962241 %}
+
 ### film name
 
 {% twitter url %}
