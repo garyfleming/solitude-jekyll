@@ -7,11 +7,11 @@
   <meta name="author" content="Solitude" />
   <meta name="twitter:widgets:csp" content="on" />
   <meta name="description" content="The blog of Solitude" />
-  <link rel="canonical" href="http://solitude.vkps.co.uk/Archives/2009/01/13/data-mappers/" />
+  <link rel="canonical" href="https://solitude.vkps.co.uk/Archives/2009/01/13/data-mappers/" />
 
   <link href="//fonts.googleapis.com/css?family=Open+Sans:600,800" rel="stylesheet" type="text/css">
   <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="alternate" type="application/atom+xml" title="Solitude" href="http://solitude.vkps.co.uk/atom.xml" />
+  <link rel="alternate" type="application/atom+xml" title="Solitude" href="https://solitude.vkps.co.uk/atom.xml" />
 
   <link rel="stylesheet" href="/assets/css/all.css">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-k2/8zcNbxVIh5mnQ52A0r3a6jAgMGxFJFE2707UxGCk= sha512-ZV9KawG2Legkwp3nAlxLIVFudTauWuBpC10uEafMHYL0Sarrz5A7G79kXh5+5+woxQ5HM559XX2UZjMJ36Wplg==" crossorigin="anonymous">
@@ -79,7 +79,7 @@
 
     <div class="eleven columns content">
       <p class="meta">
-  January 13, 2009 | Category: <a class='category' href='/categories/uncategorized/'>Uncategorized</a>
+  January 13, 2009 | Category: Uncategorized
   <a href="/">
     <i class="home fa fa-home"></i>
   </a>
@@ -90,39 +90,37 @@
 <div class="post">
   <p>In the Java world, there have been many ways to persist and retrieve domain objects, and most involve some form of ORM mapping. Modern methods include <a href="http://www.hibernate.org/">Hibernate</a>, <a href="http://ibatis.apache.org/">iBatis</a>, <a href="http://static.springframework.org/spring/docs/2.0.x/reference/jdbc.html">Spring JDBC Templates</a> and other <a href="http://java.sun.com/javaee/overview/faq/persistence.jsp">JPA providers</a>; these are all fine methods and all should be used appropriately. Most of the time you should use one of the above approaches and not what I’m going to show you below.</p>
 
-<p>One thing I’d like to say about persistence in Java is that you should almost never be using raw JDBC. There’s too much boiler-plate and repetition. You need to create a <code class="highlighter-rouge">DataSource</code>, and then get a <code class="highlighter-rouge">Connection</code>, then use that <code class="highlighter-rouge">Connection</code> to get a <code class="highlighter-rouge">PreparedStatement</code>. That can start to look pretty messy.</p>
+<p>One thing I’d like to say about persistence in Java is that you should almost never be using raw JDBC. There’s too much boiler-plate and repetition. You need to create a <code class="language-plaintext highlighter-rouge">DataSource</code>, and then get a <code class="language-plaintext highlighter-rouge">Connection</code>, then use that <code class="language-plaintext highlighter-rouge">Connection</code> to get a <code class="language-plaintext highlighter-rouge">PreparedStatement</code>. That can start to look pretty messy.</p>
 
-<p>Worst of all is that you get a <code class="highlighter-rouge">ResultSet</code> back which, if used without any form of conversion or mapping to your own domain, exposes the rest of your application to the persistence layer. This is bad for several reasons, not least of all it makes your code more tightly coupled and brittle in the face of change. Let’s be clear here: passing around a <code class="highlighter-rouge">ResultSet</code>, <code class="highlighter-rouge">CachedRowSet</code> or any other variant is <strong>BAD</strong>.</p>
+<p>Worst of all is that you get a <code class="language-plaintext highlighter-rouge">ResultSet</code> back which, if used without any form of conversion or mapping to your own domain, exposes the rest of your application to the persistence layer. This is bad for several reasons, not least of all it makes your code more tightly coupled and brittle in the face of change. Let’s be clear here: passing around a <code class="language-plaintext highlighter-rouge">ResultSet</code>, <code class="language-plaintext highlighter-rouge">CachedRowSet</code> or any other variant is <strong>BAD</strong>.</p>
 
 <p>It’s easy to avoid this problem by convert between a ResultSet row and a domain-specific object. Spring popularised an idea called the RowMapper (which I’ll outline below). The idea is that you have an interface that, once implemented, will convert between a resultSet and your domain object.</p>
 
-<p>Why might you need this? If you’re dealing with legacy applications, it’s frequently too costly to go back and retrofit one of the more modern approaches to ORM; the database layer doesn’t fit well with Hibernate, or the rest of the codebase won’t sit nicely with JPA, or you can’t take an (additional) external library dependency for any number of reasons. Sometimes it’s easier to quickly roll your own. Here’s an example I’ll call a <code class="highlighter-rouge">DataMapper</code> (NOTE: I’ve omitted Exception handling for the sake of clarity, you will need to add this back in!):</p>
+<p>Why might you need this? If you’re dealing with legacy applications, it’s frequently too costly to go back and retrofit one of the more modern approaches to ORM; the database layer doesn’t fit well with Hibernate, or the rest of the codebase won’t sit nicely with JPA, or you can’t take an (additional) external library dependency for any number of reasons. Sometimes it’s easier to quickly roll your own. Here’s an example I’ll call a <code class="language-plaintext highlighter-rouge">DataMapper</code> (NOTE: I’ve omitted Exception handling for the sake of clarity, you will need to add this back in!):</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>public interface DataMapper&lt;T&gt; {
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>public interface DataMapper&lt;T&gt; {
 
 	public T mapRow(ResultSet resultSet);
 
 }
-</code></pre>
-</div>
+</code></pre></div></div>
 
-<p>That’s nice and simple. When you implement this interface, your implementation doesn’t bother with any sort of row iteration, all it does is take the current row of the <code class="highlighter-rouge">resultSet</code>, call the standard <code class="highlighter-rouge">getString(...)</code> etc methods and builds up a single one of your beans, here represented by the generic placeholder <code class="highlighter-rouge">T</code>. Elsewhere you have this partner method (I like to keep this as a statically imported utility):</p>
+<p>That’s nice and simple. When you implement this interface, your implementation doesn’t bother with any sort of row iteration, all it does is take the current row of the <code class="language-plaintext highlighter-rouge">resultSet</code>, call the standard <code class="language-plaintext highlighter-rouge">getString(...)</code> etc methods and builds up a single one of your beans, here represented by the generic placeholder <code class="language-plaintext highlighter-rouge">T</code>. Elsewhere you have this partner method (I like to keep this as a statically imported utility):</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>public static &lt;T&gt; Collection&lt;T&gt; map(ResultSet resultSet, DataMapper&lt;T&gt; mapper) {
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>public static &lt;T&gt; Collection&lt;T&gt; map(ResultSet resultSet, DataMapper&lt;T&gt; mapper) {
     Collection&lt;T&gt; mappedObjects = new LinkedList&lt;T&gt;();
     while(resultSet.next() {
         mappedObjects.add(mapper.mapRow(resultSet));
     }
     return mappedObjects;
 }
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>This method takes care of the iteration. You pass it your resultSet, and a DataMapper implementation and it’ll give you back a collection of your domain objects. Still quite simple and neat.</p>
 
 <p>How about an example? Let’s say you have a ResultSet that could be mapped to a simple Person bean:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>public class Person {
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>public class Person {
 
     private String firstName;
     private String lastName;
@@ -132,12 +130,11 @@
     //Imagine they were below. Go on, it'll make life easier.
 
 }
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>To do this using the DataMapper code I’ve outlined above, you’d have something like this:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>public class PersonMapper implements DataMapper&lt;Person&gt; {
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>public class PersonMapper implements DataMapper&lt;Person&gt; {
 
     @Override
     public Person mapRow(ResultSet resultSet) {
@@ -149,8 +146,7 @@
     }
 
 }
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>Pass that to the map method along with a valid ResultSet and you’ll get out a Collection of Person beans to work with. We’ve gone from ResultSet to domain-specific in very little code.</p>
 

@@ -7,11 +7,11 @@
   <meta name="author" content="Solitude" />
   <meta name="twitter:widgets:csp" content="on" />
   <meta name="description" content="The blog of Solitude" />
-  <link rel="canonical" href="http://solitude.vkps.co.uk/Archives/2005/12/02/CodeAnnoyance/" />
+  <link rel="canonical" href="https://solitude.vkps.co.uk/Archives/2005/12/02/CodeAnnoyance/" />
 
   <link href="//fonts.googleapis.com/css?family=Open+Sans:600,800" rel="stylesheet" type="text/css">
   <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="alternate" type="application/atom+xml" title="Solitude" href="http://solitude.vkps.co.uk/atom.xml" />
+  <link rel="alternate" type="application/atom+xml" title="Solitude" href="https://solitude.vkps.co.uk/atom.xml" />
 
   <link rel="stylesheet" href="/assets/css/all.css">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-k2/8zcNbxVIh5mnQ52A0r3a6jAgMGxFJFE2707UxGCk= sha512-ZV9KawG2Legkwp3nAlxLIVFudTauWuBpC10uEafMHYL0Sarrz5A7G79kXh5+5+woxQ5HM559XX2UZjMJ36Wplg==" crossorigin="anonymous">
@@ -90,9 +90,9 @@
 <div class="post">
   <p>To children and novice programmers:</p>
 
-<p>When writing various kinds of applications or <acronym title="Application Interface">API</acronym>s, it is often the case that you will have functions of the form <code class="highlighter-rouge">is&lt;em&gt;Object&lt;/em&gt;Valid()</code> (or a similar kind of check that begins with “is”), where Object is some variable or object. This is fine: checking data and providing methods to do so is a Good Thing, in that it is considerate and generally fulfills a use case.</p>
+<p>When writing various kinds of applications or <acronym title="Application Interface">API</acronym>s, it is often the case that you will have functions of the form <code class="language-plaintext highlighter-rouge">is&lt;em&gt;Object&lt;/em&gt;Valid()</code> (or a similar kind of check that begins with “is”), where Object is some variable or object. This is fine: checking data and providing methods to do so is a Good Thing, in that it is considerate and generally fulfills a use case.</p>
 
-<p>Something you should never do is write a function like <code class="highlighter-rouge">isObject&lt;em&gt;In&lt;/em&gt;valid()</code>. Putting negation into this kind of check is a lot like a double-negative in English, it makes life more difficult for everyone else because they have to spend more time straightening out the negations. This mistake is compounded by the fact it is almost always used in conjunction with the language negation to give: <code class="highlighter-rouge">!isObjectInvalid()</code>. Argh!</p>
+<p>Something you should never do is write a function like <code class="language-plaintext highlighter-rouge">isObject&lt;em&gt;In&lt;/em&gt;valid()</code>. Putting negation into this kind of check is a lot like a double-negative in English, it makes life more difficult for everyone else because they have to spend more time straightening out the negations. This mistake is compounded by the fact it is almost always used in conjunction with the language negation to give: <code class="language-plaintext highlighter-rouge">!isObjectInvalid()</code>. Argh!</p>
 
 <p>Next person to do this gets hurt.</p>
 

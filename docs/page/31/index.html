@@ -7,11 +7,11 @@
   <meta name="author" content="Solitude" />
   <meta name="twitter:widgets:csp" content="on" />
   <meta name="description" content="The blog of Solitude" />
-  <link rel="canonical" href="http://solitude.vkps.co.uk/page/31/" />
+  <link rel="canonical" href="https://solitude.vkps.co.uk/page/31/" />
 
   <link href="//fonts.googleapis.com/css?family=Open+Sans:600,800" rel="stylesheet" type="text/css">
   <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="alternate" type="application/atom+xml" title="Solitude" href="http://solitude.vkps.co.uk/atom.xml" />
+  <link rel="alternate" type="application/atom+xml" title="Solitude" href="https://solitude.vkps.co.uk/atom.xml" />
 
   <link rel="stylesheet" href="/assets/css/all.css">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-k2/8zcNbxVIh5mnQ52A0r3a6jAgMGxFJFE2707UxGCk= sha512-ZV9KawG2Legkwp3nAlxLIVFudTauWuBpC10uEafMHYL0Sarrz5A7G79kXh5+5+woxQ5HM559XX2UZjMJ36Wplg==" crossorigin="anonymous">
@@ -118,7 +118,7 @@
 }
 </pre>
 
-<p>The problem here is that everything after <code class="highlighter-rouge">public int age</code> is predictable and verbose; you know that this is a Java bean class and that the fields are likely going to have getters and setters just like those provided. If we know exactly what to expect, shouldn’t the compiler take care of that for us rather than having us specify more code? Less code is often cleaner code.</p>
+<p>The problem here is that everything after <code class="language-plaintext highlighter-rouge">public int age</code> is predictable and verbose; you know that this is a Java bean class and that the fields are likely going to have getters and setters just like those provided. If we know exactly what to expect, shouldn’t the compiler take care of that for us rather than having us specify more code? Less code is often cleaner code.</p>
 
 <p>For several years now, people have been asking for the idea of <a href="http://weblogs.java.net/blog/rbair/archive/2007/01/properties_in_j.html">properties in Java</a>. That is, being able to define fields and automatically having standard getters and setters defined, without having to clutter the class file with boilerplate. The most common (and reasonable) response for avoiding this is that it would be difficult to implement without affecting backwards compatibility.</p>
 
@@ -132,7 +132,7 @@ public class Person {
 }
 </pre>
 
-<p>That’s right: the 18 or so lines of getter/setter boilerplate are replaced by the tiny little <a href="http://projectlombok.org/features/Data.html">@Data</a> annotation, and the code is much cleaner. As a bonus, @Data also generates a <code class="highlighter-rouge">toString()</code>, an <code class="highlighter-rouge">equals()</code> and a <code class="highlighter-rouge">hashCode()</code>. You can use the other Lombok annotations to tweak the behaviour, but this is what most people are going to want.</p>
+<p>That’s right: the 18 or so lines of getter/setter boilerplate are replaced by the tiny little <a href="http://projectlombok.org/features/Data.html">@Data</a> annotation, and the code is much cleaner. As a bonus, @Data also generates a <code class="language-plaintext highlighter-rouge">toString()</code>, an <code class="language-plaintext highlighter-rouge">equals()</code> and a <code class="language-plaintext highlighter-rouge">hashCode()</code>. You can use the other Lombok annotations to tweak the behaviour, but this is what most people are going to want.</p>
 
 <p>Also of note is the <a href="http://projectlombok.org/features/Cleanup.html">@Cleanup annotation</a>, which provides automatic resource management (ARM) for using input/output streams. While this will be less essential if ARM arrives in Java 7, it’s a handy little helper for the time being.</p>
 

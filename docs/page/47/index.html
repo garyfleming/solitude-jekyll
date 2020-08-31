@@ -7,11 +7,11 @@
   <meta name="author" content="Solitude" />
   <meta name="twitter:widgets:csp" content="on" />
   <meta name="description" content="The blog of Solitude" />
-  <link rel="canonical" href="http://solitude.vkps.co.uk/page/47/" />
+  <link rel="canonical" href="https://solitude.vkps.co.uk/page/47/" />
 
   <link href="//fonts.googleapis.com/css?family=Open+Sans:600,800" rel="stylesheet" type="text/css">
   <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="alternate" type="application/atom+xml" title="Solitude" href="http://solitude.vkps.co.uk/atom.xml" />
+  <link rel="alternate" type="application/atom+xml" title="Solitude" href="https://solitude.vkps.co.uk/atom.xml" />
 
   <link rel="stylesheet" href="/assets/css/all.css">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-k2/8zcNbxVIh5mnQ52A0r3a6jAgMGxFJFE2707UxGCk= sha512-ZV9KawG2Legkwp3nAlxLIVFudTauWuBpC10uEafMHYL0Sarrz5A7G79kXh5+5+woxQ5HM559XX2UZjMJ36Wplg==" crossorigin="anonymous">
@@ -183,15 +183,15 @@
   <div class="post">
     <p>I’ll start by saying that if you’re not a programmer, you’re not going to be interested in this post. You might want to run along and <a href="http://wondermark.com/" title="Wondermark comics">read something better</a>. You probably also want to be a Java programmer.</p>
 
-<p><a href="http://www.jdom.org/">JDOM</a> is a great Java library for dealing with XML in a reasonably sane way. You turn your XML into an <code class="highlighter-rouge">org.jdom.Document</code> object (using a handy utility like <code class="highlighter-rouge">SAXBuilder</code>), and then you can use various query and manipulation tools on it. It does, however, have some fairly silly exceptions.</p>
+<p><a href="http://www.jdom.org/">JDOM</a> is a great Java library for dealing with XML in a reasonably sane way. You turn your XML into an <code class="language-plaintext highlighter-rouge">org.jdom.Document</code> object (using a handy utility like <code class="language-plaintext highlighter-rouge">SAXBuilder</code>), and then you can use various query and manipulation tools on it. It does, however, have some fairly silly exceptions.</p>
 
 <p>Recently, I was doing some XPath queries as part of a web-app. Like a good developer, I wrote some unit tests so I knew that the XPaths were correct, the XML conversion was correct, etc. I wrote the actual code to implement the test cases and everything worked fine. Great.</p>
 
-<p>Upon deploying the web-app to the container and running it properly, JDOM throws a <code class="highlighter-rouge">ClassCastException</code> and says the <code class="highlighter-rouge">Document</code> is the cause. Bizarre. After a few checks and no luck , we (I say “we” because there are now a few interested parties) break out the debugger for a look at the running web-app. [Let me stop for a second to say that debugging running web-apps is a triumph of tooling; very useful stuff.] The created Document looks fine, the code steps through ok until… bang. The debugger stops working. Ah.</p>
+<p>Upon deploying the web-app to the container and running it properly, JDOM throws a <code class="language-plaintext highlighter-rouge">ClassCastException</code> and says the <code class="language-plaintext highlighter-rouge">Document</code> is the cause. Bizarre. After a few checks and no luck , we (I say “we” because there are now a few interested parties) break out the debugger for a look at the running web-app. [Let me stop for a second to say that debugging running web-apps is a triumph of tooling; very useful stuff.] The created Document looks fine, the code steps through ok until… bang. The debugger stops working. Ah.</p>
 
 <p>After a lot of head scratching and googling, we finally figure out the problem: JDOM depends on the <a href="http://jaxen.org/">Jaxen</a> API for XPath. While our unit test container (actually an IDE) has a reference to a copy of Jaxen for an unrelated reason, the deployment doesn’t. So the problem is one of dependencies.</p>
 
-<p>However, the thing that made this tricky to debug was JDOM throwing an unrelated Exception. A <code class="highlighter-rouge">ClassCastException</code> seems completely inappropriate here and helped masked the real cause. A <code class="highlighter-rouge">ClassNotFoundException</code> pointing to the Jaxen library would have a) made sense, and b) pointed us at the real cause.</p>
+<p>However, the thing that made this tricky to debug was JDOM throwing an unrelated Exception. A <code class="language-plaintext highlighter-rouge">ClassCastException</code> seems completely inappropriate here and helped masked the real cause. A <code class="language-plaintext highlighter-rouge">ClassNotFoundException</code> pointing to the Jaxen library would have a) made sense, and b) pointed us at the real cause.</p>
 
 <p>Lessons:</p>
 
@@ -202,7 +202,7 @@
   <li>Debug, debug, debug. If the debugger fails, don’t panic.</li>
 </ol>
 
-<p>Here’s hoping the JDOM guys get rid of that erroneous <code class="highlighter-rouge">ClassCastException</code> and switch to something a little more helpful.</p>
+<p>Here’s hoping the JDOM guys get rid of that erroneous <code class="language-plaintext highlighter-rouge">ClassCastException</code> and switch to something a little more helpful.</p>
 
   </div>
   <div class="divider"><img src="/assets/images/divider.png" /></div>

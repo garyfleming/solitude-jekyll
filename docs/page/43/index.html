@@ -7,11 +7,11 @@
   <meta name="author" content="Solitude" />
   <meta name="twitter:widgets:csp" content="on" />
   <meta name="description" content="The blog of Solitude" />
-  <link rel="canonical" href="http://solitude.vkps.co.uk/page/43/" />
+  <link rel="canonical" href="https://solitude.vkps.co.uk/page/43/" />
 
   <link href="//fonts.googleapis.com/css?family=Open+Sans:600,800" rel="stylesheet" type="text/css">
   <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="alternate" type="application/atom+xml" title="Solitude" href="http://solitude.vkps.co.uk/atom.xml" />
+  <link rel="alternate" type="application/atom+xml" title="Solitude" href="https://solitude.vkps.co.uk/atom.xml" />
 
   <link rel="stylesheet" href="/assets/css/all.css">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-k2/8zcNbxVIh5mnQ52A0r3a6jAgMGxFJFE2707UxGCk= sha512-ZV9KawG2Legkwp3nAlxLIVFudTauWuBpC10uEafMHYL0Sarrz5A7G79kXh5+5+woxQ5HM559XX2UZjMJ36Wplg==" crossorigin="anonymous">
@@ -88,9 +88,9 @@
     <span class="date"> </span>
   </p>
   <div class="post">
-    <p>An interesting problem: a bunch of <a href="http://struts.apache.org/1.2.8/userGuide/dev_nested.html">Struts Nested</a> tags generate HTML. Separately, we write some Javascript that makes use of <code class="highlighter-rouge">getElementById()</code> to find some of the generated elements. This works in Internet Explorer, but fails miserably in <a href="http://www.mozilla.com/firefox/">FireFox</a>. Why?</p>
+    <p>An interesting problem: a bunch of <a href="http://struts.apache.org/1.2.8/userGuide/dev_nested.html">Struts Nested</a> tags generate HTML. Separately, we write some Javascript that makes use of <code class="language-plaintext highlighter-rouge">getElementById()</code> to find some of the generated elements. This works in Internet Explorer, but fails miserably in <a href="http://www.mozilla.com/firefox/">FireFox</a>. Why?</p>
 
-<p>Well, it turns out that Struts Nested tags generate elements that have a <code class="highlighter-rouge">name</code> attribute but not an <code class="highlighter-rouge">id</code>. Separately, IE actually does the wrong thing with <code class="highlighter-rouge">getElementById()</code>: if a search by id fails, it will try to match by name; that’s fundamentally broken. It’d be fine if a bunch of libraries and other functions didn’t prefer the use of ids, and if other browsers did the same thing. They don’t and we’re stuck with the mess. Let’s clean it up.</p>
+<p>Well, it turns out that Struts Nested tags generate elements that have a <code class="language-plaintext highlighter-rouge">name</code> attribute but not an <code class="language-plaintext highlighter-rouge">id</code>. Separately, IE actually does the wrong thing with <code class="language-plaintext highlighter-rouge">getElementById()</code>: if a search by id fails, it will try to match by name; that’s fundamentally broken. It’d be fine if a bunch of libraries and other functions didn’t prefer the use of ids, and if other browsers did the same thing. They don’t and we’re stuck with the mess. Let’s clean it up.</p>
 
 <p>The right thing to do would be to <a href="http://www.sixteensmallstones.org/ie-javascript-bugs-overriding-internet-explorers-documentgetelementbyid-to-be-w3c-compliant-exposes-an-additional-bug-in-getattributes">cripple the IE version into the correct behaviour</a>. Now everyone agrees on what should happen.</p>
 
@@ -123,7 +123,7 @@ That&#8217;ll work and it&#8217;ll even make sure subsequent calls use the nativ
     <span class="date"> </span>
   </p>
   <div class="post">
-    <p>In Java 5, as all good Java developers will know, Sun introduced the <code class="highlighter-rouge">enum</code> type. Since I’m sure anyone who is interested in what will follow knows that already, I won’t bore you with the details but there’s some decent <a href="http://java.sun.com/j2se/1.5.0/docs/guide/language/enums.html">historical information on Sun’s reasons</a> available. I’m going to be talking a little bit about operations on enums, so let’s get started by defining one:</p>
+    <p>In Java 5, as all good Java developers will know, Sun introduced the <code class="language-plaintext highlighter-rouge">enum</code> type. Since I’m sure anyone who is interested in what will follow knows that already, I won’t bore you with the details but there’s some decent <a href="http://java.sun.com/j2se/1.5.0/docs/guide/language/enums.html">historical information on Sun’s reasons</a> available. I’m going to be talking a little bit about operations on enums, so let’s get started by defining one:</p>
 
 <p>`</p>
 <pre>public enum OrderState{

@@ -7,11 +7,11 @@
   <meta name="author" content="Solitude" />
   <meta name="twitter:widgets:csp" content="on" />
   <meta name="description" content="The blog of Solitude" />
-  <link rel="canonical" href="http://solitude.vkps.co.uk/page/53/" />
+  <link rel="canonical" href="https://solitude.vkps.co.uk/page/53/" />
 
   <link href="//fonts.googleapis.com/css?family=Open+Sans:600,800" rel="stylesheet" type="text/css">
   <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="alternate" type="application/atom+xml" title="Solitude" href="http://solitude.vkps.co.uk/atom.xml" />
+  <link rel="alternate" type="application/atom+xml" title="Solitude" href="https://solitude.vkps.co.uk/atom.xml" />
 
   <link rel="stylesheet" href="/assets/css/all.css">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-k2/8zcNbxVIh5mnQ52A0r3a6jAgMGxFJFE2707UxGCk= sha512-ZV9KawG2Legkwp3nAlxLIVFudTauWuBpC10uEafMHYL0Sarrz5A7G79kXh5+5+woxQ5HM559XX2UZjMJ36Wplg==" crossorigin="anonymous">
@@ -117,7 +117,7 @@
 <ol>
   <li>Ease of use. I don’t want to have to think about which box I’m going to use for a particular action, especially when the most common action is using Google: which works equally well in both boxes.</li>
   <li>Address bar is faster. Any time you move your hands from the keyboard to the mouse, you lose a significant portion of time. I don’t know if the search bar has a keyboard shortcut, but I know that the address bar does (<kbd>Alt</kbd>+<kbd>d</kbd>). Even if it does, how do I then quickly select a different search engine than the default?</li>
-  <li>The address bar is multi-functional. I can use it for <acronym title="Uniform Resource Locator">URL</acronym>s and google, but if I add some keyword searches to my bookmarks (replace the query string <code class="highlighter-rouge">%s</code> and add a keyword), then I can have any search engine I want at my finger tips.</li>
+  <li>The address bar is multi-functional. I can use it for <acronym title="Uniform Resource Locator">URL</acronym>s and google, but if I add some keyword searches to my bookmarks (replace the query string <code class="language-plaintext highlighter-rouge">%s</code> and add a keyword), then I can have any search engine I want at my finger tips.</li>
 </ol>
 
 <p>This makes the search box dead space in a prime location. It’s one (recent) saving is the addition of Google-style autocomplete. With a little more work this could, and should, be integrated into the address bar. At the very least, the option should be available.</p>
@@ -142,9 +142,9 @@
     <span class="date"> </span>
   </p>
   <div class="post">
-    <p>A reminder for myself for the future (and any other people doing Java development): using the <code class="highlighter-rouge">like</code> operator in <a href="http://ibatis.apache.org/">iBatis</a>. The meta character escaping you need in your <acronym title="eXtensible Markup Language">XML</acronym> is <code class="highlighter-rouge">column like '%'||#property#||'%'</code>, where <code class="highlighter-rouge">property</code> property is a bean property in your parameter class.</p>
+    <p>A reminder for myself for the future (and any other people doing Java development): using the <code class="language-plaintext highlighter-rouge">like</code> operator in <a href="http://ibatis.apache.org/">iBatis</a>. The meta character escaping you need in your <acronym title="eXtensible Markup Language">XML</acronym> is <code class="language-plaintext highlighter-rouge">column like '%'||#property#||'%'</code>, where <code class="language-plaintext highlighter-rouge">property</code> property is a bean property in your parameter class.</p>
 
-<p>Also, if you’re doing everything in your <code class="highlighter-rouge">where</code> clause dynamically, I would recommend looking at <code class="highlighter-rouge">dynamic</code> and <code class="highlighter-rouge">isNotNull</code> tags.</p>
+<p>Also, if you’re doing everything in your <code class="language-plaintext highlighter-rouge">where</code> clause dynamically, I would recommend looking at <code class="language-plaintext highlighter-rouge">dynamic</code> and <code class="language-plaintext highlighter-rouge">isNotNull</code> tags.</p>
 
   </div>
   <div class="divider"><img src="/assets/images/divider.png" /></div>
@@ -180,11 +180,11 @@
 
 <p>The first thing you really need to know about implementing a plagiarism detection system, and most natural language processors, is called <strong>tokenising</strong>: the process of taking a document and splitting it into smaller parts before the real analysis can take place.</p>
 
-<p>What exactly do I mean by that? Say you have a 300 students all handing in essays or a piece of code (we will choose the latter simply because the syntax can be easier), and you want to compare them for the purpose of finding plagiarists. We’ll say that one of these pieces of code includes the line “<code class="highlighter-rouge">for i in 1..10 loop</code>“. The computer does not understand that snippet, or the language it is written in (ADA, incidentally). For it to compare it to other snippets, it must first do what the human brain has evolved to do naturally: split the sentences into words and extract meaning from the words. Without splitting up a page somewhat, you can understand it far less well than you can if you break it up, and you have less tolerance for slight differences when comparing documents. Same applies for the computer.</p>
+<p>What exactly do I mean by that? Say you have a 300 students all handing in essays or a piece of code (we will choose the latter simply because the syntax can be easier), and you want to compare them for the purpose of finding plagiarists. We’ll say that one of these pieces of code includes the line “<code class="language-plaintext highlighter-rouge">for i in 1..10 loop</code>“. The computer does not understand that snippet, or the language it is written in (ADA, incidentally). For it to compare it to other snippets, it must first do what the human brain has evolved to do naturally: split the sentences into words and extract meaning from the words. Without splitting up a page somewhat, you can understand it far less well than you can if you break it up, and you have less tolerance for slight differences when comparing documents. Same applies for the computer.</p>
 
 <p>That’s not strictly true. The computer can just read those documents in as one big long string and compare them the dumb way, character by character. This, however, gives you much less tolerance for slight changes when comparing two very similar documents. A series of changes, even simple ones like adding spaces or punctuation, would make two very similar documents look different. This is a <strong>bad thing</strong>. We don’t want the cheaters to be able to beat our system by making small changes. If they make a lot of changes, that makes our life harder (are they still really cheating if they’ve changed everything?) but we certainly don’t want people them getting away with small changes.</p>
 
-<p>So, we take the document, figure out what constitutes a “word” in the language of the document, and turn the document into a list of these “words”. We call these words <strong>tokens</strong>. We can compare tokens much more easily and efficiently than comparing full strings, and with more tolerance for change. So, our earlier example might be broken up like this: <code class="highlighter-rouge">["for", "i", "in", "1", "..", "10", "loop"]</code></p>
+<p>So, we take the document, figure out what constitutes a “word” in the language of the document, and turn the document into a list of these “words”. We call these words <strong>tokens</strong>. We can compare tokens much more easily and efficiently than comparing full strings, and with more tolerance for change. So, our earlier example might be broken up like this: <code class="language-plaintext highlighter-rouge">["for", "i", "in", "1", "..", "10", "loop"]</code></p>
 
 <p>Anyone who is being astute will notice that I just skipped over the real crux of the problem: how do we determine what a token is? Well, that really depends on the language that the document is in and, to an extent, the domain. Consider:</p>
 
@@ -205,7 +205,7 @@
 
 <p>Now, I know some people just shuddered at the mention of the word “grammar”, but it’s not so bad. The grammar for a language is simply the set of rules that allow for the construction of language features, a bunch of very simple rules that state which tokens can appear where and what form they should take when near other tokens. Thankfully, just about every computer language has a detailed specified grammar somewhere. If you’re suffering insomnia, have a look at the <a href="http://www.adahome.com/rm95/rm9x-P.html">Ada syntax</a> or the <a href="http://java.sun.com/docs/books/jls/second_edition/html/syntax.doc.html">Java grammar</a>. Thrilling stuff, I know.</p>
 
-<p>You know your language, you have your grammar, now you need a <strong>parser</strong>. The parser takes the grammar and documents you provide, and spits out your tokens. This is a well-understood area, and you may even have some tools to do it for you. If not there are plenty of tools available that will parse for you: <code class="highlighter-rouge">yacc</code>, <code class="highlighter-rouge">bison</code> and <code class="highlighter-rouge">lexx</code> are just a few command line tools that will parse documents. I would recommend <a href="http://sablecc.org/">SableCC</a> if you’re writing your plagiarism detection system in Java: it has a decent <acronym title="Application Interface">API</acronym> and does most of the work for you. You just need to take the trees it produces (for compiler use), and flatten them into an array; a trivial task that amounts to an in-order walk.</p>
+<p>You know your language, you have your grammar, now you need a <strong>parser</strong>. The parser takes the grammar and documents you provide, and spits out your tokens. This is a well-understood area, and you may even have some tools to do it for you. If not there are plenty of tools available that will parse for you: <code class="language-plaintext highlighter-rouge">yacc</code>, <code class="language-plaintext highlighter-rouge">bison</code> and <code class="language-plaintext highlighter-rouge">lexx</code> are just a few command line tools that will parse documents. I would recommend <a href="http://sablecc.org/">SableCC</a> if you’re writing your plagiarism detection system in Java: it has a decent <acronym title="Application Interface">API</acronym> and does most of the work for you. You just need to take the trees it produces (for compiler use), and flatten them into an array; a trivial task that amounts to an in-order walk.</p>
 
 <p>Wow! We’ve now tokenised the document. End of story.</p>
 

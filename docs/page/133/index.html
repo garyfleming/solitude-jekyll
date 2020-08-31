@@ -7,11 +7,11 @@
   <meta name="author" content="Solitude" />
   <meta name="twitter:widgets:csp" content="on" />
   <meta name="description" content="The blog of Solitude" />
-  <link rel="canonical" href="http://solitude.vkps.co.uk/page/133/" />
+  <link rel="canonical" href="https://solitude.vkps.co.uk/page/133/" />
 
   <link href="//fonts.googleapis.com/css?family=Open+Sans:600,800" rel="stylesheet" type="text/css">
   <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="alternate" type="application/atom+xml" title="Solitude" href="http://solitude.vkps.co.uk/atom.xml" />
+  <link rel="alternate" type="application/atom+xml" title="Solitude" href="https://solitude.vkps.co.uk/atom.xml" />
 
   <link rel="stylesheet" href="/assets/css/all.css">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-k2/8zcNbxVIh5mnQ52A0r3a6jAgMGxFJFE2707UxGCk= sha512-ZV9KawG2Legkwp3nAlxLIVFudTauWuBpC10uEafMHYL0Sarrz5A7G79kXh5+5+woxQ5HM559XX2UZjMJ36Wplg==" crossorigin="anonymous">
@@ -121,7 +121,7 @@
   <div class="post">
     <p>I’ve been doing a lot of thinking about commenting systems lately (no prizes for guessing why.) It occurs to me that my biggest problem with allowing comments is the vulnerability that it gives the site. By letting others post (in reply to my entries), I allow them the opportunity to inject malicious or malformed code.</p>
 
-<p>To bypass this, I could <code class="highlighter-rouge">strip_tags()</code>. But that rather limits the ability of people to express themselves fully; I know I’d hate to have most of my <acronym title="eXtensible HyperText Markup Language">XHTML</acronym> vocabularly pulled out from underneath me. I could allow a limited textile style pseudo-markup language (which I probably will), but many are set in writing proper <acronym title="HyperText Markup Language">HTML</acronym>.</p>
+<p>To bypass this, I could <code class="language-plaintext highlighter-rouge">strip_tags()</code>. But that rather limits the ability of people to express themselves fully; I know I’d hate to have most of my <acronym title="eXtensible HyperText Markup Language">XHTML</acronym> vocabularly pulled out from underneath me. I could allow a limited textile style pseudo-markup language (which I probably will), but many are set in writing proper <acronym title="HyperText Markup Language">HTML</acronym>.</p>
 
 <p>I’ve settled on my last option: processing comments with various regular expressions (to get rid of the dangerous) and then sending it through Simon Willison’s <a href="http://simon.incutio.com/archive/2003/02/23/safeHtmlChecker">safe HTML checker</a> class. Playing with it earlier, it works a treat.</p>
 

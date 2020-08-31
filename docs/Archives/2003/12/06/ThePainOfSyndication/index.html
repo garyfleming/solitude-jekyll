@@ -7,11 +7,11 @@
   <meta name="author" content="Solitude" />
   <meta name="twitter:widgets:csp" content="on" />
   <meta name="description" content="The blog of Solitude" />
-  <link rel="canonical" href="http://solitude.vkps.co.uk/Archives/2003/12/06/ThePainOfSyndication/" />
+  <link rel="canonical" href="https://solitude.vkps.co.uk/Archives/2003/12/06/ThePainOfSyndication/" />
 
   <link href="//fonts.googleapis.com/css?family=Open+Sans:600,800" rel="stylesheet" type="text/css">
   <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="alternate" type="application/atom+xml" title="Solitude" href="http://solitude.vkps.co.uk/atom.xml" />
+  <link rel="alternate" type="application/atom+xml" title="Solitude" href="https://solitude.vkps.co.uk/atom.xml" />
 
   <link rel="stylesheet" href="/assets/css/all.css">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-k2/8zcNbxVIh5mnQ52A0r3a6jAgMGxFJFE2707UxGCk= sha512-ZV9KawG2Legkwp3nAlxLIVFudTauWuBpC10uEafMHYL0Sarrz5A7G79kXh5+5+woxQ5HM559XX2UZjMJ36Wplg==" crossorigin="anonymous">
@@ -91,24 +91,24 @@
   <p>There are three ways to reasonably serve up <acronym title="Rich Site Summary">RSS</acronym>, listed here in order of preference:</p>
 
 <ol>
-  <li><code class="highlighter-rouge">application/rss+xml</code></li>
-  <li><code class="highlighter-rouge">application/xml</code></li>
-  <li><code class="highlighter-rouge">text/xml</code></li>
+  <li><code class="language-plaintext highlighter-rouge">application/rss+xml</code></li>
+  <li><code class="language-plaintext highlighter-rouge">application/xml</code></li>
+  <li><code class="language-plaintext highlighter-rouge">text/xml</code></li>
 </ol>
 
-<p>Since the first is the type we say we’re serving in the link tag (despite that type not being a real MIME type), that is the one we should probably pick to serve our feeds as. The problem is that browsers (rightly) refuse to display <code class="highlighter-rouge">application/rss+xml</code>. Instead, they try to download it or pass it to another viewer.</p>
+<p>Since the first is the type we say we’re serving in the link tag (despite that type not being a real MIME type), that is the one we should probably pick to serve our feeds as. The problem is that browsers (rightly) refuse to display <code class="language-plaintext highlighter-rouge">application/rss+xml</code>. Instead, they try to download it or pass it to another viewer.</p>
 
 <p>This behaviour doesn’t help someone who doesn’t know what an RSS feed does (a problem that needs addressed). They will see something they do not understand being downloaded and abort. Not good. To aid in this, it would be nice for the user to see the styled feed (<a href="/Syndication/RSS.rss">my RSS 2.0 feed</a> already has <acronym title="Cascading Style Sheets">CSS</acronym> styling).</p>
 
 <p>Two thoughts occurred to me: “Are there any workarounds?” and “How are others serving their RSS feeds?”.</p>
 
-<p>Changing the content-type to <code class="highlighter-rouge">application/xml</code> fixes the visibility problem, but means that feeds are inconsistent with the link tag. In turn, changing the link tag to suit the new content-type isn’t feasible. There are dozens of aggregators who need to see <code class="highlighter-rouge">application/rss+xml</code> in the link tag to do auto-discovery properly.</p>
+<p>Changing the content-type to <code class="language-plaintext highlighter-rouge">application/xml</code> fixes the visibility problem, but means that feeds are inconsistent with the link tag. In turn, changing the link tag to suit the new content-type isn’t feasible. There are dozens of aggregators who need to see <code class="language-plaintext highlighter-rouge">application/rss+xml</code> in the link tag to do auto-discovery properly.</p>
 
-<p>Step 2 was to see how others serve their feeds. The results were disconcerting, at best. <a href="http://golem.ph.utexas.edu/~distler/blog/index.shtml">Jacques Distler</a> and <a href="http://annevankesteren.nl/">Anne van Kesteren</a> both use <code class="highlighter-rouge">text/xml</code>, <a href="http://diveintomark.org">Mark Pilgrim</a> uses <code class="highlighter-rouge">application/xml</code>, and <a href="http://intertwingly.net">Sam Ruby</a> uses <code class="highlighter-rouge">application/xml</code> for RSS 0.91 and <code class="highlighter-rouge">application/rss+xml</code> for RSS 2.0.</p>
+<p>Step 2 was to see how others serve their feeds. The results were disconcerting, at best. <a href="http://golem.ph.utexas.edu/~distler/blog/index.shtml">Jacques Distler</a> and <a href="http://annevankesteren.nl/">Anne van Kesteren</a> both use <code class="language-plaintext highlighter-rouge">text/xml</code>, <a href="http://diveintomark.org">Mark Pilgrim</a> uses <code class="language-plaintext highlighter-rouge">application/xml</code>, and <a href="http://intertwingly.net">Sam Ruby</a> uses <code class="language-plaintext highlighter-rouge">application/xml</code> for RSS 0.91 and <code class="language-plaintext highlighter-rouge">application/rss+xml</code> for RSS 2.0.</p>
 
 <p>Ouch.</p>
 
-<p>In the end, it’s probably best to settle on the middle option: <code class="highlighter-rouge">application/xml</code>. Why? It provides visibility, is the parent of the “correct” MIME type (if you see these things as hierarchical), and it is a real MIME type.</p>
+<p>In the end, it’s probably best to settle on the middle option: <code class="language-plaintext highlighter-rouge">application/xml</code>. Why? It provides visibility, is the parent of the “correct” MIME type (if you see these things as hierarchical), and it is a real MIME type.</p>
 
 <p>The situation is hardly ideal, but it’s the one we have.</p>
 

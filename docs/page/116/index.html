@@ -7,11 +7,11 @@
   <meta name="author" content="Solitude" />
   <meta name="twitter:widgets:csp" content="on" />
   <meta name="description" content="The blog of Solitude" />
-  <link rel="canonical" href="http://solitude.vkps.co.uk/page/116/" />
+  <link rel="canonical" href="https://solitude.vkps.co.uk/page/116/" />
 
   <link href="//fonts.googleapis.com/css?family=Open+Sans:600,800" rel="stylesheet" type="text/css">
   <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="alternate" type="application/atom+xml" title="Solitude" href="http://solitude.vkps.co.uk/atom.xml" />
+  <link rel="alternate" type="application/atom+xml" title="Solitude" href="https://solitude.vkps.co.uk/atom.xml" />
 
   <link rel="stylesheet" href="/assets/css/all.css">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-k2/8zcNbxVIh5mnQ52A0r3a6jAgMGxFJFE2707UxGCk= sha512-ZV9KawG2Legkwp3nAlxLIVFudTauWuBpC10uEafMHYL0Sarrz5A7G79kXh5+5+woxQ5HM559XX2UZjMJ36Wplg==" crossorigin="anonymous">
@@ -132,13 +132,13 @@
 
 <p>Due to FTP problems, I can’t upload the new templates at this moment, but I’ll at least talk about what will change.</p>
 
-<p>To be honest, not a lot has changed. The <code class="highlighter-rouge">link</code> tag (feed level, and entry level) has changed in syntax (it’s now an empty tag). It also now requires a <code class="highlighter-rouge">rel</code> attribute (generally going to be set to “alternate”) and a <code class="highlighter-rouge">type</code> attribute.</p>
+<p>To be honest, not a lot has changed. The <code class="language-plaintext highlighter-rouge">link</code> tag (feed level, and entry level) has changed in syntax (it’s now an empty tag). It also now requires a <code class="language-plaintext highlighter-rouge">rel</code> attribute (generally going to be set to “alternate”) and a <code class="language-plaintext highlighter-rouge">type</code> attribute.</p>
 
 <p>The former could allow some interesting and smart parsing of documents (once <a href="http://bitworking.org/projects/atom/draft-gregorio-09.html#rfc.section.5.4.1">the rel values</a> are bulked out). The latter seems utterly useless. It doesn’t take into account multiple representations (one of the lovely aspects of a <acronym title="Uniform Resource Indicator">URI</acronym>), or allow for content without a registered media type. It adds nothing (except a lot of extra bytes on a feed).</p>
 
-<p>The new <code class="highlighter-rouge">mode</code> attribute will make feeds easier to parse, but seems to be lacking a plain text value (currently acceptable values are xml, escaped and base64).</p>
+<p>The new <code class="language-plaintext highlighter-rouge">mode</code> attribute will make feeds easier to parse, but seems to be lacking a plain text value (currently acceptable values are xml, escaped and base64).</p>
 
-<p>That’s really about it. I added <code class="highlighter-rouge">type</code> attributes, changed some syntax and got absolutely no returns from it. At the moment, that particular attribute looks like bloat.</p>
+<p>That’s really about it. I added <code class="language-plaintext highlighter-rouge">type</code> attributes, changed some syntax and got absolutely no returns from it. At the moment, that particular attribute looks like bloat.</p>
 
   </div>
   <div class="divider"><img src="/assets/images/divider.png" /></div>

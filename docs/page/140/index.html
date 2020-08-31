@@ -7,11 +7,11 @@
   <meta name="author" content="Solitude" />
   <meta name="twitter:widgets:csp" content="on" />
   <meta name="description" content="The blog of Solitude" />
-  <link rel="canonical" href="http://solitude.vkps.co.uk/page/140/" />
+  <link rel="canonical" href="https://solitude.vkps.co.uk/page/140/" />
 
   <link href="//fonts.googleapis.com/css?family=Open+Sans:600,800" rel="stylesheet" type="text/css">
   <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="alternate" type="application/atom+xml" title="Solitude" href="http://solitude.vkps.co.uk/atom.xml" />
+  <link rel="alternate" type="application/atom+xml" title="Solitude" href="https://solitude.vkps.co.uk/atom.xml" />
 
   <link rel="stylesheet" href="/assets/css/all.css">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-k2/8zcNbxVIh5mnQ52A0r3a6jAgMGxFJFE2707UxGCk= sha512-ZV9KawG2Legkwp3nAlxLIVFudTauWuBpC10uEafMHYL0Sarrz5A7G79kXh5+5+woxQ5HM559XX2UZjMJ36Wplg==" crossorigin="anonymous">
@@ -108,7 +108,7 @@
 
 <p>Secondly, is <a href="/Syndication/ChannelDefinition.cdf">my <acronym title="Channel Definition Format"><acronym title="Compact Disk">CD</acronym>F</acronym> feed</a> for <acronym title="Internet Explorer">IE</acronym> users only (after the enhancements users of better browsers get, it’s the least I could do for those poor people still suffering a slow bloated browser). Click on the link to the feed and it’ll try to add itself to your favourites. Let it. This will then give you a list of all the current items.</p>
 
-<p>A little bit more difficult to implement. I basically copied the format used by <a href="http://www.intertwingly.net">Sam</a> and <a href="http://www.aquarionics.com">Aquarionics</a> and did my best to get it to work. The only thing that wasn’t fairly obvious was that it must be served with a MIME type of <code class="highlighter-rouge">application/cdf</code>.</p>
+<p>A little bit more difficult to implement. I basically copied the format used by <a href="http://www.intertwingly.net">Sam</a> and <a href="http://www.aquarionics.com">Aquarionics</a> and did my best to get it to work. The only thing that wasn’t fairly obvious was that it must be served with a MIME type of <code class="language-plaintext highlighter-rouge">application/cdf</code>.</p>
 
 <p>Both feeds, and others, can be found on <a href="/Syndication/">the syndication page</a>.</p>
 
@@ -125,7 +125,7 @@
     <p>I’ve made a few small changes over the past week or so that should make reading this site a bit easier:</p>
 
 <ol>
-  <li><strong>Justified text</strong> – text on all pages is now justified. This took a seconds worth of work and makes everything look a lot better. To anyone who doesn’t do this already, add <code class="highlighter-rouge">p {text-align: justify;}</code> to your <acronym title="Cascading Style Sheets">CSS</acronym> immediately.</li>
+  <li><strong>Justified text</strong> – text on all pages is now justified. This took a seconds worth of work and makes everything look a lot better. To anyone who doesn’t do this already, add <code class="language-plaintext highlighter-rouge">p {text-align: justify;}</code> to your <acronym title="Cascading Style Sheets">CSS</acronym> immediately.</li>
   <li><strong>Smaller CSS</strong> – The remaining CSS has been made more detailed, yet the file is smaller. If you’re seeing any weird effects during the change, press <kbd>CTRL</kbd> and <kbd>F5</kbd> together.</li>
   <li>Valid <acronym title="eXtensible HyperText Markup Language">XHTML</acronym> for code – the code pages now show valid X<acronym title="HyperText Markup Language">HTML</acronym> (where appropriate) rather than the default mish-mish. This is all thanks to <a href="http://www.xiven.com/blog.php?start=26">conversion code from Xiven</a>.</li>
   <li><strong>Meta tags changed</strong> – Hopefully Google will actually figure out how to follow my permalinks now that I’ve updated my meta-tags.</li>
@@ -145,7 +145,7 @@
   <div class="post">
     <p>Ever have one of those zen moments when you see a problem in a perfectly clear way, removing the garbage that you had before? I had one today. It makes my previous effort really quite embarrasing.</p>
 
-<p>I’ve updated the <a href="/Code/Palindrome/">Palindrome code</a> to make it a million times simpler. How did this happen? I was looking at the <acronym title="PHP: Hypertext Processor">PHP</acronym> manual for something entirely unrelated and noticed the <code class="highlighter-rouge">strrev</code> function. Everything immediately clicked into place in my head: rather than compare the first and last characters of a string recursively after stripping it down, just strip it down and compare it to its reverse. Simple.</p>
+<p>I’ve updated the <a href="/Code/Palindrome/">Palindrome code</a> to make it a million times simpler. How did this happen? I was looking at the <acronym title="PHP: Hypertext Processor">PHP</acronym> manual for something entirely unrelated and noticed the <code class="language-plaintext highlighter-rouge">strrev</code> function. Everything immediately clicked into place in my head: rather than compare the first and last characters of a string recursively after stripping it down, just strip it down and compare it to its reverse. Simple.</p>
 
 <p>The changes have been uploaded and should have propagated automatically through to the <a href="http://solitude.vkps.co.uk/Code/Palindrome/IsPalindromeForm.php">online palindrome checker</a> and <acronym title="eXtensible Markup Language Remote Procedure Call"><acronym title="eXtensible Markup Language">XML</acronym>RPC</acronym> <acronym title="Application Interface">API</acronym> interfaces.</p>
 

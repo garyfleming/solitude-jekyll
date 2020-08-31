@@ -7,11 +7,11 @@
   <meta name="author" content="Solitude" />
   <meta name="twitter:widgets:csp" content="on" />
   <meta name="description" content="The blog of Solitude" />
-  <link rel="canonical" href="http://solitude.vkps.co.uk/Archives/2004/02/05/Java15/" />
+  <link rel="canonical" href="https://solitude.vkps.co.uk/Archives/2004/02/05/Java15/" />
 
   <link href="//fonts.googleapis.com/css?family=Open+Sans:600,800" rel="stylesheet" type="text/css">
   <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="alternate" type="application/atom+xml" title="Solitude" href="http://solitude.vkps.co.uk/atom.xml" />
+  <link rel="alternate" type="application/atom+xml" title="Solitude" href="https://solitude.vkps.co.uk/atom.xml" />
 
   <link rel="stylesheet" href="/assets/css/all.css">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-k2/8zcNbxVIh5mnQ52A0r3a6jAgMGxFJFE2707UxGCk= sha512-ZV9KawG2Legkwp3nAlxLIVFudTauWuBpC10uEafMHYL0Sarrz5A7G79kXh5+5+woxQ5HM559XX2UZjMJ36Wplg==" crossorigin="anonymous">
@@ -92,11 +92,11 @@
 
 <p>Firstly, there are the new types and constructs.</p>
 
-<p>The new <a href="http://jcp.org/aboutJava/communityprocess/jsr/tiger/enum.html">enumerated types</a> have been in demand for a while, and work similarly to the typical <code class="highlighter-rouge">C/C++</code> idiom. In terms of Java, they are being compared to public inner classes; encapsulated but accessible.</p>
+<p>The new <a href="http://jcp.org/aboutJava/communityprocess/jsr/tiger/enum.html">enumerated types</a> have been in demand for a while, and work similarly to the typical <code class="language-plaintext highlighter-rouge">C/C++</code> idiom. In terms of Java, they are being compared to public inner classes; encapsulated but accessible.</p>
 
-<p><a href="http://jcp.org/aboutJava/communityprocess/jsr/tiger/autoboxing.html">Auto-boxing</a> takes away some of the hassle of casting primitive types to their respective wrapper classes. It should automatically create a reference, r, to the primitive, p, such that <code class="highlighter-rouge">r.value() == p</code>. Not a huge change, but it will help cut code.</p>
+<p><a href="http://jcp.org/aboutJava/communityprocess/jsr/tiger/autoboxing.html">Auto-boxing</a> takes away some of the hassle of casting primitive types to their respective wrapper classes. It should automatically create a reference, r, to the primitive, p, such that <code class="language-plaintext highlighter-rouge">r.value() == p</code>. Not a huge change, but it will help cut code.</p>
 
-<p>Much bigger is the <a href="http://jcp.org/aboutJava/communityprocess/jsr/tiger/enhanced-for.html">enhanced <code class="highlighter-rouge">for</code> loop</a>. As part of the introduction of <a href="http://java.sun.com/j2se/1.5.0/docs/relnotes/features.html#generics">Generics</a> – the new method to allow operations of objects of varying types safely – the new for loop will provide cleaner iteration over any Iterable class (pertinently, anything in the Collections framework). Instead of explicitly creating iterators and updating at each stage, a pseudo <code class="highlighter-rouge">foreach</code> syntax will be used. Example: <code class="highlighter-rouge">for (String s : c)</code>. This will take each String S in c (most likely a collection), and perform the loop operations on each one. Very clean, very nice.</p>
+<p>Much bigger is the <a href="http://jcp.org/aboutJava/communityprocess/jsr/tiger/enhanced-for.html">enhanced <code class="language-plaintext highlighter-rouge">for</code> loop</a>. As part of the introduction of <a href="http://java.sun.com/j2se/1.5.0/docs/relnotes/features.html#generics">Generics</a> – the new method to allow operations of objects of varying types safely – the new for loop will provide cleaner iteration over any Iterable class (pertinently, anything in the Collections framework). Instead of explicitly creating iterators and updating at each stage, a pseudo <code class="language-plaintext highlighter-rouge">foreach</code> syntax will be used. Example: <code class="language-plaintext highlighter-rouge">for (String s : c)</code>. This will take each String S in c (most likely a collection), and perform the loop operations on each one. Very clean, very nice.</p>
 
 <p>There are also some interesting new classes, both extending the old and starting from scratch.</p>
 
@@ -110,7 +110,7 @@
   <li><a href="http://java.sun.com/j2se/1.5.0/docs/guide/vm/gc-ergonomics.html">Improvements to garbage collection</a> – It was a little lacking before.</li>
   <li><a href="http://java.sun.com/j2se/1.5.0/docs/api/java/util/concurrent/package-summary.html">The Concurrency Framework</a> – Aiming to do for concurrent applications what the Collections framework did for data structures; providing a simple, consistent way of doing concurrency.</li>
   <li><a href="http://java.sun.com/j2se/1.5.0/docs/guide/xml/jaxp/index.html">Improved <acronym title="eXtensible Markup Language">XML</acronym> handling</a> – Supporting both SAX and <acronym title="Document Object Model">DOM</acronym> parsing.</li>
-  <li>Making <code class="highlighter-rouge">JFrame.add()</code> equivalent to <code class="highlighter-rouge">JFrame.getContentPane().add()</code> – a small, but simple enhancement.</li>
+  <li>Making <code class="language-plaintext highlighter-rouge">JFrame.add()</code> equivalent to <code class="language-plaintext highlighter-rouge">JFrame.getContentPane().add()</code> – a small, but simple enhancement.</li>
   <li><a href="http://java.sun.com/j2se/1.5.0/docs/guide/net/enhancements-1.5.0.html">Networking Enhancements</a> – Improved support for various standards (including IPv6) and a minimal set of mandatory protocol handlers.</li>
 </ul>
 
