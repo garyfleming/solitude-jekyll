@@ -1,7 +1,0 @@
-<h3><a href="https://pinboard.in/u:garyfleming">B-Links</a></h3>
-<ul>
-{% for bookmark in page.bookmarks %}
-	{% capture note %}X{{ bookmark.note }}{% endcapture %}
-	<li><a href="{{ bookmark.url }}">{{ bookmark.description }}</a>{% unless note == "X" %} - {{ bookmark.note }}{% endunless %}</li>
-{% endfor %}
-</ul>
