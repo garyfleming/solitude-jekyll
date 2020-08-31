@@ -23,5 +23,3 @@ jobs:
       - uses: EdricChan03/action-build-deploy-ghpages@v2.5.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }} # The GitHub installation token. Note: You can also use ${{ github.token }}
-          gh_pages_branch: 'main' # The GitHub Pages branch to deploy the site to
-          skip_deploy: 'true'
