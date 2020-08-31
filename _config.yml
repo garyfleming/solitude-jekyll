@@ -8,8 +8,6 @@ timezone: Europe/London
 encoding: utf-8
 
 baseurl: ""
-#
-# destination: docs
 
 permalinks: /:year/:month/:title
 

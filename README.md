@@ -10,24 +10,11 @@ Then go to localhost:4000
 
 ## Publish ##
 
-From the site root:
-
-`rsync -arvz ./_site/ flemingg@vkps.co.uk:/home/flemingg/solitude.vkps.co.uk`
-
-You'll might need a password, which you can get from 1password under VKPS SSH, but I've
-set-up keyless ssh from the iMac.
+No longer needed. Covered by GH Actions.
 
 ### Build/publish for GH Pages
 
-This is evolving and will be entirely automated by GH actions at some point, but right now:
-
-```
-rm -rf docs/*
-bundle exec jekyll build
-cp -R _site/ docs/
-```
-
-Then commit and push to GH.
+No longer needed. Covered by GH Actions.
 
 
 ## TODO ##
@@ -44,8 +31,3 @@ To re-enable later:
 ### Archives
 
 The Archive root page is apparently hand-cranked (I've long since forgotten this). Keep it up to date until you automate this
-
-### GH Migration
-
-* Category links need fixed
-* Atom feed link probably needs fixed - /feed/ was being served up by htaccess rewrites to /feed.xml. 
