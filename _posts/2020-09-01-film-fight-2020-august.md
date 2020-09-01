@@ -1,6 +1,6 @@
 ---
 title: "Film Fight 2020: August"
-date: 3899-01-07T20:00:00+00:00
+date: 2020-09-01T09:25:00+00:00
 author: Gary Fleming
 layout: post
 permalink: /:year/:month/:title/
@@ -8,7 +8,7 @@ categories:
   - Films
 ---
 
-Intro
+A little quieter than recent months, but still 7 new films.
 
 ### 7500
 
@@ -38,12 +38,6 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1300420185501962241 %}
 
-### film name
+### The August Winner
 
-{% twitter url %}
-
-
-
-### The month Winner
-
-...
+The winner for August is **Never Rarely Sometimes Always**, a difficult but important watch, that's well put together.
