@@ -18,6 +18,14 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1302554910337114112 %}
 
+### Spree
+
+{% twitter https://twitter.com/garyfleming/status/1310226348263247872 %}
+
+### The Devil All The Time
+
+{% twitter https://twitter.com/garyfleming/status/1310227092227977216 %}
+
 ### film name
 
 {% twitter url %}
