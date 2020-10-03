@@ -26,9 +26,13 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1310227092227977216 %}
 
-### film name
+### Freaks: You're One Of Us
 
-{% twitter url %}
+{% twitter https://twitter.com/garyfleming/status/1312424593819406336 %}
+
+### Bill & Ted Face The Music
+
+{% twitter https://twitter.com/garyfleming/status/1312425083336613891 %}
 
 
 ### The month Winner
