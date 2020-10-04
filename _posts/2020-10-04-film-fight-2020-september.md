@@ -1,6 +1,6 @@
 ---
 title: "Film Fight 2020: September"
-date: 3899-01-07T20:00:00+00:00
+date: 2020-10-04T12:23:00+00:00
 author: Gary Fleming
 layout: post
 permalink: /:year/:month/:title/
@@ -8,7 +8,7 @@ categories:
   - Films
 ---
 
-Intro
+A reasonable month, with 6 new films...
 
 ### Get Duked
 
@@ -35,6 +35,6 @@ Intro
 {% twitter https://twitter.com/garyfleming/status/1312425083336613891 %}
 
 
-### The month Winner
+### The September Winner
 
-...
+Turns out there wasn't much worthwhile this month, so the winner is **Get Duked**.
