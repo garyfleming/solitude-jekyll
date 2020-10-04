@@ -82,6 +82,22 @@
 
   
   <div class="postcontainer">
+  <h3><a href="/Archives/2004/02/20/SchoolOfRock/">School Of Rock</a></h1>
+  <p class="author">
+    <span class="date"> </span>
+  </p>
+  <div class="post">
+    <p>Slightly formulaic, but still amusing, <strong>School Of Rock</strong> is exactly what you might expect.</p>
+
+<p>The plot focusses around <a href="http://us.imdb.com/name/nm0085312/">Jack Black</a> trying to teach some school kids to rock. You know what to expect, he helps a few of them through hard times in their life, and helps them to loosen up. They, in turn, teach him to grow up.</p>
+
+<p>Despite the predictable, back of a matchbox script, it is still fairly amusing. This can be attributed more to the charm and energy that Black puts into his perfomances, than to the jokes themselves. Either way, though, it is well worth watching.</p>
+
+  </div>
+  <div class="divider"><img src="/assets/images/divider.png" /></div>
+  </div>
+  
+  <div class="postcontainer">
   <h3><a href="/Archives/2004/02/17/FontDecisions/">Font Decisions</a></h1>
   <p class="author">
     <span class="date"> </span>
@@ -163,44 +179,6 @@
 </ul>
 
 <p>That’s all. The coming week will be post-lite, but stay tuned.</p>
-
-  </div>
-  <div class="divider"><img src="/assets/images/divider.png" /></div>
-  </div>
-  
-  <div class="postcontainer">
-  <h3><a href="/Archives/2004/02/05/Java15/">Java 1.5</a></h1>
-  <p class="author">
-    <span class="date"> </span>
-  </p>
-  <div class="post">
-    <p>Yesterday, the first beta of the long-awaited <a href="http://java.sun.com/j2se/1.5.0/">Java 1.5</a> finally went public. Sporting a large number of new features and classes, this new version will make every Java programmers life easier.</p>
-
-<p>Firstly, there are the new types and constructs.</p>
-
-<p>The new <a href="http://jcp.org/aboutJava/communityprocess/jsr/tiger/enum.html">enumerated types</a> have been in demand for a while, and work similarly to the typical <code class="language-plaintext highlighter-rouge">C/C++</code> idiom. In terms of Java, they are being compared to public inner classes; encapsulated but accessible.</p>
-
-<p><a href="http://jcp.org/aboutJava/communityprocess/jsr/tiger/autoboxing.html">Auto-boxing</a> takes away some of the hassle of casting primitive types to their respective wrapper classes. It should automatically create a reference, r, to the primitive, p, such that <code class="language-plaintext highlighter-rouge">r.value() == p</code>. Not a huge change, but it will help cut code.</p>
-
-<p>Much bigger is the <a href="http://jcp.org/aboutJava/communityprocess/jsr/tiger/enhanced-for.html">enhanced <code class="language-plaintext highlighter-rouge">for</code> loop</a>. As part of the introduction of <a href="http://java.sun.com/j2se/1.5.0/docs/relnotes/features.html#generics">Generics</a> – the new method to allow operations of objects of varying types safely – the new for loop will provide cleaner iteration over any Iterable class (pertinently, anything in the Collections framework). Instead of explicitly creating iterators and updating at each stage, a pseudo <code class="language-plaintext highlighter-rouge">foreach</code> syntax will be used. Example: <code class="language-plaintext highlighter-rouge">for (String s : c)</code>. This will take each String S in c (most likely a collection), and perform the loop operations on each one. Very clean, very nice.</p>
-
-<p>There are also some interesting new classes, both extending the old and starting from scratch.</p>
-
-<p>The Collections framework has been updated in several areas. <a href="http://java.sun.com/j2se/1.5.0/docs/api/java/util/Queue.html">Queue</a> provides an interface for holding Objects before processing. This has been implemented by, among several others, the <a href="http://java.sun.com/j2se/1.5.0/docs/api/java/util/PriorityQueue.html">PriorityQueue</a> and <a href="http://java.sun.com/j2se/1.5.0/docs/api/java/util/concurrent/SynchronousQueue.html">SynchronousQueue</a> classes. A more extensive <a href="http://java.sun.com/j2se/1.5.0/docs/guide/collections/changes5.html">list of the changes to Collections</a> is available.</p>
-
-<p>Other changes include:</p>
-
-<ul>
-  <li><a href="http://java.sun.com/j2se/1.5.0/docs/api/java/util/Scanner.html">Scanner</a> class – a method for parsing primitives and Strings using regexes.</li>
-  <li><a href="http://java.sun.com/j2se/1.5.0/docs/guide/rmi/relnotes.html">Removal of RMIC</a> – No more need to compile RMI stub classes explicitly.</li>
-  <li><a href="http://java.sun.com/j2se/1.5.0/docs/guide/vm/gc-ergonomics.html">Improvements to garbage collection</a> – It was a little lacking before.</li>
-  <li><a href="http://java.sun.com/j2se/1.5.0/docs/api/java/util/concurrent/package-summary.html">The Concurrency Framework</a> – Aiming to do for concurrent applications what the Collections framework did for data structures; providing a simple, consistent way of doing concurrency.</li>
-  <li><a href="http://java.sun.com/j2se/1.5.0/docs/guide/xml/jaxp/index.html">Improved <acronym title="eXtensible Markup Language">XML</acronym> handling</a> – Supporting both SAX and <acronym title="Document Object Model">DOM</acronym> parsing.</li>
-  <li>Making <code class="language-plaintext highlighter-rouge">JFrame.add()</code> equivalent to <code class="language-plaintext highlighter-rouge">JFrame.getContentPane().add()</code> – a small, but simple enhancement.</li>
-  <li><a href="http://java.sun.com/j2se/1.5.0/docs/guide/net/enhancements-1.5.0.html">Networking Enhancements</a> – Improved support for various standards (including IPv6) and a minimal set of mandatory protocol handlers.</li>
-</ul>
-
-<p>All in all, Java programming just got a lot simpler.</p>
 
   </div>
   <div class="divider"><img src="/assets/images/divider.png" /></div>
