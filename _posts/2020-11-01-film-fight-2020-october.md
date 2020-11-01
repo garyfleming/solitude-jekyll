@@ -1,6 +1,6 @@
 ---
 title: "Film Fight 2020: October"
-date: 3899-01-07T20:00:00+00:00
+date: 2020-11-01T12:45:00+00:00
 author: Gary Fleming
 layout: post
 permalink: /:year/:month/:title/
@@ -8,7 +8,7 @@ categories:
   - Films
 ---
 
-Intro
+My concentration was elsewhere so only three films in October.
 
 ### Enola Holmes
 
@@ -23,7 +23,6 @@ Intro
 {% twitter https://twitter.com/garyfleming/status/1322521553662300160 %}
 
 
+### The October Winner
 
-### The month Winner
-
-...
+The winner for October is **The Trial Of The Chicago 7**, a timely reminder of systemic injustice.
