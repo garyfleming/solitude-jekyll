@@ -30,6 +30,10 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1327917201140162563 %}
 
+### Hillbilly Elegy
+
+{% twitter https://twitter.com/garyfleming/status/1333057916824326144 %}
+
 ### film name
 
 {% twitter url %}
