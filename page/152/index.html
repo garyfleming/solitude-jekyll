@@ -82,6 +82,30 @@
 
   
   <div class="postcontainer">
+  <h3><a href="/Archives/2003/05/09/ContentSentCorrectly/">Content Sent Correctly</a></h1>
+  <p class="author">
+    <span class="date"> </span>
+  </p>
+  <div class="post">
+    <p>A few days ago, I read about a test someone was doing on various sites. The <a href="http://www.goer.org/Journal/2003/Apr/index.html#29">test showed</a> that of 119 sites tested, only 1 site had fully conformed to <acronym title="eXtensible HyperText Markup Language">XHTML</acronym>. So, I wanted to see if this site passed the tests.</p>
+
+<p>The first two were easy: every page on this site validates as XHTML 1.1 (or it damn well should). The last one was a known problem: sending the pages you read as <em>application/xhtml+xml</em> rather than <em>text/html</em>. So off I went to find a solution.</p>
+
+<p>It wasn’t long before I found <cite>Mark Pilgrim’s</cite> <a href="http://www.xml.com/pub/a/2003/03/19/dive-into-xml.html">Road To XHTML 2.0: MIME types</a>, which included a trivial piece of <acronym title="PHP: Hypertext Preprocessor">PHP</acronym> that would solve my problems. It was quickly added to my headers.</p>
+
+<p>Now, this change to my PHP meant that browsers who could accept the correct MIME type got that sent to them, others (like <acronym title="Internet Explorer/Windows">IE/WIN</acronym>) got a normal MIME type that wouldn’t strain them.</p>
+
+<p>Everything was going fine until I had to edit a post (I never spell-check this until well after entries go online). The editing feature of my <acronym title="Content Management System">CMS</acronym> bawked at the new MIME-type. Why? Because browsers refuse to display any XHTML in a textarea when you use the proper MIME-type, leaving me screwed since my CMS dumps XHTML straight into a textarea to be manipulated.</p>
+
+<p>After a bit of fudging, it all works. I can hardly wait for a new bunch of problems when <a href="http://www.w3.org/TR/2003/WD-xhtml2-20030506/">XHTML 2.0</a> hits.</p>
+
+<p><ins>Sorry for how boring this all turned out. I’m a little ill today, and it seemed interesting when I started writing. Oh, how wrong.</ins></p>
+
+  </div>
+  <div class="divider"><img src="/assets/images/divider.png" /></div>
+  </div>
+  
+  <div class="postcontainer">
   <h3><a href="/Archives/2003/05/07/MetaData/">MetaData</a></h1>
   <p class="author">
     <span class="date"> </span>
@@ -159,18 +183,6 @@
 <p>It starts out reasonably: 4 friends reunite and reminisce about how they got super-powers from a mentally handicapped boy they saved from bullies. Yes, that’s the reasonable part. After that, all manner of bizarre (read: shit) plot contrivances make it laughably bad.</p>
 
 <p>I would recommend people see it, if only for the short film they’re showing before it: “Final Flight Of Osiris”, part of the <a href="http://whatisthematrix.warnerbros.com/">Animatrix</a> films (no direct link). Now that’s how you make a film.</p>
-
-  </div>
-  <div class="divider"><img src="/assets/images/divider.png" /></div>
-  </div>
-  
-  <div class="postcontainer">
-  <h3><a href="/Archives/2003/05/03/FunnyIECrashBug/">Funny IE Crash Bug</a></h1>
-  <p class="author">
-    <span class="date"> </span>
-  </p>
-  <div class="post">
-    <p>This has got to be possibly the <a href="http://www.secunia.com/advisories/8642/">funniest crash bug for <acronym title="InternetExplorer">IE</acronym></a>. Basically, by having an input element (used in forms) with no body tag, IE dies on its arse.</p>
 
   </div>
   <div class="divider"><img src="/assets/images/divider.png" /></div>
