@@ -1,6 +1,6 @@
 ---
 title: "Film Fight 2020: November"
-date: 3899-01-07T20:00:00+00:00
+date: 2020-12-06T13:15:00+00:00
 author: Gary Fleming
 layout: post
 permalink: /:year/:month/:title/
@@ -8,7 +8,7 @@ categories:
   - Films
 ---
 
-Intro
+For November's Film Fight, we have 6 films.
 
 ### Borat Subsequent Moviefilm
 
@@ -34,11 +34,7 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1333057916824326144 %}
 
-### film name
 
-{% twitter url %}
+### The November Winner
 
-
-### The month Winner
-
-...
+The winner is **His House**, a must-see horror film.
