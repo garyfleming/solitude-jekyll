@@ -10,6 +10,14 @@ categories:
 
 Intro
 
+### Mank
+
+{% twitter https://twitter.com/garyfleming/status/1335621386677743620 %}
+
+### Inheritance
+
+{% twitter https://twitter.com/garyfleming/status/1335622175940882434 %}
+
 ### Ava
 
 {% twitter https://twitter.com/garyfleming/status/1338119167380246529 %}
@@ -22,6 +30,14 @@ Intro
 ### Yes, God, Yes
 
 {% twitter https://twitter.com/garyfleming/status/1340656531063398401 %}
+
+### Ma Rainey's Black Bottom
+
+{% twitter https://twitter.com/garyfleming/status/1343180894027337728 %}
+
+### The Midnight Sky
+
+{% twitter https://twitter.com/garyfleming/status/1343181702991065088 %}
 
 ### film name
 
