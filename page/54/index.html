@@ -82,6 +82,28 @@
 
   
   <div class="postcontainer">
+  <h3><a href="/Archives/2006/12/27/filmfightdecember2006/">Film Fight: December 2006</a></h1>
+  <p class="author">
+    <span class="date"> </span>
+  </p>
+  <div class="post">
+    <p>Shockingly early for a film fight, here it is for December.</p>
+
+<p>We begin with an unusual piece starring Will Ferrell, <strong>Stranger Than Fiction</strong>. Toning down Ferrell’s normally over-the-top comedy stylings, this instead has him running through a fairly surreal scenario (that of his life being narrated accurately and presciently, with his death impending). We get a delightful love interest in the form of Maggie Gyllenhall, a slightly over-done neurotic in the form of Emma Thompson, and an out of place but interesting English professor (Dustin Hoffman). Quietly funny, well-written, but spoiled by a slightly weak ending, the film is breezily watchable without being trashy.</p>
+
+<p>On the other hand, <strong>Big Nothing</strong> is about an accurate a title as you get. Simon Pegg doesn’t get the room he needs to prop up David Schwimmer in this dark, farcical comedy. This film bulges with half-finished ideas, shoved together like pieces from different jigsaw puzzles, barely seeing the picture in any of them. Mistimed and lacking many redeeming moments, an entirely forgettable film.</p>
+
+<p>Guillermo Del Toro goes in some interesting directions with Spanish film, <strong>Pan’s Labyrinth</strong>. It is a modern day retelling of fairytales of old, where beautiful fantasy set pieces and morality plays are contrasted starkly by brutal moments of horror (i.e. before Disney stripped them for consumer production). In this case we see a little girl challenged to retake her place in the underworld while her cruel step-father tries to savagely quell a rebellion. The entangling of these two threads, and the world illuminated so brightly and darkly, culminates in an excellent work.</p>
+
+<p>Finally, <strong>Deja Vu</strong> is an action/sci-fi piece about changing the events of a terrorist attack in New Orleans. While Denzel Washington handles the role as confidently as he can, the film makers cannot say the same. Plastered with some cack-handed but very Hollywood pseudo-science, the film suffers from a lack of conviction. Instead of following through with the rigid world that is set-up and you can see tragically but grippingly playing out, there is a distinct taste of a last minute happy ending rewrite; the film suffers greatly for it. Could have been better.</p>
+
+<p>The final finalist for the film fight is, obviously, Pan’s Labyrinth. The finale has already been written, meaning of course that I have selected my film of the year. Expect it soon.</p>
+
+  </div>
+  <div class="divider"><img src="/assets/images/divider.png" /></div>
+  </div>
+  
+  <div class="postcontainer">
   <h3><a href="/Archives/2006/12/25/filmfightnovember2006/">Film Fight: November 2006</a></h1>
   <p class="author">
     <span class="date"> </span>
@@ -164,53 +186,6 @@
 <p>A couple of years back, the great Hong Kong crime trilogy, <strong><a href="/Archives/2004/03/05/InfernalAffairs">Infernal Affairs</a></strong>, kicked off. That is long since finished, but a heavyweight Hollywood version has appeared in the form of <strong>The Departed</strong>. The tale of a cop going undercover in a crime syndicate, and the same crime syndicating planting a mole in the cops, this version builds the same tension through paranoia and near-misses, with some excellent performances from Jack Nicholson and Leonardo Dicaprio. Although the dialogue is better (post-translation), it does go wayward in a few places (like the love story). Still a very worthy film.</p>
 
 <p>It’s a tricky month, but I would say <strong>Little Miss Sunshine</strong> edges it.</p>
-
-  </div>
-  <div class="divider"><img src="/assets/images/divider.png" /></div>
-  </div>
-  
-  <div class="postcontainer">
-  <h3><a href="/Archives/2006/11/12/PlagiarismTokenisingPart1/">Plagiarism: Tokenising, Part 1</a></h1>
-  <p class="author">
-    <span class="date"> </span>
-  </p>
-  <div class="post">
-    <p>After a long break since our <a href="/Archives/2006/10/17/PlagiarismIntroduction">plagiarism introduction</a>, it’s time to get started on the real work. I would go and get some coffee before reading, because this is going to take a while.</p>
-
-<p>The first thing you really need to know about implementing a plagiarism detection system, and most natural language processors, is called <strong>tokenising</strong>: the process of taking a document and splitting it into smaller parts before the real analysis can take place.</p>
-
-<p>What exactly do I mean by that? Say you have a 300 students all handing in essays or a piece of code (we will choose the latter simply because the syntax can be easier), and you want to compare them for the purpose of finding plagiarists. We’ll say that one of these pieces of code includes the line “<code class="language-plaintext highlighter-rouge">for i in 1..10 loop</code>“. The computer does not understand that snippet, or the language it is written in (ADA, incidentally). For it to compare it to other snippets, it must first do what the human brain has evolved to do naturally: split the sentences into words and extract meaning from the words. Without splitting up a page somewhat, you can understand it far less well than you can if you break it up, and you have less tolerance for slight differences when comparing documents. Same applies for the computer.</p>
-
-<p>That’s not strictly true. The computer can just read those documents in as one big long string and compare them the dumb way, character by character. This, however, gives you much less tolerance for slight changes when comparing two very similar documents. A series of changes, even simple ones like adding spaces or punctuation, would make two very similar documents look different. This is a <strong>bad thing</strong>. We don’t want the cheaters to be able to beat our system by making small changes. If they make a lot of changes, that makes our life harder (are they still really cheating if they’ve changed everything?) but we certainly don’t want people them getting away with small changes.</p>
-
-<p>So, we take the document, figure out what constitutes a “word” in the language of the document, and turn the document into a list of these “words”. We call these words <strong>tokens</strong>. We can compare tokens much more easily and efficiently than comparing full strings, and with more tolerance for change. So, our earlier example might be broken up like this: <code class="language-plaintext highlighter-rouge">["for", "i", "in", "1", "..", "10", "loop"]</code></p>
-
-<p>Anyone who is being astute will notice that I just skipped over the real crux of the problem: how do we determine what a token is? Well, that really depends on the language that the document is in and, to an extent, the domain. Consider:</p>
-
-<ul>
-  <li>An essay written in English is very different from an essay written in Spanish.</li>
-  <li>An essay written in English is very different from a Java source file.</li>
-  <li>An essay about biology is likely very different (in language and style) from an essay about history.</li>
-</ul>
-
-<p>What you really need to understand about tokenising is that it is:</p>
-
-<ol>
-  <li><strong>Language specific</strong> – in that to get anywhere worthwhile with your tokeninsing, you will need a different tokeniser for each language.</li>
-  <li><strong>Domain specific</strong> – to get the most out of your tokeniser, it needs to be tuned to the domain of the topic (i.e. History, medicine etc) to better take advantage of how people in that domain exploit and use the language.</li>
-</ol>
-
-<p>The latter of these two I will leave as an exercise to the reader, and not discuss much further. The former is the core of the problem we want to solve: how do we create a tokeniser for a specific language? Easy, we look at the <strong>grammar</strong> of the language.</p>
-
-<p>Now, I know some people just shuddered at the mention of the word “grammar”, but it’s not so bad. The grammar for a language is simply the set of rules that allow for the construction of language features, a bunch of very simple rules that state which tokens can appear where and what form they should take when near other tokens. Thankfully, just about every computer language has a detailed specified grammar somewhere. If you’re suffering insomnia, have a look at the <a href="http://www.adahome.com/rm95/rm9x-P.html">Ada syntax</a> or the <a href="http://java.sun.com/docs/books/jls/second_edition/html/syntax.doc.html">Java grammar</a>. Thrilling stuff, I know.</p>
-
-<p>You know your language, you have your grammar, now you need a <strong>parser</strong>. The parser takes the grammar and documents you provide, and spits out your tokens. This is a well-understood area, and you may even have some tools to do it for you. If not there are plenty of tools available that will parse for you: <code class="language-plaintext highlighter-rouge">yacc</code>, <code class="language-plaintext highlighter-rouge">bison</code> and <code class="language-plaintext highlighter-rouge">lexx</code> are just a few command line tools that will parse documents. I would recommend <a href="http://sablecc.org/">SableCC</a> if you’re writing your plagiarism detection system in Java: it has a decent <acronym title="Application Interface">API</acronym> and does most of the work for you. You just need to take the trees it produces (for compiler use), and flatten them into an array; a trivial task that amounts to an in-order walk.</p>
-
-<p>Wow! We’ve now tokenised the document. End of story.</p>
-
-<p>Well, not quite. The problem with using a pure parser-and-grammar approach is that it doesn’t work if your input (your code snippets or essays) are malformed. If even one part of your document breaks a rule, your parser is going to complain. Most will refuse to process it further. Handling this is your responsibility, and it’s not an easy problem to solve. The simplest solution I can suggest is falling back to white-space tokenising when something fails and logging the problem, feeding a better solution into the next version of your system. It’s hardly ideal. Also, always remember <a href="http://en.wikipedia.org/wiki/Robustness_Principle">Postel’s law</a> and consider that just because someone doesn’t fully follow the rules of a language, that does not mean they should get away with plagiarism.</p>
-
-<p>Are we done now? No, but we’ve done enough for today. More tokenising soon.</p>
 
   </div>
   <div class="divider"><img src="/assets/images/divider.png" /></div>
