@@ -8,7 +8,7 @@ categories:
   - Films
 ---
 
-Intro
+A decent number of films for December with 10 new films, but are they any good?
 
 ### Mank
 
@@ -21,7 +21,6 @@ Intro
 ### Ava
 
 {% twitter https://twitter.com/garyfleming/status/1338119167380246529 %}
-
 
 ### Archenemy
 
@@ -53,4 +52,4 @@ Intro
 
 ### The December Winner
 
-...
+There was a surprising amount of bad stuff this month, but **Ma Rainey's Black Bottom** is a more than deserving winner, for those excellent lead performances.
