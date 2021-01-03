@@ -1,6 +1,6 @@
 ---
 title: "Film Fight 2020: December"
-date: 3899-01-07T20:00:00+00:00
+date: 2021-01-03T12:15:00+00:00
 author: Gary Fleming
 layout: post
 permalink: /:year/:month/:title/
@@ -39,10 +39,18 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1343181702991065088 %}
 
-### film name
+### Wonder Woman 1984
 
-{% twitter url %}
+{% twitter https://twitter.com/garyfleming/status/1345742348404330496 %}
 
-### The month Winner
+### Greyhound
+
+{% twitter https://twitter.com/garyfleming/status/1345743002648653824 %}
+
+### The 2nd
+
+{% twitter https://twitter.com/garyfleming/status/1345743289656422401 %}
+
+### The December Winner
 
 ...
