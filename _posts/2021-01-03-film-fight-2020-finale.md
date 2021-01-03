@@ -1,6 +1,6 @@
 ---
 title: "Film Fight 2020: Finale"
-date: 2021-01-13:30:00+00:00
+date: 2021-01-03T13:30:30+00:00
 author: Gary Fleming
 layout: post
 permalink: /:year/:month/:title/
