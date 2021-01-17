@@ -30,6 +30,14 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1348200168290717698 %}
 
+### Outside The Wire
+
+{% twitter https://twitter.com/garyfleming/status/1350768303292166144 %}
+
+### Soul
+
+{% twitter https://twitter.com/garyfleming/status/1350781789854433282 %}
+
 ### film name
 
 {% twitter url %}
