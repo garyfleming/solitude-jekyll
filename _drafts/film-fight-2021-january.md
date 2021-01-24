@@ -38,6 +38,14 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1350781789854433282 %}
 
+### Ham On Rye
+
+{% twitter https://twitter.com/garyfleming/status/1353367187420033024 %}
+
+### Arkansas
+
+{% twitter https://twitter.com/garyfleming/status/1353367722982256641 %}
+
 ### film name
 
 {% twitter url %}
