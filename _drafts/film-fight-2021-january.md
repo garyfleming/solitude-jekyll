@@ -46,10 +46,17 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1353367722982256641 %}
 
+### One Night In Miami
+
+{% twitter https://twitter.com/garyfleming/status/1355903817322274821 %}
+
+### Synchronic
+
+{% twitter https://twitter.com/garyfleming/status/1355905060379766790 %}
+
 ### film name
 
 {% twitter url %}
-
 
 
 
