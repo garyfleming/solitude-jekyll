@@ -82,6 +82,40 @@
 
   
   <div class="postcontainer">
+  <h3><a href="/Archives/2006/01/08/decompressionbombs/">Decompression Bombs</a></h1>
+  <p class="author">
+    <span class="date"> </span>
+  </p>
+  <div class="post">
+    <p>From random discussions I’ve had with people over the last few months, it seems to me that not too many people really know about a particularly nasty and cunning form of computer attack: the decompression bomb.</p>
+
+<p>First, think about compressing data. Most of us have used an application like WinZip or some similar tool to make our files smaller, albeit less accessible temporarily. These programs take advantage of how signal to noise ratios work in most representations of data; that is, the way we try to represent information is almost always ineffecient. There are usually techniques available for removing the parts that aren’t so important, and letting important (or common) information take less space.</p>
+
+<p>For example, the algorithm behind the ZIP programs is largely based on <a href="http://www.dogma.net/markn/articles/lzw/lzw.htm">LZW compression</a>: a technique that collapses common substrings down into single codes. Obviously, I’ve completely glossed over how it works, but if you want to know the information is out there (any computing scientist worth their salt should have at least an idea of how this sort of thing works).</p>
+
+<p>Using a randomly selected document of, say, English text, you would expect a maximum compression ratio of 10:1. That is, given a 100k file, you would expect a zip file of around 10k. That’s pretty good compression! The language being used and the specific text will cause the compression ratio to vary greatly, but the principles remain the same.</p>
+
+<p>The thing is, if you carefully construct an example document, you can get a compression ratio much higher. How much higher? MUCH, MUCH higher. For example, if you created a PNG image containing just one colour repeated over and over then you could easily get a 1000:1 ratio. For a text document containing 1 character repeated over and over, it’s possible to shrink 100Gb to about 6k. Think about that, it is a huge difference: 1.7e7:1.</p>
+
+<p>That’s all well and good as an interesting experiment, but what does it mean for an average user? Imagine I had constructed one of those zip files that had shrunk 100Gb down to 6k and I sent you that file. If you trusted me, you might try to open it. Therein lies the problem: while you can readily accept the zipped file, the chances that you have the 100Gb of free memory (including virtual memory) to accomodate the decompressed file are bloody slim. When you try to open one of these files, your computer will quickly become overwhelmed and stop responding; all of the free memory having been used up, it can’t do anything else. You effectively suffer a denial of service attack.</p>
+
+<p>That is what we call a decompression bomb.</p>
+
+<p>There is another factor that could cause problems for people who are careful when opening files: well-meaning programs can open them anyway. If the file arrives on your system (either by explicit downloading or by, say, a mail program fetching it), it’s likely that anti-virus software installed on your system would then want to check if the file contained any viruses. To do this, it pretty much has to decompress the file in memory, leading to the same problem. Oh dear.</p>
+
+<p>Most modern anti-virus software has some defences against decompression bombs, but they can still cause significant system lock-ups while figuring it out. Perhaps more evil is compressed web content, whether images or GZip encoded <acronym title="HyperText Markup Language">HTML</acronym>. No modern browser has a strong defence against decompression bombs. Relatively small files (100Mb decompressed) are usually handled quite well, in that the browser doesn’t crash completely, but go much bigger and most systems will run into trouble. Because browsers, sensibly, accept GZip encoding by default, any <acronym title="Uniform Resource Locator">URL</acronym> can hide a problem.</p>
+
+<p>Thankfully, problems don’t arise much in practice because there is little to be gained from this activity: if you take out someone’s system, you’ve annoyed them but you can rarely turn this to your advantage i.e. you can’t elicitly install spyware.</p>
+
+<p>If you want to see some more figures or examples (at your own risk), then the <a href="http://www.aerasec.de/security/advisories/decompression-bomb-vulnerability.html">AERAsec decompression bomb page</a> is a great start. It’s where I got a few of my figures from (so thanks for that!), and has a link to some real examples you can try.</p>
+
+<p>Now, <a href="http://solitude.vkps.co.uk/Archives/2006/01/11/DecompressionBombsPart2/">Decompression Bombs Part 2</a> outlines some real-life examples and answers a few questions!</p>
+
+  </div>
+  <div class="divider"><img src="/assets/images/divider.png" /></div>
+  </div>
+  
+  <div class="postcontainer">
   <h3><a href="/Archives/2006/01/05/BusAvoidance/">Bus Avoidance</a></h1>
   <p class="author">
     <span class="date"> </span>
@@ -173,32 +207,6 @@
 <p>So from the list of finalists, remembering that some better films never made it to the final twelve, the best film of this year is…</p>
 
 <p><strong>The Life Aquatic</strong>. While both Sin City and Million Dollar Baby nearly had it, the performances and perfect comic moments in the Bill Murray film take it into the lead. Quirky, but brilliantly so. Every scene adds a little more to the overall charm. A good winner.</p>
-
-  </div>
-  <div class="divider"><img src="/assets/images/divider.png" /></div>
-  </div>
-  
-  <div class="postcontainer">
-  <h3><a href="/Archives/2005/12/30/DroppedFeeds/">Dropped Feeds</a></h1>
-  <p class="author">
-    <span class="date"> </span>
-  </p>
-  <div class="post">
-    <p>Given that a new year is almost upon us, I figured it is a good time to get rid of the feeds I do not read any more. Before this cull, I had 218 feeds in Bloglines. That’s a fair number to keep up with and I don’t think my unread items count has dropped below a thousand in months now. Here’s what has been removed:</p>
-
-<ul>
-  <li><strong><a href="http://scaryduck.blogspot.com/">Scary Duck</a></strong> – It’s not gone any worse, it just hasn’t changed at all. I just don’t read it any more.</li>
-  <li><strong><a href="http://queryletters.blogspot.com/">Query Letters I Love</a></strong> – Not entertaining enough any more for the throughput.</li>
-  <li><strong><a href="http://www.snopes.com/info/whatsnew.asp">New Urban Legends</a></strong> – Debunking urban legends. Good reference, but not feed worthy.</li>
-  <li><strong><a href="http://www.worldwidewords.org/">World Wide Words</a></strong> – Why I ever subscribed to this is beyond me. Resolutely dull.</li>
-  <li><strong><a href="http://www.bigbold.com/snippets/?rss=">Code Snippets</a></strong> – When most of the examples are so out of context and badly done, I don’t want to sift through them in a feed reader for the few gems.</li>
-  <li><strong><a href="http://muttawa.blogspot.com/">The Religious Policeman</a></strong> – A well meaning site on the situation in Saudia Arabia, but one whose jaded writing has become more and more stilted.</li>
-  <li><strong><a href="http://creativecommons.org/">Creative Commons</a></strong> – A signal to noise problem: not consistently interesting enough to read.</li>
-  <li><strong><a href="http://antwrp.gsfc.nasa.gov/apod/ap050812.html">Astronomy Picture Of The Day</a></strong> – Although some of the pictures can be quite stunning, there are only so many nebulas I can find interesting. That number was reached some time ago.</li>
-  <li><strong><a href="http://www.guardian.co.uk/0,6961,603247,00.html?gusrc=rss">Guardian Unlimited</a></strong> – Again, a signal to noise issue. Of the several hundred items a week, I read maybe 2. Time for it to go.</li>
-</ul>
-
-<p>Far more than that shall be going, but it’s a good start.</p>
 
   </div>
   <div class="divider"><img src="/assets/images/divider.png" /></div>
