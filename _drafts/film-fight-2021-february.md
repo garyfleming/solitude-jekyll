@@ -18,6 +18,14 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1358417659637989376 %}
 
+### Greenland
+
+{% twitter https://twitter.com/garyfleming/status/1361377034228936708 %}
+
+### Malcolm & Marie
+
+{% twitter https://twitter.com/garyfleming/status/1361378444421046273 %}
+
 ### film name
 
 {% twitter url %}
