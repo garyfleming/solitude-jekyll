@@ -34,6 +34,13 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1373590463572283393 %}
 
+### Fire Will Come
+
+{% twitter https://twitter.com/garyfleming/status/1376144192074825729 %}
+
+### Bad Trip
+
+{% twitter https://twitter.com/garyfleming/status/1376145239430344707 %}
 
 ### Film
 
