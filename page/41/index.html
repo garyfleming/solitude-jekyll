@@ -82,6 +82,50 @@
 
   
   <div class="postcontainer">
+  <h3><a href="/Archives/2009/02/08/spotify-and-the-queue-problem/">Spotify and the Queue Problem</a></h1>
+  <p class="author">
+    <span class="date"> </span>
+  </p>
+  <div class="post">
+    <p>I’m sure most people will have heard of it already but <a href="http://www.spotify.com/">Spotify</a> is probably the most interesting music service I’ve seen since the Napster days (the first version of Napster that is, not the current one).</p>
+
+<p>You find an invite for it (there are plenty freely available just now), sign-up for free and you can then access a massive back catalogue of music to stream whenever you like. The streaming seems very reliable, and the selection is pretty good: this isn’t just small artists, all the major labels are represented. The cost? You either take it for free and listen to the occassional advert (all seem pretty unobtrusive so far), or pay £10 a month to stop the adverts.</p>
+
+<p>It’s different from something like <a href="http://www.last.fm/">last.fm</a>‘s streaming service, because you queue up a list of songs that you want to hear, rather than just starting somewhere and having new music pushed at you (which is not a bad thing in and of itself).</p>
+
+<p>If Spotify is successful, then it’ll be a game-changer. I won’t be surprised if, within a few years, Spotify is <em>the</em> way to get music, just as YouTube is <em>the</em> way to get video and Google is <em>the</em> way to find information. You won’t buy new music when you want to hear that one song you’ve not heard in a while, you’ll Spotify it.</p>
+
+<p>It’s fair to say I like it and I think it works incredibly, having tried it on Windows, Mac and on Linux (via <a href="http://www.winehq.org/">WINE</a>). It looks pretty slick across the board. It does, however, have some odd behaviour in places, which I’d like to detail.</p>
+
+<p>The playback functionality is built around the idea of a “play queue”: a list that holds all the songs you’ve selected to play. When they’ve played, they leave the queue and appear in your history. That’s pretty straightforward, but the manner in which you add songs to the queue is, on occassion, counter-intuitive. This is going to take a little explanation.</p>
+
+<p>There are two broad routes for finding music to add to the queue. You can either use a playlist (which, neatly, are shareable over the web), or you can use the fairly comprehensive search options. Once you’ve found the music you want with either route, you then have two actions you can take: play (the default action) and queue. The difference between the two, and how they interact with the two find methods causes some issues.</p>
+
+<p><strong>Problem #1: There are two different types of queue item.</strong> This is lengthy but keep with me, it’ll help you understand the rest. Let’s say you search for and find an album. You double-click the first track and start listening. As it finishes, Spotify automatically plays the next track as it has added the whole album to the play queue. Satisfied that it’ll keep going you make another selection and queue it i.e. not “play” it straight away as you want to hear all the items from the first album which, after all, you can see in your play queue. When the next song starts you might be surprised to learn that the next track to play is not the next track from the first album, it’s the first track from your second selection.</p>
+
+<p>What happened? Well, it turns out Spotify has active and passive queue items. On any search, a play will actively queue the item you selected and passively queue everything else. The play queue is sorted so that passively queued items are <strong>always</strong> after actively queued items. Using the play action creates one active item and potentially many passive items. Using the queue action creates an active item for every item you have selected.</p>
+
+<p>When you made your first album selection (using the play action), the first item was actively queued and the rest were passively queued. When you made your second selection (using the queue action), it jumped in front of all those other tracks. That’s pretty counter-intuitive, and is <strong>Problem #1</strong>.</p>
+
+<p>You might think, “Ok, I understand that and can avoid it”. Well, slow down, there’s more.</p>
+
+<p><strong>Problem #2: You can’t play an entire selection</strong>. If you thought that the solution to the above problem was to select the entire first album and use the play action, you’d be mistaken. Although Spotify will let you make a selection and use the play action while on that selection, it really only plays one of the tracks i.e. it ignores the fact you have made a selection. You can make a selection, use the queue action, and then delete everything before it already in your play queue, but that’s a bit of a roundabout way of doing things. Better behaviour? Enable the play action to operate over a selection, or disable it when a selection has been made. Or, model intents by adding a “Queue album” action.</p>
+
+<p><strong>Problem #3: Queing passive queue items makes copies of them</strong>. So maybe you thought the solution is to use the play action on the first item, thus passively queueing the rest, going to the play queue and selecting queue on the remaining items? Well, that works. You’ll have the entire thing actively queued. The problem is that actively queuing something like that doesn’t remove the passive copy. As soon as the entire album finishes, you’ll probably be surprised to hear the second track onwards again. The passive items weren’t removed, they were just copied to the active part of the queue. Better behaviour? Making a passive item an active item (using the queue action) should jusy promote it, and not copy it.</p>
+
+<p><strong>Problem #4: Passive queue items can’t be removed easily</strong>. Maybe you thought the solution to problem #3 is to just remove the passive items from the queue, thus leaving one active copy. I’m afraid not. You <strong>cannot</strong> remove passively queued items, without wiping out your entire play queue. This is a massive cause of irritation. Better behaviour? Activate the delete option for all items, thus allowing the removal of passive items.</p>
+
+<p><strong>Problem #5: Search and passive queuing can interact too broadly</strong>. You’ve learned to jump through the hoops above and now know how to queue things properly. Good. Let’s say you want to hear one song, and do a search for it. The search results return 10 similarly titled tracks and the one you wanted. You play the one you wanted. Can you guess what happens? Those completely unrelated tracks by unrelated artists in unrelated genres all got passively queued and you’re now listening to them. Best of all, because of problem #4 you can’t remove them without wiping out your queue entirely. Better behaviour? Restrict the passive queueing of items such that only items from the same artist/album get passively queued when searching by artist or track. A special case here is when the track is from a compilation, where you might want to queue the whole thing.</p>
+
+<p>Now, I know that comes across as negative, but let me reiterate that I really like Spotify (I’ve been listening to <a href="spotify:genre:britpop">genre:britpop</a> on it whilst writing this), and would just like to see some basic usability improvements.</p>
+
+<p>Here’s hoping the service makes it.</p>
+
+  </div>
+  <div class="divider"><img src="/assets/images/divider.png" /></div>
+  </div>
+  
+  <div class="postcontainer">
   <h3><a href="/Archives/2009/01/31/film-fight-january-2009/">Film Fight: January 2009</a></h1>
   <p class="author">
     <span class="date"> </span>
@@ -190,84 +234,6 @@
 <p>Is it likely to happen? Probably not. While I see the platforms opening up slowly, there is a cost in making that volume of data available and I honestly don’t know if any of the platform holders or developers would be willing to foot the bill for potentially nothing.</p>
 
 <p>I hope they do though, because the more information in our lives we can mash together and <a href="http://jeffjonas.typepad.com/jeff_jonas/2008/11/puzzling-how-observations-are-assembled-into-context.html">accumulate into a context</a>, the more interesting and rich that data can become.</p>
-
-  </div>
-  <div class="divider"><img src="/assets/images/divider.png" /></div>
-  </div>
-  
-  <div class="postcontainer">
-  <h3><a href="/Archives/2009/01/13/data-mappers/">Data Mappers with Java</a></h1>
-  <p class="author">
-    <span class="date"> </span>
-  </p>
-  <div class="post">
-    <p>In the Java world, there have been many ways to persist and retrieve domain objects, and most involve some form of ORM mapping. Modern methods include <a href="http://www.hibernate.org/">Hibernate</a>, <a href="http://ibatis.apache.org/">iBatis</a>, <a href="http://static.springframework.org/spring/docs/2.0.x/reference/jdbc.html">Spring JDBC Templates</a> and other <a href="http://java.sun.com/javaee/overview/faq/persistence.jsp">JPA providers</a>; these are all fine methods and all should be used appropriately. Most of the time you should use one of the above approaches and not what I’m going to show you below.</p>
-
-<p>One thing I’d like to say about persistence in Java is that you should almost never be using raw JDBC. There’s too much boiler-plate and repetition. You need to create a <code class="language-plaintext highlighter-rouge">DataSource</code>, and then get a <code class="language-plaintext highlighter-rouge">Connection</code>, then use that <code class="language-plaintext highlighter-rouge">Connection</code> to get a <code class="language-plaintext highlighter-rouge">PreparedStatement</code>. That can start to look pretty messy.</p>
-
-<p>Worst of all is that you get a <code class="language-plaintext highlighter-rouge">ResultSet</code> back which, if used without any form of conversion or mapping to your own domain, exposes the rest of your application to the persistence layer. This is bad for several reasons, not least of all it makes your code more tightly coupled and brittle in the face of change. Let’s be clear here: passing around a <code class="language-plaintext highlighter-rouge">ResultSet</code>, <code class="language-plaintext highlighter-rouge">CachedRowSet</code> or any other variant is <strong>BAD</strong>.</p>
-
-<p>It’s easy to avoid this problem by convert between a ResultSet row and a domain-specific object. Spring popularised an idea called the RowMapper (which I’ll outline below). The idea is that you have an interface that, once implemented, will convert between a resultSet and your domain object.</p>
-
-<p>Why might you need this? If you’re dealing with legacy applications, it’s frequently too costly to go back and retrofit one of the more modern approaches to ORM; the database layer doesn’t fit well with Hibernate, or the rest of the codebase won’t sit nicely with JPA, or you can’t take an (additional) external library dependency for any number of reasons. Sometimes it’s easier to quickly roll your own. Here’s an example I’ll call a <code class="language-plaintext highlighter-rouge">DataMapper</code> (NOTE: I’ve omitted Exception handling for the sake of clarity, you will need to add this back in!):</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>public interface DataMapper&lt;T&gt; {
-
-	public T mapRow(ResultSet resultSet);
-
-}
-</code></pre></div></div>
-
-<p>That’s nice and simple. When you implement this interface, your implementation doesn’t bother with any sort of row iteration, all it does is take the current row of the <code class="language-plaintext highlighter-rouge">resultSet</code>, call the standard <code class="language-plaintext highlighter-rouge">getString(...)</code> etc methods and builds up a single one of your beans, here represented by the generic placeholder <code class="language-plaintext highlighter-rouge">T</code>. Elsewhere you have this partner method (I like to keep this as a statically imported utility):</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>public static &lt;T&gt; Collection&lt;T&gt; map(ResultSet resultSet, DataMapper&lt;T&gt; mapper) {
-    Collection&lt;T&gt; mappedObjects = new LinkedList&lt;T&gt;();
-    while(resultSet.next() {
-        mappedObjects.add(mapper.mapRow(resultSet));
-    }
-    return mappedObjects;
-}
-</code></pre></div></div>
-
-<p>This method takes care of the iteration. You pass it your resultSet, and a DataMapper implementation and it’ll give you back a collection of your domain objects. Still quite simple and neat.</p>
-
-<p>How about an example? Let’s say you have a ResultSet that could be mapped to a simple Person bean:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>public class Person {
-
-    private String firstName;
-    private String lastName;
-    private int age;
-
-    //getters and setters for the above fields are omitted
-    //Imagine they were below. Go on, it'll make life easier.
-
-}
-</code></pre></div></div>
-
-<p>To do this using the DataMapper code I’ve outlined above, you’d have something like this:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>public class PersonMapper implements DataMapper&lt;Person&gt; {
-
-    @Override
-    public Person mapRow(ResultSet resultSet) {
-        Person bean = new Person();
-        bean.setFirstName(resultSet.getString("first_name"));
-        bean.setLastName(resultSet.getString("last_name"));
-        bean.setAge(resultSet.getInt("age"));
-        return bean;
-    }
-
-}
-</code></pre></div></div>
-
-<p>Pass that to the map method along with a valid ResultSet and you’ll get out a Collection of Person beans to work with. We’ve gone from ResultSet to domain-specific in very little code.</p>
-
-<p>Now these DataMappers don’t have to be simple. They could use the ResultSet and only the ResultSet, or they could use that as a basis to do more queries to build the object. They could lookup other services for information. They can do whatever you want for a relatively high power-to-lines of code ratio.</p>
-
-<p>I’ve found myself using the DataMapper abstraction for the purposes of unit testing. You write a DataMapper that outright ignores the (perhaps empty) ResultSet you pass it, and it instead uses the some randomised test data you’ve got ready. You can now easily create test beans without relying on the DB layer.</p>
-
-<p>It’s not perfect, and there are often better ways of doing persistence, but I’ve found this pattern has been very useful on a number of occasions.</p>
 
   </div>
   <div class="divider"><img src="/assets/images/divider.png" /></div>
