@@ -1,6 +1,6 @@
 ---
 title: "Film Fight 2021: March"
-date: 3899-01-07T20:00:00+00:00
+date: 2021-04-04T10:30:00+00:00
 author: Gary Fleming
 layout: post
 permalink: /:year/:month/:title/
@@ -8,7 +8,7 @@ categories:
   - Films
 ---
 
-Intro
+For March's Film Fight we have 9 films.
 
 ### Coming 2 America
 
@@ -49,4 +49,4 @@ Intro
 
 ### The March Winner
 
-...
+A genuinely difficult month to pick. While Barb & Star is the best comedy I've seen in ages, the real contenders are Judas & The Black Messiah and Dead Pigs. I think **Judas & The Black Messiah** edges it simply because if I had to pick one to watch again soon, it'd be that.
