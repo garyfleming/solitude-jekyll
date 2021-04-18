@@ -26,6 +26,26 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1381267464982528004 %}
 
+### Run
+
+{% twitter https://twitter.com/garyfleming/status/1383786309165092875 %}
+
+### Promising Young Woman
+
+{% twitter https://twitter.com/garyfleming/status/1383789251611938824 %}
+
+### Nobody
+
+{% twitter https://twitter.com/garyfleming/status/1383789687798521862 %}
+
+### Proxima
+
+{% twitter https://twitter.com/garyfleming/status/1383790289735745545 %}
+
+### Thunder Force
+
+{% twitter https://twitter.com/garyfleming/status/1383791019582365704 %}
+
 ### film name
 
 {% twitter url %}
