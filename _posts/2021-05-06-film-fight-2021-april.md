@@ -1,6 +1,6 @@
 ---
 title: "Film Fight 2021: April"
-date: 3899-01-07T20:00:00+00:00
+date: 2021-05-04T11:35:00+00:00
 author: Gary Fleming
 layout: post
 permalink: /:year/:month/:title/
@@ -8,7 +8,7 @@ categories:
   - Films
 ---
 
-Intro
+For April's Film Fight, we have 9 films.
 
 ### Concrete Cowboy
 
@@ -46,11 +46,7 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1383791019582365704 %}
 
-### film name
 
-{% twitter url %}
+### The April Winner
 
-
-### The month Winner
-
-...
+An easy one: **Promising Young Woman** has the story and style to take it here, and a better than average shot at film of the year.
