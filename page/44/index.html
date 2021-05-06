@@ -82,6 +82,28 @@
 
   
   <div class="postcontainer">
+  <h3><a href="/Archives/2008/12/28/the-quiet/">The Quiet</a></h1>
+  <p class="author">
+    <span class="date"> </span>
+  </p>
+  <div class="post">
+    <p>I hate seeing those “Sorry, I haven’t been posting much” posts, so it’s with more than a little trepidation that I write one myself to try and explain my two and a half month absence. (I am, in truth, adding this entirely for my own benefit years down the line.) The following things have happened:</p>
+
+<ul>
+  <li>I left my job at the BigCo I’ve been working for since I graduated from university (3+ years of service). There wasn’t any big, deep disagreement, I just felt it was time to try something different and take on a different kind of challenge. I’d certainly go back at some point in the future, if that’s where my path was headed.</li>
+  <li>Consequently, I’ve started working for a pretty SmallCo. So far it seems pretty excellent, and is a remarkably different kind of pace. The amount of bureaucracy has decreased dramatically, but the level of support for peripheral items has also decreased. All in all, it seems like it’s a good experience and one I should be taking at this point in my life.</li>
+  <li>I’ve moved flat <em>again</em>. Yes, this is my 4th flat in 3 years, but hopefully the last for a good little while. I’ve finally left the city centre of Glasgow behind, and am slowly getting acquainted with the south side (specifically, Mount Florida).</li>
+  <li>As I mentioned on <a href="http://twitter.com/garyfleming">Twitter</a>, I was briefly admitted to hospital after my appendix decided it wanted a separation. It was a tough break-up but a few weeks later, I think I’m over it.</li>
+  <li>Aside from that, I’ve been catching up on various games. My Guitar Hero skills are coming along nicely, and Fable II was quite a nice diversion. Fallout 3 is just warming up now.</li>
+</ul>
+
+<p>I’d like to say that it won’t happen again, but we all know it will. I do, however, have a reasonably large selection of ideas that I want to write about in the near future so hopefully it’ll be a little less barren here. Look out for the remainder of 2008’s Film Fights, and the Film Fight Finale in the next few days.</p>
+
+  </div>
+  <div class="divider"><img src="/assets/images/divider.png" /></div>
+  </div>
+  
+  <div class="postcontainer">
   <h3><a href="/Archives/2008/10/11/pre-merge-logs/">Pre-merge Logs in SVN</a></h1>
   <p class="author">
     <span class="date"> </span>
@@ -176,41 +198,6 @@ Then you&#8217;re free to take a trunk check-out and do a merge with full knowle
 <p>Finally, Christopher Nolan continues to redefine the superhero genre in <strong>The Dark Knight</strong>. I’ve discussed this film more than any other in recent memory and I agree with the pervading feeling: it’s extremely good. Heath Ledger is incredible as the Joker, the tone is well set, the cinematography is exceptional, and it’s a thoroughly enjoyable film. That said, it’s not without flaws. Most notable is the burgeoning length and lack of clear focus. Building up Harvey Dent for the fall to become Two-Face was necessary, but then cramming so much of the character into the back half of the movie? It felt forced and pushed the film longer than it could comfortably sustain; that strand could and should have been picked up in the next part of the series. There’s plenty of other cuts that could be made: most of the cast being rendered mere scenery compared to the scene-stealing joker. I could go on (and have in conversation) with list of problems with the movie, but ultimately I enjoyed it, and thought it was a compelling piece of film-making. I recommend it highly.</p>
 
 <p>I’m a little torn for this months’ winner: should it be a subtle horror movie, a brilliant but light story, or a flawed but enjoyable blockbuster? They’re all great films, but I think it’s going to be <strong>The Dark Knight</strong>, largely due to Ledger’s perfectly-pitched attempt at the classic Joker character.</p>
-
-  </div>
-  <div class="divider"><img src="/assets/images/divider.png" /></div>
-  </div>
-  
-  <div class="postcontainer">
-  <h3><a href="/Archives/2008/08/19/fixing-a-gap-in-javascript/">Fixing a Gap in Javascript</a></h1>
-  <p class="author">
-    <span class="date"> </span>
-  </p>
-  <div class="post">
-    <p>An interesting problem: a bunch of <a href="http://struts.apache.org/1.2.8/userGuide/dev_nested.html">Struts Nested</a> tags generate HTML. Separately, we write some Javascript that makes use of <code class="language-plaintext highlighter-rouge">getElementById()</code> to find some of the generated elements. This works in Internet Explorer, but fails miserably in <a href="http://www.mozilla.com/firefox/">FireFox</a>. Why?</p>
-
-<p>Well, it turns out that Struts Nested tags generate elements that have a <code class="language-plaintext highlighter-rouge">name</code> attribute but not an <code class="language-plaintext highlighter-rouge">id</code>. Separately, IE actually does the wrong thing with <code class="language-plaintext highlighter-rouge">getElementById()</code>: if a search by id fails, it will try to match by name; that’s fundamentally broken. It’d be fine if a bunch of libraries and other functions didn’t prefer the use of ids, and if other browsers did the same thing. They don’t and we’re stuck with the mess. Let’s clean it up.</p>
-
-<p>The right thing to do would be to <a href="http://www.sixteensmallstones.org/ie-javascript-bugs-overriding-internet-explorers-documentgetelementbyid-to-be-w3c-compliant-exposes-an-additional-bug-in-getattributes">cripple the IE version into the correct behaviour</a>. Now everyone agrees on what should happen.</p>
-
-<p>Let’s assume, though, that this isn’t possible, that there’s a large dependency on this behaviour that cannot be changed for whatever reason: no access to the JS, unwieldy codebase that we don’t have time to fix straight away (bad!), or something else. It’s not really that important. If you need to go for the wrong solution, here’s how:</p>
-
-<p>`</p>
-<pre>
-document.nativeGetById = document.getElementById;
-document.getElementById = function(id){
-  var el = document.nativeGetById(id);
-  if(el == null){
-    el = document.getElementsByName(id)[0];
-    if(el != null){el.id=id;}
-  }
-  return el;
-}
-</pre>
-<p>`
-
-That&#8217;ll work and it&#8217;ll even make sure subsequent calls use the native version of the function for extra speed. Now, there are a couple of small issues with this function and some pretty obvious optimisations, but I&#8217;ll leave that as an exercise for the reader.
-</p>
 
   </div>
   <div class="divider"><img src="/assets/images/divider.png" /></div>

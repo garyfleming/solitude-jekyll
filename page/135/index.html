@@ -82,6 +82,37 @@
 
   
   <div class="postcontainer">
+  <h3><a href="/Archives/2003/08/14/PermalinksAndData/">Permalinks And Data</a></h1>
+  <p class="author">
+    <span class="date"> </span>
+  </p>
+  <div class="post">
+    <p>There’s an old problem with permalinks: they have a tendency to end up not being permanent. You keep a record of articles (bookmarks/favourites) that you know you’ll want to refer back to later. When it comes time to actually use them, the links are broken for whatever reason and you’re left staring at a 404 screen. Not fun.</p>
+
+<p>It’s happened to me once too many times, so I’m going to try to solve the problem for at least my site. My thinking is that servers are outwith the control of most people, even the owner of the site living on the server, thus making it the weakest link in the distribution chain. So, how do we remove reliance on servers to recall information?</p>
+
+<p>The best answer is immediate addressing in the form of <a href="http://www.ietf.org/rfc/rfc2397">Data: <acronym title="Uniform Resource Locator">URL</acronym>‘s</a>. For those who’ve never seen a data:url, it’s a way to store information (images, text, or pretty much anything else) as a link; that is, the link <strong>is</strong> the data, not just a pointer to it. It’s a great concept being used in various ways (not least as a way of beating <acronym title="Digital Video Disc">DVD</acronym> encryption).</p>
+
+<p>When permalinks meet data:urls, we have a way of storing entries as links. That is, we have bookmarks that will <em>never</em> break.</p>
+
+<p>Of course, this is not without it’s problems:</p>
+
+<ol>
+  <li><strong>Internet Explorer</strong> – Not unsurprisingly, <acronym title="Internet Explorer">IE</acronym> does not support data: url’s and won’t do anytime soon. So, those users don’t get the added benefits unless they upgrade.</li>
+  <li><strong>Bandwidth</strong> – by providing the data on a page and as a link, bandwidth usage is effectively doubled. This is not good. To combat this, I only provide data: permalinks on individual item pages. You’ll have to click through to an entry to get the data permalink.</li>
+  <li><strong>Limited space</strong> – Although <a href="http://www.mozilla.org">Mozilla</a> and its derivatives offer data: urls of up to 2Gb, the recently added support in <a href="http://www.opera.com">Opera</a> is limited to 4kb. That’s not a lot of room for a full-on essay. Happily, though, it’s easily big enough for <em>most</em> entries around here. Those that are too long get automatically cut down to size and a real permalink added to the end, pointing to the full articale. This is very much a compromise, but one worth making.</li>
+  <li><strong>Unclosed Tags</strong> – Related to large essays getting cut down (above), permalinks on this site might have unclosed tags towards the end. This is entirely my fault. Eventually, I will work on a way to automatically close tags that are open, but until I do they’ll be broken. Sorry.</li>
+</ol>
+
+<p>If you want to play with data: urls yourself, there are some good resources. Ian Hickson’s <a href="http://software.hixie.ch/utilities/cgi/data/data">data: <acronym title="Uniform Resource Indicator">URI</acronym> kitchen</a> is the best place to generate them for experimentation. Or, if you’re feeling really fruity, there is Simon Willison’s <a href="http://simon.incutio.com/archive/2003/08/11/selfContained#comments">self-contained data: URI kitchen</a>; a reinvention of Ian’s kitchen as a data: uri (confusing yes, useless no).</p>
+
+<p>Thanks to <a href="http://ln.hixie.ch">Ian Hickson</a> for providing the numbers on <acronym title="Uniform Resource Locator">URL</acronym> lengths, and to <a href="http://simon.incutio.com">Simon Willison</a> for reworking the original kitchen and inadvertantly giving me a kick to get this done.</p>
+
+  </div>
+  <div class="divider"><img src="/assets/images/divider.png" /></div>
+  </div>
+  
+  <div class="postcontainer">
   <h3><a href="/Archives/2003/08/11/CommentingOnComments/">Commenting On Comments</a></h1>
   <p class="author">
     <span class="date"> </span>
@@ -147,26 +178,6 @@
 <p>What I enjoyed most was the action sequences. No clever special effects, no highly stylised martial arts, just robots throwing each other around like the brutes they are. Fantastic.</p>
 
 <p>Worth seeing, especially in anticipation for the inevitable T4.</p>
-
-  </div>
-  <div class="divider"><img src="/assets/images/divider.png" /></div>
-  </div>
-  
-  <div class="postcontainer">
-  <h3><a href="/Archives/2003/08/07/RandomLinksBockEdition/">Random Links: Bock Edition</a></h1>
-  <p class="author">
-    <span class="date"> </span>
-  </p>
-  <div class="post">
-    <p>Yes, time for some more random links, from random places… randomly.</p>
-
-<p><a href="http://www.legalaffairs.org/issues/July-August-2003/feature_zittrain_julaug03.html">The Copyright Cage</a> is a long article about peculiarites in the copyright system, how arbitary it is, and how copyright law is being shifted away from society. Worth slogging through.</p>
-
-<p>Over on Digital Web, <a href="http://www.mezzoblue.com">Dave Shea</a> is <a href="http://digital-web.com/features/feature_2003-08.shtml">defending Fehrner Image Replacement</a>. It uses powerful examples, way beyond the scope that I’d thought was possible from the technique. This could be something worth playing with some more.</p>
-
-<p>There is an interesting article on Idle Words about <a href="http://www.idlewords.com/weblog.08.2003.html#242">the <acronym title="Rich Site Summary">RSS</acronym> “conflict”</a>, or lack of.</p>
-
-<p>And finally, <a href="http://story.news.yahoo.com/news?tmpl=story&amp;cid=519&amp;ncid=519&amp;e=4&amp;u=/ap/20030806/ap_on_re_us/hawk_attack_2">trained hawks attack a dog</a>. Fun.</p>
 
   </div>
   <div class="divider"><img src="/assets/images/divider.png" /></div>
