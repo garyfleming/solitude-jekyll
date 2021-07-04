@@ -12,11 +12,11 @@ Intro
 
 ### Freaky
 
-{% twitter url %}
+{% twitter https://twitter.com/garyfleming/status/1411638717178171393 %}
 
 ### Minari
 
-{% twitter url %}
+{% twitter https://twitter.com/garyfleming/status/1411639511679897601 %}
 
 ### film name
 
