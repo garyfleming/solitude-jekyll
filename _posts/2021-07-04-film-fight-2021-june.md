@@ -1,6 +1,6 @@
 ---
 title: "Film Fight 2021: June"
-date: 2021-07-04T10:20:00+00:00
+date: 2021-07-04T09:20:00+00:00
 author: Gary Fleming
 layout: post
 permalink: /:year/:month/:title/

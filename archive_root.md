@@ -26,3 +26,4 @@ To explore the archives, pick a year:
 * [2018]({{ site.baseurl }}/Archives/2018/)
 * [2019]({{ site.baseurl }}/Archives/2019/)
 * [2020]({{ site.baseurl }}/Archives/2020/)
+* [2021]({{ site.baseurl }}/Archives/2021/)
