@@ -22,6 +22,13 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1411726781095219203 %}
 
+### Body Brokers
+
+{% twitter https://twitter.com/garyfleming/status/1414173422410772480 %}
+
+### Honest Thief
+
+{% twitter https://twitter.com/garyfleming/status/1414173790649585668 %}
 
 ### film name
 
