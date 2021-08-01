@@ -1,6 +1,6 @@
 ---
 title: "Film Fight 2021: July"
-date: 3899-01-07T20:00:00+00:00
+date: 2021-08-01T07:12:00+00:00
 author: Gary Fleming
 layout: post
 permalink: /:year/:month/:title/
@@ -8,7 +8,7 @@ categories:
   - Films
 ---
 
-Intro
+For July, there are 10 films in the fight.
 
 ### Freaky
 
@@ -34,11 +34,23 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1414267655104700418 %}
 
-### film name
+### Clemency
 
-{% twitter url %}
+{% twitter https://twitter.com/garyfleming/status/1421749735355002882 %}
+
+### First Cow
+
+{% twitter https://twitter.com/garyfleming/status/1421750589160046595 %}
+
+### Gunpowder Milkshake
+
+{% twitter https://twitter.com/garyfleming/status/1421751321581981699 %}
+
+### The Suicide Squad
+
+{% twitter https://twitter.com/garyfleming/status/1421751756371935233 %}
 
 
-### The month Winner
+### The July Winner
 
-...
+The winner for July is **Clemency**, a film that'll be hard to watch again.
