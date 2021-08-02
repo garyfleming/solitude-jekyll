@@ -82,17 +82,16 @@ module Jekyll
     priority :high
 
     def generate(site)
-      # TODO reenable this
-      # if site.layouts.key? 'pinboard_list'
-      #   pinboard = PinboardPage.new(site, site.source)
-      #   if pinboard.render?
-      #     pinboard.render(site.layouts, site.site_payload)
-      #     pinboard.write(site.dest)
-      #     site.pages << pinboard
-      #   end
-      # else
-      #   throw "No 'pinboard_list' layout found."
-      # end
+      if site.layouts.key? 'pinboard_list'
+        pinboard = PinboardPage.new(site, site.source)
+        if pinboard.render?
+          pinboard.render(site.layouts, site.site_payload)
+          pinboard.write(site.dest)
+          site.pages << pinboard
+        end
+      else
+        throw "No 'pinboard_list' layout found."
+      end
     end
 
   end
