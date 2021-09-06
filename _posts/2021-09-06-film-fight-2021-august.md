@@ -1,6 +1,6 @@
 ---
 title: "Film Fight 2021: August"
-date: 3899-01-07T20:00:00+00:00
+date: 2021-09-06T09:00:00+00:00
 author: Gary Fleming
 layout: post
 permalink: /:year/:month/:title/
@@ -8,7 +8,7 @@ categories:
   - Films
 ---
 
-Intro
+A busy month with some pretty great films. 13 in total!
 
 ### Walk Away Joe
 
@@ -62,11 +62,7 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1431915700206112775 %}
 
-### film name
 
-{% twitter url %}
+### The August Winner
 
-
-### The month Winner
-
-...
+A genuinely tough choice, given some of the better entries. I've gone back and forward for a while but I'm giving it to **The Green Knight**, a film with a sense of myth and folklore that is shown, not told.
