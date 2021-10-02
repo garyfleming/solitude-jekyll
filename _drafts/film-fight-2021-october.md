@@ -10,6 +10,14 @@ categories:
 
 Intro
 
+### The Guilty
+
+{% twitter https://twitter.com/garyfleming/status/1444307000888864774 %}
+
+### No Time To Die
+
+{% twitter https://twitter.com/garyfleming/status/1444307888026103809 %}
+
 ### film name
 
 {% twitter url %}
