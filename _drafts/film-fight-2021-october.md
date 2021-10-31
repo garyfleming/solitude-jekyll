@@ -38,6 +38,17 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1451856216183951367 %}
 
+### Dune
+
+{% twitter https://twitter.com/garyfleming/status/1454771770091786241 %}
+
+### No Sudden Move
+
+{% twitter https://twitter.com/garyfleming/status/1454772342274600962 %}
+
+### Last Night In Soho
+
+{% twitter https://twitter.com/garyfleming/status/1454774139634524162 %}
 
 ### film name
 
