@@ -1,6 +1,6 @@
 ---
 title: "Film Fight 2021: October"
-date: 3899-01-07T20:00:00+00:00
+date: 2021-11-07T11:00:00+00:00
 author: Gary Fleming
 layout: post
 permalink: /:year/:month/:title/
@@ -8,7 +8,7 @@ categories:
   - Films
 ---
 
-Intro
+For October, we have a real mixed batch of 11 films.
 
 ### The Guilty
 
@@ -50,10 +50,10 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1454774139634524162 %}
 
-### film name
+### Army of Thieves
 
-{% twitter url %}
+{% twitter https://twitter.com/garyfleming/status/1457330967409012737 %}
 
-### The month Winner
+### The October Winner
 
-...
+While The Guilty was surprisingly good, I'm going with **Last Night In Soho** for October's best film: stylish, fun, and impeccably made.
