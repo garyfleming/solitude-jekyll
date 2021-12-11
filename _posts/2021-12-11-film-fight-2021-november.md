@@ -1,6 +1,6 @@
 ---
 title: "Film Fight 2021: November"
-date: 3899-01-07T20:00:00+00:00
+date: 2021-12-11T11:30:00+00:00
 author: Gary Fleming
 layout: post
 permalink: /:year/:month/:title/
@@ -8,7 +8,7 @@ categories:
   - Films
 ---
 
-Intro
+A solid month with 8 new films.
 
 ### Eternals
 
@@ -38,11 +38,11 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1464536611283156992 %}
 
-### film name
+### King Richard
 
-{% twitter url %}
+{% twitter https://twitter.com/garyfleming/status/1469651282742988804 %}
 
 
-### The month Winner
+### The November Winner
 
-...
+Not the strongest month, but **The Harder They Fall** is a deserved winner: great visuals, pacing, and performances. A must-see.
