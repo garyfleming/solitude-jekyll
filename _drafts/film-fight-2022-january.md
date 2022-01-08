@@ -26,6 +26,10 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1479121386618568718 %}
 
+### Mother/Android
+
+{% twitter https://twitter.com/garyfleming/status/1479833558684508161 %}
+
 ### film name
 
 {% twitter url %}
