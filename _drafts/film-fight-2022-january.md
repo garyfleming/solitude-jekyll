@@ -30,6 +30,22 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1479833558684508161 %}
 
+### The Tender Bar
+
+{% twitter https://twitter.com/garyfleming/status/1485236420633665540 %}
+
+### Preparations To Be Together For An Unknown Period Of Time
+
+{% twitter https://twitter.com/garyfleming/status/1485237050462904322 %}
+
+### The Starling
+
+{% twitter https://twitter.com/garyfleming/status/1485238447342247942 %}
+
+### Nightmare Alley
+
+{% twitter https://twitter.com/garyfleming/status/1485239493443604481 %}
+
 ### film name
 
 {% twitter url %}
