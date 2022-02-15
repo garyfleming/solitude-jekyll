@@ -1,6 +1,6 @@
 ---
 title: "Film Fight 2022: January"
-date: 3899-01-07T20:00:00+00:00
+date: 2022-01-15T10:00:00+00:00
 author: Gary Fleming
 layout: post
 permalink: /:year/:month/:title/
@@ -8,7 +8,7 @@ categories:
   - Films
 ---
 
-Intro
+A big start to 2022, with 11 new films. A very mixed bag.
 
 ### The Protege
 
@@ -46,11 +46,15 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1485239493443604481 %}
 
-### film name
+### A Journal For Jordan
 
-{% twitter url %}
+{% twitter https://twitter.com/garyfleming/status/1493556032534163461 %}
+
+### Friends And Strangers
+
+{% twitter https://twitter.com/garyfleming/status/1493556747037990912 %}
 
 
-### The month Winner
+### The January Winner
 
-...
+While Licorice Pizza is an excellent slice of life film, I think **The Lost Daughter** is the monthly winner. Several very strong performances, a compelling story, beautifully shot.
