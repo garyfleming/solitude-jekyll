@@ -1,8 +1,8 @@
 require 'net/http'
 
-module Jekyll
+module PinboardPlugin
 
-  class PinboardPage < Page
+  class PinboardPage < Jekyll::Page
 
     # Initializes a new PinboardPage
     #
@@ -77,7 +77,7 @@ module Jekyll
 
 
   # Jekyll hook - the generate method is called by jekyll
-  class GeneratePinboard < Generator
+  class GeneratePinboard < Jekyll::Generator
     safe true
     priority :high
 
