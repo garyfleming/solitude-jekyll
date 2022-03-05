@@ -16,7 +16,7 @@ exclude: [LICENSE, README.md, .gitignore, Gemfile, _local.yml, local-serve.sh, G
 paginate: 5
 paginate_path: "/page/:num"
 
-plugins: ["pinboard_generator", "jekyll-archives", "jekyll-paginate", "jekyll-twitter-plugin"]
+plugins: [ "jekyll-archives", "jekyll-paginate", "jekyll-twitter-plugin"]
 
 
 jekyll-archives:
