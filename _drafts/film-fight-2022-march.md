@@ -14,6 +14,14 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1500099533723820032 %}
 
+### Kimi
+
+{% twitter https://twitter.com/garyfleming/status/1504817195121004547 %}
+
+### The Batman
+
+{% twitter https://twitter.com/garyfleming/status/1504817701172224009 %}
+
 ### film name
 
 {% twitter url %}
