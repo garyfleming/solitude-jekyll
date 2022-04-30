@@ -20,7 +20,11 @@ Intro
 
 ### The Northman
 
-{% twitter url %}
+{% twitter https://twitter.com/garyfleming/status/1515714599655510021 %}
+
+### The Bubble
+
+{% twitter https://twitter.com/garyfleming/status/1520387345127817217 %}
 
 ### film name
 
