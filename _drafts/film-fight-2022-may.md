@@ -14,6 +14,10 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1522878214242471941 %}
 
+### The Contractor
+
+{% twitter https://twitter.com/garyfleming/status/1523215666991742976 %}
+
 ### film name
 
 {% twitter url %}
