@@ -18,6 +18,18 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1523215666991742976 %}
 
+### Doctor Strange In The Multiverse Of Madness
+
+{% twitter https://twitter.com/garyfleming/status/1525862418538237959 %}
+
+### Operation Mincemeat
+
+{% twitter https://twitter.com/garyfleming/status/1525863532272795649 %}
+
+### Everything Everywhere All At Once
+
+{% twitter https://twitter.com/garyfleming/status/1525864262991851520 %}
+
 ### film name
 
 {% twitter url %}
