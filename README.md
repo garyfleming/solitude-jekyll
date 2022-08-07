@@ -8,13 +8,11 @@
 
 Then go to localhost:4000
 
-## Publish ##
+### Build/publish
 
-No longer needed. Covered by GH Actions.
+Coveredf by a GH Action workflow. See `.github/workflows/main.yml` for 
+details.
 
-### Build/publish for GH Pages
-
-No longer needed. Covered by GH Actions.
 
 
 ## TODO ##
