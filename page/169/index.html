@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Solitude - Happenings</title>
+  <meta name="author" content="Solitude" />
+  <meta name="twitter:widgets:csp" content="on" />
+  <meta name="description" content="The blog of Solitude" />
+  <link rel="canonical" href="https://solitude.vkps.co.uk/page/169/" />
+
+  <link href="//fonts.googleapis.com/css?family=Open+Sans:600,800" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="alternate" type="application/atom+xml" title="Solitude" href="https://solitude.vkps.co.uk/atom.xml" />
+  <link rel="stylesheet" href="/assets/css/all.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-k2/8zcNbxVIh5mnQ52A0r3a6jAgMGxFJFE2707UxGCk= sha512-ZV9KawG2Legkwp3nAlxLIVFudTauWuBpC10uEafMHYL0Sarrz5A7G79kXh5+5+woxQ5HM559XX2UZjMJ36Wplg==" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container">
+    <div class="four columns sidebar">
+      <nav>
+  <h1><a href="/">Solitude</a></h1>
+  <a href="/">
+    
+    <img src="/assets/images/tree-160.jpg" id="solitude-logo" alt="Solitude logo"/>
+    
+  </a>
+  <div id="bio">
+    <p>Technology. Code. Living relentlessly in the real world.</p>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="/about/">About</a></li>
+      <li><a href="/Archives/">Archives</a></li>
+    </ul>
+  </nav>
+  <div id="social">
+    Follow me:
+<div id="stalker">
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <a title="garyfleming on Twitter" href="https://twitter.com/garyfleming">
+    <i class="fa fa-twitter-square"></i>
+  </a>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <a title="Atom feed" id="atom" href="/feed.xml">
+    <i class="fa fa-rss-square"></i>
+  </a>
+  
+</div>
+
+  </div>
+  
+</nav>
+
+    </div>
+
+    <div class="eleven columns content">
+      <div id="home">
+  <h2><i class="fa fa-bookmark"></i> Happenings</h2>
+
+  
+  <div class="postcontainer">
+  <h3><a href="/Archives/2003/03/02/AllAboutTheStructure/">All About The Structure</a></h1>
+  <p class="author">
+    <span class="date"> </span>
+  </p>
+  <div class="post">
+    <p>In response to my <a href="http://solitude.vkps.co.uk/News/Index.php?ArtID=20030301233749">Graphic Vs. Web Design article</a>, someone said:</p>
+
+<blockquote>
+  <p>So, when I begin by opening photoshop and making everything look cool, am I doing it all wrong?</p>
+</blockquote>
+
+<p>Yes and no. It’s generally a good step to have a clear design in your head before starting anything (although, don’t be afraid to deviate from a preliminary design). But it should never be more than a concept.</p>
+
+<p>Imagine what you want to do visually, see the words flow together in your sea of colours. Paint this picture, if you must, in Photoshop (or whatever package you want to use). Done? Now, throw it away immediately.</p>
+
+<p>Let’s start again properly: take the content you want on a page and separate it into logical sections (content, navigation, header etc). We’ll do this (in mark-up) using the DIV tag. Importantly, give each of these top-level DIV’s a unique ID attribute. If each of those sections needs broken down further, then do that too (although you might be looking at giving these DIV’s generic classes, rather than ID’s). Iterate, until you’ve chopped your site into the smallest reasonable sections.</p>
+
+<p>Take this site as an example. It has 3 top-level sections: Content, Navigation and Header. Now, it so happens that I only wanted a single title in the header, so DIV tags were omitted. They were unnecessary since the (unique) H1 tag takes care of anything that a DIV could. Navigation is broken into a several sections, but I’ll focus on the Content section.</p>
+
+<p>First off, the Content DIV, has a header (H2). This is important since everything that follows is subordinate to this. In an outline view, you can easily determine that the content is part of “Happenings” (my own very special way of saying “News”). After this, each piece of content is broken into “BlogItem”‘s (a second-level DIV with a “BlogItem” class attribute attached to each one). These consist of 4 parts: A <em>heading</em> (H3), the <em>date</em> (a P with a date class attached), the <em>content</em> itself and a <em>permanent</em> link to that BlogItem.</p>
+
+<p>The <em>heading</em> is self-explanatory: each part of a document should have an appropriate title which, in this case, happens to be at the H3 level since it is within elements containing H1 and H2 tags (the parent sections of our BlogItem’s). We could add further subheadings in our content, if necessary.</p>
+
+<p>The <em>date</em> is a little more dubious. Some would make it an H4 heading. I disagree. In an outline of the document, nobody cares about the date something is posted. We would skim through the headings until we saw something that interests us, not when it was posted (“Oh yeah, this was posted on the 23rd February. I <strong>must</strong> read”). But it <em>is</em> useful meta-data. We can use it as frame of reference to put the content in.</p>
+
+<p>The <em>content</em> itself is quite self-explanatory too: it’s what you wanted on the page. It’s why we’ve went to these lengths to create a well-structured document. Type it in. (There’s a lot to be said about marking-up content, but that goes way beyond the scope of this article – another time perhaps). Note that an article is logically separated into paragraphs, and these paragraphs into sentences. This is what we’re doing here, and on a larger scale.</p>
+
+<p>Finally, we have a <em>permanent link</em> to each individual BlogItem. This is, again, meta-data. It’s useful to have an access mechanism to a given piece of content at the end (or beginning) of that content. We can then look back at it whenever we feel the need, without having to sift through the rest of the data structure.</p>
+
+<p>I’m not saying this structure should be adopted for other sites, it just made sense for <em>this</em> site. Separate your own information into logical sections, to get a decent structure for <em>your</em> site.</p>
+
+<p>Now I can already see the graphic designers and table fanatics at the back saying: “That’s not web design, it’s information management”. Well, yes, it is information management, and it’s also <strong>exactly</strong> what web design is based on. Now that we have a logical data structure for our information, we can make it look however we like. This is a secondary concern.</p>
+
+<p>Because of our detailed structure (complete with IDs and classes), we can now generically access every similar item on every page in one clean swoop. That means that redesigning a site will now take minutes, rather than weeks. The data structure, free from style of any form, is mouldable at a higher level. For anyone who’s strived to change a site or make it look good in a brand new browser (how are those new table hacks coming along?), this will mean a lot. Actually styling the page is, again, beyond the scope of this article, but will be resolved at a later date.</p>
+
+<p>To summarise, style should always come after structure. Once we have a structure, we can do what we like with it to make it look great. The same can’t be said in reverse.</p>
+
+  </div>
+  <div class="divider"><img src="/assets/images/divider.png" /></div>
+  </div>
+  
+  <div class="postcontainer">
+  <h3><a href="/Archives/2003/03/02/TheMusicIndustry/">The Music Industry</a></h1>
+  <p class="author">
+    <span class="date"> </span>
+  </p>
+  <div class="post">
+    <p>The whingers of the music industry are <a href="http://www.scottandrew.com/weblog/2003_03#a000590">put into their places by Scott Andrew</a>. With a million “artists” per required piece of art, we’re not in any shortage. Artists should, primarily, create art for themselves. Glad someone else sees it that way.</p>
+
+  </div>
+  <div class="divider"><img src="/assets/images/divider.png" /></div>
+  </div>
+  
+  <div class="postcontainer">
+  <h3><a href="/Archives/2003/03/01/GraphicVsWebdesign/">Graphic Vs Web design</a></h1>
+  <p class="author">
+    <span class="date"> </span>
+  </p>
+  <div class="post">
+    <p>Most web designers are terrible at web design. There, I said it. I’m not talking about the people who put up personal sites full of animated gifs that they stole from the thousand other personal sites that came before, or the small businessmen who get their wife to design a logo in their copy of Paint. I mean “professional” web designers.</p>
+
+<p>Now, let me clarify slightly. The web designers who are terrible at web design are the ones who trained as graphics designers and jumped on the net bandwagon, thinking that it’s a graphical medium so the same approach always works. <strong>It’s not</strong>. Let’s say it loud and clear: graphic design and web design are very different disciplines, despite some similarities in function and possible conveyance.</p>
+
+<p>Graphic and web design both share one key thing in common: they both aim to convey information in the best way possible. By this, I mean that not only is it important that the subject is understood by everyone, but is also accessible to everyone. And there lies a key difference; graphic design passed on as web design is <em>not</em> accessible and does <em>not</em> convey information well.</p>
+
+<p>Imagine we have “Munky Cola”, the newest soft drink to enter the market. So new, in fact, that the manufacturers have yet to establish any real brand identity for themselves. They hire a design team to come up with a brand and marketing scheme. Being a traditional team primarily, they first create a logo for the company. This is a fine first step. A logo is a very simple way of getting immediate recognition for any brand. It can and should be permuated across all media.</p>
+
+<p>Next, they create a series of graphic designs to be used as adverts. These centre on the brand and making it stick in peoples head; something funny or, perhaps, abstract. This is a fine second step. People now recognise the brand and associate it with a product or idea.</p>
+
+<p>Then, they take their existing graphic design ideas and blindly transform them as closely as they can to the web environment, with some information or widgets related to the product/brand in some way. (By widgets, I mean tiny games or toys that the user can play with). <strong>This is a bad step</strong>. Using widgets is fine, they help strengthen a brand, but using the existing graphic design is bad web design.</p>
+
+<p>Why? Websites are different, they serve a different purpose and must be treated as a different medium. What works for graphic design (abstract advertising) will not work on the web. Web users want information, they want to go beyond the elements of graphic design they’ve already seen, they want interaction. This is a key difference. Graphic design is a one-way medium: people can see it but they can’t do anything to it, they can’t be part of it. Web design is two-way: we can use it to convey more information about a project and, more powerfully, create a sense of community around it.</p>
+
+<p>Think carefully about that last bit: a community means a constantly growing and returning audience. You can’t buy that kind of interest (whether you’re selling something or not). You also start to get a project which generates its own content. No need for a new graphic design every other week.</p>
+
+<p>That takes care of the usability side of things. In terms of actual design (raw and dirty mark-up), it’s just plain wrong to treat a website as an example of graphic design. Sure, it <em>should</em> convey brand identity, but it shouldn’t be a graphically based. Using tables and all manors of redundant mark-up to get an image to sit just right on a site is missing the point. A web page is essentially a document (largely, just a piece of text) with special tags around parts of it to logically separate chunks of it and give certain parts meaning. This can’t be achieved through graphical means.</p>
+
+<p>There’s a <strong>lot more</strong> to this, but I’ll leave that for another day. Just remember, next time you design a web site, make sure it’s a web site and not a graphic design.</p>
+
+  </div>
+  <div class="divider"><img src="/assets/images/divider.png" /></div>
+  </div>
+  
+  <div class="postcontainer">
+  <h3><a href="/Archives/2003/02/27/Textile/">Textile</a></h1>
+  <p class="author">
+    <span class="date"> </span>
+  </p>
+  <div class="post">
+    <p>Today, I got an email from <a href="http://www.textism.com">Dean Allen</a> saying that I <em>can</em> use <a href="http://www.textism.com/tools/textile/">Textile</a> in Finetto (the <acronym title="Content Management System">CMS</acronym> I’ve been working on for quite some time).</p>
+
+<p>This is great news since it lets me focus on other areas of Finetto, without having to worry about processing text. Besides, the Textile system is fantastic at what it does. I couldn’t come up with better (you should see the cludges that hold the site together at the moment). Thanks, Dean!</p>
+
+  </div>
+  <div class="divider"><img src="/assets/images/divider.png" /></div>
+  </div>
+  
+  <div class="postcontainer">
+  <h3><a href="/Archives/2003/02/26/WhenIArgue/">When I Argue&#8230;</a></h1>
+  <p class="author">
+    <span class="date"> </span>
+  </p>
+  <div class="post">
+    <p>This site is, perhaps, the internets finest moment; bursting with comedy, insight and bizarreness. Those are the cornerstones of the web. Well, maybe porn is the cornerstone, but in the absence of that then it’s those 3 things.</p>
+
+<p>Back to the site: Imagine the world’s most argumentative couple. And then imagine the male of the pair documenting everything. You get such classic quotes as:</p>
+
+<blockquote>
+  <p>I eat two-fingered Kit-Kats like I’d eat any other chocolate bars of that size, i.e., without feeling the need to snap them into two individual fingers first. Margret accused me of doing this, ‘deliberately to annoy her’.</p>
+</blockquote>
+
+<p>Read the whole page. It’s full of the most contrived logic. You know, the sort of stuff we all like to use in arguments with people we love.</p>
+
+<p>The link? <a href="http://homepage.ntlworld.com/mil.millington/things.html">Things My Girlfriend And I Have Argued About</a></p>
+
+  </div>
+  <div class="divider"><img src="/assets/images/divider.png" /></div>
+  </div>
+  
+</div>
+
+
+
+<!-- Pagination links -->
+<div class="postnavigation">
+  
+    <a href="/page/168" class="previous">&laquo; Previous</a>
+  
+  
+    <a href="/page/170" class="next">Next &raquo;</a>
+  
+</div>
+
+
+      <div class="footer">
+        <div class="disclaimer">
+  
+
+  <p>
+    © Solitude, 2003-22 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a>, using <a href="https://github.com/swanson/lagom">Lagom</a> as a base theme.
+  </p>
+</div>
+      </div>
+    </div>
+  </div>
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-11493178-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>

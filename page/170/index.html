@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Solitude - Happenings</title>
+  <meta name="author" content="Solitude" />
+  <meta name="twitter:widgets:csp" content="on" />
+  <meta name="description" content="The blog of Solitude" />
+  <link rel="canonical" href="https://solitude.vkps.co.uk/page/170/" />
+
+  <link href="//fonts.googleapis.com/css?family=Open+Sans:600,800" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="alternate" type="application/atom+xml" title="Solitude" href="https://solitude.vkps.co.uk/atom.xml" />
+  <link rel="stylesheet" href="/assets/css/all.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-k2/8zcNbxVIh5mnQ52A0r3a6jAgMGxFJFE2707UxGCk= sha512-ZV9KawG2Legkwp3nAlxLIVFudTauWuBpC10uEafMHYL0Sarrz5A7G79kXh5+5+woxQ5HM559XX2UZjMJ36Wplg==" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container">
+    <div class="four columns sidebar">
+      <nav>
+  <h1><a href="/">Solitude</a></h1>
+  <a href="/">
+    
+    <img src="/assets/images/tree-160.jpg" id="solitude-logo" alt="Solitude logo"/>
+    
+  </a>
+  <div id="bio">
+    <p>Technology. Code. Living relentlessly in the real world.</p>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="/about/">About</a></li>
+      <li><a href="/Archives/">Archives</a></li>
+    </ul>
+  </nav>
+  <div id="social">
+    Follow me:
+<div id="stalker">
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <a title="garyfleming on Twitter" href="https://twitter.com/garyfleming">
+    <i class="fa fa-twitter-square"></i>
+  </a>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <a title="Atom feed" id="atom" href="/feed.xml">
+    <i class="fa fa-rss-square"></i>
+  </a>
+  
+</div>
+
+  </div>
+  
+</nav>
+
+    </div>
+
+    <div class="eleven columns content">
+      <div id="home">
+  <h2><i class="fa fa-bookmark"></i> Happenings</h2>
+
+  
+  <div class="postcontainer">
+  <h3><a href="/Archives/2003/02/26/PHPChallenge2/">PHP Challenge #2</a></h1>
+  <p class="author">
+    <span class="date"> </span>
+  </p>
+  <div class="post">
+    <p>It’s time for the second PHP challenge. This time I want an Integer to Roman Numeral converter. So the script should accept a single parameter (an integer), and return the roman numeral which corresponds to the integer. If anyone has any difficulty trying to work out how to do this, search google for information on roman numerals.</p>
+
+<p>Here are the rules:</p>
+
+<ul>
+  <li>The winner is the person who writes the shortest script that works on sample integers that I will run on it</li>
+  <li>All functions <strong>must</strong> return a value,</li>
+  <li>All functions <strong>must</strong> be called RNC,</li>
+  <li>All functions submitted are considered public domain and hence can be reproduced and used with or without credit to anyone by anyone (so no bitching if someone rips off your script after the challenge finishes),</li>
+  <li>The winning script will be archived here for prosperity and to help others,</li>
+  <li>New rules may be added here at any time,</li>
+  <li><strong>New Rule</strong>: The script should be able to handle integers in the range 1 to 4999. If no-one manages this, the upper-limit will be lowered to 3999. Handling integers outside this range is unnecessary,</li>
+  <li>My decision is final, but the shortest (file size) script will be the winner,</li>
+  <li>All functions should be submitted to <a href="mailto:solitude@vkps.co.uk">Solitude@vkps.co.uk</a>,</li>
+  <li>The deadline for entries is 12pm <acronym title="Greenwich Mean Time">GMT</acronym> on March 5th 2003</li>
+</ul>
+
+<p>That should be fairly simple to follow. Any questions should be sent to the same email address. Good luck!</p>
+
+  </div>
+  <div class="divider"><img src="/assets/images/divider.png" /></div>
+  </div>
+  
+  <div class="postcontainer">
+  <h3><a href="/Archives/2003/02/24/PHPChallenge1Results/">PHP Challenge #1 Results</a></h1>
+  <p class="author">
+    <span class="date"> </span>
+  </p>
+  <div class="post">
+    <p>Thanks to everyone who submitted scripts for this little challenge. The scripts have been tested and there is a clear winner. But let’s start at 3rd place, which goes to Bane with a 94 byte entry:<br />
+<code class="language-plaintext highlighter-rouge">function GCD($A,$B){&lt;br /&gt;for($i=1,$MAX=1;$i&lt;=$A;$i++){&lt;br /&gt;if(!($A%$i)&amp;&amp;!($B%$i)){&lt;br /&gt;$MAX=$i;&lt;br /&gt;}&lt;br /&gt;}&lt;br /&gt;return$MAX;&lt;br /&gt;}&lt;br /&gt;</code>This entry used a similar method to most other entries to work out the GCD, but was quite a bit smaller than most entries.</p>
+
+<p>Unfortunately, it was <strong>1 byte</strong> larger than Jante’s 93 byte entry:<br />
+<code class="language-plaintext highlighter-rouge">function GCD($num1,$num2){&lt;br /&gt;while($num2!=0){&lt;br /&gt;$t=$num1%$num2;$num1=$num2;$num2=$t;&lt;br /&gt;}&lt;br /&gt;return $num1;}&lt;br /&gt;</code>Now this entry could have been made much smaller by replacing <var>$num1</var> with <var>$n</var> and <var>$num2</var> with <var>$m</var> (or any other 1 letter variable name), but not much can be done about that now.</p>
+
+<p>The clear leader, however, was ZeroByte’s 58 byte entry:<br />
+<code class="language-plaintext highlighter-rouge">function gcd($n,$m){&lt;br /&gt;if(!$m)return$n;return gcd($m,$n%$m);&lt;br /&gt;}&lt;br /&gt;</code>That is some fantastic use of recursion to get the size right down. Congratulations, ZeroByte!</p>
+
+<p>It should be noted that the winning entry will be archived soo. Also, the code sizes shown were for all formatting and comments removed.</p>
+
+  </div>
+  <div class="divider"><img src="/assets/images/divider.png" /></div>
+  </div>
+  
+  <div class="postcontainer">
+  <h3><a href="/Archives/2003/02/23/CustomerDogma/">Customer Dogma</a></h1>
+  <p class="author">
+    <span class="date"> </span>
+  </p>
+  <div class="post">
+    <p>In the film Dogma, the universe is based on the fact that “God is infallible”. Breach of this idea would cause the universe to cease existing; to be uncreated.</p>
+
+<p>Something I realised today: we should all be eternally grateful that the same consequences do not apply to a breach of the old saying “the customer is never wrong”. Uncreated a billion times over. At least.</p>
+
+  </div>
+  <div class="divider"><img src="/assets/images/divider.png" /></div>
+  </div>
+  
+  <div class="postcontainer">
+  <h3><a href="/Archives/2003/02/23/Failures/">Failures</a></h1>
+  <p class="author">
+    <span class="date"> </span>
+  </p>
+  <div class="post">
+    <p>Some of you might have noticed that certain parts of the site (namely, the archives) have been inaccessible for the last few days, and others haven’t been updated (namely, the whole thing). Why, you ask? I’ve been talking about updating the back-end of the site a lot recently. On Friday I finally got the changes finished on the offline version of the site. One merge later with the online version and disaster. Here’s what went wrong:</p>
+
+<ol>
+  <li>My devbox (being Windows based) has no real understanding of file permissions. My online box (which runs on Linux) does. By scripting for the former, I failed to anticipate the “File Permission Denied” messages that my online site (rightly) gave me,</li>
+  <li>The archives. I completely forget to change the code for them, so it choked the minute the update went live. Doh,</li>
+  <li>The <acronym title="Rich Site Summary">RSS</acronym> feed died, inexplicably. It should be working again (I’ll know when this update goes online).</li>
+</ol>
+
+<p>I had planned to fix all of this over the weekend, but a cold virus had other ideas. Until I get time to really thing about the problems facing the updated back-end, I thought it would be best to just switch to a back-up I made minutes before I made the change. (ALWAYS back-up before a big change, stuff like this is bound to happen).</p>
+
+  </div>
+  <div class="divider"><img src="/assets/images/divider.png" /></div>
+  </div>
+  
+  <div class="postcontainer">
+  <h3><a href="/Archives/2003/02/19/FunnyGeometry/">Funny Geometry</a></h1>
+  <p class="author">
+    <span class="date"> </span>
+  </p>
+  <div class="post">
+    <p>One of the best Flash animations I’ve seen in a while: <a href="http://www.mediapill.com/trianglesquare/">Triangle and Square</a>. Short, funny and to the point.</p>
+
+<p>Via <a href="http://www.yeahbutisitart.com/">Yeah, But Is It Art?</a>.</p>
+
+  </div>
+  <div class="divider"><img src="/assets/images/divider.png" /></div>
+  </div>
+  
+</div>
+
+
+
+<!-- Pagination links -->
+<div class="postnavigation">
+  
+    <a href="/page/169" class="previous">&laquo; Previous</a>
+  
+  
+    <a href="/page/171" class="next">Next &raquo;</a>
+  
+</div>
+
+
+      <div class="footer">
+        <div class="disclaimer">
+  
+
+  <p>
+    © Solitude, 2003-22 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a>, using <a href="https://github.com/swanson/lagom">Lagom</a> as a base theme.
+  </p>
+</div>
+      </div>
+    </div>
+  </div>
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-11493178-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>

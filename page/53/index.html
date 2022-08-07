@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Solitude - Happenings</title>
+  <meta name="author" content="Solitude" />
+  <meta name="twitter:widgets:csp" content="on" />
+  <meta name="description" content="The blog of Solitude" />
+  <link rel="canonical" href="https://solitude.vkps.co.uk/page/53/" />
+
+  <link href="//fonts.googleapis.com/css?family=Open+Sans:600,800" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="alternate" type="application/atom+xml" title="Solitude" href="https://solitude.vkps.co.uk/atom.xml" />
+  <link rel="stylesheet" href="/assets/css/all.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-k2/8zcNbxVIh5mnQ52A0r3a6jAgMGxFJFE2707UxGCk= sha512-ZV9KawG2Legkwp3nAlxLIVFudTauWuBpC10uEafMHYL0Sarrz5A7G79kXh5+5+woxQ5HM559XX2UZjMJ36Wplg==" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container">
+    <div class="four columns sidebar">
+      <nav>
+  <h1><a href="/">Solitude</a></h1>
+  <a href="/">
+    
+    <img src="/assets/images/tree-160.jpg" id="solitude-logo" alt="Solitude logo"/>
+    
+  </a>
+  <div id="bio">
+    <p>Technology. Code. Living relentlessly in the real world.</p>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="/about/">About</a></li>
+      <li><a href="/Archives/">Archives</a></li>
+    </ul>
+  </nav>
+  <div id="social">
+    Follow me:
+<div id="stalker">
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <a title="garyfleming on Twitter" href="https://twitter.com/garyfleming">
+    <i class="fa fa-twitter-square"></i>
+  </a>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <a title="Atom feed" id="atom" href="/feed.xml">
+    <i class="fa fa-rss-square"></i>
+  </a>
+  
+</div>
+
+  </div>
+  
+</nav>
+
+    </div>
+
+    <div class="eleven columns content">
+      <div id="home">
+  <h2><i class="fa fa-bookmark"></i> Happenings</h2>
+
+  
+  <div class="postcontainer">
+  <h3><a href="/Archives/2007/10/06/jdom-classcastexception/">JDOM ClassCastException</a></h1>
+  <p class="author">
+    <span class="date"> </span>
+  </p>
+  <div class="post">
+    <p>I’ll start by saying that if you’re not a programmer, you’re not going to be interested in this post. You might want to run along and <a href="http://wondermark.com/" title="Wondermark comics">read something better</a>. You probably also want to be a Java programmer.</p>
+
+<p><a href="http://www.jdom.org/">JDOM</a> is a great Java library for dealing with XML in a reasonably sane way. You turn your XML into an <code class="language-plaintext highlighter-rouge">org.jdom.Document</code> object (using a handy utility like <code class="language-plaintext highlighter-rouge">SAXBuilder</code>), and then you can use various query and manipulation tools on it. It does, however, have some fairly silly exceptions.</p>
+
+<p>Recently, I was doing some XPath queries as part of a web-app. Like a good developer, I wrote some unit tests so I knew that the XPaths were correct, the XML conversion was correct, etc. I wrote the actual code to implement the test cases and everything worked fine. Great.</p>
+
+<p>Upon deploying the web-app to the container and running it properly, JDOM throws a <code class="language-plaintext highlighter-rouge">ClassCastException</code> and says the <code class="language-plaintext highlighter-rouge">Document</code> is the cause. Bizarre. After a few checks and no luck , we (I say “we” because there are now a few interested parties) break out the debugger for a look at the running web-app. [Let me stop for a second to say that debugging running web-apps is a triumph of tooling; very useful stuff.] The created Document looks fine, the code steps through ok until… bang. The debugger stops working. Ah.</p>
+
+<p>After a lot of head scratching and googling, we finally figure out the problem: JDOM depends on the <a href="http://jaxen.org/">Jaxen</a> API for XPath. While our unit test container (actually an IDE) has a reference to a copy of Jaxen for an unrelated reason, the deployment doesn’t. So the problem is one of dependencies.</p>
+
+<p>However, the thing that made this tricky to debug was JDOM throwing an unrelated Exception. A <code class="language-plaintext highlighter-rouge">ClassCastException</code> seems completely inappropriate here and helped masked the real cause. A <code class="language-plaintext highlighter-rouge">ClassNotFoundException</code> pointing to the Jaxen library would have a) made sense, and b) pointed us at the real cause.</p>
+
+<p>Lessons:</p>
+
+<ol>
+  <li>Libraries are only as sane as the most insane thing they do.</li>
+  <li>Unit tests start falling apart if the environment in which they are run does not match the final environment. This can be a very subtle problem.</li>
+  <li>Throwing exceptions is only as useful as the quality of the feedback the exception provides.</li>
+  <li>Debug, debug, debug. If the debugger fails, don’t panic.</li>
+</ol>
+
+<p>Here’s hoping the JDOM guys get rid of that erroneous <code class="language-plaintext highlighter-rouge">ClassCastException</code> and switch to something a little more helpful.</p>
+
+  </div>
+  <div class="divider"><img src="/assets/images/divider.png" /></div>
+  </div>
+  
+  <div class="postcontainer">
+  <h3><a href="/Archives/2007/09/18/n95/">N95</a></h1>
+  <p class="author">
+    <span class="date"> </span>
+  </p>
+  <div class="post">
+    <p>I recently decided it was time to upgrade my phone, since <a href="/Archives/2005/11/20/OnNewPhones/">my previous phone</a> was starting to fail me in several ways (i.e. the battery was fecked). So I opted for the <a href="http://www.nseries.com/products/n95/#l=products,n95">Nokia N95</a>. (Note: if you’ve ever had my mobile number, it’s still the same. I haven’t changed it since my first phone.)</p>
+
+<p>I had a couple of good reasons for making this choice. First, after my last phone, I’m a big fan of Nokia phones and the Symbian OS. Everything nice I said about my previous phone still applies, but I can now appreciate features like the active desktop style interface a bit more. It had always annoyed me that the screen you get upon unlocking a mobile is near enough useless; basically, a glorified splash screen. Nokia S60 phones are different: switch on active standby and you get 5 icons on your desktop which are shortcuts into your favourite programs (customisable). As well as that, you get the next few events from your calendar displayed clearly and prominently, plus the next items on your to-do list. That’s exactly how it should be, the most important info clearly displayed.</p>
+
+<p>Another major selling point of the N95 is the camera. The previous camera I had was only 1.2 megapixels and performed poorly in all but the best light conditions. My new phone has a 5 megapixel chip, a much better lens, and a two stage auto-focus, which helps the camera pick out the best lighting conditions.</p>
+
+<p>There are plenty of other nice little features (wifi, visual radio, enough oomph for 3D games) but what does it get wrong?</p>
+
+<ol>
+  <li>It breaks the Nokia charger standard. Every Nokia phone I’ve ever seen used a standard charger, making it easy to find a spare if you’re away from home. The N95 uses a much slimmer charger. Not good.</li>
+  <li>The battery life. With great new features, comes great power consumption. If you don’t use the bigger features you get a fairly standard charge for a modern phone (2 days+). If you hammer the features, you could easily wipe it in half a day.</li>
+  <li>It came with Moby as the standard track. It’s not 1999, and I’m not doing a car advert, thanks.</li>
+</ol>
+
+<p>Other than that, I’m very happy with it. Highly recommended.</p>
+
+  </div>
+  <div class="divider"><img src="/assets/images/divider.png" /></div>
+  </div>
+  
+  <div class="postcontainer">
+  <h3><a href="/Archives/2007/09/11/film-fight-august-2007/">Film Fight: August 2007</a></h1>
+  <p class="author">
+    <span class="date"> </span>
+  </p>
+  <div class="post">
+    <p>With this August entry, I’m back up to speed, after the delays for the previous few months.</p>
+
+<p>First up, <strong>The Hoax</strong> is a strange tale about an author that decided to fake Howard Hughes’ auto-biography while the reclusive billionaire was at his peak. Richard Gere has never been better than here, as the self-interested writer who will do whatever it takes to become huge. As his plan unravels, he keeps digging, coming up with more bizarre solutions. An excellent take on a bizarre idea which is, apparently, true.</p>
+
+<p>No-one was expecting much from a sequel to the family comedy <strong>Bruce Almighty</strong>, especially with Jim Carrey replaced by the usually more adult <strong>Steve Carrell</strong>, and <strong>Evan Almighty</strong> does nothing to beat those expectations. If anything this film is more preachy and less funny than its predecessor. I’m sure kids would lap it up, but there’s little here for the grown-ups.</p>
+
+<p>Finally, to finish Robert Ludlum’s trilogy, <strong>The Bourne Ultimatum</strong> casts Matt Damon as the man who can weaponise just about anything in his pursuit for the truth, Jason Bourne. The set-up is relatively simple (a journalist is fed information about Bourne, and Bourne works with him to find out how he became what he is), but brings together a number of great action sequences. This, as with the rest of the series, is a masterclass in how to do action sequences; keeping it near the boundaries of plausible while still spectacular enough to warrant viewing. The plot wraps up more neatly than might be expected too.</p>
+
+<p>I’m a little torn this month, but I think <strong>The Bourne Ultimatum</strong> edges it over The Hoax because there are so few action films that can get away with not having “action” as an excuse for lazy cinema.</p>
+
+  </div>
+  <div class="divider"><img src="/assets/images/divider.png" /></div>
+  </div>
+  
+  <div class="postcontainer">
+  <h3><a href="/Archives/2007/09/09/film-fight-july-2007/">Film Fight: July 2007</a></h1>
+  <p class="author">
+    <span class="date"> </span>
+  </p>
+  <div class="post">
+    <p>July’s cinema selection was a fairly mixed bag.</p>
+
+<p>After 12 years of waiting, <strong>Die Hard 4.0</strong> finally makes an appearance. You mostly get what you expect with this one: a bunch of action sequences held together by a somewhat ridiculous plot, some over the top villians with questionable motives, and John Mclane killing everyone. You get that all here, but it’s all a bit too ridiculous, too over the top. If you can switch your brain to off, then you can enjoy it. Otherwise, this may be a bit wide of the mark.</p>
+
+<p>Having only seen Glengarry Glen Ross recently, it was a pleasure to see another film by the same playwright, David Mamet. <strong>Edmond</strong> is about a man who loses his place in the world and goes about trying to find it amongst the seediest parts of New York. Surprisingly dark in tone, this film doesn’t hold back in its vision of the terrible things people can justify to themselves. Superbly shot, with exceptional dialogue, the one caveat being that it’s origins as a play are fairly apparent, Edmond is an excellent film. Highly recommended.</p>
+
+<p><strong>The Simpsons Movie</strong> is what most people expected, a long episode of the series. Thankfully, though, it would be an episode from one of the later single-digit seasons. While not as good as the earlier episodes, it doesn’t degenerate as far as the later series which were almost entirely variations on “The Simpsons go to [insert place and vaguely racist jokes here]” or “Homer works as [something stupidly unlikely and unfunny here]”. Although the best joke was spoiled by the trailer, there are still enough set-ups here to make it worth seeing.</p>
+
+<p>Finally, <strong>Transformers</strong> is Hollywood at its very worst: crass, loud, brainless, and without style. If it had been two hours of robots fighting, I could have gotten behind that. If it had been built-up with any tact, that’d been fine. Instead we’re treated to an episode of Dawson’s Creek, numerous advertisements, some terrible comic relief, and more plot holes than I’ve seen in any other film in recent times. Even the few action sequences on offer are merely perfunctory. I mean, no-one should’ve been expecting a masterpiece here, but if the action scenes aren’t up to much (they’re either mostly off-screen or a blurry mess), then what is the point? The film is almost entirely without merit.</p>
+
+<p>The obvious winner this month is <strong>Edmond</strong>.</p>
+
+  </div>
+  <div class="divider"><img src="/assets/images/divider.png" /></div>
+  </div>
+  
+  <div class="postcontainer">
+  <h3><a href="/Archives/2007/08/21/film-fight-june-2007/">Film Fight: June 2007</a></h1>
+  <p class="author">
+    <span class="date"> </span>
+  </p>
+  <div class="post">
+    <p>June was a bigger month than May for cinema, with 6 films taken in. Let’s get started.</p>
+
+<p><strong>The Hitcher</strong> is a remake of the classic Rutger Hauer film about a couple who don’t pick up a hitch-hiker they almost run into. The hiker, the bad guy, then ruthlessly chases across state, murdering anyone who gets in the way. Sadly, it lacks the excellent directorial work of it’s namesake, becoming more of a modern (and by that I mean “dumb”) horror film rather than a taut psychological thriller (with more than enough action). Sean Bean also continues his recent run of terrible performances. Though I can’t really recommend The Hitcher, there is at least one scene that is really quite something to see.</p>
+
+<p>I once said that the big <a href="/Archives/2005/03/01/FilmFightFebruary2005/">failure of Ocean’s Twelve</a> was that it didn’t really show the heists being perpetrated by the main characters: <strong>Ocean’s Thirteen</strong> makes me take that back. This time they painstakingly go over every tedious detail of the large scam, spreading some sections way beyond breaking point. Again, this is basically watching an A-list cast mess around on holiday, with a overwritten dialogue and underwritten plot. If you liked the second film, you’ll probably like this.</p>
+
+<p>French thriller <strong>Tell No One</strong> is about a man whose wife is killed after they have an argument and, seven years later, he spots her on CCTV. From there the investigation reopens, placing him as a suspect, as he tries to understand what’s happening. The director captures every aspect of the story perfectly, from the bitter anger to the overwhelming passions. Beautifully shot and performed, and only marred by a few extraneous scenes and characters, this film is one of the best of the year.</p>
+
+<p>One of the few Asian action films to make it through this year, <strong>Exiled</strong> is a fairly silly example of the gun play and gangsters genre. Normally the story is just an excuse for some ludicrous action scenes, but here there are nowhere near enough worthwhile action scenes to keep things moving forward. It suffers sorely by tring to be more stylish than it is. A regrettably poor entry.</p>
+
+<p>Owen Wilson tries his hand at the fright game in <strong>Vacancy</strong>. This is a modern horror film done well, balancing the brutal and gruesome with intense emotional moments and impossible but necessary decisions. The set-up is unsurprising, but the pay offs are of a high enough calibre that it does not matter. Vacancy won’t win any awards, but it’s a fine example of the genre.</p>
+
+<p>Finally, <strong>Captivity</strong> is pretty much the opposite in terms of the quality of horror it offers. More of an excuse for a bunch of pre-canned set-ups than an attempt to do something that makes sense as a whole, this film fails on a number of levels, not least of all a number of weak performances and a nonsensical plot. If you liked Saw, you might like this (similar style). If not, avoid.</p>
+
+<p>The winner this month was the excellent <strong>Tell No One</strong>, proving itself to be great in almost every suit.</p>
+
+  </div>
+  <div class="divider"><img src="/assets/images/divider.png" /></div>
+  </div>
+  
+</div>
+
+
+
+<!-- Pagination links -->
+<div class="postnavigation">
+  
+    <a href="/page/52" class="previous">&laquo; Previous</a>
+  
+  
+    <a href="/page/54" class="next">Next &raquo;</a>
+  
+</div>
+
+
+      <div class="footer">
+        <div class="disclaimer">
+  
+
+  <p>
+    © Solitude, 2003-22 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a>, using <a href="https://github.com/swanson/lagom">Lagom</a> as a base theme.
+  </p>
+</div>
+      </div>
+    </div>
+  </div>
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-11493178-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>

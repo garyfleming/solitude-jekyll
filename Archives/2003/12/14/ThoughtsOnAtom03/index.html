@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Solitude - Thoughts On Atom 0.3</title>
+  <meta name="author" content="Solitude" />
+  <meta name="twitter:widgets:csp" content="on" />
+  <meta name="description" content="The blog of Solitude" />
+  <link rel="canonical" href="https://solitude.vkps.co.uk/Archives/2003/12/14/ThoughtsOnAtom03/" />
+
+  <link href="//fonts.googleapis.com/css?family=Open+Sans:600,800" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="alternate" type="application/atom+xml" title="Solitude" href="https://solitude.vkps.co.uk/atom.xml" />
+  <link rel="stylesheet" href="/assets/css/all.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-k2/8zcNbxVIh5mnQ52A0r3a6jAgMGxFJFE2707UxGCk= sha512-ZV9KawG2Legkwp3nAlxLIVFudTauWuBpC10uEafMHYL0Sarrz5A7G79kXh5+5+woxQ5HM559XX2UZjMJ36Wplg==" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container">
+    <div class="four columns sidebar">
+      <nav>
+  <h1><a href="/">Solitude</a></h1>
+  <a href="/">
+    
+    <img src="/assets/images/tree-160.jpg" id="solitude-logo" alt="Solitude logo"/>
+    
+  </a>
+  <div id="bio">
+    <p>Technology. Code. Living relentlessly in the real world.</p>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="/about/">About</a></li>
+      <li><a href="/Archives/">Archives</a></li>
+    </ul>
+  </nav>
+  <div id="social">
+    Follow me:
+<div id="stalker">
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <a title="garyfleming on Twitter" href="https://twitter.com/garyfleming">
+    <i class="fa fa-twitter-square"></i>
+  </a>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <a title="Atom feed" id="atom" href="/feed.xml">
+    <i class="fa fa-rss-square"></i>
+  </a>
+  
+</div>
+
+  </div>
+  
+</nav>
+
+    </div>
+
+    <div class="eleven columns content">
+      <p class="meta">
+  December 14, 2003 | Category: 
+  <a href="/">
+    <i class="home fa fa-home"></i>
+  </a>
+</p>
+
+<h1 class="title"><a href="/Archives/2003/12/14/ThoughtsOnAtom03/">Thoughts On Atom 0.3</a></h1>
+
+<div class="post">
+  <p>A brand spanking <a href="http://www.mnot.net/drafts/draft-nottingham-atom-format-02.html">new Atom snapshot</a> is out (<a href="http://diveintomark.org/archives/2003/12/13/atom03">Atom 0.3 examples</a> are available on diveintomark).</p>
+
+<p>Due to FTP problems, I can’t upload the new templates at this moment, but I’ll at least talk about what will change.</p>
+
+<p>To be honest, not a lot has changed. The <code class="language-plaintext highlighter-rouge">link</code> tag (feed level, and entry level) has changed in syntax (it’s now an empty tag). It also now requires a <code class="language-plaintext highlighter-rouge">rel</code> attribute (generally going to be set to “alternate”) and a <code class="language-plaintext highlighter-rouge">type</code> attribute.</p>
+
+<p>The former could allow some interesting and smart parsing of documents (once <a href="http://bitworking.org/projects/atom/draft-gregorio-09.html#rfc.section.5.4.1">the rel values</a> are bulked out). The latter seems utterly useless. It doesn’t take into account multiple representations (one of the lovely aspects of a <acronym title="Uniform Resource Indicator">URI</acronym>), or allow for content without a registered media type. It adds nothing (except a lot of extra bytes on a feed).</p>
+
+<p>The new <code class="language-plaintext highlighter-rouge">mode</code> attribute will make feeds easier to parse, but seems to be lacking a plain text value (currently acceptable values are xml, escaped and base64).</p>
+
+<p>That’s really about it. I added <code class="language-plaintext highlighter-rouge">type</code> attributes, changed some syntax and got absolutely no returns from it. At the moment, that particular attribute looks like bloat.</p>
+
+</div>
+
+<div class="postnavigation">
+  
+    <a class="prev" href="/Archives/2003/12/10/BugsSwallowsAndPlanes/">&laquo; Bugs, Swallows, And Planes</a>
+  
+  
+    <a class="next" href="/Archives/2003/12/19/HoHoRedesign/">Ho Ho Redesign &raquo;</a>
+  
+</div>
+
+
+      <div class="footer">
+        <div class="disclaimer">
+  
+
+  <p>
+    © Solitude, 2003-22 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a>, using <a href="https://github.com/swanson/lagom">Lagom</a> as a base theme.
+  </p>
+</div>
+      </div>
+    </div>
+  </div>
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-11493178-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>

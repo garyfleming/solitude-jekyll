@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Solitude - Happenings</title>
+  <meta name="author" content="Solitude" />
+  <meta name="twitter:widgets:csp" content="on" />
+  <meta name="description" content="The blog of Solitude" />
+  <link rel="canonical" href="https://solitude.vkps.co.uk/page/31/" />
+
+  <link href="//fonts.googleapis.com/css?family=Open+Sans:600,800" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="alternate" type="application/atom+xml" title="Solitude" href="https://solitude.vkps.co.uk/atom.xml" />
+  <link rel="stylesheet" href="/assets/css/all.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-k2/8zcNbxVIh5mnQ52A0r3a6jAgMGxFJFE2707UxGCk= sha512-ZV9KawG2Legkwp3nAlxLIVFudTauWuBpC10uEafMHYL0Sarrz5A7G79kXh5+5+woxQ5HM559XX2UZjMJ36Wplg==" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container">
+    <div class="four columns sidebar">
+      <nav>
+  <h1><a href="/">Solitude</a></h1>
+  <a href="/">
+    
+    <img src="/assets/images/tree-160.jpg" id="solitude-logo" alt="Solitude logo"/>
+    
+  </a>
+  <div id="bio">
+    <p>Technology. Code. Living relentlessly in the real world.</p>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="/about/">About</a></li>
+      <li><a href="/Archives/">Archives</a></li>
+    </ul>
+  </nav>
+  <div id="social">
+    Follow me:
+<div id="stalker">
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <a title="garyfleming on Twitter" href="https://twitter.com/garyfleming">
+    <i class="fa fa-twitter-square"></i>
+  </a>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <a title="Atom feed" id="atom" href="/feed.xml">
+    <i class="fa fa-rss-square"></i>
+  </a>
+  
+</div>
+
+  </div>
+  
+</nav>
+
+    </div>
+
+    <div class="eleven columns content">
+      <div id="home">
+  <h2><i class="fa fa-bookmark"></i> Happenings</h2>
+
+  
+  <div class="postcontainer">
+  <h3><a href="/Archives/2011/07/03/film-fight-2011-june/">Film Fight 2011: June</a></h1>
+  <p class="author">
+    <span class="date"> </span>
+  </p>
+  <div class="post">
+    <p>June was quite a quiet month, with only two films viewed.</p>
+
+<p>First off, <strong>Stake Land</strong> manages to fumble a reasonable premise and some early good will, by trying to do far too much. Set in a world that has been destroyed by a vampiric plague, we see early on that the film is capable of stylish and brutal action sequences, as set in motion by the no-nonsense protagonist, Mister. Throughout, these are the film’s saving grace. However, the film-makers spend so much time world-building and setting up lots of tiny little sub-plots, they forgot to really develop any of them, or to build up most of the characters to the point that we care what happens to them. It feels like they were sticking out plot points for a TV series with the intention of fleshing them out over dozens of hours, but were instead forced to take what they had and film it for around two hours. A real shame. (See <a href="https://twitter.com/garyfleming/status/82189737733009409">my Stake Land Twitter review</a>).</p>
+
+<p>Finally, <strong>Senna</strong> was an interesting documentary on Ayrton Senna, one of Formula One’s all-time greats. In contrast with most modern documentaries, there’s no talking-head footage, and no narrated “story”. Instead we get lots of archive footage (of which they obviously had more of than for most other subjects) and minimal use of interview audio from his family and friends, with the emphasis heavily on trying to tell the story with period materials. This works tremendously well, building up his rivalries, triumphs and downfalls in a natural fashion. It’s a little slow-paced in the middle, but keeps you interested every time Senna gets a bad break. Very good. (See <a href="https://twitter.com/garyfleming/status/85022943729565696">my Senna Twitter review</a>).</p>
+
+<p>With those two films, there really could only be one winner: <strong>Senna</strong>. A fine documentary, and an interesting subject.</p>
+
+  </div>
+  <div class="divider"><img src="/assets/images/divider.png" /></div>
+  </div>
+  
+  <div class="postcontainer">
+  <h3><a href="/Archives/2011/06/09/code-for-machines/">Code for Machines</a></h1>
+  <p class="author">
+    <span class="date"> </span>
+  </p>
+  <div class="post">
+    <p>Code for machines. Code for machines. CODE FOR MACHINES.</p>
+
+<p>I’ve mentioned <a href="http://projectlombok.org/">Project Lombok</a> before, as <a href="http://solitude.vkps.co.uk/Archives/2010/04/05/modern-java-lombok/" title="Modern Java: Lombok">part of my Modern Java series</a>. It’s a way of hiding some of the meaningless boilerplate code that machines need to interpret the programmer’s will; lines of code sacrificed to the compiler gods in the hope that they’ll do meaningful equality (and hashCode), or print objects nicely for The Log.</p>
+
+<p>I spent a coding eternity (a year and a half) having my life made easy by Lombok: no more boilerplate getters and setters, no screen-filling equals methods that have the semantics that anyone half-way competent would have guessed, and no more toString(), that semi-mandatory serpent of concatenation. It was a paradise of clean, expressive code, built in the image of the domain. You could forget Lombok was even there, as it quietly did all the bad code for you.</p>
+
+<p>That was then.</p>
+
+<p>Now, having had Lombok ripped from my toolset, I realise just how much I miss it, and more importantly that it shouldn’t have to exist at all.</p>
+
+<p>Classes shouldn’t have to be 90% boilerplate to make three fields behave in what is a defacto standard manner. Chances are the getters/setters are going to be plain vanilla, the toString is going to concatenate the lot together, and the equals/hashCode are going to follow the recommendation that was laid down as law <strong>ON PENALTY OF DEATH</strong> in Effective Java. Everyone who programs at a decent level in Java knows this; absolutely everyone except for Java itself.</p>
+
+<p>I’m extremely grateful that Lombok exists to workaround the broken parts of the language, but it shouldn’t have to. Everything that Lombok does should be in the core. It’s time we had genuine properties. It’s time we had less noise, and more signal. Java is our stumbling, drunk of a language; and Lombok is the poor spouse that has to drag its sorry shell to its bed every night.</p>
+
+<p>These missing parts, these default behaviours in all but implementation, are pieces of code meant purely for machines. We don’t need code for machines. We never need code for machines.</p>
+
+  </div>
+  <div class="divider"><img src="/assets/images/divider.png" /></div>
+  </div>
+  
+  <div class="postcontainer">
+  <h3><a href="/Archives/2011/06/01/film-fight-2011-may/">Film Fight 2011: May</a></h1>
+  <p class="author">
+    <span class="date"> </span>
+  </p>
+  <div class="post">
+    <p>May was a decent month for cinema, with four films viewed…</p>
+
+<p><strong>Thor</strong> is not going to cause any great surprises: it’s a big budget, superhero-filled, special-effects-laden barrel of dumb fun; and fun it is. While a lot of films in this genre seem to think that just having enough explosions makes them worth seeing, Thor at least tries to build a story (and something of a mythos), and creates somes decent characters along the way. While Thor’s change of heart is as sudden as it is predictable, the supporting cast (particularly Loki and Odin) do enough to keep you distracted and the action moving forward. It’s worth seeing, even if it is as cheesy as you expect. (See <a href="https://twitter.com/garyfleming/status/67239767502360577">my Thor Twitter review</a>).</p>
+
+<p><strong>13 Assassins</strong> is the story of the last days of the samurai. The 12 best (and one other character) are charged with assassinating an evil feudal lord, knowing it will likely be their last act. From end to end, the film is excellent: we get some clear and utterly brutal reasons why the feudal lord must go, and an hour or so of strategic manoeuvring and character building to set-up the last act. What a last act it is: a 50 minute battle where the 13 take on 200 soldiers with every trick they’ve learned. It’s a spectacular fight scene, that manages to keep up the momentum throughout. An excellent film. (See <a href="https://twitter.com/garyfleming/status/67240246881951744">my 13 Assassins Twitter review</a>).</p>
+
+<p><strong>Attack the Block</strong> is an interesting debut by Joe Cornish (of Adam &amp; Joe fame): while it’s clearly been shot on a low budget, this sci-fi comedy manages to turn this to its advantage, with monsters that are more frightening due to how difficult they are to see (they’re deepest black, except for their day-glo fangs). It manages to provide some good laughs, and reasonable horror moments, and in doing so is probably a success. It’s not fantastic, but is worth seeing. (See <a href="http://twitter.com/garyfleming/status/69852629827727360">my Attack the Block Twitter review</a>).</p>
+
+<p>Finally, <strong>Win Win</strong> is most of what you expect from an indie film starring Paul Giamatti: the characters are likeable, but flawed; people learn important life lessons; and there is an underlying quirky wit to it. The story itself, that of a family that take in a teenage runaway who just so happens to be the wrestling champion that the father badly needs for his team, is pretty good, and you’ll feel for most of the characters along the way. This is a solid film, but not a stand-out. (see <a href="http://twitter.com/garyfleming/status/72332651498979330">my Win Win Twitter review</a>).</p>
+
+<p>The winner for May is <strong>13 Assassins</strong>, for it’s excellent pacing and that finale. Excellent.</p>
+
+  </div>
+  <div class="divider"><img src="/assets/images/divider.png" /></div>
+  </div>
+  
+  <div class="postcontainer">
+  <h3><a href="/Archives/2011/05/29/film-fight-2011-april/">Film Fight 2011: April</a></h1>
+  <p class="author">
+    <span class="date"> </span>
+  </p>
+  <div class="post">
+    <p>April was a reasonable enough month, with 4 films in the fight.</p>
+
+<p>First up, <strong>Source Code</strong> manages to find quite a neat balance between a techno-thriller and decent characterisation. Unlike most entries to the genre, it tries to stay jargon light and stay focussed on the plot at hand: a bomb went off earlier in the day and, while that cannot change, through some advanced technology, a former-soldier is forced to relieve the event again and again in order to find clues to stop a future attack. It’s to Jake Gyllenhaal and Vera Farmiga’s credit that you actually end up caring about this “virtual” environment as much as they do, buying into the hopeless exercise. It’s somewhat marred by an overly saccharine ending, but the tight runtime keeps everything going at a good pace. Worth seeing.(See <a href="https://twitter.com/garyfleming/status/56437150803169280">my Source Code Twitter review</a>).</p>
+
+<p><strong>Your Highness</strong> is a silly and ridiculous film that takes the usually stoic and noble concepts found in most fantasy films, and turns them into a run of toilet humour. It’s not high-brow in the slightest, but it manages to get just enough out of the jokes to keep funny. It starts to wear more than a little thin by the end, but stops before there’s nothing left. It’s certainly not a classic, but there are enough absurd moments (the mechanical bird) for it to be somewhat memorable. Good, not great. (See <a href="https://twitter.com/garyfleming/status/59233394965483520">my Your Highness Twitter review</a>).</p>
+
+<p><strong>Scream 4</strong> manages to do something that should not have been possible after Scream 3: it squanders the franchise even further, gaining absolutely nothing along the way. The handful of decent scares and laughs are entirely mired by the huge number of predictable twists and dull moments. The new characters are all forgettable, and the returning cast are either in it for the money, or left as paper-thin caricatures. Bad. (See <a href="https://twitter.com/garyfleming/status/62226627198849024">my Scream 4 Twitter review</a>).</p>
+
+<p>Finally, <strong>Cedar Rapids</strong> is an indie comedy that, while not a classic, is a surprisingly good film. Introducing Ed Helms as a painfully naive insurance salesman really slows down the movies opening (but does set up some awkward moments with his ex-teacher/lover), but the movie eventually finds some great moments for its characters to come alive. John C Reilly is excellent as an obnoxious, loud-mouthed competitor, with a good heart; being crude enough to be funny, but not so much that he’s repulsive. Well worth seeing. (See <a href="https://twitter.com/garyfleming/status/64641538071859201">my Cedar Rapids Twitter review</a>).</p>
+
+<p>It’s another slightly tough month, but the winner is <strong>Source Code</strong>. The ending aside, it does a great job of making you sympathise with the lead and makes you want him to be able to change the unchangeable.</p>
+
+  </div>
+  <div class="divider"><img src="/assets/images/divider.png" /></div>
+  </div>
+  
+  <div class="postcontainer">
+  <h3><a href="/Archives/2011/04/03/film-fight-2011-march/">Film Fight 2011: March</a></h1>
+  <p class="author">
+    <span class="date"> </span>
+  </p>
+  <div class="post">
+    <p>March was an okay month, with 5 films in the running.</p>
+
+<p>First up, <strong>Drive Angry</strong> is a unabashed throwback to a time when action ruled all. If you’re looking for a film that has great lines, a sharp plot, or makes much sense at all, then you’re looking at the wrong film. Essentially, the film is about getting Nicholas Cage to play an action star again, with William Fichtner as a crazy demonic accountant-sidekick. It’s at its best when the action sequences are let go mad, and its worst when someone tries to shoehorn in a plot. It’s pure grindhouse, with all the good and bad that implies. Entertaining, despite being a bit terrible. (See <a href="http://twitter.com/garyfleming/status/44043660504993792">my Drive Angry Twitter review</a>).</p>
+
+<p><strong>Rango</strong> is one of the more interesting animated movies of recent times. What’s most striking about it are the visuals: this does not have the super-cute characters with oversized features you’ll find in most Pixar films. No, all the inhabitants of Dirt, the old western town it’s set in, are hideous little animals savaged by scars and warts. They bristle with character from the moment they appear, and set an interesting tone. Despite some risque lines here and there, it’s a fairly well-natured film about belonging, finding a place in the world and becoming a hero by being yourself. The plot won’t surprise, but it doesn’t have to when the rest of the package is so pleasant. Pretty good. (See <a href="http://twitter.com/garyfleming/status/46990115414867968">my Rango Twitter review</a>).</p>
+
+<p>There have been many books and films about alien invasions, many are better than <strong>Battle: Los Angeles</strong>, some are worse. When it’s trying to build B-plots of past tension between the characters, you simply will not care. None of them are interesting enough, or well-portrayed enough, to warrant any attention. Where they are a little better is in the action sequences. The camera work here will put some off, falling somewhere between the Bourne Ultimatum (very shaky) and District 9 (pretty watchable) in the handicam-shake stakes. If you can follow it, there are some pretty great set-pieces, with some reasonably well done CG. It’s entertaining, but not good. (See <a href="http://twitter.com/garyfleming/status/46990316582092800">my Battle Los Angeles Twitter review</a>).</p>
+
+<p><strong>The Company Men</strong> is a little bit baffling. The economic downturn over the last few years is surely ripe for storytelling about families who are suffering the consequences, from professionals through the working classes. That’s not really what we get here: we get one company executive who is saddened by another, but lands just fine, and a reasonably well-off salesman who deludes himself for a while and then lands just fine. The film also fails to see any irony in a millionaire actor, playing a millionaire CEO, complaining about how the now derelict shipyards used to have good honest, hard-workers in it. Despite a pretty great cast, the performances are phoned-in in many places, probably because the characters are so utterly flat. It’s hard to care when no-one else does. A wasted opportunity. (See <a href="https://twitter.com/garyfleming/status/48445315015122944">my The Company Men Twitter review</a>).</p>
+
+<p>Finally, <strong>Submarine</strong> is a distinctly indie debut from Richard Ayoade. It’s difficult to say what it’s about in a way that really captures the feel of the film. It has themes that are familiar, about love, loss, regret and making do, but doesn’t necessarily pursue them breathlessly. The fairly unlikeable lead (a self-obsessed teenager) lets his view of himself get in the way of being a decent human being. There are a number of other tangental threads that all connect in some way (his parents, a psychic, a bulled girl at school), but it’s not particularly tightly plotted, nor does it need to be. It did feel a little long, but there are enough amusing moments along the way to ease the rough pacing. Interesting. (See <a href="http://twitter.com/garyfleming/status/49908088098131969">my Submarine Twitter review</a>).</p>
+
+<p>A difficult one this month: two entertaining action films, a cartoon comedy, a bland downturn tale, and a rough but interesting indie film. To my own surprise, I think I’m going to go with <strong>Submarine</strong> at the winner. While many of the films were good, I think this is the one I’d choose to watch again now.</p>
+
+  </div>
+  <div class="divider"><img src="/assets/images/divider.png" /></div>
+  </div>
+  
+</div>
+
+
+
+<!-- Pagination links -->
+<div class="postnavigation">
+  
+    <a href="/page/30" class="previous">&laquo; Previous</a>
+  
+  
+    <a href="/page/32" class="next">Next &raquo;</a>
+  
+</div>
+
+
+      <div class="footer">
+        <div class="disclaimer">
+  
+
+  <p>
+    © Solitude, 2003-22 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a>, using <a href="https://github.com/swanson/lagom">Lagom</a> as a base theme.
+  </p>
+</div>
+      </div>
+    </div>
+  </div>
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-11493178-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>

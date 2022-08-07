@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Solitude - Fixing a Gap in Javascript</title>
+  <meta name="author" content="Solitude" />
+  <meta name="twitter:widgets:csp" content="on" />
+  <meta name="description" content="The blog of Solitude" />
+  <link rel="canonical" href="https://solitude.vkps.co.uk/Archives/2008/08/19/fixing-a-gap-in-javascript/" />
+
+  <link href="//fonts.googleapis.com/css?family=Open+Sans:600,800" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="alternate" type="application/atom+xml" title="Solitude" href="https://solitude.vkps.co.uk/atom.xml" />
+  <link rel="stylesheet" href="/assets/css/all.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-k2/8zcNbxVIh5mnQ52A0r3a6jAgMGxFJFE2707UxGCk= sha512-ZV9KawG2Legkwp3nAlxLIVFudTauWuBpC10uEafMHYL0Sarrz5A7G79kXh5+5+woxQ5HM559XX2UZjMJ36Wplg==" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container">
+    <div class="four columns sidebar">
+      <nav>
+  <h1><a href="/">Solitude</a></h1>
+  <a href="/">
+    
+    <img src="/assets/images/tree-160.jpg" id="solitude-logo" alt="Solitude logo"/>
+    
+  </a>
+  <div id="bio">
+    <p>Technology. Code. Living relentlessly in the real world.</p>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="/about/">About</a></li>
+      <li><a href="/Archives/">Archives</a></li>
+    </ul>
+  </nav>
+  <div id="social">
+    Follow me:
+<div id="stalker">
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <a title="garyfleming on Twitter" href="https://twitter.com/garyfleming">
+    <i class="fa fa-twitter-square"></i>
+  </a>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <a title="Atom feed" id="atom" href="/feed.xml">
+    <i class="fa fa-rss-square"></i>
+  </a>
+  
+</div>
+
+  </div>
+  
+</nav>
+
+    </div>
+
+    <div class="eleven columns content">
+      <p class="meta">
+  August 19, 2008 | Category: Uncategorized
+  <a href="/">
+    <i class="home fa fa-home"></i>
+  </a>
+</p>
+
+<h1 class="title"><a href="/Archives/2008/08/19/fixing-a-gap-in-javascript/">Fixing a Gap in Javascript</a></h1>
+
+<div class="post">
+  <p>An interesting problem: a bunch of <a href="http://struts.apache.org/1.2.8/userGuide/dev_nested.html">Struts Nested</a> tags generate HTML. Separately, we write some Javascript that makes use of <code class="language-plaintext highlighter-rouge">getElementById()</code> to find some of the generated elements. This works in Internet Explorer, but fails miserably in <a href="http://www.mozilla.com/firefox/">FireFox</a>. Why?</p>
+
+<p>Well, it turns out that Struts Nested tags generate elements that have a <code class="language-plaintext highlighter-rouge">name</code> attribute but not an <code class="language-plaintext highlighter-rouge">id</code>. Separately, IE actually does the wrong thing with <code class="language-plaintext highlighter-rouge">getElementById()</code>: if a search by id fails, it will try to match by name; that’s fundamentally broken. It’d be fine if a bunch of libraries and other functions didn’t prefer the use of ids, and if other browsers did the same thing. They don’t and we’re stuck with the mess. Let’s clean it up.</p>
+
+<p>The right thing to do would be to <a href="http://www.sixteensmallstones.org/ie-javascript-bugs-overriding-internet-explorers-documentgetelementbyid-to-be-w3c-compliant-exposes-an-additional-bug-in-getattributes">cripple the IE version into the correct behaviour</a>. Now everyone agrees on what should happen.</p>
+
+<p>Let’s assume, though, that this isn’t possible, that there’s a large dependency on this behaviour that cannot be changed for whatever reason: no access to the JS, unwieldy codebase that we don’t have time to fix straight away (bad!), or something else. It’s not really that important. If you need to go for the wrong solution, here’s how:</p>
+
+<p>`</p>
+<pre>
+document.nativeGetById = document.getElementById;
+document.getElementById = function(id){
+  var el = document.nativeGetById(id);
+  if(el == null){
+    el = document.getElementsByName(id)[0];
+    if(el != null){el.id=id;}
+  }
+  return el;
+}
+</pre>
+<p>`
+
+That&#8217;ll work and it&#8217;ll even make sure subsequent calls use the native version of the function for extra speed. Now, there are a couple of small issues with this function and some pretty obvious optimisations, but I&#8217;ll leave that as an exercise for the reader.
+</p>
+
+</div>
+
+<div class="postnavigation">
+  
+    <a class="prev" href="/Archives/2008/08/12/neater-java/">&laquo; Neater Java</a>
+  
+  
+    <a class="next" href="/Archives/2008/08/23/film-fight-july-2008/">Film Fight: July 2008 &raquo;</a>
+  
+</div>
+
+
+      <div class="footer">
+        <div class="disclaimer">
+  
+
+  <p>
+    © Solitude, 2003-22 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a>, using <a href="https://github.com/swanson/lagom">Lagom</a> as a base theme.
+  </p>
+</div>
+      </div>
+    </div>
+  </div>
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-11493178-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>

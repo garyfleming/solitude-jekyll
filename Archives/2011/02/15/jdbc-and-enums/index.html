@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Solitude - Jdbc and Enums</title>
+  <meta name="author" content="Solitude" />
+  <meta name="twitter:widgets:csp" content="on" />
+  <meta name="description" content="The blog of Solitude" />
+  <link rel="canonical" href="https://solitude.vkps.co.uk/Archives/2011/02/15/jdbc-and-enums/" />
+
+  <link href="//fonts.googleapis.com/css?family=Open+Sans:600,800" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="alternate" type="application/atom+xml" title="Solitude" href="https://solitude.vkps.co.uk/atom.xml" />
+  <link rel="stylesheet" href="/assets/css/all.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-k2/8zcNbxVIh5mnQ52A0r3a6jAgMGxFJFE2707UxGCk= sha512-ZV9KawG2Legkwp3nAlxLIVFudTauWuBpC10uEafMHYL0Sarrz5A7G79kXh5+5+woxQ5HM559XX2UZjMJ36Wplg==" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container">
+    <div class="four columns sidebar">
+      <nav>
+  <h1><a href="/">Solitude</a></h1>
+  <a href="/">
+    
+    <img src="/assets/images/tree-160.jpg" id="solitude-logo" alt="Solitude logo"/>
+    
+  </a>
+  <div id="bio">
+    <p>Technology. Code. Living relentlessly in the real world.</p>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="/about/">About</a></li>
+      <li><a href="/Archives/">Archives</a></li>
+    </ul>
+  </nav>
+  <div id="social">
+    Follow me:
+<div id="stalker">
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <a title="garyfleming on Twitter" href="https://twitter.com/garyfleming">
+    <i class="fa fa-twitter-square"></i>
+  </a>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <a title="Atom feed" id="atom" href="/feed.xml">
+    <i class="fa fa-rss-square"></i>
+  </a>
+  
+</div>
+
+  </div>
+  
+</nav>
+
+    </div>
+
+    <div class="eleven columns content">
+      <p class="meta">
+  February 15, 2011 | Category: Uncategorized
+  <a href="/">
+    <i class="home fa fa-home"></i>
+  </a>
+</p>
+
+<h1 class="title"><a href="/Archives/2011/02/15/jdbc-and-enums/">Jdbc and Enums</a></h1>
+
+<div class="post">
+  <p>After months of using JPA/Hibernate almost exclusively, I got caught out on a relatively simple bug when using JDBC more directly (well, via Spring’s JdbcTemplate):</p>
+
+<pre class="brush: java; title: ; notranslate" title="">public List&lt;SomeObject&gt; fetchSomeObjects(RecordType recordType) {
+  Map&lt;String,Object&gt; params = ...//Map creation;
+  params.put("recordType", recordType);
+  return namedParameterJdbcTemplate.query("select * from someObject where recordType =  :recordType",
+    params,
+    someRowMapper);
+}</pre>
+
+<p>That was from memory, so it may be a little off, but it should give you the basics of what the code was doing. It looks okay to my eyes, but, of course, it wasn’t. When run an exception was being thrown from the bowels of the JDBC code saying that RecordType couldn’t be converted to a JAVA_OBJECT.</p>
+
+<p>Odd, I thought. It had worked perfectly well with an in-memory database (HSQL) but now wasn’t working when deployed on a hosted database (SQL server).</p>
+
+<p>I couldn’t spot it straight away, so a quick debugging session revealed the problem: JDBC doesn’t play nicely with enums. RecordType, an enum, was being passed to JDBC verbatim without any attempt for it to match up with the recordType column (a varchar column); and that just doesn’t work. You need to explicitly convert from an enum to a String.</p>
+
+<p>Thankfully, it was a one-line fix:</p>
+
+<pre class="brush: java; title: ; notranslate" title="">params.put("recordType", recordType.toString());
+</pre>
+
+<p>It doesn’t read quite as neatly but it works. The fact that the original version reads quite well (the value for “recordType” is called recordType) actually makes the bug harder to spot. Now, back to JPA.</p>
+
+</div>
+
+<div class="postnavigation">
+  
+    <a class="prev" href="/Archives/2011/02/13/film-fight-2011-january/">&laquo; Film Fight 2011: January</a>
+  
+  
+    <a class="next" href="/Archives/2011/02/17/on-organising-music/">On Organising Music &raquo;</a>
+  
+</div>
+
+
+      <div class="footer">
+        <div class="disclaimer">
+  
+
+  <p>
+    © Solitude, 2003-22 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a>, using <a href="https://github.com/swanson/lagom">Lagom</a> as a base theme.
+  </p>
+</div>
+      </div>
+    </div>
+  </div>
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-11493178-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>
