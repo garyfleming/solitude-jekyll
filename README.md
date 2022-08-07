@@ -1,10 +1,10 @@
 # Build #
 
-`jekyll build`
+`bundle exec jekyll build`
 
 ## Preview ##
 
-`jekyll serve`
+`bundle exec jekyll serve`
 
 Then go to localhost:4000
 
