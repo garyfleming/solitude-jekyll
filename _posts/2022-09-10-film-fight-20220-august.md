@@ -1,6 +1,6 @@
 ---
 title: "Film Fight 2022: August"
-date: 3899-01-07T20:00:00+00:00
+date: 2022-09-10T06:00:00+00:00
 author: Gary Fleming
 layout: post
 permalink: /:year/:month/:title/
@@ -8,7 +8,7 @@ categories:
   - Films
 ---
 
-Intro
+A short month with only 4 films...
 
 ### Bullet Train
 
@@ -26,11 +26,7 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1561349487355887616 %}
 
-### movie title
 
-{% twitter url %}
+### The August Winner
 
-
-### The month Winner
-
-...
+While Nope is interesting, **Prey** has to be the winner: a great action film that rejuvenates a flagging franchise.
