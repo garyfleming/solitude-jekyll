@@ -1,6 +1,6 @@
 ---
 title: "Film Fight 2022: September"
-date: 3899-01-07T20:00:00+00:00
+date: 2022-10-02T12:00:00+00:00
 author: Gary Fleming
 layout: post
 permalink: /:year/:month/:title/
@@ -8,7 +8,7 @@ categories:
   - Films
 ---
 
-Intro
+Nine films for the September Film Fight!
 
 ### Rogue Agent
 
@@ -30,7 +30,6 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1568967912274231299 %}
 
-
 ### See How They Run
 
 {% twitter https://twitter.com/garyfleming/status/1573628228085882882 %}
@@ -39,13 +38,15 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1573629582179274759 %}
 
-### film name
+### Crimes Of The Future
 
-{% twitter url %}
+{% twitter https://twitter.com/garyfleming/status/1576540610122878976 %}
+
+### I Came By
+
+{% twitter https://twitter.com/garyfleming/status/1576541280490119169 %}
 
 
+### The September Winner
 
-
-### The month Winner
-
-...
+Not a bad month, but not a great one either; lots of solid films, but not much that's great. I think the winner is **The Forgiven** for walking quite a difficult path and pulling it off.
