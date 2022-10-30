@@ -34,9 +34,21 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1581621596980068353 %}
 
-### film name
+### The Banshees of Inisherin
 
-{% twitter url %}
+{% twitter https://twitter.com/garyfleming/status/1586737061297590279 %}
+
+### Emily The Criminal
+
+{% twitter https://twitter.com/garyfleming/status/1586737654028275712 %}
+
+### The Innocents
+
+{% twitter https://twitter.com/garyfleming/status/1586739069870129156 %}
+
+### Barbarian
+
+{% twitter https://twitter.com/garyfleming/status/1586739844373532677 %}
 
 
 ### The October Winner
