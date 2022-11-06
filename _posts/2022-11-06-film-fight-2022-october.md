@@ -1,6 +1,6 @@
 ---
 title: "Film Fight 2022: October"
-date: 3899-01-07T20:00:00+00:00
+date: 2022-11-06T13:01:00+00:00
 author: Gary Fleming
 layout: post
 permalink: /:year/:month/:title/
@@ -8,7 +8,7 @@ categories:
   - Films
 ---
 
-Intro
+A busy month with 10 new films...
 
 ### Don't Worry Darling
 
@@ -50,7 +50,6 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1586739844373532677 %}
 
-
 ### The October Winner
 
-...
+Some very good options but I'm going with **Barbarian** as the kind of horror I love: it's inventive, and constantly shifting.
