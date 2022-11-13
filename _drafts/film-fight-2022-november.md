@@ -18,6 +18,13 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1589277672403632129 %}
 
+### Smile
+
+{% twitter https://twitter.com/garyfleming/status/1591765321467273216 %}
+
+### Black Panther: Wakanda Forever
+{% twitter https://twitter.com/garyfleming/status/1591767127022878720 %}
+
 ### film name
 
 {% twitter url %}
