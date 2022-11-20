@@ -23,7 +23,21 @@ Intro
 {% twitter https://twitter.com/garyfleming/status/1591765321467273216 %}
 
 ### Black Panther: Wakanda Forever
+
 {% twitter https://twitter.com/garyfleming/status/1591767127022878720 %}
+
+### Pearl
+
+{% twitter https://twitter.com/garyfleming/status/1594354548499513344 %}
+
+### The Menu
+
+{% twitter https://twitter.com/garyfleming/status/1594355455362564097 %}
+
+### Confess, Fletch
+
+{% twitter https://twitter.com/garyfleming/status/1594356011816685568 %}
+
 
 ### film name
 
