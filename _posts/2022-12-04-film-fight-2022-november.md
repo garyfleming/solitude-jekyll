@@ -1,6 +1,6 @@
 ---
-title: "Film Fight YEAR: MONTH"
-date: 3899-01-07T20:00:00+00:00
+title: "Film Fight 2022: November"
+date: 2022-12-04T10:00:00+00:00
 author: Gary Fleming
 layout: post
 permalink: /:year/:month/:title/
@@ -8,7 +8,7 @@ categories:
   - Films
 ---
 
-Intro
+A busy month with 10 films in the fight.
 
 ### Vengeance
 
@@ -38,7 +38,6 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1594356011816685568 %}
 
-
 ### The Wonder
 
 {% twitter https://twitter.com/garyfleming/status/1599365769279680512 %}
@@ -52,6 +51,6 @@ Intro
 {% twitter https://twitter.com/garyfleming/status/1599367836807270400 %}
 
 
-### The month Winner
+### The November Winner
 
-...
+Some very good films in November, but I think the winner is **Pearl** for so many moments, but mostly for that monologue.
