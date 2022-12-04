@@ -82,6 +82,66 @@
 
   
   <div class="postcontainer">
+  <h3><a href="/Archives/2010/04/05/modern-java-lombok/">Modern Java: Lombok</a></h1>
+  <p class="author">
+    <span class="date"> </span>
+  </p>
+  <div class="post">
+    <p>In recent months, I’ve been looking at a lot of new Java libraries to see what I’d like to use and what I think still has a way to go. I’ll be posting about them all in due course but I wanted to mention <a href="http://projectlombok.org/">Lombok</a> first.</p>
+
+<p>First, a class:</p>
+
+<pre class="brush: java; title: ; notranslate" title="">public class Person {
+    private String firstName;
+    private String lastName;
+    private int age;
+
+    public String getFirstName() {
+      return firstName;
+    }
+    public void setFirstName(String firstName) {
+      this.firstName = firstName;
+    }
+    public String getLastName() {
+      return lastName;
+    }
+    public void setLastName(String lastName) {
+      this.lastName = lastName;
+    }
+    public int getAge() {
+      return age;
+    }
+    public void setAge(int age) {
+      this.age = age;
+    }
+}
+</pre>
+
+<p>The problem here is that everything after <code class="language-plaintext highlighter-rouge">public int age</code> is predictable and verbose; you know that this is a Java bean class and that the fields are likely going to have getters and setters just like those provided. If we know exactly what to expect, shouldn’t the compiler take care of that for us rather than having us specify more code? Less code is often cleaner code.</p>
+
+<p>For several years now, people have been asking for the idea of <a href="http://weblogs.java.net/blog/rbair/archive/2007/01/properties_in_j.html">properties in Java</a>. That is, being able to define fields and automatically having standard getters and setters defined, without having to clutter the class file with boilerplate. The most common (and reasonable) response for avoiding this is that it would be difficult to implement without affecting backwards compatibility.</p>
+
+<p>While those proposals are pretty much dead at the moment, Lombok saves us from having to specify our standard getters and setters by marking our classes as beans and then jumping into the compilation process to make sure getters and setters are generated. The above code becomes:</p>
+
+<pre class="brush: java; title: ; notranslate" title="">@Data
+public class Person {
+    private String firstName;
+    private String lastName;
+    private int age;
+}
+</pre>
+
+<p>That’s right: the 18 or so lines of getter/setter boilerplate are replaced by the tiny little <a href="http://projectlombok.org/features/Data.html">@Data</a> annotation, and the code is much cleaner. As a bonus, @Data also generates a <code class="language-plaintext highlighter-rouge">toString()</code>, an <code class="language-plaintext highlighter-rouge">equals()</code> and a <code class="language-plaintext highlighter-rouge">hashCode()</code>. You can use the other Lombok annotations to tweak the behaviour, but this is what most people are going to want.</p>
+
+<p>Also of note is the <a href="http://projectlombok.org/features/Cleanup.html">@Cleanup annotation</a>, which provides automatic resource management (ARM) for using input/output streams. While this will be less essential if ARM arrives in Java 7, it’s a handy little helper for the time being.</p>
+
+<p>While Lombok can’t make bad code good, it can make verbose code a lot more succinct.</p>
+
+  </div>
+  <div class="divider"><img src="/assets/images/divider.png" /></div>
+  </div>
+  
+  <div class="postcontainer">
   <h3><a href="/Archives/2010/04/03/film-fight-2010-march/">Film Fight 2010: March</a></h1>
   <p class="author">
     <span class="date"> </span>
@@ -197,30 +257,6 @@
 <p>I don’t know if I could pick a bronze medallist this year, the pack is so tight, but the silver (almost gold) goes to Darren Aronofsky’s fantastic movie, The Wrestler. It’s dark, and gritty, and will leave you a little sadder, but only because it’s such an excellent movie. An absolute must-see.</p>
 
 <p>The winner, however, is <strong>Synecdoche, New York</strong>. Charlie Kaufmann’s film is so rich with imagery, imagination and an incredible spectrum of emotions that it can’t help but be an amazing film, in the truest sense of that word. It’s an instant classic, in my book.</p>
-
-  </div>
-  <div class="divider"><img src="/assets/images/divider.png" /></div>
-  </div>
-  
-  <div class="postcontainer">
-  <h3><a href="/Archives/2009/12/31/film-fight-december-2009/">Film Fight: December 2009</a></h1>
-  <p class="author">
-    <span class="date"> </span>
-  </p>
-  <div class="post">
-    <p>The last month of the year, and the final five films…</p>
-
-<p>First up, <strong>The Men Who Stare At Goats</strong> tries to be an oddball tale about the forming of an army unit who are training in psychic warfare. Despite a fairly big name cast (George Clooney, Jeff Bridges, Kevin Spacey, and Ewan Macgregor), it never really manages to capitalise on what it has. It’s funny in places, but largely inconsistent. It’s merely an okay film. (See <a href="http://twitter.com/garyfleming/status/6365885341">my Men Who Stare At Goats Twitter review</a>).</p>
-
-<p>Spike Jonze is well-known for his vivid imagination, so there’s probably no-one better placed to turn <strong>Where The Wild Things Are</strong> into a movie. Rather than do a direct adaptation, which would be incredibly short, Jonze has focussed on telling a story about the problems people often face in childhood. It’s very cute and sweet in many places, with a tiny hint of menace streaked through a large portion. He expertly moves the protagonist, Max, through his journey, showing us a wide-range of beautiful moments and difficult challenges. The lead, Max Records, does an excellent job. Good entertainment.  (See <a href="http://twitter.com/garyfleming/status/6632635892">my Where The Wild Things Are Twitter review</a>).</p>
-
-<p>Doing a biopic of John Lennon’s life you might focus on his success and admiration as a fascinating musician. <strong>Nowhere Boy</strong> instead focusses on his formative teenage years to great effect. Seeing the legendary figure as a troubled teen was a good choice for a screen play, and it’s handled very well. Given his abandonment as a child, and his subsequent reconnection with his mother a decade or so later, we get to see a fairly turbulent time in his life that seems to have shaped him. The film has several very powerful scenes, and manages to draw a fairly detailed picture of Lennon’s early years. Very good.   (See <a href="http://twitter.com/garyfleming/status/7134591697">my Nowhere Boy Twitter review</a>).</p>
-
-<p><strong>Avatar</strong> is the film that has been in the making for a dozen years according to director, James Cameron. Sadly, very few of those years have been spent on the story, which is somewhat flimsy and you have seen before. The character development is relatively meek, and most of the film lacks any real depth. It does have a message which, while delivered a little heavy-handedly, is worthwhile: both that we should be conserving the world’s culture and the environment in which we live. Avatar is, however, a good, mindless, action film. The effects (in 3D) are well-done, and some of the battle sequences are suitably epic and fun. If you want something fun that you don’t have to think about, this is your movie. It’s entertaining, but ultimately nothing special. (See <a href="http://twitter.com/garyfleming/status/7134679491">my Avatar Twitter review</a>).</p>
-
-<p>Finally, <strong>Humpday</strong> is about two friends, an artist and an apparently average Joe, who decide to make an art film of themselves having sex, for various reasons. It’s shot in a natural, almost documentary style; managing to be simultaneously amusing and uncomfortable as they get closer to the filming. The tension throughout is well-pitched, particularly between the “average” guy and his wife. Some great performances make this film, even if the ending is a little abrupt. (See <a href="http://twitter.com/garyfleming/status/7212513921">my Humpday Twitter review</a>).</p>
-
-<p>The winner this month is <strong>Nowhere Boy</strong> for an emotional and affecting biopic that perfectly captures an important time in a young man’s life.</p>
 
   </div>
   <div class="divider"><img src="/assets/images/divider.png" /></div>

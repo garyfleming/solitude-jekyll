@@ -82,6 +82,41 @@
 
   
   <div class="postcontainer">
+  <h3><a href="/Archives/2008/08/19/fixing-a-gap-in-javascript/">Fixing a Gap in Javascript</a></h1>
+  <p class="author">
+    <span class="date"> </span>
+  </p>
+  <div class="post">
+    <p>An interesting problem: a bunch of <a href="http://struts.apache.org/1.2.8/userGuide/dev_nested.html">Struts Nested</a> tags generate HTML. Separately, we write some Javascript that makes use of <code class="language-plaintext highlighter-rouge">getElementById()</code> to find some of the generated elements. This works in Internet Explorer, but fails miserably in <a href="http://www.mozilla.com/firefox/">FireFox</a>. Why?</p>
+
+<p>Well, it turns out that Struts Nested tags generate elements that have a <code class="language-plaintext highlighter-rouge">name</code> attribute but not an <code class="language-plaintext highlighter-rouge">id</code>. Separately, IE actually does the wrong thing with <code class="language-plaintext highlighter-rouge">getElementById()</code>: if a search by id fails, it will try to match by name; that’s fundamentally broken. It’d be fine if a bunch of libraries and other functions didn’t prefer the use of ids, and if other browsers did the same thing. They don’t and we’re stuck with the mess. Let’s clean it up.</p>
+
+<p>The right thing to do would be to <a href="http://www.sixteensmallstones.org/ie-javascript-bugs-overriding-internet-explorers-documentgetelementbyid-to-be-w3c-compliant-exposes-an-additional-bug-in-getattributes">cripple the IE version into the correct behaviour</a>. Now everyone agrees on what should happen.</p>
+
+<p>Let’s assume, though, that this isn’t possible, that there’s a large dependency on this behaviour that cannot be changed for whatever reason: no access to the JS, unwieldy codebase that we don’t have time to fix straight away (bad!), or something else. It’s not really that important. If you need to go for the wrong solution, here’s how:</p>
+
+<p>`</p>
+<pre>
+document.nativeGetById = document.getElementById;
+document.getElementById = function(id){
+  var el = document.nativeGetById(id);
+  if(el == null){
+    el = document.getElementsByName(id)[0];
+    if(el != null){el.id=id;}
+  }
+  return el;
+}
+</pre>
+<p>`
+
+That&#8217;ll work and it&#8217;ll even make sure subsequent calls use the native version of the function for extra speed. Now, there are a couple of small issues with this function and some pretty obvious optimisations, but I&#8217;ll leave that as an exercise for the reader.
+</p>
+
+  </div>
+  <div class="divider"><img src="/assets/images/divider.png" /></div>
+  </div>
+  
+  <div class="postcontainer">
   <h3><a href="/Archives/2008/08/12/neater-java/">Neater Java</a></h1>
   <p class="author">
     <span class="date"> </span>
@@ -218,30 +253,6 @@ Very tidy: we&#8217;ve got a single method call that expresses exactly what we&#
 <p>Finally, the much awaited <strong>Indiana Jones and the Kingdom of the Crystal Skull</strong> shows that even the relatively sacred Indiana Jones franchise is capable of producing an absolute stinker. There is little to like about this film. The story is nonsensical, fan-pleasing hookum in the worst sense. It reads like fan fiction. You expect the author’s favourite band to turn up and high-five Shia LaBeouf (who is awful in this), it’s honestly that bad. The fun, family adventures (occult themes not withstanding) have been replaced by farce. The impeccably solid stunt-work has been replaced by piss weak CGI and ludicrous ideas. The evil ants climb up each other like a cartoon? Shia LeBeouf becomes Tarzan? <em>That</em> accent was supposed to be acting? Tragically bad, and not so tragic that it’s funny either.</p>
 
 <p>The winner for May 2008 is <strong>Cashback</strong>. It wouldn’t have won in many other months, but it’s core is a good enough film to warrant a watch.</p>
-
-  </div>
-  <div class="divider"><img src="/assets/images/divider.png" /></div>
-  </div>
-  
-  <div class="postcontainer">
-  <h3><a href="/Archives/2008/07/04/film-fight-april-2008/">Film Fight: April 2008</a></h1>
-  <p class="author">
-    <span class="date"> </span>
-  </p>
-  <div class="post">
-    <p>I know, I know, it’s late again. It’s been a fair while since I’ve seen these but let’s crack on anyway.</p>
-
-<p><strong>Funny Games</strong> is shot for shot remake of a German film of the same name (by the same director), about the commercialisation and desensitisation of violence in the media. Told through the eyes of a family who are held against their will, it takes us on a fairly dark journey, using some impressively lengthy shots to force us to keep watching. The direction and camera work is pretty flawless throughout, as is the dialogue; perfunctory and sharp. The film is an unerringly focussed on it’s core questions of “Have you seen enough yet?” and “Is this still entertaining?” It succeeds masterfully. Highly recommended.</p>
-
-<p>Rod Hilton has done another excellent job of parodying <strong><a href="http://www.the-editing-room.com/21.html">21</a></strong>, but I’ll say a little more. What we have here is a good idea, done in the worst possible way. We have a film that is dumbed down as far as it will go: MTV style jump-cuts, paper thin characters, plot holes, awful dialogue, the works. It’s been designed as a music video and, for a film about card counting, that’s not good. Even if you want an easy film, I’d say there’s better fare on offer elsewhere. Avoid!</p>
-
-<p><strong>In Bruges</strong> is a bit of an odd mix: ostensibly a comedy, but with a thoroughly dark vein running through it. After a kill gone wrong, two hit men are ordered to hide out in Bruges where they begin to face up to what they’ve done. Had the film continued with that, it could’ve been very good. Sadly, it loses itself exploring the quirky characters they meet and the childish jokes that Colin Farrell’s character passes off as banter. That’s not to say it’s entirely merit less: there are some laughs in here. In a quiet period, it might be worth a look.</p>
-
-<p>As is my obligatory remark for this kind of film, I love zombie films. Spanish horror, <strong>Rec</strong>, is exactly that. Initially the single point of view handycam style gives it a Blair Witch feel (not a good thing), it quickly settles in. About a siege in an apartment block and the panic that surrounds the resident’s attempts to escape, we see old conceits work remarkably well. The story is nothing more than ordinary (well doled out), but the visual impact is impressive. Horrific in places, reasonably tense, but let down by a weak end sequence. A shame that the last scene lets it slip. Still worth a view.</p>
-
-<p>Finally, <strong>Persepolis</strong> is an animated film from Iran (redubbed by an impressive American voice cast) following the fall of civil rights in Iran, and the eventual persecution of non-conformists. Told through the eyes of a young girl growing up and eventually viewing her heritage from afar, Persepolis is simultaneously wryly bleak and dimly amusing. The story is a worthwhile one, but often the pacing feels too slow and the feel too quiet. You sympathise with the main character’s plight, but can’t warm to her as a person. Not a terrible failing, but one that makes the film drag more than it could.</p>
-
-<p>The winner for April is <strong>Funny Games</strong>, a dark vision and a pointed question combined into an excellent piece of cinema.</p>
 
   </div>
   <div class="divider"><img src="/assets/images/divider.png" /></div>
