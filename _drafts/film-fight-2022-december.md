@@ -18,6 +18,10 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1599372333734854657 %}
 
+### She Said
+
+{% twitter https://twitter.com/garyfleming/status/1601941670538665989 %}
+
 ### film name
 
 {% twitter url %}
