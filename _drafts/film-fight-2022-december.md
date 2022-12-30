@@ -22,6 +22,14 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1601941670538665989 %}
 
+### The Infernal Machine
+
+{% twitter https://twitter.com/garyfleming/status/1608829814756237312 %}
+
+### Glass Onion
+
+{% twitter https://twitter.com/garyfleming/status/1608831043183968259 %}
+
 ### film name
 
 {% twitter url %}
