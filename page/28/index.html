@@ -82,6 +82,26 @@
 
   
   <div class="postcontainer">
+  <h3><a href="/Archives/2012/12/01/film-fight-2012-october/">Film Fight 2012: October</a></h1>
+  <p class="author">
+    <span class="date"> </span>
+  </p>
+  <div class="post">
+    <p>Three films in this month’s round-up:</p>
+
+<p>First up is <strong>Looper</strong>, a brilliantly structured narrative about inevitability, love and sacrifice, seen through the eyes of a killer tasked with the murder of his future self. While that sounds convoluted, it’s not in practice; the film focusses much more on its themes than on the sci-fi mechanics that allow the story to move forward. While having Joseph Gordon-Levitt playing a younger Bruce Willis is a big stretch, the acting through-out is solid. It’s a big and bold tale, often quite pretty, but fantastically paced. Very worthwhile. (See <a href="http://twitter.com/garyfleming/status/253620585622548481">my Looper Twitter review</a>).</p>
+
+<p><strong>The Campaign</strong>, meanwhile, manages to undersell what could’ve been a great comedy. The premise is solid enough (a sleazy, corrupt politician takes on a well-meaning, naive upstart), but it never really amounts to anything. In the final edit, it feels like there are a number of segments they wanted to show and they built a fairly flimsy plot around putting those pieces together. It is funny, but it’s just not cohesive enough to be great. Passable, though. (See <a href="http://twitter.com/garyfleming/status/258652587434336257">my The Campaign Twitter review</a>).</p>
+
+<p>Finally, <strong>Taken 2</strong> is a bit of a let-down on every level. While no-one would’ve expected a great, character-led plot, it fails to make much of its action sequences. There’s a decent car chase in there, a few little moments, but nothing that grabs you as much as the relentless and breathlessly executed sequences from its predecessor. While that was a well-executed action film, this sequel feels very much like a needless and ill-advised cash-in. Avoid. (See <a href="http://twitter.com/garyfleming/status/258652934965972993">my Taken 2 Twitter review</a>).</p>
+
+<p>The winner for this month is <strong>Looper</strong>, for its brilliant take on time-loop movies.</p>
+
+  </div>
+  <div class="divider"><img src="/assets/images/divider.png" /></div>
+  </div>
+  
+  <div class="postcontainer">
   <h3><a href="/Archives/2012/10/07/film-fight-2012-september/">Film Fight 2012: September</a></h1>
   <p class="author">
     <span class="date"> </span>
@@ -158,50 +178,6 @@
 <p><strong>Prometheus</strong> seems to have riled up a lot of people. Many seem to be annoyed it’s not Aliens, whilst others seemed to think that nothing much happened. It’s certainly not Aliens (and that’s not a bad thing), but an awful lot happened. You see, the thing about Prometheus is that it has absolutely no interest in spoon feeding any of the many answers that are either in the film or hinted at extremely strongly. I’m fine with that. Ambiguity, whether a little or a lot (and this film deals with both), can be a great way of giving a fantastical premise a dose of reality; things are rarely cleanly explained in the real world. Everything that needed to be answered was, to some degree. This film deals in questions that are far above the scope of most action-adventure films,  about that nature of existence and the things that we will never know. Beyond the narrative itself, the action set pieces were surprisingly good, giving a sense of scale, desperation and pace when needed, and the performances more than did the job. It was not perfect: that final scene was entirely gratuitous, and I would’ve ended the film about 10 minutes earlier. However, it seemed to me like it was the film that it needed to be: not an Alien film, something different. Something more ponderous, and interesting. A very good film. (See <a href="http://twitter.com/garyfleming/status/215924641418579968">my Prometheus Twitter review</a>).</p>
 
 <p>Well, it’ll be no surprise that <strong>Prometheus</strong> is the winner this month.</p>
-
-  </div>
-  <div class="divider"><img src="/assets/images/divider.png" /></div>
-  </div>
-  
-  <div class="postcontainer">
-  <h3><a href="/Archives/2012/06/21/how-to-do-support-well/">How To Do Support Well</a></h1>
-  <p class="author">
-    <span class="date"> </span>
-  </p>
-  <div class="post">
-    <p>There are many aspects of professional software development that I had to learn the hard way i.e. by smashing off every branch of the mistake tree and landing on my arse. That’s a perfectly fine way of figuring things out.</p>
-
-<p>Surprisingly, though, that’s not how I learned to do development-support well, which is sometimes called level 3 support. It was something I picked up extremely early in my career, and I’ve yet to learn a better method (not through lack of trying).</p>
-
-<p>I’m going to share the method I was taught in just a second, but a quick clarification of terms. What is development-support? A typical BigCo has 3 kinds of support staff:</p>
-
-<ul>
-  <li>User-support (sometimes called level 1) deals with any user level queries, like forgotten passwords, usernames, simple account queries etc. They run the day-to-day of the system, but are not necessarily very technical. When they get asked a question that they can’t answer, they escalate it to…</li>
-  <li>Application-support (level 2). These people tend to be technical, but not necessarily developers. They’re in charge of making sure all the servers are running, backups are taken, settings are configured correctly, and that the system is running smoothly. They may perform these tasks directly, or they may co-ordinate with more specialised staff, like system administrators or DBAs. If there is something really wrong with the application itself, they’ll escalate to…</li>
-  <li>Development-support (level 3). These are almost universally people who actively write code for the system in question and, thus, are expected to be able to debug through more complicated and unusual issues arising from the application.</li>
-</ul>
-
-<p>So, with that explanation in hand, back to how I was trained to do development-support and why I think it’s the best way of doing it…</p>
-
-<p>In my first job after university, I was involved in web application with a complicated permission model. Every user had a role that gave them a set of default privileges they were allowed to perform. The domain I was working in is not important, but imagine that someone with a Doctor role might be able to perform treatments, write prescriptions, give medical advice to patients etc whilst someone with a Nurse role can perform minor treatments but not write prescriptions. That’s relatively straightforward.</p>
-
-<p>The complication we had was that for any given item in the system (in our example, a Patient) individual people could be stripped of a privilege normally associated with their role. For example, Doctor X might not be able to give a prescription to Patient Y (perhaps they’re related?).</p>
-
-<p>These minor tweaks to the default permission model were rare enough that they were not the expected norm, but common enough that the role/privilege model had to be maintained; there was no opportunity to simplify.</p>
-
-<p>The single biggest cause of support calls making it to the level 3 development-support team were, inevitably, around the privilege model. Doctors didn’t understand why they could write prescriptions for 99% of patients, but one or two would cause them issues, and that those one or two would be different for every doctor.</p>
-
-<p>The model I was taught for addressing these issues was this:</p>
-
-<ol>
-  <li><strong>Give the person asking a support question an answer as quickly as reasonably possible</strong>. If it’s gotten as far as you, for whatever reason, then don’t pass the buck if you can: answer the question. A general, all-encompassing solution might not be necessary: just figure out how to get the person asking the question a satisfactory answer quickly.</li>
-  <li><strong>Train the level above you to solve this class of problems</strong>. In a structured support model, like the one detailed above, development-support should only be getting asked about things that the other levels cannot complete through lack of understanding, training, or some impediment. It’s the duty of development-support to provide these things and, in doing so, removing the burden from themselves so they can focus on writing more code.</li>
-  <li><strong>Make solving the problem trivial</strong>. If a question is being asked enough, it’s time to take action. Write sufficient tooling to make solving similar problems simple; or change the information that is displayed so that the answer is obvious and the question itself is removed.</li>
-</ol>
-
-<p>Look at this model through the privilege problem I described. Step 1, when asked why Doctor X cannot give a prescription to Patient Y, might involve manually joining some database privilege tables to see that they’ve had that privilege removed for some reason (“Patient Y is the wife of Doctor X”). That should satisfy the immediate need. Step 2 would be completed by explaining the database structure and queries to application-support so that they’d be able to do what you did for any future queries of a similar nature. Finally, step 3 could be solved in several ways. You could provide a more robust tool so that either support can merely type in “Doctor X” and “Patient Y” and be immediately told about the privilege constraints, or you could expose the information directly to the user. When Doctor X tries to write a prescription for Patient Y, they’d be immediately told they cannot do so for the known reason.</p>
-
-<p>This is a pretty straightforward model to follow, yet I’m consistently surprised to see many teams stopping at step 1 where they’re left to absorb all complex queries indefinitely. I’m not saying it’s perfect, all that it would fit every scenario, but I’ve found it works very well for me.</p>
 
   </div>
   <div class="divider"><img src="/assets/images/divider.png" /></div>
