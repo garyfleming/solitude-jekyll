@@ -1,6 +1,6 @@
 ---
 title: "Film Fight 2022: December"
-date: 3899-01-07T20:00:00+00:00
+date: 2023-01-07T12:00:00+00:00
 author: Gary Fleming
 layout: post
 permalink: /:year/:month/:title/
@@ -8,7 +8,7 @@ categories:
   - Films
 ---
 
-Intro
+For December, we have 9 films in the fight!
 
 ### Violent Night
 
@@ -49,4 +49,4 @@ Intro
 
 ### The December Winner
 
-...
+The December winner is the excellent **Decision To Leave**, largely for the reason stated: you're not going to forget this soon.
