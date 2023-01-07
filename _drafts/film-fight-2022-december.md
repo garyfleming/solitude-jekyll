@@ -36,15 +36,15 @@ Intro
 
 ### It's A Wonderful Binge
 
-{% twitter url %}
+{% twitter https://twitter.com/garyfleming/status/1611736600534302722 %}
 
 ### White Noise
 
-{% twitter url %}
+{% twitter https://twitter.com/garyfleming/status/1611737334457958401 %}
 
 ### Decision to Leave
 
-{% twitter url %}
+{% twitter https://twitter.com/garyfleming/status/1611738351396159488 %}
 
 
 ### The December Winner
