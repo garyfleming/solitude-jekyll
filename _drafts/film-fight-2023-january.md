@@ -27,6 +27,16 @@ Intro
 {% twitter https://twitter.com/garyfleming/status/1617178090228142080 %}
 
 
+### M3gan
+
+{% twitter https://twitter.com/garyfleming/status/1619711630870462464 %}
+
+### The Fabelmans
+
+{% twitter https://twitter.com/garyfleming/status/1619712892898803713 %}
+
+
+
 ### film name
 
 {% twitter url %}
