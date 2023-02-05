@@ -37,7 +37,7 @@ A good start to the year with seven films in the fight.
 
 ### Aftersun
 
-{% twitter https://twitter.com/garyfleming/status/1622270772180881409 %}
+{% twitter https://twitter.com/garyfleming/status/1622272487500222464 %}
 
 
 ### The January Winner
