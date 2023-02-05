@@ -1,6 +1,6 @@
 ---
-title: "Film Fight 2023: February"
-date: 3899-01-07T20:00:00+00:00
+title: "Film Fight 2023: January"
+date: 2023-02-05T13:00:00+00:00
 author: Gary Fleming
 layout: post
 permalink: /:year/:month/:title/
@@ -8,7 +8,7 @@ categories:
   - Films
 ---
 
-Intro
+A good start to the year with seven films in the fight.
 
 ### The Pale Blue Eye
 
@@ -35,13 +35,11 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1619712892898803713 %}
 
-
-
 ### Aftersun
 
 {% twitter https://twitter.com/garyfleming/status/1622270772180881409 %}
 
 
-### The month Winner
+### The January Winner
 
-...
+Despite some very good films, this is an easy win for **Tár**: incredible performances, good drama, gorgeous film.
