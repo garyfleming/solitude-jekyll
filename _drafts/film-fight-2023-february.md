@@ -10,10 +10,22 @@ categories:
 
 Intro
 
-### The Whal
+### The Whale
 
 {% twitter https://twitter.com/garyfleming/status/1622273778809032704 %}
 
+
+### Bank of Dave
+
+{% twitter https://twitter.com/garyfleming/status/1625116637279002631 %}
+
+### All Quiet On The Western Front
+
+{% twitter https://twitter.com/garyfleming/status/1625117465129762819 %}
+
+### Knock At The Cabin
+
+{% twitter https://twitter.com/garyfleming/status/1625118095256825857 %}
 
 ### film name
 
