@@ -27,6 +27,19 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1625118095256825857 %}
 
+### Ant Man & The Wasp: Quantumania
+
+{% twitter https://twitter.com/garyfleming/status/1629898487079792643 %}
+
+### Sharper
+
+{% twitter https://twitter.com/garyfleming/status/1629898961644318722 %}
+
+### Cocaine bear
+
+{% twitter https://twitter.com/garyfleming/status/1629899529079205889 %}
+
+
 ### film name
 
 {% twitter url %}
