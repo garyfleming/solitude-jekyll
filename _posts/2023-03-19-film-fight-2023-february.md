@@ -1,6 +1,6 @@
 ---
 title: "Film Fight 2023: February"
-date: 3899-01-07T20:00:00+00:00
+date: 2023-03-19T13:00:00+00:00
 author: Gary Fleming
 layout: post
 permalink: /:year/:month/:title/
@@ -8,7 +8,7 @@ categories:
   - Films
 ---
 
-Intro
+Seven films in the February Film Fight.
 
 ### The Whale
 
@@ -40,11 +40,6 @@ Intro
 {% twitter https://twitter.com/garyfleming/status/1629899529079205889 %}
 
 
-### film name
+### The February Winner
 
-{% twitter url %}
-
-
-### The month Winner
-
-...
+While Cocaine Bear nearly got it for it's simple entertainment value, I think the winner has to be **All Quiet On The Western Front**, a difficult but powerful watch.
