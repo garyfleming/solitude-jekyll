@@ -18,6 +18,10 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1634936343192293376 %}
 
+### The Boston Strangler
+
+{% twitter https://twitter.com/garyfleming/status/1637508094891634689 %}
+
 ### film name
 
 {% twitter url %}
