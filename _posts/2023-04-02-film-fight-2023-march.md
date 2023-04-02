@@ -1,6 +1,6 @@
 ---
 title: "Film Fight 2023: March"
-date: 3899-01-07T20:00:00+00:00
+date: 2023-04-02T10:00:00+00:00
 author: Gary Fleming
 layout: post
 permalink: /:year/:month/:title/
@@ -8,7 +8,7 @@ categories:
   - Films
 ---
 
-Intro
+Just six films in the fight this month...
 
 ### Creed 3
 
@@ -38,4 +38,4 @@ Intro
 
 ### The March Winner
 
-...
+Some decent films in March, but the best film here is clearly **Women Talking**.
