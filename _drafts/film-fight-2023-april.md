@@ -22,6 +22,14 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1645486045218107392 %}
 
+### Shazam: Fury Of The Gods
+
+{% twitter https://twitter.com/garyfleming/status/1647606662251917312 %}
+
+### Assassin Club
+
+{% twitter https://twitter.com/garyfleming/status/1647607228721946624 %}
+
 ### film name
 
 {% twitter url %}
