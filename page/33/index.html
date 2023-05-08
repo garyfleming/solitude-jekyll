@@ -82,6 +82,24 @@
 
   
   <div class="postcontainer">
+  <h3><a href="/Archives/2011/07/03/film-fight-2011-june/">Film Fight 2011: June</a></h1>
+  <p class="author">
+    <span class="date"> </span>
+  </p>
+  <div class="post">
+    <p>June was quite a quiet month, with only two films viewed.</p>
+
+<p>First off, <strong>Stake Land</strong> manages to fumble a reasonable premise and some early good will, by trying to do far too much. Set in a world that has been destroyed by a vampiric plague, we see early on that the film is capable of stylish and brutal action sequences, as set in motion by the no-nonsense protagonist, Mister. Throughout, these are the film’s saving grace. However, the film-makers spend so much time world-building and setting up lots of tiny little sub-plots, they forgot to really develop any of them, or to build up most of the characters to the point that we care what happens to them. It feels like they were sticking out plot points for a TV series with the intention of fleshing them out over dozens of hours, but were instead forced to take what they had and film it for around two hours. A real shame. (See <a href="https://twitter.com/garyfleming/status/82189737733009409">my Stake Land Twitter review</a>).</p>
+
+<p>Finally, <strong>Senna</strong> was an interesting documentary on Ayrton Senna, one of Formula One’s all-time greats. In contrast with most modern documentaries, there’s no talking-head footage, and no narrated “story”. Instead we get lots of archive footage (of which they obviously had more of than for most other subjects) and minimal use of interview audio from his family and friends, with the emphasis heavily on trying to tell the story with period materials. This works tremendously well, building up his rivalries, triumphs and downfalls in a natural fashion. It’s a little slow-paced in the middle, but keeps you interested every time Senna gets a bad break. Very good. (See <a href="https://twitter.com/garyfleming/status/85022943729565696">my Senna Twitter review</a>).</p>
+
+<p>With those two films, there really could only be one winner: <strong>Senna</strong>. A fine documentary, and an interesting subject.</p>
+
+  </div>
+  <div class="divider"><img src="/assets/images/divider.png" /></div>
+  </div>
+  
+  <div class="postcontainer">
   <h3><a href="/Archives/2011/06/09/code-for-machines/">Code for Machines</a></h1>
   <p class="author">
     <span class="date"> </span>
@@ -170,26 +188,6 @@
 <p>Finally, <strong>Submarine</strong> is a distinctly indie debut from Richard Ayoade. It’s difficult to say what it’s about in a way that really captures the feel of the film. It has themes that are familiar, about love, loss, regret and making do, but doesn’t necessarily pursue them breathlessly. The fairly unlikeable lead (a self-obsessed teenager) lets his view of himself get in the way of being a decent human being. There are a number of other tangental threads that all connect in some way (his parents, a psychic, a bulled girl at school), but it’s not particularly tightly plotted, nor does it need to be. It did feel a little long, but there are enough amusing moments along the way to ease the rough pacing. Interesting. (See <a href="http://twitter.com/garyfleming/status/49908088098131969">my Submarine Twitter review</a>).</p>
 
 <p>A difficult one this month: two entertaining action films, a cartoon comedy, a bland downturn tale, and a rough but interesting indie film. To my own surprise, I think I’m going to go with <strong>Submarine</strong> at the winner. While many of the films were good, I think this is the one I’d choose to watch again now.</p>
-
-  </div>
-  <div class="divider"><img src="/assets/images/divider.png" /></div>
-  </div>
-  
-  <div class="postcontainer">
-  <h3><a href="/Archives/2011/03/29/jpa-and-bad-assumptions/">JPA and Bad Assumptions</a></h1>
-  <p class="author">
-    <span class="date"> </span>
-  </p>
-  <div class="post">
-    <p>I made a bad assumption about how JPA (with Hibernate) works a while ago, that came back to bite me recently. For a long time, I’d assumed that if you have an <code class="language-plaintext highlighter-rouge">@Column</code> annotation with a name attribute, that name would always be the name that gets used to match the field to a DB column i.e. <code class="language-plaintext highlighter-rouge">@Column(name="someName")</code> would always resolve to the DB column “someName”.</p>
-
-<p>I was very much mistaken in that assumption.</p>
-
-<p>When using Hibernate (and possibly other JPA implementations, I’ll need to check), it turns out that name just replaces the field name as it goes through the normal renaming process. That is, the name is still subject to all of Hibernate’s naming strategy code.</p>
-
-<p>By default, that means that when using the ImprovedNamingStrategy (as most people are), “someName” becomes “some_name”. This is definitely a more db-like name, but took me a little by surprise when I saw this happening in someone’s code.</p>
-
-<p>The lesson: never assume anything.</p>
 
   </div>
   <div class="divider"><img src="/assets/images/divider.png" /></div>
