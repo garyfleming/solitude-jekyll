@@ -1,6 +1,6 @@
 ---
 title: "Film Fight 2023: April"
-date: 3899-01-07T20:00:00+00:00
+date: 2023-05-08T10:00:00+00:00
 author: Gary Fleming
 layout: post
 permalink: /:year/:month/:title/
@@ -8,7 +8,7 @@ categories:
   - Films
 ---
 
-Intro
+The April Film Fight has five films...
 
 ### Tetris
 
@@ -38,4 +38,4 @@ Intro
 
 ### The April Winner
 
-...
+There aren't really any gems here, and **Tetris** takes it by being merely okay.
