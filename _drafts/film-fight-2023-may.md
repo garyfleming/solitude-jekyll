@@ -30,9 +30,13 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1660245219013541890 %}
 
-### film name
+### Dead Shot
 
-{% twitter url %}
+{% twitter https://twitter.com/garyfleming/status/1663114475015217153 %}
+
+### Hypnotic
+
+{% twitter https://twitter.com/garyfleming/status/1663115543786782720 %}
 
 ### film name
 
