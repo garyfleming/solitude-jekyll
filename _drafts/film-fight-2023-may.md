@@ -8,7 +8,7 @@ categories:
   - Films
 ---
 
-Intro
+Seven films this month…
 
 ### Missing
 
@@ -38,11 +38,7 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1663115543786782720 %}
 
-### film name
-
-{% twitter url %}
-
 
 ### The May Winner
 
-...
+While Missing almost had it, **Beau Is Afraid** takes it because it has stayed with me more.
