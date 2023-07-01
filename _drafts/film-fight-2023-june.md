@@ -26,11 +26,11 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1673034175794872321 %}
 
-### film name
+### Asteroid City
 
-{% twitter url %}
+{% twitter https://twitter.com/garyfleming/status/1675148276696268801 %}
 
 
-### The month Winner
+### The June Winner
 
 ...
