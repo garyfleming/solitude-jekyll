@@ -1,6 +1,6 @@
 ---
 title: "Film Fight 2023: June"
-date: 3899-01-07T20:00:00+00:00
+date: 2023-07-01T14:00:00+00:00
 author: Gary Fleming
 layout: post
 permalink: /:year/:month/:title/
@@ -8,7 +8,7 @@ categories:
   - Films
 ---
 
-Intro
+A short month with only five films in the fight.
 
 ### Alice, Darling
 
@@ -33,4 +33,4 @@ Intro
 
 ### The June Winner
 
-...
+Some good options, but the winner is **Alice, Darling**; an excellent, if difficult, watch.
