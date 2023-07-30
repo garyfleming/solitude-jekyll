@@ -29,31 +29,31 @@ Intro
 
 ### The Flash
 
-{% twitter url %}
+{% twitter https://twitter.com/garyfleming/status/1685609477339324416 %}
 
 ### How To Blow Up A Pipeline
 
-{% twitter url %}
+{% twitter https://twitter.com/garyfleming/status/1685609910094938112 %}
 
 ### Oppenheimer
 
-{% twitter url %}
+{% twitter https://twitter.com/garyfleming/status/1685610432755531776 %}
 
 ### The Out-laws
 
-{% twitter url %}
+{% twitter https://twitter.com/garyfleming/status/1685610842476232704 %}
 
 ### They Cloned Tyrone
 
-{% twitter url %}
+{% twitter https://twitter.com/garyfleming/status/1685611833019727872 %}
 
 ### The Artifice Girl
 
-{% twitter url %}
+{% twitter https://twitter.com/garyfleming/status/1685612484193894400 %}
 
 ### Barbie
 
-{% twitter url %}
+{% twitter https://twitter.com/garyfleming/status/1685614018751254528 %}
 
 ### film name
 
