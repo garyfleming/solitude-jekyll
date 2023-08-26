@@ -1,6 +1,6 @@
 ---
 title: "Film Fight 2023: July"
-date: 3899-01-07T20:00:00+00:00
+date: 2023-08-26T14:00:00+00:00
 author: Gary Fleming
 layout: post
 permalink: /:year/:month/:title/
@@ -54,11 +54,6 @@ I honestly thought I posted this at the start of August, but here it is: 11 film
 
 {% twitter https://twitter.com/garyfleming/status/1685614018751254528 %}
 
-### film name
-
-{% twitter url %}
-
-
 ### The July Winner
 
-...
+Some very good films this month, but the winner for me is **Oppenheimer**; Nolan's most interesting work in a long time.
