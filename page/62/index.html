@@ -82,6 +82,38 @@
 
   
   <div class="postcontainer">
+  <h3><a href="/Archives/2006/10/17/PlagiarismIntroduction/">Plagiarism: Introduction</a></h1>
+  <p class="author">
+    <span class="date"> </span>
+  </p>
+  <div class="post">
+    <p>Having been been involved in various natural language problems at university, the area of study interests me greatly as a series of very difficult problems. Despite that, I’ve written very little about it. This series on plagiarism detection is an attempt to rectify that.</p>
+
+<p>First, the problem: people are opportunistic, lying cheats who will take any advantage to get ahead. Well, if you believe the tabloids. While we might not all be like that, sadly, the number of people cheating in universities is increasing. Rather than work hard and produce their own work, professors are dismayed to find that several students hand in suspiciously similar pieces of work. Of course, with rather a lot of students in any given course, it can be very difficult to match up a handful as being similar. Lots of people, lots entries, not enough time to go through them and compare every single one against every other one by hand.</p>
+
+<p>Take some time to appreciate the scale of the problem: if a class has 300 people, and you want to compare them all against each other, you’re invoking the classic <a href="http://dwb.unl.edu/calculators/activities/middle/shake.html">handshake problem</a>. To compare them all, you have to do <em>44850</em> checks. Ouch.</p>
+
+<p>This is where <strong>plagiarism detection</strong> comes in: we want to automatically detect any near-duplicates in a group of submissions, eliminating any honest submissions in the process.</p>
+
+<p>Note that although I will refer to most examples in terms of students, submissions and universities, you can substitute in a wide range of domains. Copied texts in a library, finding cross-quotations, finding duplicate entries in financial market systems, the list is nearly endless.</p>
+
+<p>Next, a couple of useful terms: If one person copies another without that person knowing, we call that <strong>plagiarism</strong>. If two or more people copy one another intentionally, we call that <strong>collusion</strong>. For our purposes, these are the same thing. Why? It would be tremendously difficult, if not impossible, to infer the intentions of any entries marked as potential duplicates. Because of this and other possible failings in the system, it is never for the system to act as a final decision maker in whether or not people are cheating; it merely serves as an ordering system for someone else to make a decision. We will, therefore, use the terms “plagiarism” and “collusion” in interchangeably.</p>
+
+<p>It’s worth reiterating that plagiarism detection systems are just ordering systems: they take in a bunch of entries, find groups of similar entries (normally simple pairs of entries), and order those groups by the similarity found within. A user would then look at the produced ordering and decide whether these entries really are similar. There’s nothing unusual about that, when you think about it. Google is doing something pretty similar: it takes a bunch of web pages and a query, groups them on key attributes (words, meta-data, rankings), and orders the pages by how similar they are to the query. A user would then look at the produced ordering and decide which entries best matched the query. You’ve done this a million times yourself, you know it mostly works.</p>
+
+<p>You also know that, heck, sometimes it doesn’t; you can’t make decisions on the ordering with absolute certainty. In this way, plagiarism detection, search engines and other natural language problems are, at the time of writing, incomplete. While we don’t have the natural language problem nailed, we have to accept that they sometimes produce errors. In the case of plagiarism detection systems, those errors could lead to someone being kicked out of university if the risks are not understood. Again, these systems are just for ordering: not absolute decision making.</p>
+
+<p>Another point worth noting is that plagiarism detection systems generally deal with <strong>intra corpus</strong> search. That is, we know and have absolutely every entry in the set: they all come from submissions for a set exercise with a set deadline. After the deadline, the set is fixed in size, it will never grow, and it is almost always relatively small in size (a few hundred or thousand entries). Compare with web search where the corpus of documents is continually increasing and has billions of entries. So we’re comparing the entries in a fixed size set of documents, and not against a wider set. It is possible to compare against a much larger set like, say, the internet to find people copying from there, but it’s beyond the scope of much of the series as it is a much more difficult problem.</p>
+
+<p>We’re nearly down with this introduction, I hope by the time that I end this series, you will have a much better feel for how plagiarism detection works, how natural language problems can be solved, and what the trade-offs can by through-out.</p>
+
+<p>Finally, I highly recommend that you read Tim Bray’s excellent <a href="http://www.tbray.org/ongoing/When/200x/2003/07/30/OnSearchTOC">On Search</a> series. While reading the whole thing will do you no harm, if you’re lacking time I would read the sections on <a href="http://www.tbray.org/ongoing/When/200x/2003/06/22/PandR">Precision and Recall</a> and <a href="http://www.tbray.org/ongoing/When/200x/2003/07/11/Stopwords">Stop Words</a> as they hint at areas that need to be understood for most of this series.</p>
+
+  </div>
+  <div class="divider"><img src="/assets/images/divider.png" /></div>
+  </div>
+  
+  <div class="postcontainer">
   <h3><a href="/Archives/2006/10/10/DualMonitors/">Dual Monitors</a></h1>
   <p class="author">
     <span class="date"> </span>
@@ -146,32 +178,6 @@
     <p>This morning I found out that I’ve been invited to join the <a href="http://www.tapeitofftheinternet.com/">Tape It Off The Internet</a> Beta, after signing up months ago. The idea is that it’ll be the place to go for TV related stuff: whether commenting, leaving information or downloading.</p>
 
 <p>It’s far too early in the beta to say anything much about it other than it’s a great idea (<acronym title="Rich Site Summary">RSS</acronym> feeds and the ability to attach your own torrents to episodes is sadly lacking). Instead, I have 5 invites to give away. If you want one, leave a comment, email my gmail account or find me on msn.</p>
-
-  </div>
-  <div class="divider"><img src="/assets/images/divider.png" /></div>
-  </div>
-  
-  <div class="postcontainer">
-  <h3><a href="/Archives/2006/09/19/filmfightaugust2006/">Film Fight: August 2006</a></h1>
-  <p class="author">
-    <span class="date"> </span>
-  </p>
-  <div class="post">
-    <p>Late? Pah! Lateness is our new motto. August was a fairly busy month, so let’s get going, foregoing subtley for speed.</p>
-
-<p><strong>Miami Vice</strong> is atrocious. Michael Mann might have done some classic films (I even enjoyed Tom Cruise vehicle, “<a href="/Archives/2004/09/22/Collateral">Collateral</a>“), but this is far from it. In fact, this is about as far removed from his previous film as possible: acting is woeful on all fronts (including from Oscar winner Jamie Foxx), the grainy cam is just annoying, the action is… non-existent, and the dialogue is amongst the worst committed to celluloid. Honestly, you will pray for the deaths of either of the main characters just so they can’t talk to each other. Awful stuff.</p>
-
-<p>On the comedy front, <strong>Nacho Libre</strong> mixes the writing of Napoleon Dynamite with the comedy front of Jack Black. Normally loud and Dynamic, Black struggles to make anything of this quiet, near dead pan style; laughs becoming rarer and never getting above a chuckle. That said, there is something appealing about the wrestling scenes; maybe it’s the outlandish silliness of it all, or the midgets, but they just seem to work. Not bad, but not great.</p>
-
-<p>After some absolutely awful superhero films, <strong>Superman Returns</strong> is surprisingly reasonable. Taking off after Superman 2, and taking some great liberties with the canon, the plot brings the camp visual jokes back to Earth with more emotional content dealing, as it does, primarily with the return of a man to a world that both no longer needs him and is screaming out for him. The echoes between the life of Clark and his alter-ego may lack subtlety, but this is still good, solid storytelling.</p>
-
-<p>The ultimate burlesque model turned minor star gets a biopic in the form of <strong>The Notorious Bettie Page</strong>. It deals with the subject matter in a very superficial manner, suggesting that she wandered into her starhood and didn’t realise what she was doing, even after it was explained. It never goes into any worthwhile depth, showing merely a series of events in her life rather than taking a standpoint, any standpoint, and rigorously exploring it. A disappointment purely for it’s lack of any real insight into the icon.</p>
-
-<p>Just about everyone has seen it now, so I will keep it brief: <strong>Snakes On A Plane</strong> is unashamedly trashy, cheap, brainless nonsense. It doesn’t stand up to the slightest hint of scrutiny, but no-one cares. It’s amusing because it knows how bad it is. It won’t be winning any awards (despite the tongue in cheek claims of star, Samuel L. Jackson) but probably worth seeing once.</p>
-
-<p>Finally, set in a world where we’re losing the so called war on drugs and paranoia is at a record high, <strong>A Scanner Darkly</strong> explores a world in which perception and reality are orthogonal. Our hero, under a secret guise in his role as an undercover drugs agent, is assigned to monitor himself and his own life. As his drug uses increases and his mind slips, he takes us through a bizarre world, rendered in the most beautiful rotoscoped animation. Performances are sterling throughout, with Robert Downie Jr doing exceptional work. Insightful, schizophrenic, and funny, a film worth seeing.</p>
-
-<p>The obvious and clear winner is, of course, A Scanner Darkly.</p>
 
   </div>
   <div class="divider"><img src="/assets/images/divider.png" /></div>
