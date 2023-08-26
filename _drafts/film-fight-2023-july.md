@@ -8,12 +8,11 @@ categories:
   - Films
 ---
 
-Intro
+I honestly thought I posted this at the start of August, but here it is: 11 films in the July fight.
 
 ### Blackberry
 
 {% twitter https://twitter.com/garyfleming/status/1685607237895503872 %}
-
 
 ### Fool's Paradise
 
