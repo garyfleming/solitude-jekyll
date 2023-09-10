@@ -40,7 +40,7 @@ A decent month with eight films...
 
 ### Paint
 
-{% twitter https://twitter.com/garyfleming/status/1700836076099629293 %}
+{% twitter https://twitter.com/garyfleming/status/1700836554808111378 %}
 
 
 ### The August Winner
