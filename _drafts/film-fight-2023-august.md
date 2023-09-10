@@ -30,9 +30,17 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1695451241755652503 %}
 
-### film name
+### The Blackening
 
-{% twitter url %}
+{% twitter https://twitter.com/garyfleming/status/1700835619834937811 %}
+
+### Inside
+
+{% twitter https://twitter.com/garyfleming/status/1700836076099629293 %}
+
+### Paint
+
+{% twitter https://twitter.com/garyfleming/status/1700836076099629293 %}
 
 
 ### The August Winner
