@@ -1,6 +1,6 @@
 ---
 title: "Film Fight 2023: August"
-date: 3899-01-07T20:00:00+00:00
+date: 2023-09-10T11:00:00+00:00
 author: Gary Fleming
 layout: post
 permalink: /:year/:month/:title/
@@ -8,7 +8,7 @@ categories:
   - Films
 ---
 
-Intro
+A decent month with eight films...
 
 ### The Beanie Bubble
 
@@ -45,4 +45,4 @@ Intro
 
 ### The August Winner
 
-...
+A little torn between Inside and Corner Office, but **Corner Office** edges it - I've got a soft spot for weird workplace films.
