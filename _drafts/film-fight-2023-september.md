@@ -22,6 +22,26 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1700840495625146532 %}
 
+### Past Lives
+
+{% twitter https://twitter.com/garyfleming/status/1708123140688158966 %}
+
+### No-One Will Save You
+
+{% twitter https://twitter.com/garyfleming/status/1708123650807710182 %}
+
+### Dumb Money
+
+{% twitter https://twitter.com/garyfleming/status/1708124332323377495 %}
+
+### Bottoms
+
+{% twitter https://twitter.com/garyfleming/status/1708125258857718165 %}
+
+### Reptile
+
+{% twitter https://twitter.com/garyfleming/status/1708125725688012904 %}
+
 ### film name
 
 {% twitter url %}
