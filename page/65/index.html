@@ -82,6 +82,37 @@
 
   
   <div class="postcontainer">
+  <h3><a href="/Archives/2006/06/18/UbuntuAndStorage/">Ubuntu And Storage</a></h1>
+  <p class="author">
+    <span class="date"> </span>
+  </p>
+  <div class="post">
+    <p>Linux and filesystem experts, I need your help. A while back, I started looking at installing <a href="http://www.ubuntu.com/">Ubuntu</a> after discussing various options with <a href="http://kryogenix.org">Stuart Langridge</a>. I’ve subsequently burned 3 different releases of said OS to <acronym title="Digital Video Disc">DVD</acronym>, up to and including the latest 6.06 LTS x64 version. Playing with the live <acronym title="Compact Disk">CD</acronym> on a few occassions has convinced me that it is the right idea: it’s a tidy little Linux distro that gets out of your way until you want to really start messing around with it. I have not, however, installed it yet for two reasons. Primarily, it has taken me a fair amount of time to investigate everything I needed to know about Ubuntu before being happy with it, making sure I’ve thought through any potential problems. I’m glad I did that because I’ve hit a real problem, which brings me to my second reason.</p>
+
+<p>My computer is an AMD64x2 based machine with two 200Gb SATA drives, both of which were formatted as NTFS volumes. The first of those is the boot drive, which contains installed programs and games and has almost 125Gb free. The secondary drive is my data drive, containing video, music, pictures, websites and a whole load of other application data I <strong>don’t want to lose</strong>. It is full, give or take a few gigs.</p>
+
+<p>The problem is the data drive. I want a volume that I can read and write from either windows or linux (Mac support would be nice, but not essential) but, as the drive is NTFS, the linux support is poor for writing and this is data I <strong>don’t want to lose</strong>. I’ve been giving it some thought and have a few ideas:</p>
+
+<ol>
+  <li><strong>Long, bitty migration</strong>. I could offload a good chunk of the data drive to the non-data drive, create a new partition on the data drive (in the new freespace) with a better filesystem (whiche one), migrate the data back to that partition, and repeat with the other section. This strikes me as potentially messy.</li>
+  <li><strong>The <a href="http://www.linux-ntfs.org/">Linux-NTFS</a> project</strong>. Although they now have NTFS support, it’s at the expense of “speed and stability”. I don’t know if that’s a worthwhile trade-off.</li>
+  <li><strong>Checking out NTFS for linux</strong>. I’d be willing to pay for the software if it safely met my needs, but I am not sure it will.</li>
+</ol>
+
+<p>Of course, those options all miss a key point: the data drive is absolutely full. I will need more space at some point though the largely free non-data drive can be used for now, so this might be a perfect opportunity. I think (though I am not sure) my motherboard, an Asus A8N32-SLI Deluxe, only has two SATA slots and that makes just shoving in another disk tricky. So I’m also looking towards <acronym title="Network Attached Storage">NAS</acronym> solutions:</p>
+
+<ol>
+  <li><strong>Buying a NAS box from <a href="http://www.infrant.com/">Infrant</a></strong>. It’s quite a cost up front to get even a diskless NAS box, but it’s the sort of investment that might be worth it. While I’m wary that nothing will be compatible forever, an ethernet-accessed blackbox with upgradeable firmware seems like a safe bet for at least the medium term. Cost might be an issue, but I’m also not sure about all the access issues. Presumably it uses some standard access protocol (Samba-based most likely), but it’s been a while since I have looked at the issues around network storage.</li>
+  <li><strong>Build my own NAS box based on <a href="http://www.freenas.org/">FreeNAS</a></strong>. This would be a fun little project, but I’m not sure it would be any cheaper than buying a more sophisticated box given a) the cost of components, b) time taken, c) reliability, d) feature set, and e) lifespan.</li>
+</ol>
+
+<p>So, gentle readers, have I missed an obvious or better option? Do these options look good? Which is best? Are they problems I have overlooked? All comments and suggestions welcome.</p>
+
+  </div>
+  <div class="divider"><img src="/assets/images/divider.png" /></div>
+  </div>
+  
+  <div class="postcontainer">
   <h3><a href="/Archives/2006/05/24/DesignBanshee/">Design: Banshee</a></h1>
   <p class="author">
     <span class="date"> </span>
@@ -162,30 +193,6 @@
   </p>
   <div class="post">
     <p>In less than one hour from now, the time will be 01:02:03 04/05/06. There is no greater point or meaning here, just an observation of a moment with little significance that will pass by while we sleep. Good night.</p>
-
-  </div>
-  <div class="divider"><img src="/assets/images/divider.png" /></div>
-  </div>
-  
-  <div class="postcontainer">
-  <h3><a href="/Archives/2006/05/02/filmfight2006april/">Film Fight 2006: April</a></h1>
-  <p class="author">
-    <span class="date"> </span>
-  </p>
-  <div class="post">
-    <p>Given recent form, this will seem like a relatively light month in terms of cinema. That is because, since the return of the classic Tuesday night film, I’ve been going to that a fair bit more than seeing new fodder. Anyway…</p>
-
-<p>First up is the dreadful <strong>Hostel</strong>, a film that gets virtually nothing right. The premise is a reasonable starting point for a horror film: tourists off the beaten path get captured and tortured. The problem is everything else. The writer gives us protagonists we can’t like and certainly don’t care about, the director gives us sloppy cuts and gets a woeful acting performance out of the cast, and the sound director does an unbelievably heavy handed job on even the simplest of moments. It’s not often that scene-setting music jars so horribly with the set-up that undermines the little dramatic tension present, but Hostel has this effect in nearly every scene. Even if you’re just in it for the gore, it is, for the most part, timid.</p>
-
-<p><strong>Pierrepoint</strong> is on the opposite end of the spectrum. It’s rare that you see a thorough and detailed character examination that is more than just superficial, that gets inside the head of the character and pulls out every dark synapse, but this film does it with style. Timothy Spall (previously best known for his role in “Auf Wiedersehen, Pet”) pulls off one of the finest performances I have even see as Albert Pierrepoint, Britain’s last chief executioner. Starting from humble beginnings, we see the complexities of the man as he rises to fame and descends into a broken shell. A stunning, faultless work.</p>
-
-<p>Tipping away from the seriouss drama is <strong>Scary Movie 4</strong>. If you’ve seen any other chapter in the series, you will know exactly what to expect: crude references to well known films, slapstick and some awful jokes. It’s been so long since we had a good parody film (think Hot Shots, think Naked Gun) that an endless stream of toilet humour can pass. That’s not to say this is a worthless film, just don’t expect anything above simple and juvenile.</p>
-
-<p><strong>American Dreamz</strong> is surprising; it manages to fit some pretty sharp satire into a fairly clumsy mould. A take on both Middle Eastern politics and Pop Idol style tv shows, it’s not an obvious spoof. While much of the film is painful to watch, you know there are some good jokes been steam-rollered by bad pace, trashy caricatures and actors out of their depth (Hugh Grant being prime candidate). Probably not worth the time to go and see it, but if you get dragged along it’s not the end of the world.</p>
-
-<p>Finally, <strong>Paradise Now</strong> is the story of two men, good friends, who are selected to be martyrs for the Palestinean cause. While this could be viewed as propaganda, it gives a reasonable view of what one side of the fight is thinking, without ever pretending that violence is justified. Indeed that is the real conflict in the film: whether or not the ends justify the means. As indie films go, it holds itself well, reasonable competence and confidence being shown. It just misses some real depth.</p>
-
-<p>And the winner? Clearly, Pierrepoint. Early candidate for film of the year.</p>
 
   </div>
   <div class="divider"><img src="/assets/images/divider.png" /></div>
