@@ -1,6 +1,6 @@
 ---
 title: "Film Fight 2023: September"
-date: 3899-01-07T20:00:00+00:00
+date: 2023-10-08T09:00:00+00:00
 author: Gary Fleming
 layout: post
 permalink: /:year/:month/:title/
@@ -8,11 +8,11 @@ categories:
   - Films
 ---
 
-Intro
+Eight films in Film Fight this month...
 
 ### Meg 2: The Trench
 
-{% twitter uhttps://twitter.com/garyfleming/status/1700836076099629293 %}
+{% twitter https://twitter.com/garyfleming/status/1700838659484705236 %}
 
 ### The Equaliser 3
 
@@ -42,11 +42,7 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1708125725688012904 %}
 
-### film name
-
-{% twitter url %}
-
 
 ### The September Winner
 
-...
+The winner is **Bottoms** for hitting the mark every single moment. Very good.
