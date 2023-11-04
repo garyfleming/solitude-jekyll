@@ -1,6 +1,6 @@
 ---
 title: "Film Fight 2023: October"
-date: 3899-01-07T20:00:00+00:00
+date: 2023-11-04T12:01:00+00:00
 author: Gary Fleming
 layout: post
 permalink: /:year/:month/:title/
@@ -8,7 +8,7 @@ categories:
   - Films
 ---
 
-Intro
+Only six films this month in the Film Fight.
 
 ### Talk To Me
 
@@ -37,4 +37,4 @@ Intro
 
 ### The October Winner
 
-...
+There's really only one option: *The Caine Mutiny Court-Martial**, as a tight, well-performed drama.
