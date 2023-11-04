@@ -18,10 +18,21 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1710961030937858240 %}
 
+### The Creator
 
-### film name
+{% twitter https://twitter.com/garyfleming/status/1720764684977016926 %}
 
-{% twitter url %}
+### You're Killing Me
+
+{% twitter https://twitter.com/garyfleming/status/1720765944669065293 %}
+
+### Totally Killer
+
+{% twitter https://twitter.com/garyfleming/status/1720766530462318803 %}
+
+### Pain Hustlers
+
+{% twitter https://twitter.com/garyfleming/status/1720767087809827185 %}
 
 
 ### The October Winner
