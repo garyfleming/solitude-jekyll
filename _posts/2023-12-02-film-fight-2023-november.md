@@ -1,6 +1,6 @@
 ---
 title: "Film Fight 2023: November"
-date: 3899-01-07T20:00:00+00:00
+date: 2023-12-02T13:00:00+00:00
 author: Gary Fleming
 layout: post
 permalink: /:year/:month/:title/
@@ -8,9 +8,7 @@ categories:
   - Films
 ---
 
-Intro
-
-
+Seven films this month...
 
 ### Fingernails
 
@@ -43,4 +41,4 @@ Intro
 
 ### The November Winner
 
-...
+I think The Royal Hotel would win most other months, but **Anatomy Of A Fall** is just a little better.
