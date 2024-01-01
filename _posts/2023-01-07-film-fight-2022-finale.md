@@ -1,5 +1,5 @@
 ---
-title: "Film Fight 2021: Finale"
+title: "Film Fight 2022: Finale"
 date: 2023-01-07T13:00:00+00:00
 author: Gary Fleming
 layout: post
