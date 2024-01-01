@@ -82,6 +82,26 @@
 
   
   <div class="postcontainer">
+  <h3><a href="/Archives/2003/03/28/nntprss/">nntprss</a></h1>
+  <p class="author">
+    <span class="date"> </span>
+  </p>
+  <div class="post">
+    <p>I found a link to <a href="http://www.methodize.org/nntprss">nntprss</a> the other day and have to say how great an idea it is. It allows you to read <acronym title="Rich Site Summary">RSS</acronym> feeds in any newsgroup reading software that you might have.</p>
+
+<p>Now, not a lot of people use newsgroups anymore (compared to when it was <em>the</em> killer app of the net), but I do. So being able to read news from all the sites I visit in a simple straight-forward manner in a familiar interface (in my case, <strong>Outlook express</strong>) is very useful. I recommend this to anyone who uses newsgroups and reads any site with an <acronym title="Rich Site Summary">RSS</acronym> feed.</p>
+
+<p>I just need to set it up as a windows service, rather than having to use the command prompt everytime I start-up, and it’ll be perfect.</p>
+
+<p>Update: I’ve created a very fast and nasty way or working around the problem of executing nntprss at start-up. Just use the following code as a batch file:<a href="http://solitude.vkps.co.uk/Code/nntp/nntprss.txt">batch-file code</a>.</p>
+
+<p><ins>UPDATE: The word “start” has been added to the code to make the command prompt created by the batch file disappear on completion. Thanks to WildShaft!</ins></p>
+
+  </div>
+  <div class="divider"><img src="/assets/images/divider.png" /></div>
+  </div>
+  
+  <div class="postcontainer">
   <h3><a href="/Archives/2003/03/28/BiffyLanding/">Biffy Landing</a></h1>
   <p class="author">
     <span class="date"> </span>
@@ -153,33 +173,6 @@
   <div class="divider"><img src="/assets/images/divider.png" /></div>
   </div>
   
-  <div class="postcontainer">
-  <h3><a href="/Archives/2003/03/24/AnotherReasonToSwitchBrowsers/">Another Reason To Switch Browsers</a></h1>
-  <p class="author">
-    <span class="date"> </span>
-  </p>
-  <div class="post">
-    <p>I just found out about another reason to switch browsers to the Gecko family (I use <a href="http://www.mozilla.org/projects/phoenix/">Phoenix</a> personally): keyword searching.</p>
-
-<p>Imagine you want to use a search engine, say Google, (or any site that provides a search facility) to quickly search for information on horses. Wouldn’t it be nice if you could just type “google horses” into your address bar and have it give you all the search results? Well, you can. And here’s how to do it:</p>
-
-<ol>
-  <li>Go to the site of your choice (we’ll use google), and enter a simple keyword (we’ll be using horses). You’ll get something like “http://www.google.com/search?hl=en&amp;ie=UTF-8&amp;oe=UTF-8&amp;q=<strong>horses</strong>” back as a URL string.</li>
-  <li>Remove the search term (horses) from the URL and replace it with “%s” (with the quotations) to get something like “http://www.google.com/search?hl=en&amp;ie=UTF-8&amp;oe=UTF-8&amp;q=<strong>%s</strong>“. Bookmark this string.</li>
-  <li>Go into “Manage Bookmarks” and look at the properties for the bookmark you just created. In keywords, add “Google”.</li>
-  <li>Go back to your browser and type “Google horses”, and you’ll get your search results.</li>
-</ol>
-
-<p>Very simple, yet extremely clever. I’ve already created a few bookmarks that you can use (just add keywords): <a href="http://www.feedster.com/search.php?q=%s&amp;hl=en&amp;ie=ISO-8859-1&amp;&amp;btnG=Search&amp;sort">Feedster</a>, <a href="http://www.google.com/search?hl=en&amp;ie=UTF-8&amp;oe=UTF-8&amp;q=%s">Google</a>, and <a href="http://dictionary.reference.com/search?q=%s">Dictionary.com</a>.</p>
-
-<p>Remember, you should be able to do this with just about any site with a search engine, so try it out a lot. Unless you use Internet Explorer. In which case, upgrade and then try it out.</p>
-
-<p><a href="http://www.surfmind.com/musings/2003/03/17/index.cfm#mozKeywords">Technique via Surf*Mind*Musings</a></p>
-
-  </div>
-  <div class="divider"><img src="/assets/images/divider.png" /></div>
-  </div>
-  
 </div>
 
 
@@ -200,7 +193,7 @@
   
 
   <p>
-    © Solitude, 2003-23 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a>, using <a href="https://github.com/swanson/lagom">Lagom</a> as a base theme.
+    © Solitude, 2003-24 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a>, using <a href="https://github.com/swanson/lagom">Lagom</a> as a base theme.
   </p>
 </div>
       </div>

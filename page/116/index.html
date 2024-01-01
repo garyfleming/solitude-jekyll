@@ -82,6 +82,26 @@
 
   
   <div class="postcontainer">
+  <h3><a href="/Archives/2004/03/04/GzipCSS/">Gzip CSS</a></h1>
+  <p class="author">
+    <span class="date"> </span>
+  </p>
+  <div class="post">
+    <p>Using a very simple technique, it is possible to <a href="http://www.fiftyfoureleven.com/sandbox/compress-css-with-php/">compress your <acronym title="Cascading Style Sheets">CSS</acronym></a> files with <acronym title="PHP Hypertext Processor">PHP</acronym>.</p>
+
+<p>Following the instructions on that site, and you can cut your CSS files by a large percentage. Good for bandwidth, good for visitors.</p>
+
+<p>However, I would suggest one modification to the code given: do some user-agent sniffing for Netscape 4. Now, normally I’m not a fan of <acronym title="User Agent">UA</acronym> specific techniques, but if you don’t make an exception in this case, the GZip process will crash Netscape 4.</p>
+
+<p>The problem is that it is difficult to target that particular browser. After some careful observation of various similar UA string, I think it is sufficient to not run the compression routine if you find the string <code class="language-plaintext highlighter-rouge">Mozilla/4</code> but not the string <code class="language-plaintext highlighter-rouge">compatible</code>.</p>
+
+<p>In addition, I’ve set up an htacess rule to parse .css files, rather than rename them to .php.</p>
+
+  </div>
+  <div class="divider"><img src="/assets/images/divider.png" /></div>
+  </div>
+  
+  <div class="postcontainer">
   <h3><a href="/Archives/2004/02/29/RocksFishAndNinjaGold/">Rocks, Fish And Ninja Gold</a></h1>
   <p class="author">
     <span class="date"> </span>
@@ -168,24 +188,6 @@
   <div class="divider"><img src="/assets/images/divider.png" /></div>
   </div>
   
-  <div class="postcontainer">
-  <h3><a href="/Archives/2004/02/23/BigFish/">Big Fish</a></h1>
-  <p class="author">
-    <span class="date"> </span>
-  </p>
-  <div class="post">
-    <p>From the trailers it is easy to imagine Tim Burton’s new film, <strong>Big Fish</strong>, as just being more Hollywood fantasy tripe, with about as much depth as <a href="http://solitude.vkps.co.uk/Archives/2003/08/19/Chicago">Chicago</a> (how I love that film).</p>
-
-<p>Surprising, then, is the fact that Big Fish is actually quite entertaining.</p>
-
-<p>It’s not laugh out loud funny, but the tall tales being woven into a bizarre cornucopia of imagery and tangents. The bit parts are fantastically acted, even if Ewan McGregor’s accent is a little irritating.</p>
-
-<p>A good film, that managed to surpass low expectations.</p>
-
-  </div>
-  <div class="divider"><img src="/assets/images/divider.png" /></div>
-  </div>
-  
 </div>
 
 
@@ -206,7 +208,7 @@
   
 
   <p>
-    © Solitude, 2003-23 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a>, using <a href="https://github.com/swanson/lagom">Lagom</a> as a base theme.
+    © Solitude, 2003-24 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a>, using <a href="https://github.com/swanson/lagom">Lagom</a> as a base theme.
   </p>
 </div>
       </div>

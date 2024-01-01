@@ -82,6 +82,42 @@
 
   
   <div class="postcontainer">
+  <h3><a href="/Archives/2003/12/26/PolitenessAndAgents/">Politeness And Agents</a></h1>
+  <p class="author">
+    <span class="date"> </span>
+  </p>
+  <div class="post">
+    <p>Politeness has long been a problem for automated agents on the web. Well, it’s not so much that politeness is a problem; agents are programmed to be impolite, whether accidently or not. Politeness is a solved problem.</p>
+
+<p>Let us be clear on what is meant. “Agents” refers to any automated system capable of talking to web servers, i.e. search engines, aggregators, download managers etc. “Polite” means waiting a while before checking a server again.</p>
+
+<ol>
+  <li>If a download manager hammers a file on my site 50 times a minute unsuccessfully, that’s impolite,</li>
+  <li>If a search agent crawls my entire site, doing so again 4 hours later is impolite. Doing so again <em>every</em> 4 hours is downright rude,</li>
+  <li>If an aggregator agent checks my <acronym title="Rich Site Summary">RSS</acronym> feeds more than 3 times an hour, that’s impolite.</li>
+</ol>
+
+<p>How can we solve these problems? As was said earlier, politeness is a solved problem.</p>
+
+<p>However, the <strong>current solutions are poor</strong>. In all 3 situations above, the user of these agents would be banned from crawling the site (either automatically or after manual inspection of logs). “Good riddance,” you might be thinking, “no good bandwidth leech, I’m better of without them.”</p>
+
+<p>Have you considered that the user doesn’t know any better? They don’t know they’re being impolite because so few tools actually <em>tell</em> them.</p>
+
+<p>Download managers: they’ll let you pick any number of connections and any time interval between retries. Would it kill the implementer to bring up a dialogue saying: “This could cause a heavy load on a server, causing you to be banned. Are you sure you want to change settings?”</p>
+
+<p>Search agents: Is it so hard to say: “The time interval you’ve specified between crawls is impolite, and may get you banned and blacklisted. Are you sure you want to keep new settings?”</p>
+
+<p>Aggregator agents: A similar time interval warning to search agents would suffice. As an aside, there is a mechanism in RSS that allows the producer of the feed to <a href="http://web.resource.org/rss/1.0/modules/syndication/">specify a recommended time interval</a> between checks. Do any aggregators support it? Do they tell the end user if they’re in breach of it? Hmmm? Thought not.</p>
+
+<p>If a user doesn’t heed the warnings, ban them.</p>
+
+<p>This puts the pressure on the tool makers to tell users of bad behaviour. And why shouldn’t it be? They should keep their users informed; it’s only polite.</p>
+
+  </div>
+  <div class="divider"><img src="/assets/images/divider.png" /></div>
+  </div>
+  
+  <div class="postcontainer">
   <h3><a href="/Archives/2003/12/24/MerryChristmas/">Merry Christmas</a></h1>
   <p class="author">
     <span class="date"> </span>
@@ -171,20 +207,6 @@
   <div class="divider"><img src="/assets/images/divider.png" /></div>
   </div>
   
-  <div class="postcontainer">
-  <h3><a href="/Archives/2003/12/19/HoHoRedesign/">Ho Ho Redesign</a></h1>
-  <p class="author">
-    <span class="date"> </span>
-  </p>
-  <div class="post">
-    <p>Since it is the season, I’ve done a tiny bit of Christmas redesigning. Hope it appeals.</p>
-
-<p>I’ve been fairly busy this week, so posts have been thin on the ground. Real posting should reemerge tonight or tomorrow (it <em>is</em> the end of term after all).</p>
-
-  </div>
-  <div class="divider"><img src="/assets/images/divider.png" /></div>
-  </div>
-  
 </div>
 
 
@@ -205,7 +227,7 @@
   
 
   <p>
-    © Solitude, 2003-23 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a>, using <a href="https://github.com/swanson/lagom">Lagom</a> as a base theme.
+    © Solitude, 2003-24 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a>, using <a href="https://github.com/swanson/lagom">Lagom</a> as a base theme.
   </p>
 </div>
       </div>
