@@ -37,4 +37,4 @@ Only six films this month in the Film Fight.
 
 ### The October Winner
 
-There's really only one option: *The Caine Mutiny Court-Martial**, as a tight, well-performed drama.
+There's really only one option: **The Caine Mutiny Court-Martial**, as a tight, well-performed drama.

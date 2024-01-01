@@ -8,7 +8,7 @@ categories:
   - Films
 ---
 
-Intro
+Seven films this month, most of them in the last week or so.
 
 ### Killers Of The Flower Moon
 
