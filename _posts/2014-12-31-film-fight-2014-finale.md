@@ -8,6 +8,7 @@ guid: http://solitude.vkps.co.uk/?p=16076
 permalink: /Archives/2014/12/31/film-fight-2014-finale/
 categories:
   - Films
+  - Finale
 ---
 Yes, most of the Film Fights this year were terribly late, with roughly half showing up in December, but we got there in the end. So what was the best film of the year? As always, [my caveat from earlier years applies](http://solitude.vkps.co.uk/Archives/2013/12/31/film-fight-2013-finale/): Film Fight is done in a knock-out style and, as such, only picks my favourite film of the year; there are no guarantees about second place.
 

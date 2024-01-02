@@ -6,6 +6,7 @@ layout: post
 permalink: /:year/:month/:title/
 categories:
   - Films
+  - Finale
 ---
 
 Wow, another year of mostly at home viewing, but with a bit more cinema thrown in, particularly towards the end. It's been a decent enough year for film, with maybe a few too many big-budget action films dominating screens in the back end of the year (looking at you Marvel!).

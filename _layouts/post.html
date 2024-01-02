@@ -3,7 +3,7 @@ layout: default
 ---
 
 <p class="meta">
-  {{ page.date | date: "%B %d, %Y" }} | Category: {{ page.categories | category_links }}
+  {{ page.date | date: "%B %d, %Y" }} | Category: {% for category in page.categories %} {{category}}{% endfor %}
   <a href="/">
     <i class="home fa fa-home"></i>
   </a>

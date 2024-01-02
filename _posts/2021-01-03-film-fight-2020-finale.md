@@ -6,6 +6,7 @@ layout: post
 permalink: /:year/:month/:title/
 categories:
   - Films
+  - Finale
 ---
 
 Film Fight, for the first time in years, ran roughly to schedule. Most of the monthly posts went up on time! Hurrah!

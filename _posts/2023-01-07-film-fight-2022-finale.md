@@ -6,6 +6,7 @@ layout: post
 permalink: /:year/:month/:title/
 categories:
   - Films
+  - Finale
 ---
 
 Another year of film watching done. Back to the cinema for a lot of this, but also a bunch that were first/early release at home. Seems like a lot of low to mid budget films are skipping cinemas entirely these days.

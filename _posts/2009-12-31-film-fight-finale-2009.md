@@ -8,6 +8,7 @@ guid: http://solitude.vkps.co.uk/?p=926
 permalink: /Archives/2009/12/31/film-fight-finale-2009/
 categories:
   - Uncategorized
+  - Finale
 ---
 As always [my caveat from previous years still apply](http://solitude.vkps.co.uk/Archives/2008/12/31/film-fight-finale-2008/): Film Fight is a knock-out tournament and, as such, will only select my favourite film. It makes no guarantees about any other place.
 

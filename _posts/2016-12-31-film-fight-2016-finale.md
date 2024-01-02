@@ -6,6 +6,7 @@ layout: post
 permalink: /:year/:month/:title/
 categories:
   - Films
+  - Finale
 ---
 
 A mostly very late Film Fight 2016 comes to an end in time. As per [my permanent caveat](http://solitude.vkps.co.uk/Archives/2015/12/31/film-fight-2015-finale/), Film Fight is done in a knock-out style: it'll let me select my favourite film of the year, but with no guarantees about second place.

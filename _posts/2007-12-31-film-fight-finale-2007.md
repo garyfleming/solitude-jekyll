@@ -8,6 +8,7 @@ guid: http://solitude.vkps.co.uk/Archives/2007/12/31/film-fight-finale-2007/
 permalink: /Archives/2007/12/31/film-fight-finale-2007/
 categories:
   - Uncategorized
+  - Finale
 tags:
   - Film
   - Film Fight

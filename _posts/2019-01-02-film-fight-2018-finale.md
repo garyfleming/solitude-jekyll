@@ -6,6 +6,7 @@ layout: post
 permalink: /:year/:month/:title/
 categories:
   - Films
+  - Finale
 ---
 
 While this finale is a day or two later than normal, Film Fight has mostly run to schedule this year. As per [my perennial caveat](https://solitude.vkps.co.uk/2017/12/film-fight-2017-finale/), Film Fight is done in
