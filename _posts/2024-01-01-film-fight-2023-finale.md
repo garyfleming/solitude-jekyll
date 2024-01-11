@@ -15,7 +15,7 @@ As per the [caveat every year](https://solitude.vkps.co.uk/2023/01/film-fight-20
 The honorable mentions: films that weren't good enough to win their own month, but still worth seeing.
 
 * Aftersun
-* Cocaina Bear
+* Cocaine Bear
 * Knock At The Cabin
 * Infinity Pool
 * John Wick: Chapter 4
