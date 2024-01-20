@@ -1,0 +1,57 @@
+---
+title: "Film Fight 2024: January"
+date: 3899-01-07T20:00:00+00:00
+author: Gary Fleming
+layout: post
+permalink: /:year/:month/:title/
+categories:
+  - Films
+---
+
+Intro
+
+### Freelance
+
+{% twitter https://twitter.com/garyfleming/status/1748712305305547005 %}
+
+### Priscilla
+
+{% twitter https://twitter.com/garyfleming/status/1748713875082518550 %}
+
+### Next Goal Wins
+
+{% twitter https://twitter.com/garyfleming/status/1748714412989415765 %}
+
+### The Holdovers
+
+{% twitter https://twitter.com/garyfleming/status/1748715084191257023 %}
+
+### Society Of The Snow
+
+{% twitter https://twitter.com/garyfleming/status/1748715585456714039 %}
+
+### Poor Things
+
+{% twitter https://twitter.com/garyfleming/status/1748716357116404075 %}
+
+### Role Play
+
+{% twitter https://twitter.com/garyfleming/status/1748717255490256914 %}
+
+### Lift
+
+{% twitter https://twitter.com/garyfleming/status/1748718083450056726 %}
+
+
+### film name
+
+{% twitter url %}
+
+### film name
+
+{% twitter url %}
+
+
+### The January Winner
+
+...
