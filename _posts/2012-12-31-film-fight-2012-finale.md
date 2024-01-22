@@ -8,6 +8,7 @@ guid: http://solitude.vkps.co.uk/?p=15712
 permalink: /Archives/2012/12/31/film-fight-2012-finale/
 categories:
   - Films
+  - Finale
 ---
 Another year done, so it&#8217;s time to find out what my movie of the year was. As always, [my caveat from earlier years still applies](http://solitude.vkps.co.uk/Archives/2011/12/31/film-fight-2011-finale/ "Film Fight 2011: Finale"): Film Fight is done in a knock-out style and, as such, only picks my favourite film of the year; there are no guarantees about second place.
 

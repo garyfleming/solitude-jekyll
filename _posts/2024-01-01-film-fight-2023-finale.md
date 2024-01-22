@@ -6,6 +6,7 @@ layout: post
 permalink: /:year/:month/:title/
 categories:
   - Films
+  - Finale
 ---
 
 It was a bit more of an uneven year. There were some great films, but fewer in contention than previous years. I also was quite busy so saw fewer films in the cinema

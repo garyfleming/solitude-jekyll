@@ -6,6 +6,7 @@ layout: post
 permalink: /:year/:month/:title/
 categories:
   - Films
+  - Finale
 ---
 
 So, Film Fight didn't remotely run to schedule this year. I all but abandoned it for a number of months, due to being busy elsewhere. As per [my perennial caveat](https://solitude.vkps.co.uk/2019/01/film-fight-2018-finale/), Film Fight is done in a (not particularly serious) knock-out style: it can pick a first place, but everything else is unknown.

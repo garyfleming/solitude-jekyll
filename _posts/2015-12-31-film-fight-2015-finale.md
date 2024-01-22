@@ -8,6 +8,7 @@ guid: http://solitude.vkps.co.uk/?p=16255
 permalink: /Archives/2015/12/31/film-fight-2015-finale/
 categories:
   - Films
+  - Finale
 ---
 Another year, another Film Fight almost over. While the monthly posts were later than I&#8217;d have liked, they weren&#8217;t as bad as the previous year. As per [my annual caveat](/Archives/2014/12/31/film-fight-2014-finale/), Film Fight is done in a knock-out style: it&#8217;ll select my favourite film of the year, but there are no guarantees about second place.
 

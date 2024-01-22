@@ -6,6 +6,7 @@ layout: post
 permalink: /:year/:month/:title/
 categories:
   - Films
+  - Finale
 ---
 
 Another mostly very late Film Fight comes to a close for 2017. As per [my perennial caveat](https://solitude.vkps.co.uk/2016/12/film-fight-2016-finale/), Film Fight is done in

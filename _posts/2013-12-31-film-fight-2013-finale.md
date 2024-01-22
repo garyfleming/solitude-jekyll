@@ -8,6 +8,7 @@ guid: http://solitude.vkps.co.uk/?p=15944
 permalink: /Archives/2013/12/31/film-fight-2013-finale/
 categories:
   - Films
+  - Finale
 ---
 Twelve film fights later and we&#8217;ve got another finale. As always, [my caveat from earlier years still applies](http://solitude.vkps.co.uk/Archives/2012/12/31/film-fight-2012-finale/): Film Fight is done in a knock-out style and, as such, only picks my favourite film of the year; there are no guarantees about second place.
 

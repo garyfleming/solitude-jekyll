@@ -9,6 +9,7 @@ permalink: /Archives/2010/12/31/film-fight-2010-finale/
 categories:
   - Films
   - Uncategorized
+  - Finale
 ---
 As always [my caveat from previous years still apply](http:/Archives/2009/12/31/film-fight-finale-2009/): Film Fight is a knock-out tournament and, as such, will only select my favourite film. It makes no guarantees about any other place.
 

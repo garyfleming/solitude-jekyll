@@ -8,6 +8,7 @@ guid: http://solitude.vkps.co.uk/?p=15565
 permalink: /Archives/2011/12/31/film-fight-2011-finale/
 categories:
   - Films
+  - Finale
 ---
 Another year, another bunch of film reviews. What was the best of the lot? Settle down and read on to find out.
 
