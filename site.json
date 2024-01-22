@@ -1,7 +1,7 @@
 [
 
 {"date": "Mon, 01 Jan 2024 13:00:00 +0000",
-"categories": ["Films"],
+"categories": ["Films","Finale"],
 "tags": [],
 "title": "Film Fight 2023: Finale",
 "url": "/2024/01/film-fight-2023-finale/"},
@@ -79,7 +79,7 @@
 "url": "/2023/02/film-fight-2023-january/"},
 
 {"date": "Sat, 07 Jan 2023 13:00:00 +0000",
-"categories": ["Films"],
+"categories": ["Films","Finale"],
 "tags": [],
 "title": "Film Fight 2022: Finale",
 "url": "/2023/01/film-fight-2022-finale/"},
@@ -157,7 +157,7 @@
 "url": "/2022/01/film-fight-2022-january/"},
 
 {"date": "Sat, 01 Jan 2022 15:01:00 +0000",
-"categories": ["Films"],
+"categories": ["Films","Finale"],
 "tags": [],
 "title": "Film Fight 2021: Finale",
 "url": "/2022/01/film-fight-2021-finale/"},
@@ -235,7 +235,7 @@
 "url": "/2021/02/film-fight-2021-january/"},
 
 {"date": "Sun, 03 Jan 2021 13:30:30 +0000",
-"categories": ["Films"],
+"categories": ["Films","Finale"],
 "tags": [],
 "title": "Film Fight 2020: Finale",
 "url": "/2021/01/film-fight-2020-finale/"},
@@ -313,7 +313,7 @@
 "url": "/2020/01/film-fight-2020-january/"},
 
 {"date": "Fri, 03 Jan 2020 07:00:00 +0000",
-"categories": ["Films"],
+"categories": ["Films","Finale"],
 "tags": [],
 "title": "Film Fight 2019: Finale",
 "url": "/2020/01/film-fight-2019-finale/"},
@@ -391,7 +391,7 @@
 "url": "/2019/10/film-fight-2019-january/"},
 
 {"date": "Wed, 02 Jan 2019 11:00:00 +0000",
-"categories": ["Films"],
+"categories": ["Films","Finale"],
 "tags": [],
 "title": "Film Fight 2018: Finale",
 "url": "/2019/01/film-fight-2018-finale/"},
@@ -475,7 +475,7 @@
 "url": "/2018/01/film-fight-2018-history-and-future/"},
 
 {"date": "Sun, 31 Dec 2017 13:00:00 +0000",
-"categories": ["Films"],
+"categories": ["Films","Finale"],
 "tags": [],
 "title": "Film Fight 2017: Finale",
 "url": "/2017/12/film-fight-2017-finale/"},
@@ -553,7 +553,7 @@
 "url": "/2017/02/film-fight-2017-january/"},
 
 {"date": "Sat, 31 Dec 2016 16:00:00 +0000",
-"categories": ["Films"],
+"categories": ["Films","Finale"],
 "tags": [],
 "title": "Film Fight 2016: Finale",
 "url": "/2016/12/film-fight-2016-finale/"},
@@ -631,7 +631,7 @@
 "url": "/2016/02/film-fight-2016-january/"},
 
 {"date": "Thu, 31 Dec 2015 16:30:16 +0000",
-"categories": ["Films"],
+"categories": ["Films","Finale"],
 "tags": [],
 "title": "Film Fight 2015: Finale",
 "url": "/Archives/2015/12/31/film-fight-2015-finale/"},
@@ -709,7 +709,7 @@
 "url": "/Archives/2015/05/26/film-fight-2015-january/"},
 
 {"date": "Wed, 31 Dec 2014 19:00:32 +0000",
-"categories": ["Films"],
+"categories": ["Films","Finale"],
 "tags": [],
 "title": "Film Fight 2014: Finale",
 "url": "/Archives/2014/12/31/film-fight-2014-finale/"},
@@ -787,7 +787,7 @@
 "url": "/Archives/2014/04/06/film-fight-2014-january/"},
 
 {"date": "Tue, 31 Dec 2013 20:00:30 +0000",
-"categories": ["Films"],
+"categories": ["Films","Finale"],
 "tags": [],
 "title": "Film Fight 2013: Finale",
 "url": "/Archives/2013/12/31/film-fight-2013-finale/"},
@@ -871,7 +871,7 @@
 "url": "/Archives/2013/03/04/film-fight-2013-january/"},
 
 {"date": "Mon, 31 Dec 2012 19:21:34 +0000",
-"categories": ["Films"],
+"categories": ["Films","Finale"],
 "tags": [],
 "title": "Film Fight 2012: Finale",
 "url": "/Archives/2012/12/31/film-fight-2012-finale/"},
@@ -967,7 +967,7 @@
 "url": "/Archives/2012/02/04/film-fight-2012-january/"},
 
 {"date": "Sat, 31 Dec 2011 18:00:57 +0000",
-"categories": ["Films"],
+"categories": ["Films","Finale"],
 "tags": [],
 "title": "Film Fight 2011: Finale",
 "url": "/Archives/2011/12/31/film-fight-2011-finale/"},
@@ -1081,7 +1081,7 @@
 "url": "/Archives/2011/02/13/film-fight-2011-january/"},
 
 {"date": "Fri, 31 Dec 2010 23:34:35 +0000",
-"categories": ["Films","Uncategorized"],
+"categories": ["Films","Uncategorized","Finale"],
 "tags": [],
 "title": "Film Fight 2010: Finale",
 "url": "/Archives/2010/12/31/film-fight-2010-finale/"},
@@ -1195,7 +1195,7 @@
 "url": "/Archives/2010/02/02/film-fight-2010-january/"},
 
 {"date": "Thu, 31 Dec 2009 22:26:32 +0000",
-"categories": ["Uncategorized"],
+"categories": ["Uncategorized","Finale"],
 "tags": [],
 "title": "Film Fight: Finale 2009",
 "url": "/Archives/2009/12/31/film-fight-finale-2009/"},
@@ -1477,7 +1477,7 @@
 "url": "/Archives/2009/01/02/solitude-awards-2008/"},
 
 {"date": "Wed, 31 Dec 2008 23:00:27 +0000",
-"categories": ["Uncategorized"],
+"categories": ["Uncategorized","Finale"],
 "tags": ["Film","Film Fight","Finale"],
 "title": "Film Fight: Finale 2008",
 "url": "/Archives/2008/12/31/film-fight-finale-2008/"},
@@ -1627,7 +1627,7 @@
 "url": "/Archives/2008/01/09/solitude-awards-2007/"},
 
 {"date": "Mon, 31 Dec 2007 23:59:35 +0000",
-"categories": ["Uncategorized"],
+"categories": ["Uncategorized","Finale"],
 "tags": ["Film","Film Fight","Finale"],
 "title": "Film Fight: Finale 2007",
 "url": "/Archives/2007/12/31/film-fight-finale-2007/"},
@@ -1819,7 +1819,7 @@
 "url": "/Archives/2007/01/02/Solitude2006Awards/"},
 
 {"date": "Sat, 30 Dec 2006 17:08:32 +0000",
-"categories": ["Uncategorized"],
+"categories": ["Uncategorized","Finale"],
 "tags": ["Film","Film Fight","Finale"],
 "title": "Film Fight: Finale 2006",
 "url": "/Archives/2006/12/30/filmfightfinale2006/"},
