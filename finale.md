@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Finale
-permalink: /finale/
+permalink: /Finale/
 ---
 
 ## Finale

@@ -15,7 +15,7 @@ tags:
   - Film Fight
   - Finale
 ---
-As I said in [last year&#8217;s film fight](/Archives/2005/12/31/FilmFightFinale2005), a knock-out tournament like this can only show my favourite film of the year, not even producing a guaranteed second place, but who cares? Let&#8217;s start with notable films that never took a final place:
+As I said in [last year&#8217;s film fight](/Archives/2005/12/31/filmfightfinale2005/), a knock-out tournament like this can only show my favourite film of the year, not even producing a guaranteed second place, but who cares? Let&#8217;s start with notable films that never took a final place:
 
   * Shopgirl
   * Jarhead
