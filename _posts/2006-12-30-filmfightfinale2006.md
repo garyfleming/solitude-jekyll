@@ -8,7 +8,7 @@ layout: post
 guid: tag:solitude.vkps.co.uk,2003:1,20061230170832
 permalink: /Archives/2006/12/30/filmfightfinale2006/
 categories:
-  - Uncategorized
+  - Films
   - Finale
 tags:
   - Film

@@ -9,6 +9,7 @@ guid: tag:solitude.vkps.co.uk,2003:1,20051231115116
 permalink: /Archives/2005/12/31/filmfightfinale2005/
 categories:
   - Uncategorized
+  - Finale
 tags:
   - Film
   - Film Fight
