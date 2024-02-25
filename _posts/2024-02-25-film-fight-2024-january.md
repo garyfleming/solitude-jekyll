@@ -8,7 +8,7 @@ categories:
   - Films
 ---
 
-Intro
+Very late, but 10 whole films in the January fight...
 
 ### Freelance
 
@@ -53,4 +53,4 @@ Intro
 
 ### The January Winner
 
-...
+Some very good contenders but the winner is **Priscilla**, a beautiful and disturbing look at celebrity.
