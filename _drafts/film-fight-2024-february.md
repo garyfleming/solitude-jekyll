@@ -22,13 +22,13 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1761801575226392966 %}
 
-### film name
+### The Iron Claw
 
-{% twitter url %}
+{% twitter https://twitter.com/garyfleming/status/1761802493875380631 %}
 
-### film name
+### The Zone Of Interest
 
-{% twitter url %}
+{% twitter https://twitter.com/garyfleming/status/1761803116888900028 %}
 
 ### film name
 
