@@ -83,6 +83,32 @@
 
   
   <div class="postcontainer">
+  <h3><a href="/Archives/2010/07/06/modern-java-the-point/">Modern Java: The Point</a></h1>
+  <p class="author">
+    <span class="date"> </span>
+  </p>
+  <div class="post">
+    <p>In the Modern Java series, I’ve looked at how <a href="/Archives/2010/04/05/modern-java-lombok/" title="Modern Java: Lombok">Lombok</a> removes boilerplate from bean classes, <a href="/Archives/2010/04/11/modern-java-validation/" title="Modern Java: Validation">JSR-303 validation</a> makes checking domain correctness neat and how <a href="/Archives/2010/04/22/modern-java-jpa/" title="Modern Java: JPA">JPA</a> provides a convenient standardisation over the ORM space. Each of these technologies does something interesting and in an interesting way.</p>
+
+<p>The point of this series, however, was not to try to provide any deep level of insight into any of those technologies; writing anything even approaching a useful tutorial about JPA alone would take up many more posts than I had ever intended on giving the subject. There is simply too much there, and too much intricacy involved to sum that up.</p>
+
+<p>No, the point of this series was multi-faceted, and I’d like to take another few moments to try and explain what I was trying to achieve.</p>
+
+<p>Firstly, the primary concern for designing good systems is understanding the domain of interest. If you don’t understand the domain well, you won’t be able to produce a nice user experience at the front-end. You won’t be able to write meaningful abstractions at the back-end. You won’t be able to write something that you can pick up a year or two down the line and immediately understand. Knowing and understanding the domain is a <em>prerequisite</em> for good design.</p>
+
+<p>What does that have to do with the libraries I discussed? Each of them help you design in terms of the domain and only the domain. Lombok helps you write domain objects without all the cruft in the way. Standardised validation makes sure the correct rules are cleanly annotated and enforced on those domain objects. JPA ensures that when instances of those domain objects are persisted, they are persisted following a series of rules that make sense for the domain. Each of the libraries pushes you down a path of thinking about your domain and hiding other more mundane concerns.</p>
+
+<p>Secondly, I wanted to show that clean code is infinitely preferable to cluttered code. In the examples I gave, I showed a simple bean class being built up with just a handful of annotations, each one describing it’s own purpose and providing a clean understanding of the domain. As a thought experiment, consider what that code would be like without the annotations. Imagine the number of classes and methods that even a well-designed alternative would have to orchestrate. While I’m sure it could be quite neat, I can’t imagine a solution quite as neat as the one offered by the technologies I mentioned.</p>
+
+<p>That leads into my final point: modern Java features, such as annotations, and the libraries that make use of them allow for much richer, cleaner and downright better code than has been possible previously. I won’t try to argue that Java is perfect as a language as I like many of the alternatives, such as Scala, Groovy, Haskell, Ruby, Python and many others. What I <em>am</em> trying to say, though, is the situation with the Java language is a lot better than it was five years ago, when typical Java code was verbose, unsightly and headed away from the domain. It often obscured the domain, rather than illuminating it.</p>
+
+<p>My hope is that future iterations of the language and future libraries continue to keep Java in a competitive place in the language market, by making even more problems domain-focused and removing the remaining boilerplate. With the <a href="http://openjdk.java.net/projects/coin/">Project Coin</a> and <a href="http://openjdk.java.net/projects/lambda/">Project Lambda</a> improvements due in Java 7 later in the year, I really think this will be the case.</p>
+
+  </div>
+  <div class="divider"><img src="/assets/images/divider.png" /></div>
+  </div>
+  
+  <div class="postcontainer">
   <h3><a href="/Archives/2010/07/04/film-fight-2010-june/">Film Fight 2010: June</a></h1>
   <p class="author">
     <span class="date"> </span>
@@ -207,81 +233,6 @@ public class Person {
 <p>As a bonus, if you use a JPA2 provider AND have a JSR-303 validation implementation in your classpath, the default behaviour will be for your bean to get validated before it gets persisted, so you wouldn’t have to explicitly call the validator any more.</p>
 
 <p>Again, there’s a lot more to be said about JPA, and the use cases that it supports (I haven’t touched on object-graphs, embedded collections, or the Java persistence query language), but you should have a flavour for it.</p>
-
-  </div>
-  <div class="divider"><img src="/assets/images/divider.png" /></div>
-  </div>
-  
-  <div class="postcontainer">
-  <h3><a href="/Archives/2010/04/11/modern-java-validation/">Modern Java: Validation</a></h1>
-  <p class="author">
-    <span class="date"> </span>
-  </p>
-  <div class="post">
-    <p>In the previous post on Modern Java, I showed how <a href="/Archives/2010/04/05/modern-java-lombok/">Lombok is making Java beans more concise</a>. In that post, I showed how we would end up with the following class:</p>
-
-<pre class="brush: java; title: ; notranslate" title="">@Data
-public class Person {
-    private String firstName;
-    private String lastName;
-    private int age;
-}
-</pre>
-
-<p>Given an instance of that class by binding data from a web form, a database or some other data source, a fairly common requirement is to validate it against a series of rules and constraints.</p>
-
-<p>For example, if we assume “age” is the number of years the person being described has been alive, we know that it must be zero or greater. Depending on our application we may also know that it’s above a minimum age (18, say) and is extremely likely to be below a maximum age (there are very few people over 100, and none over 120).</p>
-
-<p>A few years ago, you would have to write a custom piece of code to validate simple rules in all of your domain classes. These would typically be specific to the class in question, running through a series of explicit checks, and produce a list of errors found. While this worked, it was often verbose and tightly-coupled to each domain class. It might look something like this:</p>
-
-<pre class="brush: java; title: ; notranslate" title="">public Collection&lt;Error&gt; validate(Person person) {
-  Collection&lt;Error&gt; errors = new LinkedList&lt;Error&gt;();
-  if(person.getAge() == null) {
-    errors.add(new Error("Age cannot be null"));
-  }
-  if(person.getAge() &lt; 0) {
-    errors.add(new Error("Age must be greater than zero"));
-  }
-  if(person.getAge() &gt; 120) {
-    errors.add(new Error("Unlikely to be a real age"));
-  }
-  return errors;
-}
-</pre>
-
-<p>Note that we’re only validating a few rules on one field, and it’s already quite verbose. If we validated every field on an object and the interdependencies between them, then we would have a lot of code.</p>
-
-<p>Both the <a href="http://www.springsource.org/">Spring Framework</a> and <a href="http://hibernate.org/">Hibernate</a> had come up with their own ways of making writing and integrating validation logic a little easier, but now validation has been standardised in <a href="http://jcp.org/en/jsr/detail?id=303">JSR-303</a>. The reference implementation is Hibernate Validator 4, and it’s a great starting point, but most uses of JSR-303 will be relatively agnostic of the implementation. Since this is a finalised specification, you can also make use of it today.</p>
-
-<p>For our Person class above, let’s add the following constraints:</p>
-
-<ul>
-  <li>Age must be 18 or more</li>
-  <li>First and last name must be set i.e. they can’t be left null</li>
-  <li>First and last name must have at least one character in them</li>
-</ul>
-
-<p>To implement these rules, we need only add a few new annotations, using standard constraints:</p>
-
-<pre class="brush: java; title: ; notranslate" title="">@Data
-public class Person {
-    @NotNull @Size(min=1)
-    private String firstName;
-     @NotNull @Size(min=1)
-    private String lastName;
-    @Min(18)
-    private int age;
-}
-</pre>
-
-<p>You then create a Validator instance (how you do this will depend on your chosen implementation), and pass the class in for validation:</p>
-
-<pre class="brush: java; title: ; notranslate" title="">Set&lt;ConstraintViolation&lt;Person&gt;&gt; errors = validator.validate(person);
-</pre>
-
-<p>All the validation is then handled for you, reducing the amount of code and making your bean classes very clearly state the constraints under which they operate. You know a first name is not just any old nullable string by just looking at the class, and you know ages have limitations in your particular domain of interest. The code is more expressive and concise, and that’s a very good thing.</p>
-
-<p>There’s a lot more to the JSR-303 specification, and it has all the features you might want. While I fully intend to go into the other features at another time, I’d strongly recommend browsing the spec to see some of the power and flexibility available to you.</p>
 
   </div>
   <div class="divider"><img src="/assets/images/divider.png" /></div>
