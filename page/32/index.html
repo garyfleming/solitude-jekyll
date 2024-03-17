@@ -83,6 +83,50 @@
 
   
   <div class="postcontainer">
+  <h3><a href="/Archives/2012/06/21/how-to-do-support-well/">How To Do Support Well</a></h1>
+  <p class="author">
+    <span class="date"> </span>
+  </p>
+  <div class="post">
+    <p>There are many aspects of professional software development that I had to learn the hard way i.e. by smashing off every branch of the mistake tree and landing on my arse. That’s a perfectly fine way of figuring things out.</p>
+
+<p>Surprisingly, though, that’s not how I learned to do development-support well, which is sometimes called level 3 support. It was something I picked up extremely early in my career, and I’ve yet to learn a better method (not through lack of trying).</p>
+
+<p>I’m going to share the method I was taught in just a second, but a quick clarification of terms. What is development-support? A typical BigCo has 3 kinds of support staff:</p>
+
+<ul>
+  <li>User-support (sometimes called level 1) deals with any user level queries, like forgotten passwords, usernames, simple account queries etc. They run the day-to-day of the system, but are not necessarily very technical. When they get asked a question that they can’t answer, they escalate it to…</li>
+  <li>Application-support (level 2). These people tend to be technical, but not necessarily developers. They’re in charge of making sure all the servers are running, backups are taken, settings are configured correctly, and that the system is running smoothly. They may perform these tasks directly, or they may co-ordinate with more specialised staff, like system administrators or DBAs. If there is something really wrong with the application itself, they’ll escalate to…</li>
+  <li>Development-support (level 3). These are almost universally people who actively write code for the system in question and, thus, are expected to be able to debug through more complicated and unusual issues arising from the application.</li>
+</ul>
+
+<p>So, with that explanation in hand, back to how I was trained to do development-support and why I think it’s the best way of doing it…</p>
+
+<p>In my first job after university, I was involved in web application with a complicated permission model. Every user had a role that gave them a set of default privileges they were allowed to perform. The domain I was working in is not important, but imagine that someone with a Doctor role might be able to perform treatments, write prescriptions, give medical advice to patients etc whilst someone with a Nurse role can perform minor treatments but not write prescriptions. That’s relatively straightforward.</p>
+
+<p>The complication we had was that for any given item in the system (in our example, a Patient) individual people could be stripped of a privilege normally associated with their role. For example, Doctor X might not be able to give a prescription to Patient Y (perhaps they’re related?).</p>
+
+<p>These minor tweaks to the default permission model were rare enough that they were not the expected norm, but common enough that the role/privilege model had to be maintained; there was no opportunity to simplify.</p>
+
+<p>The single biggest cause of support calls making it to the level 3 development-support team were, inevitably, around the privilege model. Doctors didn’t understand why they could write prescriptions for 99% of patients, but one or two would cause them issues, and that those one or two would be different for every doctor.</p>
+
+<p>The model I was taught for addressing these issues was this:</p>
+
+<ol>
+  <li><strong>Give the person asking a support question an answer as quickly as reasonably possible</strong>. If it’s gotten as far as you, for whatever reason, then don’t pass the buck if you can: answer the question. A general, all-encompassing solution might not be necessary: just figure out how to get the person asking the question a satisfactory answer quickly.</li>
+  <li><strong>Train the level above you to solve this class of problems</strong>. In a structured support model, like the one detailed above, development-support should only be getting asked about things that the other levels cannot complete through lack of understanding, training, or some impediment. It’s the duty of development-support to provide these things and, in doing so, removing the burden from themselves so they can focus on writing more code.</li>
+  <li><strong>Make solving the problem trivial</strong>. If a question is being asked enough, it’s time to take action. Write sufficient tooling to make solving similar problems simple; or change the information that is displayed so that the answer is obvious and the question itself is removed.</li>
+</ol>
+
+<p>Look at this model through the privilege problem I described. Step 1, when asked why Doctor X cannot give a prescription to Patient Y, might involve manually joining some database privilege tables to see that they’ve had that privilege removed for some reason (“Patient Y is the wife of Doctor X”). That should satisfy the immediate need. Step 2 would be completed by explaining the database structure and queries to application-support so that they’d be able to do what you did for any future queries of a similar nature. Finally, step 3 could be solved in several ways. You could provide a more robust tool so that either support can merely type in “Doctor X” and “Patient Y” and be immediately told about the privilege constraints, or you could expose the information directly to the user. When Doctor X tries to write a prescription for Patient Y, they’d be immediately told they cannot do so for the known reason.</p>
+
+<p>This is a pretty straightforward model to follow, yet I’m consistently surprised to see many teams stopping at step 1 where they’re left to absorb all complex queries indefinitely. I’m not saying it’s perfect, all that it would fit every scenario, but I’ve found it works very well for me.</p>
+
+  </div>
+  <div class="divider"><img src="/assets/images/divider.png" /></div>
+  </div>
+  
+  <div class="postcontainer">
   <h3><a href="/Archives/2012/06/18/the-detail-of-intellij/">The Detail of IntelliJ</a></h1>
   <p class="author">
     <span class="date"> </span>
@@ -196,26 +240,6 @@
 <p>Finally, <strong>The Cabin In The Woods</strong> has taken years to finally make it to the screen, and it has been worth the wait. It’s in that most troublesome group of films to review; in which any commentary could ruin the first watch, which would be a shame even though it will undoubtedly stand up to many repeated viewings. What can I say? It’s ostensibly a horror film that is about horror films, but it’s also so much more. It’s been put together with craft, style and wit into a package which we haven’t seen before in many years. I’ll say no more other than to say it is excellent. Definitely see this film. (See <a href="http://twitter.com/garyfleming/status/192218517846761472">my The Cabin In The Woods Twitter review</a>).</p>
 
 <p>As should be clear, <strong>The Cabin In The Woods</strong> is the clear winner for April.</p>
-
-  </div>
-  <div class="divider"><img src="/assets/images/divider.png" /></div>
-  </div>
-  
-  <div class="postcontainer">
-  <h3><a href="/Archives/2012/04/15/film-fight-2012-march/">Film Fight 2012: March</a></h1>
-  <p class="author">
-    <span class="date"> </span>
-  </p>
-  <div class="post">
-    <p>March sees just three films reviewed…</p>
-
-<p>First up, <strong>In Darkness</strong> deals with a Polish sewer worker using his knowledge of the passages under his city to hide Jews from persecution, for a price. As you can imagine, living in a sewer has a great physical cost and the film shows many horrible moments. However, the film really fails to bring any weight or insight to the tragedies. It fails to make any deep emotional connection. Exactly how or why it failed, I am not sure, but I know this film has been done better before this. Disappointing. (See <a href="http://twitter.com/garyfleming/status/183586180313518082">my In Darkness Twitter review</a>).</p>
-
-<p>Having not read the books and going in with very little knowledge, <strong>The Hunger Games</strong> was a relatively pleasant surprise. It has serious pacing issues, showing far too much of the story before the titular games and thereby compressing the more important acts to a greater extent than necessary. That said, we do get quite a vivid picture of the world the games are set in, and are left with no doubts about the inequalities in the society presented. For the teen fiction genre, this stands out as quite an enjoyable watch. (See <a href="http://twitter.com/garyfleming/status/183587517176610817">my The Hunger Games Twitter review</a>).</p>
-
-<p>Finally, <strong>21 Jump Street</strong> was an excellent surprise. Where I expected yet another formulaic US comedy with Jonah Hill, I actually got something of a classic. It’s just dumb enough to be funny without pandering, it’s self-aware without being groan-worthy, and it’s ridiculous enough to pull in the big laughs without being overly weird. It’s pacy, it tries mixing in a lot of different styles of comedy, and is, most importantly, amusing from start to finish. The funniest film I’ve seen in a long time. (See <a href="http://twitter.com/garyfleming/status/186009911593930752">my 21 Jump Street Twitter review</a>).</p>
-
-<p>The winner for March is <strong>21 Jump Street.</strong> The Hunger Games were good, but this comedy was better.</p>
 
   </div>
   <div class="divider"><img src="/assets/images/divider.png" /></div>

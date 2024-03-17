@@ -83,6 +83,39 @@
 
   
   <div class="postcontainer">
+  <h3><a href="/Archives/2011/02/15/jdbc-and-enums/">Jdbc and Enums</a></h1>
+  <p class="author">
+    <span class="date"> </span>
+  </p>
+  <div class="post">
+    <p>After months of using JPA/Hibernate almost exclusively, I got caught out on a relatively simple bug when using JDBC more directly (well, via Spring’s JdbcTemplate):</p>
+
+<pre class="brush: java; title: ; notranslate" title="">public List&lt;SomeObject&gt; fetchSomeObjects(RecordType recordType) {
+  Map&lt;String,Object&gt; params = ...//Map creation;
+  params.put("recordType", recordType);
+  return namedParameterJdbcTemplate.query("select * from someObject where recordType =  :recordType",
+    params,
+    someRowMapper);
+}</pre>
+
+<p>That was from memory, so it may be a little off, but it should give you the basics of what the code was doing. It looks okay to my eyes, but, of course, it wasn’t. When run an exception was being thrown from the bowels of the JDBC code saying that RecordType couldn’t be converted to a JAVA_OBJECT.</p>
+
+<p>Odd, I thought. It had worked perfectly well with an in-memory database (HSQL) but now wasn’t working when deployed on a hosted database (SQL server).</p>
+
+<p>I couldn’t spot it straight away, so a quick debugging session revealed the problem: JDBC doesn’t play nicely with enums. RecordType, an enum, was being passed to JDBC verbatim without any attempt for it to match up with the recordType column (a varchar column); and that just doesn’t work. You need to explicitly convert from an enum to a String.</p>
+
+<p>Thankfully, it was a one-line fix:</p>
+
+<pre class="brush: java; title: ; notranslate" title="">params.put("recordType", recordType.toString());
+</pre>
+
+<p>It doesn’t read quite as neatly but it works. The fact that the original version reads quite well (the value for “recordType” is called recordType) actually makes the bug harder to spot. Now, back to JPA.</p>
+
+  </div>
+  <div class="divider"><img src="/assets/images/divider.png" /></div>
+  </div>
+  
+  <div class="postcontainer">
   <h3><a href="/Archives/2011/02/13/film-fight-2011-january/">Film Fight 2011: January</a></h1>
   <p class="author">
     <span class="date"> </span>
@@ -198,32 +231,6 @@
 <p><strong>Let Me In</strong> is an American remake of the classic Swedish film, Let The Right One in. During the making of this film, we were promised that it would be a different take on the source, focussing more closely on the burgeoning relationship between Oskar and Eli (renamed Owen and Abby), and the relationship between Eli and her carer. This remake fails to deliver. What we get appears to be a somewhat neutered cut of the director’s vision: following the plot of the original very closely, sometimes shot for shot, but replacing the uneasy menace with some more obvious action scenes. There are moments where it shines. The few moments that Richard Jenkins gets he puts to great use, especially the scene he’s hiding in a car. Largely, though, it’s disappointingly similar to the original, without many fresh ideas. (See <a href="http://twitter.com/garyfleming/status/649481796190208">my Let Me In Twitter review</a>).</p>
 
 <p>In another month it wouldn’t have gotten through, but <strong>Let Me In</strong> is obviously the November winner.</p>
-
-  </div>
-  <div class="divider"><img src="/assets/images/divider.png" /></div>
-  </div>
-  
-  <div class="postcontainer">
-  <h3><a href="/Archives/2010/11/01/film-fight-2010-october/">Film Fight 2010: October</a></h1>
-  <p class="author">
-    <span class="date"> </span>
-  </p>
-  <div class="post">
-    <p>October was an even busier month for cinema than September, with 6 films in total:</p>
-
-<p><strong>Winter’s Bone</strong> is a grim story of desperation in an isolated community. A young girl is forced to raise her brother and sister due to an ill mother and an absent father. When said father skips bail, she’s forced to look for him in places where she should not be asking questions. The film is vicious and dark, and paints an interesting picture of a rural family. It’s well put together, but features some fairly unnecessary moments of questionable animal scenes. That aside, it’s a good film. (See <a href="http://twitter.com/garyfleming/status/26263028409">my Winter’s Bone Twitter review</a>).</p>
-
-<p><strong>The Town</strong> is a surprisingly good crime-thriller, following bank robbers in Boston as they become more involved in a job than they should. The story stands up by itself surprisingly well, with very little waste. There are some good performances too, with Jeremy Renner as particularly notable. A few too many establishing shots aside (yes, I know we’re in Boston, move on), Ben Affleck does a great job in the director’s chair. Along with Gone Baby Gone, he’s showing some real talent on that front. Well worth seeing. (See <a href="http://twitter.com/garyfleming/status/26263093797">my The Town Twitter review</a>).</p>
-
-<p>Jesse Eisenberg, Andrew Garfield and Justin Timberlake show the problems with mixing business and pleasure in the story of Facebook, <strong>The Social Network</strong>. While I’m sure the story has been dramatised more than a little, it’s a good one, and well-structured. Framing the story through the telling of two lawsuits against Mark Zuckerberg gives the film the pace it needs to be interesting, without losing the audience. David Fincher proves himself again as a must-see director, with a real mastery of storytelling and simple, clean visuals (even if the reality of a shot is much more complicated). A good story. (See <a href="http://twitter.com/garyfleming/status/27375470924">my The Social Network Twitter review</a>).</p>
-
-<p>The original Wall Street was a classic movie, capturing a time and place perfectly through a story of loyalty, betrayal, decency and the shady face of capitalism, Gordon Gekko. <strong>Wall Street: Money Never Sleeps</strong>, at best, captures a fairly flimsy, dumbed-down vision of the same environment two decades on. It fails on a number of fronts: the dialogue is awful, the acting is perfunctory, the direction is scattershot, and the story is nonsense. Frank Langella puts in a great early performance and is easily the best member of the cast, while the character of Gordon Gekko shows some promise in his behind-the-scenes trickery. We’re never shown why we should care about any of the other characters, so we simply don’t. By the time the cringeworthy final act appears (“See? They’re not such bad guys. Let’s have a party!”), you’ll care very little about this waste of film. Avoid. (See <a href="http://twitter.com/garyfleming/status/27650384703">my Wall Street: Money Never Sleeps Twitter review</a>).</p>
-
-<p>In <strong>Despicable Me</strong>, Steve Carrell really helps sketch a great villian in the shape of Gru, the evil mastermind who feels underminded by his mother and feels he has to out-do his rivals. At first, he’s a little Wile E. Coyote, but quickly finds a sweet side that adds some depth. That’s where this film delivers: as a sweet film about a grouchy villian finding his humanity. Funny and fun.  (See <a href="http://twitter.com/garyfleming/status/28696634341">my Despicable Me Twitter review</a>).</p>
-
-<p>Finally, <strong>Paranormal Activity 2</strong> serves as a prequel of sorts to the events of the first film, but fails to capture the simple but effective scares on show there, going for louder and bigger moments. Some of them work for sheer shock value, but it quickly pales by comparison. Given the horror in this kind of film is rooted in suspension of disbelief, casting Sprague Grayden as one of the bigger characters was a mistake. While she puts in a great performance, it was impossible to take her seriously in the role given her work on some big TV shows (24, Jericho, Sons of Anarchy). If you’re looking for a Halloween scare, you could do worse, but I wouldn’t go out of your way to see it. (See <a href="http://twitter.com/garyfleming/status/29013616857">my Paranormal Activity 2 Twitter review</a>).</p>
-
-<p>Another tough month to pick a winner. The Social Network and Winter’s Bone came very close, but I think <strong>The Town</strong> wins on the grounds of sheer enjoyability.</p>
 
   </div>
   <div class="divider"><img src="/assets/images/divider.png" /></div>
