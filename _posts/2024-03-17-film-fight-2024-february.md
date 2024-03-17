@@ -1,6 +1,6 @@
 ---
 title: "Film Fight 2024: February"
-date: 3899-01-07T20:00:00+00:00
+date: 2024-03-17T12:02:00+00:00
 author: Gary Fleming
 layout: post
 permalink: /:year/:month/:title/
@@ -8,7 +8,7 @@ categories:
   - Films
 ---
 
-Intro
+An excellent month with 6 movies
 
 ### Self Reliance
 
@@ -34,11 +34,7 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1761803814758137990 %}
 
-### film name
 
-{% twitter url %}
+### The February Winner
 
-
-### The month Winner
-
-...
+A very tough one with three movies that could win most months, but I think it's **American Fiction** for me; so much more than the trailers showed.
