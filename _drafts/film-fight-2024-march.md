@@ -32,7 +32,7 @@ Intro
 
 ### Shirley
 
-{% twitter url %}
+{% twitter https://twitter.com/garyfleming/status/1779556660903543051 %}
 
 
 
