@@ -1,6 +1,6 @@
 ---
 title: "Film Fight 2024: April"
-date: 3899-01-07T20:00:00+00:00
+date: 2024-08-17T12:00:00+00:00
 author: Gary Fleming
 layout: post
 permalink: /:year/:month/:title/
@@ -8,7 +8,7 @@ categories:
   - Films
 ---
 
-Intro
+Very late but only two films for April...
 
 ### Monkey Man
 
@@ -18,11 +18,7 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1779560378365583603 %}
 
-### film name
 
-{% twitter url %}
+### The April Winner
 
-
-### The month Winner
-
-...
+They're both good but the winner is **Civil War**.
