@@ -83,6 +83,28 @@
 
   
   <div class="postcontainer">
+  <h3><a href="/Archives/2003/12/08/ChangingFeedURLsinSharpReader/">Changing Feed URLs in SharpReader</a></h1>
+  <p class="author">
+    <span class="date"> </span>
+  </p>
+  <div class="post">
+    <p>You should be able to change feed <acronym title="Uniform Resource Locator">URL</acronym>s in <a href="http://www.hutteman.com/weblog/">Luke Hutteman</a>‘s <a href="http://sharpreader.net">Sharpreader</a> without any hassle. You can’t. Here’s how you do it:</p>
+
+<ol>
+  <li>Close SharpReader, making sure it is completely gone and not just hiding in the SysTray.</li>
+  <li>Open your SharpReader data directory. On Windows XP, this will be something like “C:Documents and Settings%USER%Application DataSharpReader”, where %USER% is your username.</li>
+  <li>Open the file called subscriptions.xml in a text editor (Notepad will do fine). It contains the list of all your current subscriptions. Find the line which applies to the feed you want to change and change it to the new URL. Save the file and close it.</li>
+  <li>Open the subdirectory called “cache”. There will be a list of <acronym title="eXtensible Markup Language">XML</acronym> files. Their names correspond to the feed they are caching. If you updated the feed name, change it here as well. If you updated the feed’s extension, things are trickier. If it has been changed <em>to</em> .xml, remove the old extension from the cached file name. If it has been changed <em>from</em> .xml, you will need to add the new extension to the end of the file name (it will not currently have a .xml extension).</li>
+  <li>Restart SharpReader.</li>
+</ol>
+
+<p>That’s what works for me, but as protection for me try this at your own risk.</p>
+
+  </div>
+  <div class="divider"><img src="/assets/images/divider.png" /></div>
+  </div>
+  
+  <div class="postcontainer">
   <h3><a href="/Archives/2003/12/06/ThePainOfSyndication/">The Pain Of Syndication</a></h1>
   <p class="author">
     <span class="date"> </span>
@@ -171,26 +193,6 @@
   </p>
   <div class="post">
     <p>Given that their is a dearth of pictures of me on my site (with good reason), it’s with some trepidation that I link to a <a href="http://iratescotsman.com/images/phonepics/fri-28-11-2003/gary_gmm.jpg">photo of me asleep in a lecture</a>. I feel that it shows off my best features. The photo comes from <a href="http://iratescotsman.com">Matt</a>, who sneakily took it while I was in that particular pose.</p>
-
-  </div>
-  <div class="divider"><img src="/assets/images/divider.png" /></div>
-  </div>
-  
-  <div class="postcontainer">
-  <h3><a href="/Archives/2003/11/28/TheMedallion/">The Medallion</a></h1>
-  <p class="author">
-    <span class="date"> </span>
-  </p>
-  <div class="post">
-    <p>I didn’t go to see <strong>The Medallion</strong> with particularly high hopes. I expected some typical <strong>Jackie Chan</strong> action, with some buddy comedy moments provided by <strong>Lee Evans</strong>. Mindless, enjoyable entertainment.</p>
-
-<p>I was wrong.</p>
-
-<p>It’s an absolutely dreadful film, to the extent that it’s quite amusing. It’s rare that a film manages to be so poorly done, so horribly cheesey, that it gets back to the funny stage.</p>
-
-<p>Plot “twists” and occurences frequently appear from nowhere: the little boy suddenly gains the ability to travel between dimensions at the end of the film (which would have been handy when kidnapped by the evil doers), a plane suddenly appearing at Lee Evans’ house, Lee Evans’ wife having a huge weapons cache (we presume that she is some sort of secret agent, but it is never stated or hinted at), the fact that Jackie seems to be both invincible and immortal despite only having half of the medallion (despite being told something to the contrary in the film). There’s a lot more.</p>
-
-<p>Poor acting, poor plot, no characterisation. All in all a humourously bad film.</p>
 
   </div>
   <div class="divider"><img src="/assets/images/divider.png" /></div>

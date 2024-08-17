@@ -83,6 +83,81 @@
 
   
   <div class="postcontainer">
+  <h3><a href="/Archives/2010/04/11/modern-java-validation/">Modern Java: Validation</a></h1>
+  <p class="author">
+    <span class="date"> </span>
+  </p>
+  <div class="post">
+    <p>In the previous post on Modern Java, I showed how <a href="/Archives/2010/04/05/modern-java-lombok/">Lombok is making Java beans more concise</a>. In that post, I showed how we would end up with the following class:</p>
+
+<pre class="brush: java; title: ; notranslate" title="">@Data
+public class Person {
+    private String firstName;
+    private String lastName;
+    private int age;
+}
+</pre>
+
+<p>Given an instance of that class by binding data from a web form, a database or some other data source, a fairly common requirement is to validate it against a series of rules and constraints.</p>
+
+<p>For example, if we assume “age” is the number of years the person being described has been alive, we know that it must be zero or greater. Depending on our application we may also know that it’s above a minimum age (18, say) and is extremely likely to be below a maximum age (there are very few people over 100, and none over 120).</p>
+
+<p>A few years ago, you would have to write a custom piece of code to validate simple rules in all of your domain classes. These would typically be specific to the class in question, running through a series of explicit checks, and produce a list of errors found. While this worked, it was often verbose and tightly-coupled to each domain class. It might look something like this:</p>
+
+<pre class="brush: java; title: ; notranslate" title="">public Collection&lt;Error&gt; validate(Person person) {
+  Collection&lt;Error&gt; errors = new LinkedList&lt;Error&gt;();
+  if(person.getAge() == null) {
+    errors.add(new Error("Age cannot be null"));
+  }
+  if(person.getAge() &lt; 0) {
+    errors.add(new Error("Age must be greater than zero"));
+  }
+  if(person.getAge() &gt; 120) {
+    errors.add(new Error("Unlikely to be a real age"));
+  }
+  return errors;
+}
+</pre>
+
+<p>Note that we’re only validating a few rules on one field, and it’s already quite verbose. If we validated every field on an object and the interdependencies between them, then we would have a lot of code.</p>
+
+<p>Both the <a href="http://www.springsource.org/">Spring Framework</a> and <a href="http://hibernate.org/">Hibernate</a> had come up with their own ways of making writing and integrating validation logic a little easier, but now validation has been standardised in <a href="http://jcp.org/en/jsr/detail?id=303">JSR-303</a>. The reference implementation is Hibernate Validator 4, and it’s a great starting point, but most uses of JSR-303 will be relatively agnostic of the implementation. Since this is a finalised specification, you can also make use of it today.</p>
+
+<p>For our Person class above, let’s add the following constraints:</p>
+
+<ul>
+  <li>Age must be 18 or more</li>
+  <li>First and last name must be set i.e. they can’t be left null</li>
+  <li>First and last name must have at least one character in them</li>
+</ul>
+
+<p>To implement these rules, we need only add a few new annotations, using standard constraints:</p>
+
+<pre class="brush: java; title: ; notranslate" title="">@Data
+public class Person {
+    @NotNull @Size(min=1)
+    private String firstName;
+     @NotNull @Size(min=1)
+    private String lastName;
+    @Min(18)
+    private int age;
+}
+</pre>
+
+<p>You then create a Validator instance (how you do this will depend on your chosen implementation), and pass the class in for validation:</p>
+
+<pre class="brush: java; title: ; notranslate" title="">Set&lt;ConstraintViolation&lt;Person&gt;&gt; errors = validator.validate(person);
+</pre>
+
+<p>All the validation is then handled for you, reducing the amount of code and making your bean classes very clearly state the constraints under which they operate. You know a first name is not just any old nullable string by just looking at the class, and you know ages have limitations in your particular domain of interest. The code is more expressive and concise, and that’s a very good thing.</p>
+
+<p>There’s a lot more to the JSR-303 specification, and it has all the features you might want. While I fully intend to go into the other features at another time, I’d strongly recommend browsing the spec to see some of the power and flexibility available to you.</p>
+
+  </div>
+  <div class="divider"><img src="/assets/images/divider.png" /></div>
+  </div>
+  
+  <div class="postcontainer">
   <h3><a href="/Archives/2010/04/05/modern-java-lombok/">Modern Java: Lombok</a></h1>
   <p class="author">
     <span class="date"> </span>
@@ -207,57 +282,6 @@ public class Person {
 <p>Finally, <strong>Precious</strong> is a fairly harrowing story of bullying, abusive upbringings and never thinking you can make something of yourself. While, at times, it turns things around a little too neatly, the main plot-line is equally engaging and chilling. Mo’Nique puts in an Oscar worthy performance as the abusive mother, handling a fairly dicey subject with a great believability. It’s not easy to watch, but it is worthwhile. A powerful film. (Read <a href="http://twitter.com/garyfleming/status/8414638989">my Precious Twitter review</a>).</p>
 
 <p>And the winner? It was a close-run thing between Precious, The Road and A Prophet, but I think <strong>The Road</strong> takes it in the end. Another great January for film.</p>
-
-  </div>
-  <div class="divider"><img src="/assets/images/divider.png" /></div>
-  </div>
-  
-  <div class="postcontainer">
-  <h3><a href="/Archives/2009/12/31/film-fight-finale-2009/">Film Fight: Finale 2009</a></h1>
-  <p class="author">
-    <span class="date"> </span>
-  </p>
-  <div class="post">
-    <p>As always <a href="http://solitude.vkps.co.uk/Archives/2008/12/31/film-fight-finale-2008/">my caveat from previous years still apply</a>: Film Fight is a knock-out tournament and, as such, will only select my favourite film. It makes no guarantees about any other place.</p>
-
-<p>First, the non-finalists that deserve a nod:</p>
-
-<ul>
-  <li>Slumdog Millionaire</li>
-  <li>Milk</li>
-  <li>The Curious Case of Benjamin Button</li>
-  <li>Anvil: The Story of Anvil</li>
-  <li>Monsters Vs. Aliens</li>
-  <li>Star Trek</li>
-  <li>Antichrist</li>
-  <li>Mesrine: Killer Instinct</li>
-  <li>Zombieland</li>
-  <li>Up</li>
-  <li>Where The Wild Things Are</li>
-</ul>
-
-<p>And then the monthly finalists:</p>
-
-<ul>
-  <li>January: <strong>The Wrestler</strong></li>
-  <li>February: <strong>Revolutionary Road</strong></li>
-  <li>March: <strong>Bronson</strong></li>
-  <li>April: <strong>In The Loop</strong></li>
-  <li>May: <strong>Synecdoche, New York</strong></li>
-  <li>June: <strong>The Hangover</strong></li>
-  <li>July: <strong>Moon</strong></li>
-  <li>August: <strong>Inglourious Basterds</strong></li>
-  <li>September: <strong>District 9</strong></li>
-  <li>October: <strong>Fantastic Mr. Fox</strong></li>
-  <li>November: <strong>A Serious Man</strong></li>
-  <li>December: <strong>Nowhere Boy</strong></li>
-</ul>
-
-<p>Last year, it was very easy to give the title to There Will Be Blood (despite a good effort from No Country For Old Men), but this year the finalists are almost all fantastic films; The Hangover being the only one that slid through in a weak month.</p>
-
-<p>I don’t know if I could pick a bronze medallist this year, the pack is so tight, but the silver (almost gold) goes to Darren Aronofsky’s fantastic movie, The Wrestler. It’s dark, and gritty, and will leave you a little sadder, but only because it’s such an excellent movie. An absolute must-see.</p>
-
-<p>The winner, however, is <strong>Synecdoche, New York</strong>. Charlie Kaufmann’s film is so rich with imagery, imagination and an incredible spectrum of emotions that it can’t help but be an amazing film, in the truest sense of that word. It’s an instant classic, in my book.</p>
 
   </div>
   <div class="divider"><img src="/assets/images/divider.png" /></div>
