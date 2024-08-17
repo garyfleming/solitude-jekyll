@@ -83,6 +83,24 @@
 
   
   <div class="postcontainer">
+  <h3><a href="/Archives/2003/06/20/SearchingDoneRight/">Searching Done Right</a></h1>
+  <p class="author">
+    <span class="date"> </span>
+  </p>
+  <div class="post">
+    <p><a href="http://tbray.org/ongoing/">Tim Bray</a> has started a series of articles about search. So far he’s covered <a href="http://tbray.org/ongoing/When/200x/2003/06/15/OnSearch">the background of searching</a>, <a href="http://tbray.org/ongoing/When/200x/2003/06/17/SearchUsers">what users want from search engines</a>, and <a href="http://tbray.org/ongoing/When/200x/2003/06/18/HowSearchWorks">the basics of building a search engine</a>. All great articles, with more to come.</p>
+
+<p>I mention this because one of my summer projects is to build a search engine for this site. I was going to use a fast dynamic form of <a href="http://javelina.cet.middlebury.edu/lsa/out/lsa_definition.htm">Latent Semantic Indexing</a> with no real index.</p>
+
+<p>Basically, I was going to generate a vector space based on the query words alone and not the overall dataset (it’s normal to get all the words in every document, create a vector space and then project a query into it). For a small data set, I think my proposed method would work better: providing better spacial efficiency (for sure) and time efficiency (as long as the query and data set were reasonably small).</p>
+
+<p>Of course, this site is still growing. I wouldn’t want to build a search engine only to have to rebuild it in 6 months because the number of posts had grown substantially. So I’m going to wait until I’ve finished reading this series before going ahead with the project.</p>
+
+  </div>
+  <div class="divider"><img src="/assets/images/divider.png" /></div>
+  </div>
+  
+  <div class="postcontainer">
   <h3><a href="/Archives/2003/06/20/Validatingforms/">Validating forms</a></h1>
   <p class="author">
     <span class="date"> </span>
@@ -143,22 +161,6 @@
 <p>On the plus side, I managed to get the high-score of the day: a modest 150. It’s probably my personal best.</p>
 
 <p>Anyway, bowling might look like a sport for the lazy, but boy does it hurt if you’re not used to it. Ice-pack this way, please.</p>
-
-  </div>
-  <div class="divider"><img src="/assets/images/divider.png" /></div>
-  </div>
-  
-  <div class="postcontainer">
-  <h3><a href="/Archives/2003/06/18/AnAPIcompletestheset/">An API completes the set</a></h1>
-  <p class="author">
-    <span class="date"> </span>
-  </p>
-  <div class="post">
-    <p>A week or so ago, I <a href="http://solitude.vkps.co.uk/Archives/2003/06/09/#CheckingPalindromes">updated the palindrome code</a> found on this site, but I couldn’t implement everything I wanted to. Now, I have the time to do it. For the past day or two, I’ve been messing around with <acronym title="eXtensible Markup Language - Remote Procedure Call">XMLRPC</acronym> servers and clients, trying to get a feel for how it all works. It’s really quite simple once you get into it.</p>
-
-<p>So, in this spirit, I have now got <a href="http://solitude.vkps.co.uk/Code/Palindrome/PalindromeAPI.php">an API for the palindrome checker</a>. While it only has one method at the moment, I’m sure if anything else comes to mind, it’ll be trivial to add it in.</p>
-
-<p>More importantly, by having an XMLRPC server running, I’ll be able to add and incorporate support for more web services; such as <a href="http://www.hixie.ch/specs/pingback/pingback">pingback</a>. While it’s not available yet, it will be soon enough.</p>
 
   </div>
   <div class="divider"><img src="/assets/images/divider.png" /></div>
