@@ -83,6 +83,26 @@
 
   
   <div class="postcontainer">
+  <h3><a href="/Archives/2010/07/04/film-fight-2010-june/">Film Fight 2010: June</a></h1>
+  <p class="author">
+    <span class="date"> </span>
+  </p>
+  <div class="post">
+    <p>Three new films this month, all quite different.</p>
+
+<p><strong>Rec 2</strong> picks up immediately after the ending of <a href="/Archives/2008/07/04/film-fight-april-2008/">Rec</a>, with a SWAT team about to enter the quarantined Spanish apartment building. Rather than shy away from the weak ending of the original, it embraces it and builds a fairly silly plot around it. There’s all-sorts of terrible tell-don’t-show storytelling on display here, and that undermines a good amount of the work done elsewhere. Despite a forgettable plot, the audio-visual design is fantastic: in-camera glitches, sound breaking up and distorting in just the right way to make you squirm, and THAT scene with the boy. Genuinely creepy horror in places, let down by the plot changes. (See <a href="http://twitter.com/garyfleming/status/15340433017">my Rec 2 Twitter review</a>).</p>
+
+<p><strong>The Killer Inside Me</strong> is, if nothing else, beautifully shot with art-direction in the opening credits that most films can’t muster in 90 minutes. The look throughout is striking, whether we’re observing the lead sitting in a chair or brutalising another character needlessly, and he brutalises other characters frequently. There are several fairly uncomfortable, difficult scenes here; scenes of reasonably extreme violence against women (in the context of modern cinema, at least). While they’re extremely powerful and shocking moments, they sit amongst a plot that for the most part lurches along and doesn’t really get anywhere. The film is purposefully rife with ambiguity as we, the audience, try to fill in the gaps around why the lead is such a cruel and twisted man. Sadly, it’s just not interesting or well-done enough to really bother. The idea of irredeemable characters, monsters for their own sake, has surely been done better than this many times before. (See <a href="http://twitter.com/garyfleming/status/15659114490">my The Killer Inside Me Twitter review</a>).</p>
+
+<p>Finally, <strong>Shrek Forever After</strong> marks the supposed end of the series, with Dreamworks claiming they won’t make any more. I wish they’d stopped at least one film back (perhaps two). The latest film in the series is definitely not a classic, lacking the originality, creativity or joy of the original Shrek. The plot is fairly forgettable and largely unimportant, with the majority of the laughs (and there are some good laughs in there) coming from little visual cues. The source material here has been stretched a little too thin: had this been an episode in a 25 minute cartoon series, you wouldn’t have noticed the difference. Okay, but not great. (See <a href="http://twitter.com/garyfleming/status/17194132498">my Shrek Forever After Twitter review</a>).</p>
+
+<p>While I didn’t think any of the films this month were particularly great, the winner is <strong>Rec 2</strong>. Despite a fairly nonsensical plot, it delivered where it mattered: providing a horror-filled, cinematic experience.</p>
+
+  </div>
+  <div class="divider"><img src="/assets/images/divider.png" /></div>
+  </div>
+  
+  <div class="postcontainer">
   <h3><a href="/Archives/2010/06/21/film-fight-2010-may/">Film Fight 2010: May</a></h1>
   <p class="author">
     <span class="date"> </span>
@@ -262,66 +282,6 @@ public class Person {
 <p>All the validation is then handled for you, reducing the amount of code and making your bean classes very clearly state the constraints under which they operate. You know a first name is not just any old nullable string by just looking at the class, and you know ages have limitations in your particular domain of interest. The code is more expressive and concise, and that’s a very good thing.</p>
 
 <p>There’s a lot more to the JSR-303 specification, and it has all the features you might want. While I fully intend to go into the other features at another time, I’d strongly recommend browsing the spec to see some of the power and flexibility available to you.</p>
-
-  </div>
-  <div class="divider"><img src="/assets/images/divider.png" /></div>
-  </div>
-  
-  <div class="postcontainer">
-  <h3><a href="/Archives/2010/04/05/modern-java-lombok/">Modern Java: Lombok</a></h1>
-  <p class="author">
-    <span class="date"> </span>
-  </p>
-  <div class="post">
-    <p>In recent months, I’ve been looking at a lot of new Java libraries to see what I’d like to use and what I think still has a way to go. I’ll be posting about them all in due course but I wanted to mention <a href="http://projectlombok.org/">Lombok</a> first.</p>
-
-<p>First, a class:</p>
-
-<pre class="brush: java; title: ; notranslate" title="">public class Person {
-    private String firstName;
-    private String lastName;
-    private int age;
-
-    public String getFirstName() {
-      return firstName;
-    }
-    public void setFirstName(String firstName) {
-      this.firstName = firstName;
-    }
-    public String getLastName() {
-      return lastName;
-    }
-    public void setLastName(String lastName) {
-      this.lastName = lastName;
-    }
-    public int getAge() {
-      return age;
-    }
-    public void setAge(int age) {
-      this.age = age;
-    }
-}
-</pre>
-
-<p>The problem here is that everything after <code class="language-plaintext highlighter-rouge">public int age</code> is predictable and verbose; you know that this is a Java bean class and that the fields are likely going to have getters and setters just like those provided. If we know exactly what to expect, shouldn’t the compiler take care of that for us rather than having us specify more code? Less code is often cleaner code.</p>
-
-<p>For several years now, people have been asking for the idea of <a href="http://weblogs.java.net/blog/rbair/archive/2007/01/properties_in_j.html">properties in Java</a>. That is, being able to define fields and automatically having standard getters and setters defined, without having to clutter the class file with boilerplate. The most common (and reasonable) response for avoiding this is that it would be difficult to implement without affecting backwards compatibility.</p>
-
-<p>While those proposals are pretty much dead at the moment, Lombok saves us from having to specify our standard getters and setters by marking our classes as beans and then jumping into the compilation process to make sure getters and setters are generated. The above code becomes:</p>
-
-<pre class="brush: java; title: ; notranslate" title="">@Data
-public class Person {
-    private String firstName;
-    private String lastName;
-    private int age;
-}
-</pre>
-
-<p>That’s right: the 18 or so lines of getter/setter boilerplate are replaced by the tiny little <a href="http://projectlombok.org/features/Data.html">@Data</a> annotation, and the code is much cleaner. As a bonus, @Data also generates a <code class="language-plaintext highlighter-rouge">toString()</code>, an <code class="language-plaintext highlighter-rouge">equals()</code> and a <code class="language-plaintext highlighter-rouge">hashCode()</code>. You can use the other Lombok annotations to tweak the behaviour, but this is what most people are going to want.</p>
-
-<p>Also of note is the <a href="http://projectlombok.org/features/Cleanup.html">@Cleanup annotation</a>, which provides automatic resource management (ARM) for using input/output streams. While this will be less essential if ARM arrives in Java 7, it’s a handy little helper for the time being.</p>
-
-<p>While Lombok can’t make bad code good, it can make verbose code a lot more succinct.</p>
 
   </div>
   <div class="divider"><img src="/assets/images/divider.png" /></div>
