@@ -83,6 +83,37 @@
 
   
   <div class="postcontainer">
+  <h3><a href="/Archives/2009/04/18/managing-technical-debt/">Managing Technical Debt</a></h1>
+  <p class="author">
+    <span class="date"> </span>
+  </p>
+  <div class="post">
+    <p>A few months ago, I came across the term <a href="http://martinfowler.com/bliki/TechnicalDebt.html">Technical Debt</a> to describe a situation that I’ve long been familiar with: you have some code to write and you can either do it the messy but fast way, or the neat but laboured way. One usually means just hacking in a quick solution, and the other usually means careful refactoring to set-up the abstractions you’re writing to their fullest. If you decide to do it the fast way then it’s likely, even if it’s not obvious today, that you <strong>will</strong> have to maintain it a later date (no code is an island, the real cost is in maintenance etc). Thus you have a technical debt that you <strong>will</strong> have to repay at some point; whether in the form of rewriting the code to the proper way, or hacking further around it. You pay back technical debt by paying time on the principal (fixing the original issue) and paying time on the interest (having to work around something that isn’t as neat as it could be).</p>
+
+<p>You can take this metaphor quite far (continued hacking eventually causes bankruptcy, for example) but I’ll leave it at that for the moment.</p>
+
+<p>In the past, I’ve worked on projects where technical debt was carefully managed. On those projects, code was easy to write and maintain, and performance tended to be very high; largely because everyone understood the entirety of the code base and always knew how their decisions affected the system as a whole. This was pleasant, but required stringent regulation.</p>
+
+<p>I’ve also worked on a project where massive technical debt was accrued and project management insisted on every fix being the fastest one possible, regardless of the long term consequences (I hasten to add I was largely opposed to this, but at some point you just have to get on with things). By the end, doing anything took far longer than it should have and performance began to tank. Working around the debt and managing time began to be the only thing possible, and paying off the principal never happened because there wasn’t any time left. That’s a bad situation to be in.</p>
+
+<p>All of that said, if you know what you are building is a one-off or infrequently used piece of code that is needed sooner rather than later, <strong>taking on some technical debt can be the most frugal thing you can do</strong>. Rather than work on figuring out the neatest abstraction, or the nicest algorithms, just get the code working quickly and move on.</p>
+
+<p>Now, I’m not saying that this is how you justify doing things the wrong way. There are rules you must adhere to in order to manage your debt.</p>
+
+<ol>
+  <li>Only take on technical debt on one-off or seldomly accessed code.</li>
+  <li>As soon as indebted code becomes used or maintained more frequently, and it inevitably will, you must endeavour to pay off the debt as soon as possible; before moving onto new code.</li>
+  <li>If you’re not sure whether or not you can take on debt in a given situation, you can’t. Write it properly and forget about it.</li>
+  <li>Never, ever, sacrifice documentation. If anyone is to have any hope of understanding your code (even the really good stuff), they’re going to need documentation. You cannot put your documentation into debt and hope someone else can pick it up easily.</li>
+</ol>
+
+<p>Remember: all debt needs to get paid, or the whole thing can come crashing down.</p>
+
+  </div>
+  <div class="divider"><img src="/assets/images/divider.png" /></div>
+  </div>
+  
+  <div class="postcontainer">
   <h3><a href="/Archives/2009/04/16/redesign-4-tarskiesque/">Redesign 4: Tarskiesque</a></h1>
   <p class="author">
     <span class="date"> </span>
@@ -197,38 +228,6 @@
 <p>Finally, <strong>Milk</strong> is the story of Harvey Milk, the first openly homosexual US politician in a time when a witch hunt was being fought in the States. While the story is a good one and tragic in parts, it’s Sean Penn’s performance that really makes this film. He manages to convey a convincing multi-dimensional character on his rise to power with sympathy and dignity. Where the film falls down is in the editing and pacing. There are some pretty stunning shots, but it nearly gets blundered by being over long while lacking depth on many of the ancilliary characters. Again, we sometimes get told about progression a little too much, rather than seeing it. Still, it’s strengths outweight it’s weaknesses and we get left with an enjoyable and uplifting film. Worth seeing. (See <a href="http://twitter.com/garyfleming/status/1147607222">my Milk Twitter review</a>).</p>
 
 <p>And the winner is… The Wrestler. Aronofsky has another masterpiece on his hands.</p>
-
-  </div>
-  <div class="divider"><img src="/assets/images/divider.png" /></div>
-  </div>
-  
-  <div class="postcontainer">
-  <h3><a href="/Archives/2009/01/27/copyright-extension/">Copyright Extension</a></h1>
-  <p class="author">
-    <span class="date"> </span>
-  </p>
-  <div class="post">
-    <p>The other day I did something I’ve never done before: written to an MEP. Below follows my message to them, with regards my views on copyright extension and why the proposed Term Extension directive is a mistake.</p>
-
-<p>Dear [My MEPs],</p>
-
-<p>I am writing to you all today because you represent me in the European Parliament. As such, I would like to bring to your attention my concern (a concern shared by many others) over the proposed extensions to European Copyright law (the Term Extension Directive).</p>
-
-<p>This new directive would mean that copyright for sound recordings would be increased from the current 50 years to 95 years. This runs counter to the purpose of copyright, which is to protect public interest (the creation of new materials) in the long term by protecting commercial interests (being able to generate revenue from new material created) in the short term. By extending the term, the public interest will not be served.</p>
-
-<p>Recordings are already easily lost within the 50 year limit. By extending the terms, we risk losing many recordings where the originals simply won’t be archived; and we will not be able to retrieve them. We lose the advantages that come from having a society whose culture heritage we can take, reshape and rework.</p>
-
-<p>Consider the musical works that do not live in copyright, those of the great composers like Mozart and Vivaldi. It would be a tragedy had their music been lost to short-sighted money making. It will be a tragedy if we lose the work of artists now.</p>
-
-<p>The stated purpose of the extension (to increase revenues to smaller artists) can be shown to be a fallacy. <a href="http://www.openrightsgroup.org/uploads/080829_ukipo_ectermextension.pdf">Most artists will receive only a small amount of extra revenue (between 0.5 and 26 Euros)</a>, and the vast majority of money will go straight to record labels and larger recording artists whose interests do not need protected further.</p>
-
-<p>Independent reviews (Gower, Hugenholtz) have shown that this directive is harmful to our heritage and is against the interests of the vast majority of the European community.</p>
-
-<p>I urge you to do the right thing: register against this directive.</p>
-
-<p>Yours sincerely,</p>
-
-<p>Gary Fleming</p>
 
   </div>
   <div class="divider"><img src="/assets/images/divider.png" /></div>
