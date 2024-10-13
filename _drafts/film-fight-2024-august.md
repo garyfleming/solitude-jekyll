@@ -30,9 +30,29 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1825148181497164253 %}
 
-### film name
+### Alien: Romulus
 
-{% twitter url %}
+{% twitter https://twitter.com/garyfleming/status/1845451351158845781 %}
+
+### Incoming
+
+{% twitter https://twitter.com/garyfleming/status/1845451902277882013 %}
+
+### Bad Boys: Ride Or Die
+
+{% twitter https://twitter.com/garyfleming/status/1845453185126654066 %}
+
+### Blink Twice
+
+{% twitter https://twitter.com/garyfleming/status/1845454160876949871 %}
+
+### Trap
+
+{% twitter https://twitter.com/garyfleming/status/1845455234199330966 %}
+
+### Kingdom Of The Planet Of The Apes
+
+{% twitter https://twitter.com/garyfleming/status/1845455899604775347 %}
 
 
 ### The August Winner
