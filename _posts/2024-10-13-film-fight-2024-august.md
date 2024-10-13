@@ -1,6 +1,6 @@
 ---
 title: "Film Fight 2024: August"
-date: 3899-01-07T20:00:00+00:00
+date: 2024-10-13T12:00:00+00:00
 author: Gary Fleming
 layout: post
 permalink: /:year/:month/:title/
@@ -8,7 +8,7 @@ categories:
   - Films
 ---
 
-Intro
+Busy month with 11 films in the fight!
 
 ### Trigger Warning
 
@@ -57,4 +57,4 @@ Intro
 
 ### The August Winner
 
-...
+Somewhat surprised, but **Blink Twice** is the best of the bunch.
