@@ -22,9 +22,17 @@ Intro
 
 {% twitter https://twitter.com/garyfleming/status/1845466851897160070 %}
 
-### film name
+### Brothers
 
-{% twitter url %}
+{% twitter https://twitter.com/garyfleming/status/1865707415674531906 %}
+
+### Woman Of The Hour
+
+{% twitter https://twitter.com/garyfleming/status/1865707846475640916 %}
+
+### Strange Darling
+
+{% twitter https://twitter.com/garyfleming/status/1865708185660637558 %}
 
 
 ### The October Winner
