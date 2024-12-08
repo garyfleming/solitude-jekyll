@@ -1,6 +1,6 @@
 ---
 title: "Film Fight 2024: October"
-date: 3899-01-07T20:00:00+00:00
+date: 2024-12-08T09:00:00+00:00
 author: Gary Fleming
 layout: post
 permalink: /:year/:month/:title/
@@ -8,7 +8,7 @@ categories:
   - Films
 ---
 
-Intro
+For October, we have six films...
 
 ### The Platform 2
 
@@ -37,4 +37,4 @@ Intro
 
 ### The October Winner
 
-...
+Nothing exceptional this month but I think **Strange Darling** wins it for it's interesting storytelling.
