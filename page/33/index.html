@@ -83,6 +83,24 @@
 
   
   <div class="postcontainer">
+  <h3><a href="/Archives/2012/10/07/film-fight-2012-september/">Film Fight 2012: September</a></h1>
+  <p class="author">
+    <span class="date"> </span>
+  </p>
+  <div class="post">
+    <p>Just two films in September:</p>
+
+<p>First up, <strong>Lawless</strong> is a movie that follows a family of bootleggers in prohibition-era America. It captures the violent nature of the enterprise with style, and a little wit. The main cast put in great performances, with only Shia LaBeouf letting the side down with a fairly stock take on his character. Tom Hardy, however, delivers another excellent showing as the indestructable eldest brother. The whole thing looks fantastic, but the plot is very predictable, nothing will surprise you here. Probably the film’s biggest downfall is an entirely unnecessary and out-of-touch epilogue, that forces a happy ending in where none was needed. Very watchable. (See <a href="http://twitter.com/garyfleming/status/245262773423063040">my Lawless Twitter review</a>).</p>
+
+<p>Finally, <strong>Dredd</strong> manages to bring the titular character to life in a way that his previous film can only dream of. Despite the obviously miniscule budget, the film deftly introduces the characters, setting and premise, before letting loose with some extremely gory scenes and full-on action set pieces. We’re left with no doubt as to why Judge Dredd is so uncompromising and harsh: he’s a product of a world where crime is so prevalent that almost none of it gets punished. It’s a fun movie and, while it won’t win any awards, it deserves to be seen. (See <a href="http://twitter.com/garyfleming/status/245647944693452802">my Dredd Twitter review</a>).</p>
+
+<p>The winner is <strong>Dredd</strong> for showing what a well-written action film is capable of.</p>
+
+  </div>
+  <div class="divider"><img src="/assets/images/divider.png" /></div>
+  </div>
+  
+  <div class="postcontainer">
   <h3><a href="/Archives/2012/09/08/film-fight-2012-august/">Film Fight 2012: August</a></h1>
   <p class="author">
     <span class="date"> </span>
@@ -185,24 +203,6 @@
 <p>Look at this model through the privilege problem I described. Step 1, when asked why Doctor X cannot give a prescription to Patient Y, might involve manually joining some database privilege tables to see that they’ve had that privilege removed for some reason (“Patient Y is the wife of Doctor X”). That should satisfy the immediate need. Step 2 would be completed by explaining the database structure and queries to application-support so that they’d be able to do what you did for any future queries of a similar nature. Finally, step 3 could be solved in several ways. You could provide a more robust tool so that either support can merely type in “Doctor X” and “Patient Y” and be immediately told about the privilege constraints, or you could expose the information directly to the user. When Doctor X tries to write a prescription for Patient Y, they’d be immediately told they cannot do so for the known reason.</p>
 
 <p>This is a pretty straightforward model to follow, yet I’m consistently surprised to see many teams stopping at step 1 where they’re left to absorb all complex queries indefinitely. I’m not saying it’s perfect, all that it would fit every scenario, but I’ve found it works very well for me.</p>
-
-  </div>
-  <div class="divider"><img src="/assets/images/divider.png" /></div>
-  </div>
-  
-  <div class="postcontainer">
-  <h3><a href="/Archives/2012/06/18/the-detail-of-intellij/">The Detail of IntelliJ</a></h1>
-  <p class="author">
-    <span class="date"> </span>
-  </p>
-  <div class="post">
-    <p>Having only really dabbled with it before, I’ve been pleasantly surprised now that I’m using <a href="https://www.jetbrains.com/idea/">IntelliJ IDEA</a> almost full-time. It’s not that it has a single feature that is mind-blowingly ahead of the competition; it’s all the little details that just make it a pleasure to use.</p>
-
-<p>My first “That’s Really Nice” moment was when working with some Spring beans and it understood all of the links between the code and the config. If I hadn’t added a referenced bean, it would tell me. If I type in a bean’s class attribute, it knows that it maps to a Java class and can auto-complete that for me. If you pull in a property file using Spring’s PropertyPlaceholderConfigurer support, it parses the property file so it can auto-complete placeholder usages, give you a hint as to the current value (so you know you have the correct property), and tells you when you’ve typed in a placeholder it doesn’t yet recognise (usually because you forgot to add it to the property file).</p>
-
-<p>The embedded language fragment support, though, is really something else. If you have a Java class that contains a String with some SQL in it, Eclipse will treat it as a String and that’s that. IntelliJ goes a step further. Sure, it’s a String, but it can understand that it’s SQL (or JPQL, HQL or whatever) and do syntax checking for you. It’ll auto-complete keywords for you. Heck, if you tell the IDE about your data-source (presumably a relational DB in this case), it’ll store a bunch of metadata about that data source, and use that to aid you too; by extending the auto-complete to table names, for example.</p>
-
-<p>There are a bunch of other great features in there but, as I say, it’s not the big, shouty features that make it great. It’s the attention to detail in making coding that much easier that makes it such a pleasant experience to work with. I can’t see myself going back any time soon.</p>
 
   </div>
   <div class="divider"><img src="/assets/images/divider.png" /></div>
