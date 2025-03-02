@@ -1,6 +1,6 @@
 ---
 title: "Film Fight 2024: December"
-date: 3899-01-07T20:00:00+00:00
+date: 2025-03-02T12:00:00+00:00
 author: Gary Fleming
 layout: post
 permalink: /:year/:month/:title/
@@ -8,7 +8,7 @@ categories:
   - Films
 ---
 
-Intro
+Seven films for December 2024...
 
 ### Rumours
 
@@ -36,9 +36,9 @@ Intro
 
 ### Anora
 
-{% twitter [url](https://x.com/garyfleming/status/1896228267713323019) %}
+{% twitter https://x.com/garyfleming/status/1896228267713323019 %}
 
 
-### The month Winner
+### The December Winner
 
-...
+A clear and easy victory for **Anora** - a late contender for Film of the Year.
