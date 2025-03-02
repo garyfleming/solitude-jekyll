@@ -83,6 +83,76 @@
 
   
   <div class="postcontainer">
+  <h3><a href="/Archives/2010/04/22/modern-java-jpa/">Modern Java: JPA</a></h1>
+  <p class="author">
+    <span class="date"> </span>
+  </p>
+  <div class="post">
+    <p>In the previous post, I <a href="http://solitude.vkps.co.uk/Archives/2010/04/11/modern-java-validation/">showed how JSR-303 is making validation neater.</a> I concluded that article with the Person bean looking like this:</p>
+
+<pre class="brush: java; title: ; notranslate" title="">@Data
+public class Person {
+    @NotNull @Size(min=1)
+    private String firstName;
+    @NotNull @Size(min=1)
+    private String lastName;
+    @Min(18)
+    private int age;
+}
+</pre>
+
+<p>If we know we have a valid bean, at some point we probably want to persist it so we can use it again. I won’t waste time on spelling out how much boilerplate code is written for raw JDBC calls as most developers have moved a level of abstraction up from that anyway, with great tools like <a href="http://static.springsource.org/spring/docs/3.0.x/javadoc-api/org/springframework/jdbc/core/JdbcTemplate.html">Spring’s JdbcTemplate</a>.</p>
+
+<p>I also won’t go deeply into the history of ORM in Java, as a lot has already been said. The Java Persistence API (JPA) standardised fairly sensible ideas about how ORM should work, starting from real implementations (primarily <a href="http://www.hibernate.org/">Hibernate</a>) and pulling together the main concepts. To prepare a bean for JPA persistence, we merely need to add an @Entity annotation and specify an @Id column (which I’m going to have to add to Person):</p>
+
+<pre class="brush: java; title: ; notranslate" title="">@Data @Entity
+public class Person {
+    @Id
+    private Long id;
+    @NotNull @Size(min=1)
+    private String firstName;
+    @NotNull @Size(min=1)
+    private String lastName;
+    @Min(18)
+    private int age;
+}
+</pre>
+
+<p>And that’s it. You can then use a properly configured EntityManager to persist() your class (the configuration details are largely implementation specific, but relatively lightweight).</p>
+
+<p>There are a lot of options available to configure exactly how an entity should be persisted when passed into an EntityManager. Again, I won’t cover them all, but it’s generally considered best practice to state your table and column names explicitly (rather than relying on convention, as I have above) and you’ll often want to make use of the built-in optimistic concurrency support to stop multiple changes happening at once.</p>
+
+<pre class="brush: java; title: ; notranslate" title="">@Data @Entity @Table(name="people")
+public class Person {
+    @Id @Column(name="id");
+    private Long id;
+
+    @Version @Column(name="version")
+    private int version;
+
+    @NotNull @Size(min=1)
+    @Column(name="first_name")
+    private String firstName;
+
+    @NotNull @Size(min=1)
+    @Column(name="last_name")
+    private String lastName;
+
+    @Min(18)
+    @Column(name="age")
+    private int age;
+}
+</pre>
+
+<p>As a bonus, if you use a JPA2 provider AND have a JSR-303 validation implementation in your classpath, the default behaviour will be for your bean to get validated before it gets persisted, so you wouldn’t have to explicitly call the validator any more.</p>
+
+<p>Again, there’s a lot more to be said about JPA, and the use cases that it supports (I haven’t touched on object-graphs, embedded collections, or the Java persistence query language), but you should have a flavour for it.</p>
+
+  </div>
+  <div class="divider"><img src="/assets/images/divider.png" /></div>
+  </div>
+  
+  <div class="postcontainer">
   <h3><a href="/Archives/2010/04/11/modern-java-validation/">Modern Java: Validation</a></h1>
   <p class="author">
     <span class="date"> </span>
@@ -256,32 +326,6 @@ public class Person {
 <p><strong>A Single Man</strong> is a fairly straight-forward and somewhat predictable story of living with grief, through the eyes of someone who cannot allow themselves to express their feelings. The direction here is solid, bringing memories of Kubrick’s shorter shots; dressing tables, desks, and lived-in spaces giving the feel of the characters in a few short seconds. Colin Firth puts in a fantastic performance as the lead, wavering between having a breakdown at any moment and keeping a stiff upper-lip. A very good film overall. (Read <a href="http://twitter.com/garyfleming/status/9434205340">my A Single Man Twitter review</a>).</p>
 
 <p>While there wasn’t much in the way of competition, <strong>A Single Man</strong> is a well-deservied winner.</p>
-
-  </div>
-  <div class="divider"><img src="/assets/images/divider.png" /></div>
-  </div>
-  
-  <div class="postcontainer">
-  <h3><a href="/Archives/2010/02/02/film-fight-2010-january/">Film Fight 2010: January</a></h1>
-  <p class="author">
-    <span class="date"> </span>
-  </p>
-  <div class="post">
-    <p>Another year, and another fresh film fight. As always, January was a tough month, with lots of pretty strong competition (usually the Oscar wannabes are released around this time of year). To get us started, there are 6 films this month.</p>
-
-<p>First up is Robert Downey Jr. in a role that he really wasn’t born to play: <strong>Sherlock Holmes</strong>. Guy Ritchie gives us an interesting take on the classic detective. His typically non-linear storytelling is used to great effect to explain how the master detective has reached his conclusions, and is particularly good when he’s sizing up opponents in fights, slowly and methodically showing how he’s going to break down their defences. Why this particular story mechanic is dropped relatively early in the film is beyond me, because it’s one of the strongest. Less good is the script: a fairly poor mishmash of ideas, ranging from secret societies, magic, steampunk and master villians. It doesn’t particularly fit into the Sherlock Holmes mythos, and doesn’t readily establish itself as a new take. It’s a pretty mediocre action film, that’s also trying to be a comedy. It fails to do anything particularly well. Not recommended.  (Read <a href="http://twitter.com/garyfleming/status/7313858309">my Sherlock Holmes Twitter review</a>).</p>
-
-<p><strong>Daybreakers</strong> is a surprisingly watchable, but not great, film. It deftly manages to build up its world, quickly, quietly and effectively, and moves on with the story it has to tell. This is a world where an infection has caused the vampires to take over and hunt down the humans. The vampires, however, have over-extended and food is becoming scarce. Queue a story about diminishing food supplies, the folly of rapid and mindless expansion, and a lot of gore. That’s what saves this film: the tongue-in-cheek bloodbath we’re treated with visually, paired with some slightly cheesy lines. The film would’ve been better had it been more over-the-top. As it stands, Daybreakers is a decent action movie, but not a great one. (Read <a href="http://twitter.com/garyfleming/status/7493111154">my Daybreaks Twitter review</a>).</p>
-
-<p><strong>The Road</strong> is the almost resolutely bleak, yet absolutely compelling. The primary narrative follows a father and son travelling through a post-apocalyptic world (what happened is never explained), as they encounter endless difficulties and enemies. What starts as trying to protect his son soon becomes a desperate paranoia, as the father becomes wary of everyone they met, and slowly loses his way. Several scenes are horrifyingly blunt about the lengths the father will go to to ensure they don’t become food for the more cannibalistic elements, and Viggo Mortensen does a fantastic job of showing the slow decay that takes a grip of him. While the ending ties things up a little too neatly, the rest of the film is very well done. A must see. (Read <a href="http://twitter.com/garyfleming/status/7597149764">my The Road Twitter review</a>).</p>
-
-<p>Not many people would make a comedy about firing people, but Jason Reitman has done just that with <strong>Up in the Air</strong>. The core conceit gives way to an inspection of the main character’s choices in life at just the right time, showing him up to be a willing outcast and seeing if those choices are right. While it does veer dangerously close to schmaltzy in places, it always manages to pull away by being brutally honest elsewhere. It’s not the funniest comedy, nor the best character piece, but both halves combine to make a good, solid movie. (Read <a href="http://twitter.com/garyfleming/status/7862400594">my Up in the Air Twitter review</a>).</p>
-
-<p><strong>A Prophet</strong> is a very interesting French film, a fairly gritty take on a prison drama. Malik begins as a young, somewhat naive hoodlum who goes to jail and, over the course of the film, becomes warped by his environment and the things he needs to do to survive. It doesn’t pull many punches as he schemes his way further up the criminal ladder. It’s well-structured and well-paced, being lent real weight by the very natural performances. While the scene in the middle where they both use the title and throw around a dead deer are puzzlingly unnecessary (and in poor taste), the rest of the film is very well done. (Read <a href="http://twitter.com/garyfleming/status/8151079914">my A Prophet Twitter review</a>).</p>
-
-<p>Finally, <strong>Precious</strong> is a fairly harrowing story of bullying, abusive upbringings and never thinking you can make something of yourself. While, at times, it turns things around a little too neatly, the main plot-line is equally engaging and chilling. Mo’Nique puts in an Oscar worthy performance as the abusive mother, handling a fairly dicey subject with a great believability. It’s not easy to watch, but it is worthwhile. A powerful film. (Read <a href="http://twitter.com/garyfleming/status/8414638989">my Precious Twitter review</a>).</p>
-
-<p>And the winner? It was a close-run thing between Precious, The Road and A Prophet, but I think <strong>The Road</strong> takes it in the end. Another great January for film.</p>
 
   </div>
   <div class="divider"><img src="/assets/images/divider.png" /></div>
