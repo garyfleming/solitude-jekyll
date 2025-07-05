@@ -1,6 +1,6 @@
 ---
 title: "Film Fight 2025: February"
-date: 3899-01-07T20:00:00+00:00
+date: 2025-07-05T12:00:00+00:00
 author: Gary Fleming
 layout: post
 permalink: /:year/:month/:title/
@@ -8,7 +8,7 @@ categories:
   - Films
 ---
 
-Intro
+Massively delayed on posting this (and the first half of the year), but there are 7 films for February.
 
 ### Companion
 
@@ -41,4 +41,4 @@ Intro
 
 ### The February Winner
 
-...
+It's good but not amazing but **The Monkey** is the best of the bunch.
