@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
-ruby '3.2.1'
+# This will load the Ruby version from the .ruby-version file
+ruby file: ".ruby-version"
 
 gem 'jekyll'
 gem 'jekyll-archives'
@@ -9,3 +10,5 @@ gem 'kramdown'
 gem 'kramdown-parser-gfm'
 gem 'jekyll-twitter-plugin'
 gem 'html-proofer'
+gem 'ostruct'
+gem 'logger'
