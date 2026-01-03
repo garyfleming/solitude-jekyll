@@ -83,6 +83,28 @@
 
   
   <div class="postcontainer">
+  <h3><a href="/Archives/2006/03/29/filmfight2005january/">Film Fight 2005: January</a></h1>
+  <p class="author">
+    <span class="date"> </span>
+  </p>
+  <div class="post">
+    <p>Though it is ever so slightly delayed, let’s go over this years first month of films anyway. It’s not going to prove useful for anyone looking to find something in the cinema (<acronym title="Digital Video Disc">DVD</acronym> releases must be imminent at this rate), but then again that has never been what this is all about.</p>
+
+<p>First film of the year was <strong>Running Scared</strong>. The plot revolves around trying to find a kid who stole a gun, previously used to murder a cop, who shot his father. Yes, it’s that ridiculous. If you can suspend disbelief through the convoluted plot and bizarre b-plot (how that paedophile story got into the script, I do not know), you have a reasonably tense if fairly predictable action-drama. It’s not going to win any awards, but there are worse ways to spend your time.</p>
+
+<p>Next up is the surprisingly warm Steve Martin film, <strong>Shopgirl</strong>. Written by the comedy legend himself, it’s a story that takes Martin away from the laughs (those are provided by the always excellent Jason Schwartzman) and puts Claire Danes in the middle of a love triangle while she tries to understand the changes in her life. At times tender, uncomfortable and nostalgic, this film portrays relationships in more dimensions than mainstream cinema has in the last decade: no-one is perfect and there are no relationships free from deep problems. Save for the misguided narration framing the piece, Shopgirl is a film worthy of anyone’s time.</p>
+
+<p>A lot of people seem to have left <strong>Jarhead</strong> with the impression that nothing much happened. While that was overtly the point (the first Gulf War being uninvolving for most soldiers), it misses the fairly blinding subtext that this is a film packed with life: from the brutality of the boot camp to the shipping to the gulf to filling endless days in a desert with paranoia and mindless tricks to fight the boredom. A whole war happens and the marines can only bear witness to it, trapped between their old lives and new lives of combat. Beautifully shot, if occassionally overbearing, Jarhead is an experience- rather than plot-driven film. That’s why it was so good.</p>
+
+<p>The final film of the month is <strong>A Cock And Bull Story</strong>: the impossible to describe, and devilishly clever retelling of the substance, if not the plot, of Tristram Shandy; a book about how life is too vibrant, detailed and fluid to ever be captured by art. While the film begins as a faithful retelling of the book (the first third focussing on the details of the titular character’s birth), it soon zooms out to incorporate the tales of the lead actors: Coogan’s pety one upmanship and affairs, Brydon’s fight for the limelight and terror when he finds it, parodying both of their public figures perfectly. In forgetting to tell the story of the book and, instead, showing the extraneous details that are needed to fully appreciate the telling, the director has captured the very essence of the book: the map is not the territory. An incredibly clever film.</p>
+
+<p>Winner? Though I pointed at Jarhead as being the winner in a previous post, I think Cock And Bull Story has edged it in retrospect. It is a film with as much depth as one would expect from the classic novel it adapts. Though, it has to be said, three of the four films this month were worth seeing.</p>
+
+  </div>
+  <div class="divider"><img src="/assets/images/divider.png" /></div>
+  </div>
+  
+  <div class="postcontainer">
   <h3><a href="/Archives/2006/03/29/DeafeningNoise/">Deafening Noise</a></h1>
   <p class="author">
     <span class="date"> </span>
@@ -178,40 +200,6 @@
   <div class="divider"><img src="/assets/images/divider.png" /></div>
   </div>
   
-  <div class="postcontainer">
-  <h3><a href="/Archives/2006/01/08/decompressionbombs/">Decompression Bombs</a></h1>
-  <p class="author">
-    <span class="date"> </span>
-  </p>
-  <div class="post">
-    <p>From random discussions I’ve had with people over the last few months, it seems to me that not too many people really know about a particularly nasty and cunning form of computer attack: the decompression bomb.</p>
-
-<p>First, think about compressing data. Most of us have used an application like WinZip or some similar tool to make our files smaller, albeit less accessible temporarily. These programs take advantage of how signal to noise ratios work in most representations of data; that is, the way we try to represent information is almost always ineffecient. There are usually techniques available for removing the parts that aren’t so important, and letting important (or common) information take less space.</p>
-
-<p>For example, the algorithm behind the ZIP programs is largely based on <a href="http://www.dogma.net/markn/articles/lzw/lzw.htm">LZW compression</a>: a technique that collapses common substrings down into single codes. Obviously, I’ve completely glossed over how it works, but if you want to know the information is out there (any computing scientist worth their salt should have at least an idea of how this sort of thing works).</p>
-
-<p>Using a randomly selected document of, say, English text, you would expect a maximum compression ratio of 10:1. That is, given a 100k file, you would expect a zip file of around 10k. That’s pretty good compression! The language being used and the specific text will cause the compression ratio to vary greatly, but the principles remain the same.</p>
-
-<p>The thing is, if you carefully construct an example document, you can get a compression ratio much higher. How much higher? MUCH, MUCH higher. For example, if you created a PNG image containing just one colour repeated over and over then you could easily get a 1000:1 ratio. For a text document containing 1 character repeated over and over, it’s possible to shrink 100Gb to about 6k. Think about that, it is a huge difference: 1.7e7:1.</p>
-
-<p>That’s all well and good as an interesting experiment, but what does it mean for an average user? Imagine I had constructed one of those zip files that had shrunk 100Gb down to 6k and I sent you that file. If you trusted me, you might try to open it. Therein lies the problem: while you can readily accept the zipped file, the chances that you have the 100Gb of free memory (including virtual memory) to accomodate the decompressed file are bloody slim. When you try to open one of these files, your computer will quickly become overwhelmed and stop responding; all of the free memory having been used up, it can’t do anything else. You effectively suffer a denial of service attack.</p>
-
-<p>That is what we call a decompression bomb.</p>
-
-<p>There is another factor that could cause problems for people who are careful when opening files: well-meaning programs can open them anyway. If the file arrives on your system (either by explicit downloading or by, say, a mail program fetching it), it’s likely that anti-virus software installed on your system would then want to check if the file contained any viruses. To do this, it pretty much has to decompress the file in memory, leading to the same problem. Oh dear.</p>
-
-<p>Most modern anti-virus software has some defences against decompression bombs, but they can still cause significant system lock-ups while figuring it out. Perhaps more evil is compressed web content, whether images or GZip encoded <acronym title="HyperText Markup Language">HTML</acronym>. No modern browser has a strong defence against decompression bombs. Relatively small files (100Mb decompressed) are usually handled quite well, in that the browser doesn’t crash completely, but go much bigger and most systems will run into trouble. Because browsers, sensibly, accept GZip encoding by default, any <acronym title="Uniform Resource Locator">URL</acronym> can hide a problem.</p>
-
-<p>Thankfully, problems don’t arise much in practice because there is little to be gained from this activity: if you take out someone’s system, you’ve annoyed them but you can rarely turn this to your advantage i.e. you can’t elicitly install spyware.</p>
-
-<p>If you want to see some more figures or examples (at your own risk), then the <a href="http://www.aerasec.de/security/advisories/decompression-bomb-vulnerability.html">AERAsec decompression bomb page</a> is a great start. It’s where I got a few of my figures from (so thanks for that!), and has a link to some real examples you can try.</p>
-
-<p>Now, <a href="http://solitude.vkps.co.uk/Archives/2006/01/11/DecompressionBombsPart2/">Decompression Bombs Part 2</a> outlines some real-life examples and answers a few questions!</p>
-
-  </div>
-  <div class="divider"><img src="/assets/images/divider.png" /></div>
-  </div>
-  
 </div>
 
 
@@ -232,7 +220,7 @@
   
 
   <p>
-    © Solitude, 2003-25 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a>, using <a href="https://github.com/swanson/lagom">Lagom</a> as a base theme.
+    © Solitude, 2003-26 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a>, using <a href="https://github.com/swanson/lagom">Lagom</a> as a base theme.
   </p>
 </div>
       </div>

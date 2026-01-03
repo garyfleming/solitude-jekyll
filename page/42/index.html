@@ -83,6 +83,28 @@
 
   
   <div class="postcontainer">
+  <h3><a href="/Archives/2010/08/01/film-fight-2010-july/">Film Fight 2010: July</a></h1>
+  <p class="author">
+    <span class="date"> </span>
+  </p>
+  <div class="post">
+    <p>As is the norm, July was a reasonably full month with 4 films viewed.</p>
+
+<p><strong>Predators</strong>, while not a masterpiece by any measure, is exactly what it needed to be: an action movie with an 80’s feel, free from large CG scenes and full of physical effects, enough of a plot to put the cannon fodder where it needed to be, and some absolutely great scenes. The pre-credits opening shot is particularly grabbing, pushing the audience immediately into the action and getting things started with some panic. Adrien Brody doesn’t pull-off being an action hero in the same way that Schwarzenegger did, and the slow reveal of the predators themselves was something of a waste, given we know what they look like from the rest of the franchise, but those are small points in an otherwise solid film. (See <a href="http://twitter.com/garyfleming/status/18185834123">my Predators Twitter review</a>).</p>
+
+<p>There’s a lot I would like to say about Christopher Nolan’s latest masterpiece, <strong>Inception</strong>, but can’t do so without leaving a large trail of spoilers. There will be many fiercely argued debates about the minutiae of it’s world and it’s take on subjective reality. That’s how you know it’s going to be a classic. Nolan has created an incredible piece of cinematic storytelling, full of visuals and world-building that wouldn’t work in any other medium. The central conceit of controllable dream worlds is revealed just as quickly as it needs to be, just like everything else in this film from Leonardo DiCaprio’s broken team lead to the depth of the maze that is being built in the incredible plot. That, as I see it, is its only major flaw: everything moves so quickly that only the central concept and DiCaprio get a chance to breath. The supporting cast (and a great cast it is) provide excellent sketches of characters and there are many questions to be asked about them, but we never get the time to see any of it. When the only real criticism you have of a movie is that you want to see a lot more, you have a classic. A fantastic, must-see film. (See <a href="http://twitter.com/garyfleming/status/18840963110">my Inception Twitter review</a>).</p>
+
+<p>Pixar’s latest effort is a new look at an old franchise. <strong>Toy Story 3</strong> revisits Woody, Buzz and friends ten years later as Andy, their owner, prepares to go to college. The central theme of transition and moving on sets a tone that is both sweet in places, and fairly sad in others. That’s not to say it’s not got the little adventure set-pieces of the previous films, it has quite a few that will make you laugh, but it is less overtly funny than its two predecessors. Revisiting a franchise this long gone is dangerous, but Pixar have done well to put a neat little ending on this story. A great film. One other note: the 3D effects are understated to the point that they actually don’t add anything to the film. If you saw this in 2d, you’d still have the same great movie. (See <a href="http://twitter.com/garyfleming/status/19436128539">my Toy Story 3 Twitter review</a>).</p>
+
+<p>I had high hopes for <strong>The Karate Kid</strong>, a thematically different take on the story structure of the 80’s classic. In the opening chunk, some of my hopes were lived up to: we see the frustration and loneliness of a young boy pushed into a foreign situation. Had the film built on this theme, it could’ve been a great film but it was there just as the set-up for a much more formulaic movie. Jaden Smith managed to get the emotional points across pretty well for an actor of his age, but failed when it came to anything approaching comedy: he has the mannerisms of his father, without the brash charm to pull it off. For a film lacking in depth and out-and-out fun, it certainly ran a lot longer than it should have. The plot on offer could’ve been covered in 90-odd minutes, but we’re given nearly an hour more than that. A shame. (See <a href="http://twitter.com/garyfleming/status/19497790703">my The Karate Kid Twitter review</a>).</p>
+
+<p>While I really enjoyed Toy Story 3, this month’s winner is <strong>Inception</strong> for its clever storytelling and THAT hotel corridor scene.</p>
+
+  </div>
+  <div class="divider"><img src="/assets/images/divider.png" /></div>
+  </div>
+  
+  <div class="postcontainer">
   <h3><a href="/Archives/2010/07/06/modern-java-the-point/">Modern Java: The Point</a></h1>
   <p class="author">
     <span class="date"> </span>
@@ -168,76 +190,6 @@
   <div class="divider"><img src="/assets/images/divider.png" /></div>
   </div>
   
-  <div class="postcontainer">
-  <h3><a href="/Archives/2010/04/22/modern-java-jpa/">Modern Java: JPA</a></h1>
-  <p class="author">
-    <span class="date"> </span>
-  </p>
-  <div class="post">
-    <p>In the previous post, I <a href="http://solitude.vkps.co.uk/Archives/2010/04/11/modern-java-validation/">showed how JSR-303 is making validation neater.</a> I concluded that article with the Person bean looking like this:</p>
-
-<pre class="brush: java; title: ; notranslate" title="">@Data
-public class Person {
-    @NotNull @Size(min=1)
-    private String firstName;
-    @NotNull @Size(min=1)
-    private String lastName;
-    @Min(18)
-    private int age;
-}
-</pre>
-
-<p>If we know we have a valid bean, at some point we probably want to persist it so we can use it again. I won’t waste time on spelling out how much boilerplate code is written for raw JDBC calls as most developers have moved a level of abstraction up from that anyway, with great tools like <a href="http://static.springsource.org/spring/docs/3.0.x/javadoc-api/org/springframework/jdbc/core/JdbcTemplate.html">Spring’s JdbcTemplate</a>.</p>
-
-<p>I also won’t go deeply into the history of ORM in Java, as a lot has already been said. The Java Persistence API (JPA) standardised fairly sensible ideas about how ORM should work, starting from real implementations (primarily <a href="http://www.hibernate.org/">Hibernate</a>) and pulling together the main concepts. To prepare a bean for JPA persistence, we merely need to add an @Entity annotation and specify an @Id column (which I’m going to have to add to Person):</p>
-
-<pre class="brush: java; title: ; notranslate" title="">@Data @Entity
-public class Person {
-    @Id
-    private Long id;
-    @NotNull @Size(min=1)
-    private String firstName;
-    @NotNull @Size(min=1)
-    private String lastName;
-    @Min(18)
-    private int age;
-}
-</pre>
-
-<p>And that’s it. You can then use a properly configured EntityManager to persist() your class (the configuration details are largely implementation specific, but relatively lightweight).</p>
-
-<p>There are a lot of options available to configure exactly how an entity should be persisted when passed into an EntityManager. Again, I won’t cover them all, but it’s generally considered best practice to state your table and column names explicitly (rather than relying on convention, as I have above) and you’ll often want to make use of the built-in optimistic concurrency support to stop multiple changes happening at once.</p>
-
-<pre class="brush: java; title: ; notranslate" title="">@Data @Entity @Table(name="people")
-public class Person {
-    @Id @Column(name="id");
-    private Long id;
-
-    @Version @Column(name="version")
-    private int version;
-
-    @NotNull @Size(min=1)
-    @Column(name="first_name")
-    private String firstName;
-
-    @NotNull @Size(min=1)
-    @Column(name="last_name")
-    private String lastName;
-
-    @Min(18)
-    @Column(name="age")
-    private int age;
-}
-</pre>
-
-<p>As a bonus, if you use a JPA2 provider AND have a JSR-303 validation implementation in your classpath, the default behaviour will be for your bean to get validated before it gets persisted, so you wouldn’t have to explicitly call the validator any more.</p>
-
-<p>Again, there’s a lot more to be said about JPA, and the use cases that it supports (I haven’t touched on object-graphs, embedded collections, or the Java persistence query language), but you should have a flavour for it.</p>
-
-  </div>
-  <div class="divider"><img src="/assets/images/divider.png" /></div>
-  </div>
-  
 </div>
 
 
@@ -258,7 +210,7 @@ public class Person {
   
 
   <p>
-    © Solitude, 2003-25 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a>, using <a href="https://github.com/swanson/lagom">Lagom</a> as a base theme.
+    © Solitude, 2003-26 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a>, using <a href="https://github.com/swanson/lagom">Lagom</a> as a base theme.
   </p>
 </div>
       </div>
