@@ -83,6 +83,35 @@
 
   
   <div class="postcontainer">
+  <h3><a href="/Archives/2003/05/07/MetaData/">MetaData</a></h1>
+  <p class="author">
+    <span class="date"> </span>
+  </p>
+  <div class="post">
+    <p>I recently came across the <strong>PostCon format</strong> (an <acronym title="Resource Description Framework">RDF</acronym>-based format) in a <a href="http://burningbird.net/articles/monsters1.rdf">document describing an article on monsters</a>. Take a look at it: that’s a lot of metadata! It got me thinking: how much metadata should we store on a given article?</p>
+
+<p>The Finetto <acronym title="eXtensible Markup Language">XML</acronym> format is very small, but also in its early unsettled days (Finetto is the content management system I use and build). The elements are:</p>
+
+<ul>
+  <li><em>ID</em> – a unique ID for each article, derived from the time it was written,</li>
+  <li><em>Title</em> – the title of the item, not necessarily unique,</li>
+  <li><em>Date</em> – The date the article was created. This is a throwback to when I didn’t understand how to use event-driven parsers properly, and has always annoyed me,</li>
+  <li><em>Description</em> – A short description of the article, entered manually,</li>
+  <li><em>Author</em> – Name of the person who wrote the article. This appears automatically (taken from a users log-in), but can be entered manually,</li>
+  <li><em>Content</em> – The content itself as a chunk of <acronym title="eXtensible HyperText Markup Language">XHTML</acronym>.</li>
+</ul>
+
+<p>Now, compared to PostCon, that is tiny. But there are times when I wish I had stored category information, or used an <acronym title="Rich Site Summary">RSS</acronym>-like format, or even scrubbed the date (it can be taken from ID). The question is should we attempt to store all information that could possibly maybe be useful down the line? I’m not convinced either way.</p>
+
+<p>On one side, you’ve got the benefit that if you ever need to know anything about the document, it’s right there: no need to infer it from other sources (the web page that the article appears on, for instance). But, on the other side, you also have a tremendous amount of bloat if the data is never used. If a post is small, the metadata outweights the data which strikes me as horribly wrong.</p>
+
+<p>When I can get a clear path to backwards-compatibility, I’ll seriously look at getting a lot more metadata into my format. For now, I’ll just muse over how much is enough.</p>
+
+  </div>
+  <div class="divider"><img src="/assets/images/divider.png" /></div>
+  </div>
+  
+  <div class="postcontainer">
   <h3><a href="/Archives/2003/05/06/XMen2/">X-Men 2</a></h1>
   <p class="author">
     <span class="date"> </span>
@@ -143,24 +172,6 @@
   </p>
   <div class="post">
     <p>This has got to be possibly the <a href="http://www.secunia.com/advisories/8642/">funniest crash bug for <acronym title="InternetExplorer">IE</acronym></a>. Basically, by having an input element (used in forms) with no body tag, IE dies on its arse.</p>
-
-  </div>
-  <div class="divider"><img src="/assets/images/divider.png" /></div>
-  </div>
-  
-  <div class="postcontainer">
-  <h3><a href="/Archives/2003/05/02/Voting/">Voting</a></h1>
-  <p class="author">
-    <span class="date"> </span>
-  </p>
-  <div class="post">
-    <p>I voted for the first time yesterday. It wasn’t a very overwhelming experience. Nobody that I really wanted to vote for.</p>
-
-<p>What’s the point in a democracy that does such a poor job of representing the people? As far as I can tell, no party fully represents a single person (other than the party themselves). The normal voters have to pick the closest fit; Everyone compromises and hopes for the best.</p>
-
-<p>Of course, the best never comes. The various political parties don’t put their real agendas on the table. No sir, can’t have the people getting what they wanted.</p>
-
-<p>Excuse the cynicism of this post, it just seems that our countries are far from what they could be.</p>
 
   </div>
   <div class="divider"><img src="/assets/images/divider.png" /></div>

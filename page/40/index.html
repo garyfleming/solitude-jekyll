@@ -83,6 +83,53 @@
 
   
   <div class="postcontainer">
+  <h3><a href="/Archives/2011/02/17/on-organising-music/">On Organising Music</a></h1>
+  <p class="author">
+    <span class="date"> </span>
+  </p>
+  <div class="post">
+    <p>People tend to build up systems for organising their data only after it’s really needed: we’ll gather related objects together haphazardly until it’s too late and we end up with a clutter. Nowhere is this seen more frequently than in people’s digital music collections.</p>
+
+<p>Invariably, people just shove all of their music into a folder and hope for the best, neither organising or normalising the data. The result is that it’s difficult to find specific files, many files are missing vital metadata (like the artist name), and doing anything takes far longer than it should.</p>
+
+<p>This need not be the case.</p>
+
+<p>I’ve shown a few people who have been interested in organising their music collections the strategy I’ve built-up for keeping clutter free, and I’m going to share it with you. It’s not perfect, but it works well for me. (To be honest, I’m writing this so I can point anyone else who asks towards this guide.)</p>
+
+<p>First of all, if all of your music is relatively popular and well known and you already use it as your main media player, just use iTunes. It has many shortcomings, but if you fit in that sweet spot then save yourself the hassle and just let iTunes take care of it all. That’s it, you lucky ones can go now. Lesson over.</p>
+
+<p>Still here? Great. For anyone who has explored the world of music beyond iTunes, you’ll know that it won’t help fix your metadata or organise your music in a particularly useful way. My solution to that is built largely on top of the tools and music database provided by <a href="http://musicbrainz.org/">MusicBrainz</a>, a collaborative way of discovering music metadata.</p>
+
+<p>A little background: MusicBrainz aims to be the definitive reference source for online music. Over the last few years, volunteers have gathered a tonne of music metadata onto the MusicBrainz website and set about organising it. There are artists, releases, albums, singles, release groups, collaborations, and every piece of music information that you could need; all of it tagged with unique IDs. I say “every piece” but that’s overstating it. There will always be gaps in what MusicBrainz knows. The good news is that if you spot a missing release from your favourite artist, you can add it to MusicBrainz yourself and then everyone else gets to benefit from it.</p>
+
+<p>Back to the task at hand. You’ll need to grab Picard, the MusicBrainz tagger, from their website. It’s available for Windows, OS X and Linux; and it’s ugly as sin on all of them. Seriously, it’s a terrible looking tool, but it’s very useful.</p>
+
+<p>Once you’ve got Picard, the rest is easy:</p>
+
+<ol>
+  <li><strong>Create a Music folder</strong> – This should be empty at first, and represents the golden copy of your data. Absolutely nothing gets in here that hasn’t been properly tagged and vetted. It can be anywhere you like, but keep in mind that you’re going to want to back this up on occasion so keep it somewhere that makes that easy.</li>
+  <li><strong>Set-up Picard</strong> – In the Picard preferences, there is a setting for moving tagged files to a specific directory. Pick your new Music folder. You may also want to change the filename format and tweak some of the other settings, but I leave that up to you. Personally, I use “artist/release/artist – track title.mp3” for filenames.</li>
+  <li><strong>Add music to Picard</strong> – There are a few ways of doing this, but you can drag and drop music directly into the left-hand panel, or use the add files/folders buttons. If you’ve added music from several albums at once, you probably also want to hit the “Cluster” button. This will attempt to organise the files into groups of untagged releases.</li>
+  <li><strong>Search for a matching release</strong> – Select the music you want to tag first, and hit lookup. Musicbrainz will try to use the file’s existing metadata to find a release that matches.</li>
+  <li><strong>Save your matches</strong> – If the release it finds looks correct, then save it. Your files will be tagged with all the extra metadata MusicBrainz knows about and an ID so you never have to match it up again, and moved to your Music folder. Once saved you can them remove the release from Picard altogether.</li>
+  <li><strong>Scan your misses</strong> – If MusicBrainz either couldn’t find a match or the match it finds isn’t correct, you can use the “Scan” button to try a different approach. This uses audio fingerprinting (like Shazam) to try and automatically match the music using the audio itself.</li>
+  <li><strong>Search Manually</strong> – Use Picard’s manual search to try and find the right release. If you find it, a “Tag” button will appear in the top-right of the release information. Click that, and the release gets imported into Picard so you can drag the music onto it yourself.</li>
+  <li><strong>Do It Yourself</strong> – Still no luck? Well, it’s time to get acquainted with the MusicBrainz website to add the artist and/or release yourself. This is pretty straight forward but there’s plenty of information on <a href="http://wiki.musicbrainz.org/How_To_Contribute">how to contribute</a>. If you think your files already have some of the data you need to add a release, there is a Picard plug-in for creating a release from a Cluster too.</li>
+</ol>
+
+<p>That’s it. Every time you get new music, follow from step 3 and you’ll keep your golden copy in good shape.</p>
+
+<p>As a bonus, if you ever decide to reorganise your Music directory, you can import your tagged music into Picard and it’ll recognise all it. You can then make whatever changes you want (maybe change the filename format) and re-save.</p>
+
+<p>If you happen to be on OS X then the <a href="http://sbooth.org/Max/">Max CD ripper</a> can automatically tag your files as it rips, as it has Musicbrainz integration. You set it up in the same way as Picard and query MusicBrainz before ripping to pull back all of the metadata.</p>
+
+<p>Hopefully, this will be of some help to someone in organising their music and understanding MusicBrainz.</p>
+
+  </div>
+  <div class="divider"><img src="/assets/images/divider.png" /></div>
+  </div>
+  
+  <div class="postcontainer">
   <h3><a href="/Archives/2011/02/15/jdbc-and-enums/">Jdbc and Enums</a></h1>
   <p class="author">
     <span class="date"> </span>
@@ -215,22 +262,6 @@
 <p><strong>The Tourist</strong>, however, is not good enough to recommend watching even half of it. It’s a truly terrible film on almost every level. It looks pretty and has a strong cast, but they’re squandered here on terrible dialogue and a formulaic, “twisting” plot. You’ll see the twists coming, you’ll cringe at the ropey lines, the heavy-handed spoonfeeding of information, the seen-it-all-before action set pieces, and the overacting. I can’t recommend this at all. Terrible. (see <a href="http://twitter.com/garyfleming/status/13607151649951745">my The Tourist Twitter review</a>).</p>
 
 <p>The winner is <strong>Megamind</strong>. Not because it’s a classic film, more because it didn’t have any competition.</p>
-
-  </div>
-  <div class="divider"><img src="/assets/images/divider.png" /></div>
-  </div>
-  
-  <div class="postcontainer">
-  <h3><a href="/Archives/2010/12/05/film-fight-2010-november/">Film Fight 2010: November</a></h1>
-  <p class="author">
-    <span class="date"> </span>
-  </p>
-  <div class="post">
-    <p>For various reason, I only made it to the cinema once, so the winner is a foregone conclusion.</p>
-
-<p><strong>Let Me In</strong> is an American remake of the classic Swedish film, Let The Right One in. During the making of this film, we were promised that it would be a different take on the source, focussing more closely on the burgeoning relationship between Oskar and Eli (renamed Owen and Abby), and the relationship between Eli and her carer. This remake fails to deliver. What we get appears to be a somewhat neutered cut of the director’s vision: following the plot of the original very closely, sometimes shot for shot, but replacing the uneasy menace with some more obvious action scenes. There are moments where it shines. The few moments that Richard Jenkins gets he puts to great use, especially the scene he’s hiding in a car. Largely, though, it’s disappointingly similar to the original, without many fresh ideas. (See <a href="http://twitter.com/garyfleming/status/649481796190208">my Let Me In Twitter review</a>).</p>
-
-<p>In another month it wouldn’t have gotten through, but <strong>Let Me In</strong> is obviously the November winner.</p>
 
   </div>
   <div class="divider"><img src="/assets/images/divider.png" /></div>
