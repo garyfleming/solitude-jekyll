@@ -14,12 +14,14 @@ def promote_draft(draft_path):
         print("File must be in the _drafts directory.")
         return
     posts_dir = draft.parent.parent / '_posts'
-    posts_dir.mkdir(exist_ok=True)
+    year = datetime.now().strftime('%Y')
+    year_dir = posts_dir / year
+    year_dir.mkdir(exist_ok=True)
     today = datetime.now().strftime('%Y-%m-%d')
     new_name = f"{today}-{draft.name}"
-    new_path = posts_dir / new_name
+    new_path = year_dir / new_name
     if new_path.exists():
-        print(f"File already exists in _posts: {new_path}")
+        print(f"File already exists in {year_dir}: {new_path}")
         return
     shutil.move(str(draft), str(new_path))
     print(f"Moved and renamed to {new_path}")
