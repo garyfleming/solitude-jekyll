@@ -10,7 +10,7 @@ categories:
 
 I'm very behind on film reviews. Between some challenges in my personal life, a busy work year, and largely exiting social media, I've not felt very motivated to write - and I've seen fewer films.
 
-That last reason, leaving social media, is an important, practical concern here. For a *long* time, I've posted my reviews on Twitter (and then Mastodon) and used a plugin to pull them into these reviews. I've barely used social media for quite some time now, and the few interactions were to push film reviews through what has become and increasingly circuitous route.
+That last reason, leaving social media, is an important, practical concern here. For a *long* time, I've posted my reviews on Twitter (and then Mastodon) and used a plugin to pull them into these reviews. I've barely used social media for quite some time now, and the few interactions were to push film reviews through what has become an increasingly circuitous route.
 
 No more. I've decided that, for now, I'm just putting the reviews directly here, while maintaining the size constraints I originally found appealing. I'll likely post the blog post links onto social media.
 
