@@ -83,6 +83,33 @@
 
   
   <div class="postcontainer">
+  <h3><a href="/Archives/2006/01/11/DecompressionBombsPart2/">Decompression Bombs Part 2</a></h1>
+  <p class="author">
+    <span class="date"> </span>
+  </p>
+  <div class="post">
+    <p>The piece on decompression bombs was not supposed to be a panic piece, as it seems is implied, rather it was an informative one about a hidden danger in handling compressed files and, in my view, a neat little trick.</p>
+
+<p>To respond to some questions about it: someone asked how you would create the compressed file in the first place since compressing that much data would have to be done in memory, causing you the same problem. Very astute! The answer is that you don’t: the uncompressed data never exists. You need to know enough about your compression algorithm to construct the compressed file directly, writing the output without any real input. This is not that tricky for most formats. The fact of the matter is that you can download decompression bombs quite freely.</p>
+
+<p>In response to a comment by <a href="http://www.davidarussell.co.uk/">David Russell</a>, and to illustrate some points more clearly, I’m going to discuss some more concrete examples. First of all, David raises the issue that this just means “you restart”. Naively, yes, it does. A restart might not mean much to you, the home user, but it does to quite a few companies. Servers going down means a tangible loss in revenue and respect in the marketplace.</p>
+
+<p>Moreover, denial of service attacks <strong>are</strong> used to blackmail companies. Mostly these come in the form of botnet attacks, but there’s no reason why a weak company couldn’t be taken down by decompression attacks. Frankly, without adequate defences, a decompression attack is far more effective than malicious pings.</p>
+
+<p>Here are a few scenarios for you:</p>
+
+<ol>
+  <li>You are an admin for a company with a reasonable IT infrastructure. Being sensible, your mail server scans all incoming attachments for problems. You’ve also put the servers into a replication configuration so that if one server goes down then your mail queues redirect. Someone sends you a decompression bomb; your mail server goes down pretty quickly because the scan tries to handle it in memory. For every minute the servers are down, you lose X pounds. Depending on how much you’ve thought about this, X can be a large number. Your redundant servers can’t easily help because they’ll start scanning the file and falling over. You have a few solutions: you can switch off scanning (obviously dangerous). Maybe you can switch off replication, though that generally means isolating that queue and dropping the mail on the floor while you figure out what has happened, potentially costing more money.</li>
+  <li>You are an image storage/processing company who let your users upload images (like, for example, <a href="http://www.flickr.com">flickr</a>). People upload whatever photos they like and let you display them. Because you want to save a considerable amount of bandwidth, you accept GZip encoded transfer of images. This saves you Y million a year (a conservative estimate for a large site). Someone sends you an image decompression bomb, which expands to some large amount on your servers. Your resources get drained while you either try storing it or sort it out. What can you do? Maybe you take the one time hit in writing it to disk; poor strategy if someone is using this as part of an effective distributed denial of service attack on your site. Maybe you just kill the GZip upload which, as we know, will cost you at least Y million a year; not a good idea if you’re looking to get promoted any time soon.</li>
+</ol>
+
+<p>There are solutions to these scenarios (which I would like to leave as an exercise for my readers, comments anyone?), and I’m sure there are also more tricky scenarios for the really devious (again, I’d love to hear something quite sneaky). The point is that if you accept any content which is compressed, you should be aware of how this <em>could</em> affect you.</p>
+
+  </div>
+  <div class="divider"><img src="/assets/images/divider.png" /></div>
+  </div>
+  
+  <div class="postcontainer">
   <h3><a href="/Archives/2006/01/10/ThreeYears/">Three Years</a></h1>
   <p class="author">
     <span class="date"> </span>
@@ -171,28 +198,6 @@
 <p><ins>Update: Terrifying. Definitely worth a watch on the next repeat, or when the torrents appear in about an hours time.</ins></p>
 
 <p><ins>Update 2: Might I suggest that the huge number of people arriving on this post looking for a torrent try somewhere else that might have it like <a href="http://www.uknova.com">UKNova</a></ins></p>
-
-  </div>
-  <div class="divider"><img src="/assets/images/divider.png" /></div>
-  </div>
-  
-  <div class="postcontainer">
-  <h3><a href="/Archives/2006/01/03/solitude2005awards/">Solitude 2005 Awards</a></h1>
-  <p class="author">
-    <span class="date"> </span>
-  </p>
-  <div class="post">
-    <p>Yes, it’s time for the Solitude 2005 awards! We’ve already covered the <a href="/Archives/2005/12/31/FilmFightFinale2005">best film of 2005</a> but there are plenty of other awards going:</p>
-
-<ul>
-  <li><strong>Best album of 2005</strong> – Being the first year for a while that Biffy haven’t released anything and The Mars Volta album being good but not great, I think there is only one clear choice for best album: “Very Fast, Very Dangerous” by the excellent <a href="http://www.wordsfromreuben.com">Reuben</a>. Mixing some chunky British rock with some tight lyrics and sprinklings of pop mentality, this album has everything any fan of modern rock needs. Each of the singles showed off a different part of the band, and the album as a whole is just brilliantly pitched.</li>
-  <li><strong>Best new band</strong> – This means the best band I heard for the first time last year and is pretty tricky. I think the best band I heard last year were the impossibly tight <a href="http://listen.to/caretaker">Caretaker</a>, a band with some incredible dynamics and transitions. I highly recommend their “Signs Of Four EP” (incidentally the best EP of 2005). That said, the industry being what it is, they won’t make it big. That’s not what this is about, mind, but another great band (who I actually heard first in November 2004) who you should be watching are <a href="http://www.amplifico.net">Amplifico</a>. A lot folkier and poppier than my usual leanings, but an excellent band nonetheless.</li>
-  <li><strong>Worst split</strong> – Although Ikara Colt were a sad loss and Degrassi showed a lot of promise, I think the worst loss of 2005 was the very early break up of the rather good Mclusky. After three albums of the kind of lyrical genius not seen outside of this band, musical differences forced them apart. Keep an eye out for the two new bands that will form from the ashes (one being the reasonably decent Shooting At Unarmed Men).</li>
-  <li><strong>Best Underuse Of A Great Actor</strong> – In any other year, March Of The Penguins would have gotten this for having Morgan Freeman narrate, but it has been beaten. Batman Begins beats all comers by not only putting Mr Freeman in a marginal role, but did the same to Michael Caine. It takes a certain amount of genius to do that and still be a pretty damn good film. Kudos to Christopher Nolan.</li>
-  <li><strong>Best use of <a href="http://us.imdb.com/name/nm0001209/">William Fichtner</a></strong> – For anyone who had to follow that IMDB link to figure out who I mean, shame on you! Fichtner is an excellent actor who does not get the credit he deserves. Winner of the award this year goes to <strong>Crash</strong>, a terrible film with one or two good roles; Fichtner was as marginal as always, but still damn good.</li>
-</ul>
-
-<p>I realise now that it would probably be best not to publish some of the other awards (such as Best Pub Quiz Teamname), so as to avoid incriminating myself. Any other awards people deserved?</p>
 
   </div>
   <div class="divider"><img src="/assets/images/divider.png" /></div>

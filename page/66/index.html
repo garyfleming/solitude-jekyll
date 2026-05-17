@@ -83,6 +83,38 @@
 
   
   <div class="postcontainer">
+  <h3><a href="/Archives/2006/11/28/OneInterface/">One Interface</a></h1>
+  <p class="author">
+    <span class="date"> </span>
+  </p>
+  <div class="post">
+    <p>Raymond Chen has reasonably pointed out that most low-end users <a href="http://blogs.msdn.com/oldnewthing/archive/2006/11/27/1160055.aspx">don’t like using the search boxes</a> that modern browsers provide in addition to address bars. I couldn’t agree more.</p>
+
+<p>The first thing I do with any new FireFox install, before loading up bookmarks or any of my favourite extensions, is to remove the search bar. Why?</p>
+
+<ol>
+  <li>Ease of use. I don’t want to have to think about which box I’m going to use for a particular action, especially when the most common action is using Google: which works equally well in both boxes.</li>
+  <li>Address bar is faster. Any time you move your hands from the keyboard to the mouse, you lose a significant portion of time. I don’t know if the search bar has a keyboard shortcut, but I know that the address bar does (<kbd>Alt</kbd>+<kbd>d</kbd>). Even if it does, how do I then quickly select a different search engine than the default?</li>
+  <li>The address bar is multi-functional. I can use it for <acronym title="Uniform Resource Locator">URL</acronym>s and google, but if I add some keyword searches to my bookmarks (replace the query string <code class="language-plaintext highlighter-rouge">%s</code> and add a keyword), then I can have any search engine I want at my finger tips.</li>
+</ol>
+
+<p>This makes the search box dead space in a prime location. It’s one (recent) saving is the addition of Google-style autocomplete. With a little more work this could, and should, be integrated into the address bar. At the very least, the option should be available.</p>
+
+<p>So, what other things do I use the address bar quick search for?</p>
+
+<ul>
+  <li><a href="http://javadocs.org">Javadoc</a> – Look up any standard class with a quick “jdoc Class”.</li>
+  <li><a href="http://man.splitbrain.org/">Man pages</a> – As with terminals, “man [program]” works just fine for looking up UNIX stuff.</li>
+  <li><a href="http://acronymfinder.com">Acronyms</a> – Need to know what something means ASAP? “acronym ASAP” would do.</li>
+</ul>
+
+<p>I use it for dictionaries (“dic”), the thesaurus (“thes), torrents (“torr”), and just about any other common search because <em>it is better</em>. Give it a try.</p>
+
+  </div>
+  <div class="divider"><img src="/assets/images/divider.png" /></div>
+  </div>
+  
+  <div class="postcontainer">
   <h3><a href="/Archives/2006/11/19/iBatisAndLike/">iBatis And Like</a></h1>
   <p class="author">
     <span class="date"> </span>
@@ -178,38 +210,6 @@
 <p>I’ve continued all that fun learning about the world and people, etc, but feel less inclined to talk about it. I know I’m better, and that’s all I need to say.</p>
 
 <p>Incidentally, by pure chance, I had the same song stuck in my head from <a href="/Archives/2005/10/24/AnotherYearGone">my birthday post last year</a>. So, older, better, but still the same.</p>
-
-  </div>
-  <div class="divider"><img src="/assets/images/divider.png" /></div>
-  </div>
-  
-  <div class="postcontainer">
-  <h3><a href="/Archives/2006/10/17/PlagiarismIntroduction/">Plagiarism: Introduction</a></h1>
-  <p class="author">
-    <span class="date"> </span>
-  </p>
-  <div class="post">
-    <p>Having been been involved in various natural language problems at university, the area of study interests me greatly as a series of very difficult problems. Despite that, I’ve written very little about it. This series on plagiarism detection is an attempt to rectify that.</p>
-
-<p>First, the problem: people are opportunistic, lying cheats who will take any advantage to get ahead. Well, if you believe the tabloids. While we might not all be like that, sadly, the number of people cheating in universities is increasing. Rather than work hard and produce their own work, professors are dismayed to find that several students hand in suspiciously similar pieces of work. Of course, with rather a lot of students in any given course, it can be very difficult to match up a handful as being similar. Lots of people, lots entries, not enough time to go through them and compare every single one against every other one by hand.</p>
-
-<p>Take some time to appreciate the scale of the problem: if a class has 300 people, and you want to compare them all against each other, you’re invoking the classic <a href="http://dwb.unl.edu/calculators/activities/middle/shake.html">handshake problem</a>. To compare them all, you have to do <em>44850</em> checks. Ouch.</p>
-
-<p>This is where <strong>plagiarism detection</strong> comes in: we want to automatically detect any near-duplicates in a group of submissions, eliminating any honest submissions in the process.</p>
-
-<p>Note that although I will refer to most examples in terms of students, submissions and universities, you can substitute in a wide range of domains. Copied texts in a library, finding cross-quotations, finding duplicate entries in financial market systems, the list is nearly endless.</p>
-
-<p>Next, a couple of useful terms: If one person copies another without that person knowing, we call that <strong>plagiarism</strong>. If two or more people copy one another intentionally, we call that <strong>collusion</strong>. For our purposes, these are the same thing. Why? It would be tremendously difficult, if not impossible, to infer the intentions of any entries marked as potential duplicates. Because of this and other possible failings in the system, it is never for the system to act as a final decision maker in whether or not people are cheating; it merely serves as an ordering system for someone else to make a decision. We will, therefore, use the terms “plagiarism” and “collusion” in interchangeably.</p>
-
-<p>It’s worth reiterating that plagiarism detection systems are just ordering systems: they take in a bunch of entries, find groups of similar entries (normally simple pairs of entries), and order those groups by the similarity found within. A user would then look at the produced ordering and decide whether these entries really are similar. There’s nothing unusual about that, when you think about it. Google is doing something pretty similar: it takes a bunch of web pages and a query, groups them on key attributes (words, meta-data, rankings), and orders the pages by how similar they are to the query. A user would then look at the produced ordering and decide which entries best matched the query. You’ve done this a million times yourself, you know it mostly works.</p>
-
-<p>You also know that, heck, sometimes it doesn’t; you can’t make decisions on the ordering with absolute certainty. In this way, plagiarism detection, search engines and other natural language problems are, at the time of writing, incomplete. While we don’t have the natural language problem nailed, we have to accept that they sometimes produce errors. In the case of plagiarism detection systems, those errors could lead to someone being kicked out of university if the risks are not understood. Again, these systems are just for ordering: not absolute decision making.</p>
-
-<p>Another point worth noting is that plagiarism detection systems generally deal with <strong>intra corpus</strong> search. That is, we know and have absolutely every entry in the set: they all come from submissions for a set exercise with a set deadline. After the deadline, the set is fixed in size, it will never grow, and it is almost always relatively small in size (a few hundred or thousand entries). Compare with web search where the corpus of documents is continually increasing and has billions of entries. So we’re comparing the entries in a fixed size set of documents, and not against a wider set. It is possible to compare against a much larger set like, say, the internet to find people copying from there, but it’s beyond the scope of much of the series as it is a much more difficult problem.</p>
-
-<p>We’re nearly down with this introduction, I hope by the time that I end this series, you will have a much better feel for how plagiarism detection works, how natural language problems can be solved, and what the trade-offs can by through-out.</p>
-
-<p>Finally, I highly recommend that you read Tim Bray’s excellent <a href="http://www.tbray.org/ongoing/When/200x/2003/07/30/OnSearchTOC">On Search</a> series. While reading the whole thing will do you no harm, if you’re lacking time I would read the sections on <a href="http://www.tbray.org/ongoing/When/200x/2003/06/22/PandR">Precision and Recall</a> and <a href="http://www.tbray.org/ongoing/When/200x/2003/07/11/Stopwords">Stop Words</a> as they hint at areas that need to be understood for most of this series.</p>
 
   </div>
   <div class="divider"><img src="/assets/images/divider.png" /></div>
