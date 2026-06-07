@@ -12,7 +12,7 @@ Six films for August and they're mostly good!
 
 ### Bring Her Back
 
-** Bring Her Back** is a creepy supernatural horror that digs its claws in very early, with some unsettling VHS footage.
+**Bring Her Back** is a creepy supernatural horror that digs its claws in very early, with some unsettling VHS footage.
 
 The main plot follows a pair of orphans being moved around the foster care system, and their new foster parent, played fantastically be Sally Hawkins. It's not a spoiler to say that not everything is as it seems in her home.
 
@@ -22,7 +22,7 @@ Very good.
 
 ### The Pickup
 
-Prime seem intent to shove out a terrible action film every month. This month it's *The Pickup**.
+Prime seem intent to shove out a terrible action film every month. This month it's **The Pickup**.
 
 The movie follows to armored van drivers who are pulled into a heist. None of it really makes sense, none of the action really works, and you'll be bored quite quickly. While it's good to see Eddie Murphy get back to acting, he deserves better than this.
 
