@@ -83,6 +83,31 @@
 
   
   <div class="postcontainer">
+  <h3><a href="/Archives/2005/07/14/NoOp/">No Op</a></h1>
+  <p class="author">
+    <span class="date"> </span>
+  </p>
+  <div class="post">
+    <p>Apologies for the lack of noise being put out by Solitude. It has been an incredibly busy fortnight. Been doing stuff most every day and night for that time period and I’m now royally knackered. This was going to be a post of random stuff that I’d noticed or heard in that time period, but since I forgot most of the good, it’s a quick catch-up for the people I haven’t spoken to in a bit.</p>
+
+<ul>
+  <li>First of all, I started my graduate job last week. It’s pretty good and should prove to be a challenge, though things haven’t gotten into full swing. The hours certainly beat the amount of time spent in the lab last year.</li>
+  <li>Spent Friday night in Stirling for a birthday party. On my way back on Saturday, the weather was boiling hot so First Scotrail were kindly giving passengers free bottles of water. Nice. Noticed the platform was full of G8 protestors (dreadlocks, bongos, banners the works). They all seem quite pleased with the generosity of the railways. Someone, however, had a sense of humour. The bottles, you see, had a competition on them: “Win a 5-star holiday in… Gleneagles!”. Well played, Scotrail, well played.</li>
+  <li>Sin City is as good the second time around.</li>
+  <li>Pub quiz team names are getting ridiculously offensive; a trend I both encourage, admire and actively participate in.</li>
+  <li>Band practices without any singers tend to go horribly wrong.</li>
+  <li><del>If you’re lucky enough to have my mobile number and aren’t getting replies, it’s because I semi-broke my phone in an incident involving red bull, Biffy Clyro and a drunken friend. It should be sorted soon and the number will remain unchanged so don’t be put off. This is just a slight warning.</del></li>
+</ul>
+
+<p>I’m off to London on Sunday for nearly a fortnight (courtesy of my employers) so updates may well be light again. I’ll try and post a bit over the next few days, but still a bit busy.</p>
+
+<p><ins><strong>UPDATE</strong>: I’ve got a new phone with the same number. It’s just a temporary phone for the next few weeks. Because of some insane offers, I effectively got it for £10</ins>.</p>
+
+  </div>
+  <div class="divider"><img src="/assets/images/divider.png" /></div>
+  </div>
+  
+  <div class="postcontainer">
   <h3><a href="/Archives/2005/07/01/AYearInMusicJune2005/">A Year In Music: June 2005</a></h1>
   <p class="author">
     <span class="date"> </span>
@@ -165,43 +190,6 @@
 <p>And how are you going to allow those options? Hmm? You’ve no tenners.</p>
 
 <p>UI design hint 3: <em>Don’t offer options to the user that you can’t provide</em>, particularly when you’ve already explicitly told the user that. What a waste of an earlier smart prompt.</p>
-
-  </div>
-  <div class="divider"><img src="/assets/images/divider.png" /></div>
-  </div>
-  
-  <div class="postcontainer">
-  <h3><a href="/Archives/2005/06/14/OrderPart6Music/">Order, Part 6: Music</a></h1>
-  <p class="author">
-    <span class="date"> </span>
-  </p>
-  <div class="post">
-    <p>Music: we all like it. MP3s: we’ve all got them. A problem: how should these files be structured on your computer.</p>
-
-<p>First of all, the operations I want to be able to perform:</p>
-
-<ul>
-  <li>Selecting all music by an artist.</li>
-  <li>Selecting a specific release by an artist.</li>
-  <li>Being able to pick individual tracks with relative ease.</li>
-  <li>Creating a snapshot and being able to see what files have changed or been added since that snapshot (for the purposes of backing up efficiently).</li>
-</ul>
-
-<p>Originally, I had them all in a single folder called “Music”, with individual track titles in the form “Artist – Song.mp3”. This worked well for a while, but started falling on its arse when the song count got over a few thousand. Thanks to some of internal handling, Windows does not like folders with thousands of items in them. So I’ve been trying to structure them in another way and have a few problems that I want to try and work out with the help of you, the kind reader.</p>
-
-<p>The most obvious thing to do is to create a folder for each artist and then a sub-folder for each release. So now we have “Artist/Album/Artist – Song.mp3”. Now, you may think that, given this structure, the “Artist” in the filename is redundant. Well, it is but I’m keeping it because I know that if files need copied or moved around it’ll be easier to have this present in the name. Also, I want the filename part to be unique (for this kind of moving around) and I want to minimise redundancy. This configuration throws up a bunch of edge cases that I’m not completely sure of the best way to resolve:</p>
-
-<ul>
-  <li><strong>Singles</strong> – There are two problems with singles. The first is that if the main track is identical to the album version of the track then the uniqueness of filenames might be lost and data may be replicated. So, do you keep the version of the file with the album, single or both? If the title track is a different mix (a radio edit, say), it’s easy enough to keep both and put “(Radio Edit)” in the filename. The second problem is that of multi-format singles. <acronym title="Compact Disk">CD</acronym>, <acronym title="Digital Video Disc">DVD</acronym>, vinyl: do you create a subfolder for each release or one for the singles as a whole? If the former, which subfolder gets the A-side if it is the same across all formats?</li>
-  <li><strong>Split Singles</strong> – The system, as it stands, assumes that one release means one artist. In the case of either a split single or a compilation this does not hold true. How do you deal with this? If you put it into one of the artists folders, then you lose the connection to the other. If you create a new split artist folder (“artist1 and artist2”), then you disassociate from both artists.</li>
-  <li><strong>Compilations</strong> – An extension of the above problem: how do you deal with multi-artist compilations? A “Various/Album/Artist – Track.mp3” folder set up? How, then, do you connect an individual artist to their contribution?</li>
-  <li><strong>Featuring</strong> – A weaker edge case. When a particular track features another artist (“Nofx – Go Your Own Way (ft. Greg Graffin)”), how do you tie that in? After the track title (as in the example, or as part of the artist? How do you connect the song to all artists? In the example, I’m more interested in the featured artist, but it could plainly be the other way.</li>
-  <li><strong>Rarities</strong> – There are always songs which exist without official release or outside of any real collection. I tend to call these rarities (whether they are actually hard to find or not). How do they fit? At the moment, I go with the “Artist/Artist Rarities” structure. Better ideas?</li>
-</ul>
-
-<p>Suggestions and ideas for some or all of these most definitely welcome (that being the point of this post and all).</p>
-
-<p>[For anyone wondering why this is Order part 6, and not part 5, I accidentally created two parts 4 and it’s too much hassle to fix now.]</p>
 
   </div>
   <div class="divider"><img src="/assets/images/divider.png" /></div>

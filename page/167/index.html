@@ -83,6 +83,20 @@
 
   
   <div class="postcontainer">
+  <h3><a href="/Archives/2003/04/24/Geoblog/">Geoblog</a></h1>
+  <p class="author">
+    <span class="date"> </span>
+  </p>
+  <div class="post">
+    <p>One of the best ideas I’ve seen implemented in a long time: take the <a href="http://geourl.org">GeoURL tags</a> and the update list from <a href="http://www.weblogs.com">weblogs.com</a>, roll them together in a beautiful flash map, and watch the world update their sites in real-time. This is <a href="http://www.brainoff.com/geoblog/">the world as a blog</a>.</p>
+
+<p>Since I ping weblogs.com and have geoURL tags, I’m going to sit watching the map for the next few minutes waiting for me to appear.</p>
+
+  </div>
+  <div class="divider"><img src="/assets/images/divider.png" /></div>
+  </div>
+  
+  <div class="postcontainer">
   <h3><a href="/Archives/2003/04/23/QuickRamble/">Quick Ramble</a></h1>
   <p class="author">
     <span class="date"> </span>
@@ -144,49 +158,6 @@ A car park.</p>
     <p>I told myself I’d leave the markup for this site alone for a while, but I found myself unable to not correct a previous over-sight. While the main navigation list for this site uses, and always has used, proper list markup, I noticed that the syndication list (blogtree, xml, GeoURL etc) does not. How this one slipped past, I don’t know.</p>
 
 <p>If you’re getting any weird effects (things should look <em>exactly</em> the way they did before), then press ctrl and F5 together. That should clear things up nicely.</p>
-
-  </div>
-  <div class="divider"><img src="/assets/images/divider.png" /></div>
-  </div>
-  
-  <div class="postcontainer">
-  <h3><a href="/Archives/2003/04/18/Semantic/">Semantic?</a></h1>
-  <p class="author">
-    <span class="date"> </span>
-  </p>
-  <div class="post">
-    <p>Recently, someone asked me what <strong>semantic markup</strong> is. Semantic markup is the way all mark-up should be. A page can exist and validate as <acronym title="eXtensible HyperText Markup Language">XHTML</acronym> (using the <a href="http://validator.w3.org"><acronym title="World Wide Web Consortium">W3C</acronym> validator</a>) without really being proper XHTML.</p>
-
-<p>To understand what I mean, you have to really understand what mark-up is. While I lack a complete historical knowledge of the subject, I know the rough details (but this isn’t a history lesson, just a brief overview). People wanted information that they stored to have meaning, so that people could understand what kind of data was being stored just by looking at it. The standard that eventually emerged was <acronym title="Standard Generalised Markup Language">SGML</acronym>.</p>
-
-<p>Created in 1974 by Dr Charles F. Goldfarb, SGML was originally conceived to allow people to use data across different platforms and by different applications. By making the way of making text significant part of the text itself, it became easy to write something once on one computer and then re-use it on many other computers.</p>
-
-<p>Tim Berners-Lee, generally considered to be the father of the web, created <acronym title="HyperText Markup Language">HTML</acronym> from his loose understanding of SGML. As most people know, HTML is what a webpage is made up of. Very simply, it’s just the information you want inside tags. For example, if you want a paragraph of text you use the <strong>P</strong> tag. If you want to show an image, you used the <strong>IMG</strong> tag.</p>
-
-<p>The biggest problem with HTML is that it lacked 2 of the main properties of other markup languages: <em>well-formedness</em> and <em>real meaning</em>. Almost every markup language requires that tags <em>must</em> be closed, and have some sort of case rule. This is called <em>well-formedness</em> (as in the tags are complete), and sadly HTML lacked it as a necessity. Also, the issue of meaning: every tag has a precise meaning (as mentioned before). But people, when actually using HTML, just used any old tag that got the work done, regardless of what it actually said about their markup. The line-break tag (BR) and table tags were the most abused: people would (and still do) shove entire essays into a single paragraph and separate real paragraphs with inappropriate line-breaks. They would also layout everything on their website with tables and never know it was wrong. Tabular data, such as scientific results, belongs in tables. Essays and navigation lists generally don’t.</p>
-
-<p>The markup purists gawked. What to do about this bastard child of meaningful markup and presentation? The masses liked it, so getting rid of it wasn’t an option. Or was it?</p>
-
-<p>In 1994, <a href="http://tbray.org/ongoing/">Tim Bray</a> and a few others created <acronym title="eXtensible Markup Language">XML</acronym> from SGML. Much like its parent language, it’s a general way of taking information and giving it structure. It’s just a fair bit simpler (and more aimed towards web-development) than SGML. It’s been used to structure everything from mathematical documents to porn metadata (such as the title and star of the film).</p>
-
-<p>Every article on this website exists as an XML document. I can access that one file and turn it into any format I wish: from the markup that you see on these pages, to the <a href="http://solitude.vkps.co.uk/Syndication/"><acronym title="Rich Site Summary">RSS</acronym> feeds</a> that I provide. In short, XML is very powerful, meaningful and widely-used.</p>
-
-<p>At some point, someone at the <a href="http://www.w3c.org">World Wide Web Consortium</a> (the people in charge of updating the HTML specification amongst other things) realised that HTML needed to be more like XML. And so, a new language was born: <acronym title="eXtensible HyperText Markup Language">XHTML</acronym>.</p>
-
-<p>Presented as the future of HTML, the new XHTML had to incorporate the wellformedness and meaning of XML, as well as it’s extensibility (the X at the beginning of XHTML comes from extensibility) among other features. Finally, a web markup language capable of being meaningful, useful and platform-independent.</p>
-
-<p>So what did the masses of web developers do? Those who learned of XHTML and understood the real point behind it (like myself) and didn’t just see it as HTML+ 1, used it properly. Uncoupling the way our web pages looked from the data itself, making our words richer by using the tags at our disposal rather than fudging everything together with tables and linebreaks and other presentational markup (B and U tags – I’m looking at you). And that is what we call <strong>Semantic Markup</strong>: using the tags properly.</p>
-
-<p>Now the XHTML specification is still open to abuse: people write markup that will validate and think it’s good XHTML. It isn’t necessarily. The validator only checks for well-formedness. It can’t look at a page and see if it’s using the language in the spirit that it was intended: to provide meaning for content.</p>
-
-<p>Why use semantic markup?</p>
-
-<ul>
-  <li>It’s <em>well-formed</em>, so it can be understood by pretty much any browser or parser on any device. That means more people can understand and view what you write. This site works in any browser: from Mosaic (which is <a href="http://news.com.com/2009-1032-995679.html" title="Mosaic is 10 years old">10 years old today</a>), to Internet Explorer, to Mozilla, to any number of non-visual browsers (screen-readers used for the blind, for example). That is the power of well-formed markup.</li>
-  <li>It’s <em>meaningful</em>. Every word I write has implied meaning via the markup. This gives it both hidden and viewable depth. For example, if you use a visual browser, throughout this article you might have noticed words that have a dashed underline (but because my markup is separate from the presentation, I can change this). Those are acronyms. By marking them up with the ACRONYM tag, you can then put your mouse-over them to find out what those acronyms stand for.</li>
-</ul>
-
-<p>And those are the reasons that every web developer who is even remotely competent should be using semantic markup.</p>
 
   </div>
   <div class="divider"><img src="/assets/images/divider.png" /></div>
