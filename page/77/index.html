@@ -83,6 +83,24 @@
 
   
   <div class="postcontainer">
+  <h3><a href="/Archives/2005/12/09/TheJoysOfSpam/">The Joys Of Spam</a></h1>
+  <p class="author">
+    <span class="date"> </span>
+  </p>
+  <div class="post">
+    <p>After several years of very little comment spam, I’ve started getting a reasonable amount, particularly on old posts. Going in and manually deleting it is getting to be a bit annoying so I’ve decided to experiment with filtering.</p>
+
+<p>I’m going to start with a very simple solution and make it more and more complex as each level fails (I can see a Bayesian filter in my future).</p>
+
+<p>Right now, all you have to do to comment is type in a generated number which is so ludicrously simple as to nearly not be there. It’s essentially the numerical values for the year, month and day added together; a very low pass filter, I think. Let’s see how that works.</p>
+
+<p>As a bonus for those commenting near midnight, it has a leniency of +1 on the value. If you take longer than a full day to comment, then… well… tough. You can just damn well go back and get a new number.</p>
+
+  </div>
+  <div class="divider"><img src="/assets/images/divider.png" /></div>
+  </div>
+  
+  <div class="postcontainer">
   <h3><a href="/Archives/2005/12/06/HowToDesignFromSpec/">How To Design From Spec</a></h1>
   <p class="author">
     <span class="date"> </span>
@@ -145,24 +163,6 @@
 </ol>
 
 <p>If the ball bearings don’t feel like they’re going past your head and the floor doesn’t rumble enough to upset the neighbours when the car lands, your equipment isn’t good enough.</p>
-
-  </div>
-  <div class="divider"><img src="/assets/images/divider.png" /></div>
-  </div>
-  
-  <div class="postcontainer">
-  <h3><a href="/Archives/2005/12/02/CodeAnnoyance/">Code Annoyance</a></h1>
-  <p class="author">
-    <span class="date"> </span>
-  </p>
-  <div class="post">
-    <p>To children and novice programmers:</p>
-
-<p>When writing various kinds of applications or <acronym title="Application Interface">API</acronym>s, it is often the case that you will have functions of the form <code class="language-plaintext highlighter-rouge">is&lt;em&gt;Object&lt;/em&gt;Valid()</code> (or a similar kind of check that begins with “is”), where Object is some variable or object. This is fine: checking data and providing methods to do so is a Good Thing, in that it is considerate and generally fulfills a use case.</p>
-
-<p>Something you should never do is write a function like <code class="language-plaintext highlighter-rouge">isObject&lt;em&gt;In&lt;/em&gt;valid()</code>. Putting negation into this kind of check is a lot like a double-negative in English, it makes life more difficult for everyone else because they have to spend more time straightening out the negations. This mistake is compounded by the fact it is almost always used in conjunction with the language negation to give: <code class="language-plaintext highlighter-rouge">!isObjectInvalid()</code>. Argh!</p>
-
-<p>Next person to do this gets hurt.</p>
 
   </div>
   <div class="divider"><img src="/assets/images/divider.png" /></div>

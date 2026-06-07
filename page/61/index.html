@@ -83,6 +83,39 @@
 
   
   <div class="postcontainer">
+  <h3><a href="/Archives/2007/10/06/jdom-classcastexception/">JDOM ClassCastException</a></h1>
+  <p class="author">
+    <span class="date"> </span>
+  </p>
+  <div class="post">
+    <p>I’ll start by saying that if you’re not a programmer, you’re not going to be interested in this post. You might want to run along and <a href="http://wondermark.com/" title="Wondermark comics">read something better</a>. You probably also want to be a Java programmer.</p>
+
+<p><a href="http://www.jdom.org/">JDOM</a> is a great Java library for dealing with XML in a reasonably sane way. You turn your XML into an <code class="language-plaintext highlighter-rouge">org.jdom.Document</code> object (using a handy utility like <code class="language-plaintext highlighter-rouge">SAXBuilder</code>), and then you can use various query and manipulation tools on it. It does, however, have some fairly silly exceptions.</p>
+
+<p>Recently, I was doing some XPath queries as part of a web-app. Like a good developer, I wrote some unit tests so I knew that the XPaths were correct, the XML conversion was correct, etc. I wrote the actual code to implement the test cases and everything worked fine. Great.</p>
+
+<p>Upon deploying the web-app to the container and running it properly, JDOM throws a <code class="language-plaintext highlighter-rouge">ClassCastException</code> and says the <code class="language-plaintext highlighter-rouge">Document</code> is the cause. Bizarre. After a few checks and no luck , we (I say “we” because there are now a few interested parties) break out the debugger for a look at the running web-app. [Let me stop for a second to say that debugging running web-apps is a triumph of tooling; very useful stuff.] The created Document looks fine, the code steps through ok until… bang. The debugger stops working. Ah.</p>
+
+<p>After a lot of head scratching and googling, we finally figure out the problem: JDOM depends on the <a href="http://jaxen.org/">Jaxen</a> API for XPath. While our unit test container (actually an IDE) has a reference to a copy of Jaxen for an unrelated reason, the deployment doesn’t. So the problem is one of dependencies.</p>
+
+<p>However, the thing that made this tricky to debug was JDOM throwing an unrelated Exception. A <code class="language-plaintext highlighter-rouge">ClassCastException</code> seems completely inappropriate here and helped masked the real cause. A <code class="language-plaintext highlighter-rouge">ClassNotFoundException</code> pointing to the Jaxen library would have a) made sense, and b) pointed us at the real cause.</p>
+
+<p>Lessons:</p>
+
+<ol>
+  <li>Libraries are only as sane as the most insane thing they do.</li>
+  <li>Unit tests start falling apart if the environment in which they are run does not match the final environment. This can be a very subtle problem.</li>
+  <li>Throwing exceptions is only as useful as the quality of the feedback the exception provides.</li>
+  <li>Debug, debug, debug. If the debugger fails, don’t panic.</li>
+</ol>
+
+<p>Here’s hoping the JDOM guys get rid of that erroneous <code class="language-plaintext highlighter-rouge">ClassCastException</code> and switch to something a little more helpful.</p>
+
+  </div>
+  <div class="divider"><img src="/assets/images/divider.png" /></div>
+  </div>
+  
+  <div class="postcontainer">
   <h3><a href="/Archives/2007/09/18/n95/">N95</a></h1>
   <p class="author">
     <span class="date"> </span>
@@ -171,30 +204,6 @@
 <p>Finally, <strong>Captivity</strong> is pretty much the opposite in terms of the quality of horror it offers. More of an excuse for a bunch of pre-canned set-ups than an attempt to do something that makes sense as a whole, this film fails on a number of levels, not least of all a number of weak performances and a nonsensical plot. If you liked Saw, you might like this (similar style). If not, avoid.</p>
 
 <p>The winner this month was the excellent <strong>Tell No One</strong>, proving itself to be great in almost every suit.</p>
-
-  </div>
-  <div class="divider"><img src="/assets/images/divider.png" /></div>
-  </div>
-  
-  <div class="postcontainer">
-  <h3><a href="/Archives/2007/08/18/film-fight-may-2007/">Film Fight: May 2007</a></h1>
-  <p class="author">
-    <span class="date"> </span>
-  </p>
-  <div class="post">
-    <p>One of the reasons the film fight series has been a little delayed this year is that I was a little less obsessive about my record keeping than normal. One consequence of this is that I only seem to have seen one film in May. This could be true (I was travelling a lot) or possibly not. Either way…</p>
-
-<p><strong>Magicians</strong> is what happens when two of Britain’s best comedians, David Mitchell and Robert Webb, get watered down to fit a mainstream audience. While this could’ve been another great and fairly dark piece of comedy, like Peep Show at its sickest, it’s barely more than a children’s film with some blue references. Forgettable, and uninteresting. Avoid.</p>
-
-<p><del datetime="2007-08-18T23:10:26+00:00">Sadly, despite the review, <strong>Magicians</strong> wins for May… unless I can remember what else I saw.</del></p>
-
-<p><ins datetime="2007-08-18T23:10:26+00:00">Update: I found the other two ticket stubs for May!</ins></p>
-
-<p><strong>28 Weeks Later</strong> is that rarest of things: a sequel that pays adequate respect to the original material, while standing on its own feet. The opening sequence is both stunning and shocking, the excellent score making it one of the most intense openers I’ve seen in a long time. As zombie films go, 28 Weeks Later is ok. It isn’t trying to make a point, but has a reasonable vision of how the world would go wrong. There are some fairly trite missteps, such as the main character zombie (a device used effectively by George Romero in his series of zombie films, but abused here). Overall, this is still fairly enjoyable.</p>
-
-<p>Finally, <strong>Zodiac</strong> is David Fincher’s latest master work: an account of the Zodiac murders, largely from the perspective of the cartoonist who became so obsessed with the story that he wrote one of the definitive books on the matter. As the case was unsolved, Fincher focusses on the paranoia and fear found in this time and place, while expanding on the details. Every scene is beautifully shot, with CGI used seamlessly (as it should be), and excellent performances from the whole cast. Although it doesn’t quite match some of his previous work (Fight Club, Seven), it’s still a fantastic piece of cinema.</p>
-
-<p>With that, Magicians is no longer the winner for May, <strong>Zodiac</strong> wins.</p>
 
   </div>
   <div class="divider"><img src="/assets/images/divider.png" /></div>
