@@ -1,4 +1,5 @@
 require 'net/http'
+require 'fileutils'
 
 module PinboardPlugin
 
@@ -8,6 +9,9 @@ module PinboardPlugin
     #
     #  +site+          is the Jekyll Site instance.
     #  +base+          is the String path to the <source>.
+
+    CACHE_FILE = '_data/pinboard_cache.json'
+
     def initialize(site, base)
 
       #Consider making these externally configurable.
@@ -43,11 +47,37 @@ module PinboardPlugin
       @bookmarks = JSON.parse(json).take(@limit).map { |item| Bookmark.new(item['u'], item['d'], item['n'], item['dt'], item['a'], item['t'])}
     end
 
-    # Get feed with username
+    # Try to fetch fresh Pinboard JSON; on failure fall back to cached file.
     def json
-      url     = 'http://feeds.pinboard.in/json/v1/u:' + @user
-      resp    = Net::HTTP.get_response(URI.parse(url))
-      return  resp.body
+      fresh = fetch_json
+      if fresh
+        cache_path = File.join(@base, CACHE_FILE)
+        FileUtils.mkdir_p(File.dirname(cache_path))
+        File.write(cache_path, fresh)
+        return fresh
+      end
+
+      cache_path = File.join(@base, CACHE_FILE)
+      if File.exist?(cache_path)
+        Jekyll.logger.warn "Pinboard:", "API unreachable, using cached bookmarks."
+        return File.read(cache_path)
+      end
+
+      Jekyll.logger.error "Pinboard:", "API unreachable and no cache found. Returning empty list."
+      '[]'
+    end
+
+    def fetch_json
+      url  = 'http://feeds.pinboard.in/json/v1/u:' + @user
+      uri  = URI.parse(url)
+      http = Net::HTTP.new(uri.host, uri.port)
+      http.open_timeout = 5
+      http.read_timeout = 5
+      resp = http.get(uri.request_uri)
+      resp.body if resp.is_a?(Net::HTTPSuccess)
+    rescue => e
+      Jekyll.logger.warn "Pinboard:", "Fetch failed (#{e.class}): #{e.message}"
+      nil
     end
   end
 
@@ -82,17 +112,16 @@ module PinboardPlugin
     priority :high
 
     def generate(site)
-      # TODO reenable this
-      # if site.layouts.key? 'pinboard_list'
-      #   pinboard = PinboardPage.new(site, site.source)
-      #   if pinboard.render?
-      #     pinboard.render(site.layouts, site.site_payload)
-      #     pinboard.write(site.dest)
-      #     site.pages << pinboard
-      #   end
-      # else
-      #   throw "No 'pinboard_list' layout found."
-      # end
+      if site.layouts.key? 'pinboard_list'
+        pinboard = PinboardPage.new(site, site.source)
+        if pinboard.render?
+          pinboard.render(site.layouts, site.site_payload)
+          pinboard.write(site.dest)
+          site.pages << pinboard
+        end
+      else
+        throw "No 'pinboard_list' layout found."
+      end
     end
 
   end

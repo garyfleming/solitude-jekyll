@@ -1,0 +1,770 @@
+[ {
+    "u": "https:\/\/hazelweakly.me\/blog\/stop-building-ai-tools-backwards\/",
+    "d": "Stop Building AI Tools Backwards",
+    "n": "",
+    "dt": "2025-07-23T16:23:28Z",
+    "a": "garyfleming",
+    "t": [
+        "ai",
+        "education",
+        "LLMs",
+        "development"
+    ]
+},{
+    "u": "https:\/\/craigmod.com\/essays\/membership_rules\/",
+    "d": "My Rules for Running My Membership Program",
+    "n": "A very clear-headed take on running a membership program.",
+    "dt": "2025-03-29T18:45:26Z",
+    "a": "garyfleming",
+    "t": [
+        "subscriptions",
+        "memberships"
+    ]
+},{
+    "u": "https:\/\/cafe.elharo.com\/programming\/different-styles-of-dependency-management\/",
+    "d": "Different Styles of Dependency Management",
+    "n": "",
+    "dt": "2025-02-16T14:15:06Z",
+    "a": "garyfleming",
+    "t": [
+        "software",
+        "dependencies"
+    ]
+},{
+    "u": "https:\/\/www.robinsloan.com\/lab\/is-it-okay\/",
+    "d": "Is it okay?",
+    "n": "Squaring up to the foundational question for language models.",
+    "dt": "2025-02-15T13:01:12Z",
+    "a": "garyfleming",
+    "t": [
+        "ai",
+        "llm",
+        "humanism"
+    ]
+},{
+    "u": "https:\/\/www.scienceofpeople.com\/power-vs-authority\/",
+    "d": "Power vs. Authority (And Why it Matters in The Workplace)",
+    "n": "An excellent overview of types of power we implicitly and explicitly hold, and how to use it for good.",
+    "dt": "2024-08-01T15:55:18Z",
+    "a": "garyfleming",
+    "t": [
+        "management",
+        "power",
+        "authority"
+    ]
+},{
+    "u": "https:\/\/gist.github.com\/timothyham\/dd003dbad5614b425a8325ec820fd785",
+    "d": "A Short IPv6 Guide for Home IPv4 Admins",
+    "n": "Looks like a reasonable starting point.",
+    "dt": "2024-08-01T15:34:07Z",
+    "a": "garyfleming",
+    "t": [
+        "Networks",
+        "admin",
+        "ipv6"
+    ]
+},{
+    "u": "https:\/\/blog.davidv.dev\/posts\/first-contact-with-k8s\/",
+    "d": "A skeptic's first contact with Kubernetes",
+    "n": "Solid guide to kubernetes basics",
+    "dt": "2024-08-01T15:04:49Z",
+    "a": "garyfleming",
+    "t": [
+        "kubernetes",
+        "k8s",
+        "beginner"
+    ]
+},{
+    "u": "https:\/\/jackdanger.com\/managing-underperformers\/",
+    "d": "Managing Underperformers",
+    "n": "Solid framework for managing underperformance in teams.",
+    "dt": "2024-07-28T15:16:51Z",
+    "a": "garyfleming",
+    "t": [
+        "management",
+        "teams",
+        "leadership"
+    ]
+},{
+    "u": "https:\/\/www.mindtheproduct.com\/how-to-write-okrs-that-dont-suck-by-adrian-howard\/",
+    "d": "How to Write OKRs That Don't Suck",
+    "n": "Good overview of common OKR antipatterns",
+    "dt": "2024-01-09T08:06:10Z",
+    "a": "garyfleming",
+    "t": [
+        "okrs",
+        "okr",
+        "metrics",
+        "agile"
+    ]
+},{
+    "u": "https:\/\/clig.dev\/",
+    "d": "Command Line Interface Guidelines",
+    "n": "Useful tips for better CLIs",
+    "dt": "2023-12-26T12:26:27Z",
+    "a": "garyfleming",
+    "t": [
+        "commandline",
+        "ux",
+        "cli"
+    ]
+},{
+    "u": "https:\/\/kpassa.me\/posts\/scenarios\/",
+    "d": "Optimizing Go Tests for Readability",
+    "n": "Interesting approach that mixes table based tests with Gherkin-like scenarios. ",
+    "dt": "2023-12-22T10:26:01Z",
+    "a": "garyfleming",
+    "t": [
+        "go",
+        "golang",
+        "tests",
+        "bdd"
+    ]
+},{
+    "u": "https:\/\/hjr265.me\/blog\/synchronization-constructs-in-go-standard-library\/",
+    "d": "Sync constructs in Go Standard Library",
+    "n": "useful set of idioms around state syncing. ",
+    "dt": "2023-10-26T14:12:59Z",
+    "a": "garyfleming",
+    "t": [
+        "golang",
+        "synchronizarion",
+        "threading"
+    ]
+},{
+    "u": "https:\/\/alexdebrie.com\/posts\/dynamodb-costs",
+    "d": "How You Should Think About DynamoDB Costs",
+    "n": "Practical advice on figuring out when to optimise DB costs. ",
+    "dt": "2023-08-05T18:59:43Z",
+    "a": "garyfleming",
+    "t": [
+        "aws",
+        "dynamodb",
+        "cost",
+        "finops"
+    ]
+},{
+    "u": "https:\/\/gist.github.com\/candlerb\/3cb11576b2d73800b58f3b548dc2ba4a",
+    "d": "Suggestions for go project layout",
+    "n": "Clear, up-to-date layouts for Golang projects",
+    "dt": "2023-05-28T09:00:10Z",
+    "a": "garyfleming",
+    "t": [
+        "golang",
+        "programming",
+        "go"
+    ]
+},{
+    "u": "https:\/\/www.dolthub.com\/blog\/2022-11-28-go-os-exec-patterns\/",
+    "d": "Some Useful Patterns for Go's os\/exec",
+    "n": "Exactly what it sounds like.",
+    "dt": "2022-12-17T14:38:05Z",
+    "a": "garyfleming",
+    "t": [
+        "go",
+        "language",
+        "patterns"
+    ]
+},{
+    "u": "https:\/\/bitfieldconsulting.com\/golang\/scripting",
+    "d": "Scripting with Go",
+    "n": "Nice little DSL for writing scripts in Go",
+    "dt": "2022-11-04T11:56:07Z",
+    "a": "garyfleming",
+    "t": [
+        "golang",
+        "go",
+        "code",
+        "scripting"
+    ]
+},{
+    "u": "https:\/\/dave.cheney.net\/2014\/10\/17\/functional-options-for-friendly-apis",
+    "d": "Functional options for friendly APIs",
+    "n": "Walks through different API designs in Golang, talking about tradeoffs. Great read.",
+    "dt": "2022-09-19T13:35:25Z",
+    "a": "garyfleming",
+    "t": [
+        "Golang",
+        "design",
+        "API"
+    ]
+},{
+    "u": "https:\/\/www.dolthub.com\/blog\/2022-09-12-golang-interface-extension\/",
+    "d": "A plugin architecture using golang interface extension",
+    "n": "Good thinking on extensions in Golang framed around mysql.",
+    "dt": "2022-09-18T14:47:57Z",
+    "a": "garyfleming",
+    "t": [
+        "golang",
+        "design"
+    ]
+},{
+    "u": "https:\/\/github.com\/streamich\/react-use",
+    "d": "streamich\/react-use",
+    "n": "Repo showing examples of a heap of React hooks",
+    "dt": "2022-08-13T11:57:35Z",
+    "a": "garyfleming",
+    "t": [
+        "React",
+        "JavaScript"
+    ]
+},{
+    "u": "https:\/\/npf.io\/2022\/05\/safer-enums\/",
+    "d": "Safer Enums In Go",
+    "n": "Compile time pattern for enums in Go",
+    "dt": "2022-05-14T13:57:25Z",
+    "a": "garyfleming",
+    "t": [
+        "go",
+        "golang",
+        "enums"
+    ]
+},{
+    "u": "https:\/\/spin.atomicobject.com\/2022\/04\/21\/terminal-wordle-react-ink\/",
+    "d": "Terminal Wordle: Write a Wordle Clone for the Terminal with React Ink",
+    "n": "Most interested in Ink, a terminal backend for React.",
+    "dt": "2022-04-30T11:10:48Z",
+    "a": "garyfleming",
+    "t": [
+        "React",
+        "CLI",
+        "Ink"
+    ]
+},{
+    "u": "https:\/\/monorepo.tools\/",
+    "d": "Monorepo Explained",
+    "n": "A nice single-page site providing an overview of monorepo patterns and tooling",
+    "dt": "2022-02-27T12:25:26Z",
+    "a": "garyfleming",
+    "t": [
+        "monorepo",
+        "repo",
+        "vcs"
+    ]
+},{
+    "u": "https:\/\/pomb.us\/build-your-own-react\/",
+    "d": "Build your own React",
+    "n": "Building react from first principles",
+    "dt": "2022-02-25T09:32:47Z",
+    "a": "garyfleming",
+    "t": [
+        "React",
+        "JS"
+    ]
+},{
+    "u": "https:\/\/github.com\/dylanaraps\/pure-bash-bible#trim-leading-and-trailing-white-space-from-string",
+    "d": "Pure Bash Bible",
+    "n": "Handy functions and tools, written in just Bash.",
+    "dt": "2022-02-17T12:57:19Z",
+    "a": "garyfleming",
+    "t": [
+        "Bash",
+        "CLI"
+    ]
+},{
+    "u": "https:\/\/formik.org\/docs\/overview",
+    "d": "Formik",
+    "n": "A library to make form handling in React easier.",
+    "dt": "2022-02-15T11:19:33Z",
+    "a": "garyfleming",
+    "t": [
+        "React",
+        "Forms",
+        "Web"
+    ]
+},{
+    "u": "https:\/\/jason-williams.co.uk\/speeding-up-vscode-extensions-in-2022",
+    "d": "Speeding up VSCode (extensions) in 2022",
+    "n": "Performance analysis for VSCode Extensions",
+    "dt": "2022-01-29T14:34:34Z",
+    "a": "garyfleming",
+    "t": [
+        "VSCode",
+        "Performance",
+        "Code"
+    ]
+},{
+    "u": "https:\/\/codepen.io\/thebabydino\/pen\/OJmpzya",
+    "d": "Minimal pure CSS textile patterns",
+    "n": "As the title suggests. Tartan in CSS, anyone?",
+    "dt": "2022-01-11T09:13:47Z",
+    "a": "garyfleming",
+    "t": [
+        "CSS",
+        "design"
+    ]
+},{
+    "u": "https:\/\/wagslane.dev\/posts\/go-struct-ordering\/",
+    "d": "Saving a Third of Our Memory by Re-ordering Go Struct Fields",
+    "n": "Memory layout matters when writing Go.",
+    "dt": "2022-01-09T15:48:49Z",
+    "a": "garyfleming",
+    "t": [
+        "go",
+        "software",
+        "golang",
+        "performance"
+    ]
+},{
+    "u": "https:\/\/gigamonkeys.com\/flowers\/",
+    "d": "Let a 1,000 flowers bloom. Then rip 999 of them out by the roots.",
+    "n": "A look at engineering effectiveness at Twitter",
+    "dt": "2022-01-08T12:44:30Z",
+    "a": "garyfleming",
+    "t": [
+        "developer-productivity",
+        "engineering-effectiveness",
+        "software",
+        "engineering"
+    ]
+},{
+    "u": "https:\/\/prog.world\/optimizing-the-size-of-the-go-binary\/",
+    "d": "Optimizing the size of the Go binary",
+    "n": "A look at options to reduce Go-produced binaries",
+    "dt": "2022-01-07T16:13:40Z",
+    "a": "garyfleming",
+    "t": [
+        "Go",
+        "Golang",
+        "compression",
+        "performance"
+    ]
+},{
+    "u": "https:\/\/jessitron.com\/2021\/12\/28\/copy-the-questions-not-the-answers\/",
+    "d": "Copy the Questions, not the Answers – Jessitron",
+    "n": "Models and frameworks show answers. You really want to copy the questions.",
+    "dt": "2022-01-07T16:05:40Z",
+    "a": "garyfleming",
+    "t": [
+        "agile",
+        "models",
+        "frameworks",
+        "SAFe"
+    ]
+},{
+    "u": "https:\/\/www.allankelly.net\/archives\/6303\/can-you-keep-agile-and-okrs-seperate\/",
+    "d": "Can you keep Agile and OKRs seperate?",
+    "n": "A small argument against separating the two.",
+    "dt": "2022-01-07T16:03:22Z",
+    "a": "garyfleming",
+    "t": [
+        "agile",
+        "okrs"
+    ]
+},{
+    "u": "https:\/\/www.just3things.com\/posts\/common-okr-misconceptions-2022",
+    "d": "Common OKR misconceptions - 30+ examples from experts",
+    "n": "A run through of misconceptions about OKRs",
+    "dt": "2022-01-07T15:53:03Z",
+    "a": "garyfleming",
+    "t": [
+        "agile",
+        "okrs"
+    ]
+},{
+    "u": "https:\/\/theconvivialsociety.substack.com\/p\/the-questions-concerning-technology",
+    "d": "The Questions Concerning Technology - by L. M. Sacasas",
+    "n": "41 questions to draw out the moral implications of technology",
+    "dt": "2021-08-30T09:41:21Z",
+    "a": "garyfleming",
+    "t": [
+        "technology",
+        "design",
+        "morality",
+        "ethics"
+    ]
+},{
+    "u": "https:\/\/royalsocietypublishing.org\/doi\/10.1098\/rsbl.2021.0158#.YJO5xboG7Vg.twitter",
+    "d": "Dunbar's number deconstructed",
+    "n": "A look into the oft-cited number.",
+    "dt": "2021-05-18T07:24:17Z",
+    "a": "garyfleming",
+    "t": [
+        "Agile"
+    ]
+},{
+    "u": "https:\/\/ciechanow.ski\/internal-combustion-engine\/",
+    "d": "Internal Combustion Engine",
+    "n": "Impressive visualisation and explanation for all the ways that a combustion engine works.",
+    "dt": "2021-05-06T07:33:18Z",
+    "a": "garyfleming",
+    "t": [
+        "visualisation"
+    ]
+},{
+    "u": "https:\/\/www.matuzo.at\/blog\/html-boilerplate\/",
+    "d": "My current HTML boilerplate - Manuel Matuzović",
+    "n": "A good explanation of why certain elements are used in current boilerplate.",
+    "dt": "2021-04-30T06:58:43Z",
+    "a": "garyfleming",
+    "t": [
+        "web",
+        "development"
+    ]
+},{
+    "u": "https:\/\/tatianamac.com\/posts\/prefers-reduced-motion\/",
+    "d": "prefers-reduced-motion: Taking a no-motion-first approach to animations",
+    "n": "Good overview of an accessible animation approach.",
+    "dt": "2021-03-22T19:40:20Z",
+    "a": "garyfleming",
+    "t": [
+        "accessibility",
+        "css",
+        "animation",
+        "design"
+    ]
+},{
+    "u": "https:\/\/shatterealm.netlify.app\/programming\/2021_01_02_shiv_lets_build_a_vcs",
+    "d": "Shiv - Let's Build a Version Control System!",
+    "n": "A great look at the trade-offs in building a VCS.",
+    "dt": "2021-01-04T15:26:23Z",
+    "a": "garyfleming",
+    "t": [
+        "code",
+        "design",
+        "version-control"
+    ]
+},{
+    "u": "https:\/\/engineering.linkedin.com\/blog\/2020\/continuous-integration",
+    "d": "How LinkedIn handles merging code in high-velocity repositories",
+    "n": "Using Trunk-Based Dev while dealing with hundreds of commits.",
+    "dt": "2020-05-04T12:09:32Z",
+    "a": "garyfleming",
+    "t": [
+        "Trunk-based-development",
+        "Dev"
+    ]
+},{
+    "u": "https:\/\/twitter.com\/mauvezero\/status\/1255233594789974023",
+    "d": "Spotify Squads and more",
+    "n": "Decent take on the Spotify model by the person who named squads and chapters",
+    "dt": "2020-05-04T10:30:21Z",
+    "a": "garyfleming",
+    "t": [
+        "Spotify",
+        "Agile"
+    ]
+},{
+    "u": "http:\/\/labs.spotify.com\/2020\/04\/14\/when-should-i-write-an-architecture-decision-record\/",
+    "d": "When should I write an Architecture Decision Record?",
+    "n": "Good advice on ADRs",
+    "dt": "2020-04-26T22:28:10Z",
+    "a": "garyfleming",
+    "t": [
+        "ADR",
+        "design",
+        "architecture"
+    ]
+},{
+    "u": "https:\/\/www.hashtagcoder.dev\/blog\/director-of-engineering",
+    "d": "What does a Director of Engineering do?",
+    "n": "Solid overview.",
+    "dt": "2020-04-16T10:01:08Z",
+    "a": "garyfleming",
+    "t": [
+        "jobs",
+        "agile",
+        "director",
+        "software",
+        "Engineering"
+    ]
+},{
+    "u": "https:\/\/hassenchaieb.com\/aws-good-parts\/",
+    "d": "The good parts of AWS - A visual summary",
+    "n": "A pretty fair summary of AWS (well some of it).",
+    "dt": "2020-03-22T18:47:08Z",
+    "a": "garyfleming",
+    "t": [
+        "AWS",
+        "Cloud",
+        "Architecture"
+    ]
+},{
+    "u": "https:\/\/codepen.io\/collection\/DamKJW\/3\/",
+    "d": "CSS Text Effects",
+    "n": "A Collection, by Mandy Michael, of impressive CSS text Effects",
+    "dt": "2018-10-27T10:32:31Z",
+    "a": "garyfleming",
+    "t": [
+        "css"
+    ]
+},{
+    "u": "https:\/\/medium.com\/@jdxcode\/12-factor-cli-apps-dd3c227a0e46",
+    "d": "12 Factor CLI Apps",
+    "n": "Useful tips for creating CLI commands",
+    "dt": "2018-10-24T07:57:22Z",
+    "a": "garyfleming",
+    "t": [
+        "CLI",
+        "programming",
+        "development"
+    ]
+},{
+    "u": "http:\/\/stevelosh.com\/blog\/2013\/09\/teach-dont-tell\/",
+    "d": "Teach, Don't Tell",
+    "n": "A fantastic, lengthy post on good documentation.",
+    "dt": "2018-04-14T10:26:08Z",
+    "a": "garyfleming",
+    "t": [
+        "Share",
+        "code",
+        "documentation"
+    ]
+},{
+    "u": "https:\/\/bulma.io\/",
+    "d": "Bulma",
+    "n": "A modern CSS framework based on Flexbox. Looks good",
+    "dt": "2018-01-22T14:34:53Z",
+    "a": "garyfleming",
+    "t": [
+        "css",
+        "framework",
+        "design"
+    ]
+},{
+    "u": "https:\/\/github.com\/codelion\/gramtest",
+    "d": "GramTest: A tool for Grammar based Test case generation",
+    "n": "",
+    "dt": "2017-04-05T15:37:39Z",
+    "a": "garyfleming",
+    "t": [
+        "Java",
+        "Test",
+        "Generation",
+        "Share"
+    ]
+},{
+    "u": "https:\/\/www.erikheemskerk.nl\/event-sourcing-eventual-consistency-responding-to-events\/",
+    "d": "Event Sourcing: Eventual Consistency and Responding to Events",
+    "n": "The 3rd part in an excellent series on Event Sourcing.",
+    "dt": "2017-04-04T11:13:46Z",
+    "a": "garyfleming",
+    "t": [
+        "Code",
+        "Design",
+        "EventSourcing",
+        "Share"
+    ]
+},{
+    "u": "https:\/\/18f.gsa.gov\/2017\/01\/19\/the-dark-standup\/",
+    "d": "The Dark Standup",
+    "n": "Great idea",
+    "dt": "2017-02-04T11:07:36Z",
+    "a": "garyfleming",
+    "t": [
+        "Agile",
+        "Share"
+    ]
+},{
+    "u": "http:\/\/manishearth.github.io\/blog\/2017\/01\/14\/stop-ascribing-meaning-to-unicode-code-points\/",
+    "d": "Let’s Stop Ascribing Meaning to Code Points",
+    "n": "They are NOT characters. Do NOT treat them as such.",
+    "dt": "2017-01-15T17:26:16Z",
+    "a": "garyfleming",
+    "t": [
+        "Share",
+        "Web",
+        "Encoding"
+    ]
+},{
+    "u": "https:\/\/developers.google.com\/web\/updates\/2016\/12\/performant-parallaxing",
+    "d": "Performant Parallaxing",
+    "n": "Non-JS, smooth parallax scrolling.",
+    "dt": "2016-12-29T10:40:01Z",
+    "a": "garyfleming",
+    "t": [
+        "CSS",
+        "Web",
+        "Design",
+        "Share"
+    ]
+},{
+    "u": "http:\/\/redsymbol.net\/articles\/unofficial-bash-strict-mode\/",
+    "d": "Use the Unofficial Bash Strict Mode",
+    "n": "Good advice for using Bash",
+    "dt": "2016-10-17T16:51:54Z",
+    "a": "garyfleming",
+    "t": [
+        "Bash",
+        "Scripting"
+    ]
+},{
+    "u": "http:\/\/www.heropatterns.com\/",
+    "d": "Hero Patterns",
+    "n": "SVG background generator. Great idea.",
+    "dt": "2016-10-10T19:22:48Z",
+    "a": "garyfleming",
+    "t": [
+        "svg",
+        "design",
+        "Share"
+    ]
+},{
+    "u": "http:\/\/connascence.io\/",
+    "d": "connascence.io",
+    "n": "Nice model for exploring refactoring.",
+    "dt": "2016-09-18T14:26:17Z",
+    "a": "garyfleming",
+    "t": [
+        "Share",
+        "Code",
+        "Programming",
+        "Connascence"
+    ]
+},{
+    "u": "http:\/\/www.codelitt.com\/blog\/my-first-10-minutes-on-a-server-primer-for-securing-ubuntu\/",
+    "d": "My First 10 Minutes On a Server",
+    "n": "Primer for Securing Ubuntu",
+    "dt": "2016-06-25T07:21:04Z",
+    "a": "garyfleming",
+    "t": [
+        "security"
+    ]
+},{
+    "u": "https:\/\/github.com\/jhalterman\/failsafe",
+    "d": "failsafe",
+    "n": "Simple, sophisticated failure handling",
+    "dt": "2016-06-13T17:36:01Z",
+    "a": "garyfleming",
+    "t": [
+        "Code",
+        "Java",
+        "Share"
+    ]
+},{
+    "u": "https:\/\/medium.com\/javascript-and-opinions\/state-of-the-art-javascript-in-2016-ab67fc68eb0b#.a2ap8f72l",
+    "d": "State of the Art JavaScript in 2016",
+    "n": "Really nice round up of JS libs today.",
+    "dt": "2016-06-05T11:18:50Z",
+    "a": "garyfleming",
+    "t": [
+        "Code",
+        "Javascript",
+        "Share"
+    ]
+},{
+    "u": "https:\/\/github.com\/linkedin\/parseq",
+    "d": "linkedin\/parseq",
+    "n": "Nice async library for Java.",
+    "dt": "2016-04-04T17:22:08Z",
+    "a": "garyfleming",
+    "t": [
+        "Java",
+        "Async",
+        "Code"
+    ]
+},{
+    "u": "http:\/\/www.456bereastreet.com\/archive\/201603\/why_i_dont_use_css_preprocessors\/",
+    "d": "Why I don’t use CSS preprocessors",
+    "n": "Being able to just upload as-is is powerful.",
+    "dt": "2016-04-03T14:53:00Z",
+    "a": "garyfleming",
+    "t": [
+        "CSS",
+        "Share"
+    ]
+},{
+    "u": "https:\/\/www.cesg.gov.uk\/guidance\/security-design-principles-digital-services-0",
+    "d": "Security Design Principles for Digital Services",
+    "n": "Well-thought out practices for secure services.",
+    "dt": "2016-03-16T16:01:05Z",
+    "a": "garyfleming",
+    "t": [
+        "Security",
+        "Design"
+    ]
+},{
+    "u": "https:\/\/www.youtube.com\/watch?v=p0jGmgIrf_M",
+    "d": "Engineering for the Long Game",
+    "n": "Great talk on long lived and distributed systems",
+    "dt": "2016-01-25T13:04:40Z",
+    "a": "garyfleming",
+    "t": [
+        "Code",
+        "Talk",
+        "Engineering",
+        "Share"
+    ]
+},{
+    "u": "http:\/\/www.sandimetz.com\/blog\/2016\/1\/20\/the-wrong-abstraction",
+    "d": "The Wrong Abstraction",
+    "n": "Don't buy into sunk costs in code",
+    "dt": "2016-01-21T13:28:29Z",
+    "a": "garyfleming",
+    "t": [
+        "Code",
+        "Craftsmanship",
+        "Share"
+    ]
+},{
+    "u": "http:\/\/codurance.com\/2015\/08\/17\/increasing-complexity-one-entity-at-a-time\/",
+    "d": "Increasing complexity one entity at a time",
+    "n": "Using CQRS for detangling entities",
+    "dt": "2016-01-16T17:13:54Z",
+    "a": "garyfleming",
+    "t": [
+        "ORM",
+        "CQRS",
+        "Craftsmanship",
+        "Code",
+        "Share"
+    ]
+},{
+    "u": "http:\/\/soveran.com\/human-error.html",
+    "d": "Human Error",
+    "n": "A look at why simplicity is key to avoiding failure",
+    "dt": "2015-12-03T17:24:13Z",
+    "a": "garyfleming",
+    "t": [
+        "Code",
+        "Design",
+        "Craft",
+        "Share"
+    ]
+},{
+    "u": "https:\/\/michaelochurch.wordpress.com\/2012\/11\/18\/programmers-dont-need-a-union-we-need-a-profession\/",
+    "d": "Programmers need a profession.",
+    "n": "On the professionalisation of software engineers",
+    "dt": "2015-12-03T08:22:12Z",
+    "a": "garyfleming",
+    "t": [
+        "software",
+        "professionalism"
+    ]
+},{
+    "u": "https:\/\/medium.com\/@nzoschke\/modern-twelve-factor-apps-with-docker-55dd92c832b3",
+    "d": "Modern Twelve-Factor Apps With Docker",
+    "n": "",
+    "dt": "2015-05-24T16:17:10Z",
+    "a": "garyfleming",
+    "t": [
+        "Share",
+        "Code",
+        "Dev",
+        "Docker"
+    ]
+},{
+    "u": "https:\/\/code.google.com\/p\/rest-assured\/",
+    "d": "rest-assured",
+    "n": "Java DSL for easy testing of REST services",
+    "dt": "2015-05-07T20:19:39Z",
+    "a": "garyfleming",
+    "t": [
+        "testing",
+        "java",
+        "rest",
+        "share"
+    ]
+},{
+    "u": "https:\/\/jitpack.io\/",
+    "d": "JitPack",
+    "n": "Use GitHub release as Maven Dependencies. Clever.",
+    "dt": "2015-04-24T19:35:16Z",
+    "a": "garyfleming",
+    "t": [
+        "Java",
+        "Maven",
+        "Github",
+        "Share"
+    ]
+}]
