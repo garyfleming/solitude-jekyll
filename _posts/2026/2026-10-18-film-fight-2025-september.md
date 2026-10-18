@@ -1,6 +1,6 @@
 ---
-title: "Film Fight 2026: September"
-date: 3899-01-07T20:00:00+00:00
+title: "Film Fight 2025: September"
+date: 2026-10-18T12:53
 author: Gary Fleming
 layout: post
 permalink: /:year/:month/:title/

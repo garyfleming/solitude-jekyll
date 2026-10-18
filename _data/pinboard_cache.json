@@ -1,4 +1,25 @@
 [ {
+    "u": "https:\/\/endsdontjustifythemeans.com\/p\/6-questions-for-believers-in-ai-consciousness",
+    "d": "6 questions for believers in AI consciousness!",
+    "n": "a ‘choose your own adventure’ philosophical resource...",
+    "dt": "2026-10-06T11:32:24Z",
+    "a": "garyfleming",
+    "t": [
+        "Philosophy",
+        "AI"
+    ]
+},{
+    "u": "https:\/\/www.architecture-weekly.com\/p\/throw-result-or-neither",
+    "d": "Throw, Result, or neither?",
+    "n": "Good post on what to return in systems: results, exceptions, or events.",
+    "dt": "2026-09-15T17:22:40Z",
+    "a": "garyfleming",
+    "t": [
+        "Code",
+        "Programming",
+        "Events"
+    ]
+},{
     "u": "https:\/\/hazelweakly.me\/blog\/stop-building-ai-tools-backwards\/",
     "d": "Stop Building AI Tools Backwards",
     "n": "",
@@ -742,29 +763,5 @@
         "Code",
         "Dev",
         "Docker"
-    ]
-},{
-    "u": "https:\/\/code.google.com\/p\/rest-assured\/",
-    "d": "rest-assured",
-    "n": "Java DSL for easy testing of REST services",
-    "dt": "2015-05-07T20:19:39Z",
-    "a": "garyfleming",
-    "t": [
-        "testing",
-        "java",
-        "rest",
-        "share"
-    ]
-},{
-    "u": "https:\/\/jitpack.io\/",
-    "d": "JitPack",
-    "n": "Use GitHub release as Maven Dependencies. Clever.",
-    "dt": "2015-04-24T19:35:16Z",
-    "a": "garyfleming",
-    "t": [
-        "Java",
-        "Maven",
-        "Github",
-        "Share"
     ]
 }]
